@@ -1,0 +1,2409 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pacefin API Documentation">
+      
+      
+        <meta name="author" content="Pacefin">
+      
+      
+        <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/contract_details/scrip_info/">
+      
+      
+        <link rel="prev" href="../../order_book/trade_book/">
+      
+      
+        <link rel="next" href="../search_scrip/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>Scrip Info - Pocketful</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-method" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pocketful" class="md-header__button md-logo" aria-label="Pocketful" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pocketful
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scrip Info
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pocketful" class="md-nav__button md-logo" aria-label="Pocketful" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Pocketful
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../login/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Login
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    orders
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            orders
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/order_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types of Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Regular Order
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Regular Order
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/regular_order/place_regular_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Place Regular Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/regular_order/modify_regular_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modify Regular Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/regular_order/cancel_regular_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cancel Regular Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conditional Order
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Conditional Order
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/BO_CO/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bracket Order & Cover Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/place_COorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Place Cover Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/modify_COorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modify Cover Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/cancel_COorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cancel Cover Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/place_BOorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Place Bracket Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/modify_BOorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modify Bracket Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/conditional_order/cancel_BOorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cancel Bracket Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basket Order
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Basket Order
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/create_basket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Basket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/fetch_basket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Basket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/delete_basket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Delete Basket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/add_basketinstrument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add Basket Instrument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/edit_basketinstrument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edit Basket Instrument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/delete_basketinstrument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Delete Basket Instrument
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/rename_basket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rename Basket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/basket_order/execute_basket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execute Basket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GTT Order
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            GTT Order
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/gtt/create_gtt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create GTT Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/gtt/fetch_gtt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch GTT Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/gtt/cancel_gtt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cancel GTT Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orders/gtt/modify_gtt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modify GTT Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Order Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Order Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order_book/fetch_completedorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Completed Orders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order_book/fetch_pendingorder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Pending Orders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order_book/order_history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order_book/trade_book/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trade Book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contract Details
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Contract Details
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Scrip Info
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Scrip Info
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search_scrip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Search Scrip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Market Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Market Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_marketdata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Market Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_ltp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Last Traded Price
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_fnoltp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get FnO Last Traded Price
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_dpr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get DPR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_closingprice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Closing Price
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/get_greek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Greek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../market_data/option_chain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Option Chain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Portfolio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Portfolio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portfolio/daywise_position/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Position Daywise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portfolio/netwise_position/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Position Netwise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portfolio/demat_holding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch Demat Holdings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portfolio/convert_positions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convert Position
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funds
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Funds
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../funds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Fund Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../profile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Websockets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Websockets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websockets/basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Live Data and Websockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connecting_websocket.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting Websockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websockets/detailed_marketdata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detailed Marketdata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websockets/compact_marketdata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compact Marketdata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websockets/snapquote_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snapquote Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Scrip Info</h1>
+
+<!-- ## ScripInfo -->
+<p>The Search Scrip API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.</p>
+<h2 id="python-method">Python Method</h2>
+<pre><code class="language-python">pocket.getScripInfo(parameters) 
+</code></pre>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exchange</td>
+<td>String</td>
+<td>Name of the exchange where the order is being placed. Possible values include <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code>.</td>
+</tr>
+<tr>
+<td>Instrument Token</td>
+<td>Integer</td>
+<td>Unique identifier assigned to each financial instrument within the exchange.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<p>response = obj.getScripInfo('NSE', 11915)</p>
+<h2 id="response">Response</h2>
+<pre><code class="language-json">{
+  &quot;error&quot;: {
+    &quot;code&quot;: 0,
+    &quot;message&quot;: &quot;&quot;
+  },
+  &quot;result&quot;: {
+    &quot;alternate_exchange&quot;: &quot;BSE&quot;,
+    &quot;alternate_token&quot;: 532648,
+    &quot;alternate_trading_symbol&quot;: &quot;YESBANK-A&quot;,
+    &quot;asm&quot;: &quot;-1&quot;,
+    &quot;asset_code&quot;: &quot;&quot;,
+    &quot;board_lot_quantity&quot;: 1,
+    &quot;book_closure_end_date&quot;: &quot;12-Jun-2019&quot;,
+    &quot;book_closure_start_date&quot;: &quot;6-Jun-2019&quot;,
+    &quot;change_in_oi&quot;: 0,
+    &quot;circuit_rating&quot;: &quot;&quot;,
+    &quot;close_price&quot;: &quot;22.85&quot;,
+    &quot;comments&quot;: &quot;AGM/DIV-RS 2 PER SH&quot;,
+    &quot;company_name&quot;: &quot;YES BANK LIMITED&quot;,
+    &quot;delivery_end_date&quot;: &quot;&quot;,
+    &quot;delivery_start_date&quot;: &quot;&quot;,
+    &quot;delivery_unit_factor&quot;: 0,
+    &quot;delivery_units&quot;: &quot;&quot;,
+    &quot;display_name&quot;: &quot;YESBANK&quot;,
+    &quot;dpr&quot;: &quot;18.3000 - 27.4000&quot;,
+    &quot;exchange&quot;: 1,
+    &quot;execution&quot;: &quot;NA&quot;,
+    &quot;expiry&quot;: 0,
+    &quot;expiry_string&quot;: &quot;&quot;,
+    &quot;exposure&quot;: &quot;5.000000&quot;,
+    &quot;face_value&quot;: 2,
+    &quot;fin_instrm_pdct_tp_cd&quot;: &quot;&quot;,
+    &quot;freeze&quot;: 0,
+    &quot;general_denominator&quot;: &quot;&quot;,
+    &quot;gsm&quot;: &quot;-1&quot;,
+    &quot;have_futures&quot;: false,
+    &quot;have_options&quot;: false,
+    &quot;higher_circuit_limit&quot;: 27.4,
+    &quot;instrument_name&quot;: &quot;EQ&quot;,
+    &quot;instrument_token&quot;: 11915,
+    &quot;instrument_type&quot;: &quot;0&quot;,
+    &quot;is_index&quot;: false,
+    &quot;is_mtf_eligible&quot;: false,
+    &quot;isin&quot;: &quot;INE528G01035&quot;,
+    &quot;issue_maturity_date&quot;: 0,
+    &quot;issue_rate&quot;: 0,
+    &quot;issue_start_date&quot;: &quot;12-Jul-2005&quot;,
+    &quot;last_trade_vol&quot;: &quot;&quot;,
+    &quot;last_trading_date&quot;: &quot;&quot;,
+    &quot;list_date&quot;: &quot;12-Jul-2005&quot;,
+    &quot;local_update_time&quot;: &quot;&quot;,
+    &quot;lower_circuit_limit&quot;: 18.3,
+    &quot;market_type&quot;: &quot;&quot;,
+    &quot;max_order_size&quot;: 0,
+    &quot;max_single_qty&quot;: 0,
+    &quot;month_identifier&quot;: 0,
+    &quot;mtf_margin&quot;: 0,
+    &quot;multiplier&quot;: 1,
+    &quot;no_delivery_date_end&quot;: &quot;0&quot;,
+    &quot;no_delivery_date_start&quot;: &quot;0&quot;,
+    &quot;open_interest&quot;: 0,
+    &quot;option_type&quot;: &quot;&quot;,
+    &quot;partition_id&quot;: 0,
+    &quot;precision&quot;: 2,
+    &quot;price_denominator&quot;: 0,
+    &quot;price_numerator&quot;: 0,
+    &quot;price_quotation&quot;: 0,
+    &quot;price_units&quot;: &quot;&quot;,
+    &quot;product_category&quot;: &quot;&quot;,
+    &quot;product_id&quot;: 0,
+    &quot;raw_expiry&quot;: 0,
+    &quot;raw_tender_period_end_date&quot;: &quot;&quot;,
+    &quot;raw_tender_period_start_date&quot;: &quot;&quot;,
+    &quot;raw_tick_size&quot;: 5,
+    &quot;re_admission_date&quot;: &quot;0&quot;,
+    &quot;record_date&quot;: &quot;0&quot;,
+    &quot;series&quot;: &quot;EQ&quot;,
+    &quot;short_code&quot;: &quot;&quot;,
+    &quot;span&quot;: [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    &quot;special_preopen&quot;: 0,
+    &quot;strike&quot;: 0,
+    &quot;surveillance_indicator&quot;: 0,
+    &quot;symbol&quot;: &quot;YESBANK&quot;,
+    &quot;symbol2&quot;: &quot;&quot;,
+    &quot;tag&quot;: &quot;&quot;,
+    &quot;tender_period_end_date&quot;: &quot;&quot;,
+    &quot;tender_period_start_date&quot;: &quot;&quot;,
+    &quot;tick_size&quot;: 0.05,
+    &quot;tradable&quot;: true,
+    &quot;trade_to_trade&quot;: false,
+    &quot;trading_symbol&quot;: &quot;YESBANK-EQ&quot;,
+    &quot;trading_unit_factor&quot;: 0,
+    &quot;trading_units&quot;: &quot;&quot;,
+    &quot;underlying_token&quot;: 11915,
+    &quot;var&quot;: &quot;23.08&quot;,
+    &quot;warning&quot;: &quot;1&quot;,
+    &quot;yearly_high_price&quot;: &quot;32.85&quot;,
+    &quot;yearly_low_price&quot;: &quot;14.40&quot;
+  }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alternate_exchange</td>
+<td>The alternate exchange where the asset is traded.</td>
+</tr>
+<tr>
+<td>alternate_token</td>
+<td>The alternate token or identifier of the asset.</td>
+</tr>
+<tr>
+<td>alternate_trading_symbol</td>
+<td>The alternate trading symbol of the asset.</td>
+</tr>
+<tr>
+<td>asm</td>
+<td>The adhoc margin for the asset.</td>
+</tr>
+<tr>
+<td>asset_code</td>
+<td>The code associated with the asset.</td>
+</tr>
+<tr>
+<td>board_lot_quantity</td>
+<td>The quantity of the asset in a board lot.</td>
+</tr>
+<tr>
+<td>book_closure_end_date</td>
+<td>The end date of the book closure period.</td>
+</tr>
+<tr>
+<td>book_closure_start_date</td>
+<td>The start date of the book closure period.</td>
+</tr>
+<tr>
+<td>change_in_oi</td>
+<td>The change in open interest for the asset.</td>
+</tr>
+<tr>
+<td>circuit_rating</td>
+<td>The circuit rating of the asset.</td>
+</tr>
+<tr>
+<td>close_price</td>
+<td>The closing price of the asset.</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>Any additional comments or notes related to the asset.</td>
+</tr>
+<tr>
+<td>company_name</td>
+<td>The name of the company associated with the asset.</td>
+</tr>
+<tr>
+<td>delivery_end_date</td>
+<td>The end date for delivery of the asset.</td>
+</tr>
+<tr>
+<td>delivery_start_date</td>
+<td>The start date for delivery of the asset.</td>
+</tr>
+<tr>
+<td>delivery_unit_factor</td>
+<td>The factor for the delivery unit of the asset.</td>
+</tr>
+<tr>
+<td>delivery_units</td>
+<td>The units for delivery of the asset.</td>
+</tr>
+<tr>
+<td>display_name</td>
+<td>The display name of the asset.</td>
+</tr>
+<tr>
+<td>dpr</td>
+<td>The daily price range of the asset.</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>The exchange where the asset is traded.</td>
+</tr>
+<tr>
+<td>execution</td>
+<td>The execution status of the asset.</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>The expiry date of the asset.</td>
+</tr>
+<tr>
+<td>expiry_string</td>
+<td>The string representation of the expiry date.</td>
+</tr>
+<tr>
+<td>exposure</td>
+<td>The exposure of the asset.</td>
+</tr>
+<tr>
+<td>face_value</td>
+<td>The face value of the asset.</td>
+</tr>
+<tr>
+<td>fin_instrm_pdct_tp_cd</td>
+<td>The product type code of the financial instrument.</td>
+</tr>
+<tr>
+<td>freeze</td>
+<td>Indicates if the asset is frozen.</td>
+</tr>
+<tr>
+<td>general_denominator</td>
+<td>The general denominator of the asset.</td>
+</tr>
+<tr>
+<td>gsm</td>
+<td>The GSM (graded surveillance mechanism) status of the asset.</td>
+</tr>
+<tr>
+<td>have_futures</td>
+<td>Indicates if the asset has futures contracts.</td>
+</tr>
+<tr>
+<td>have_options</td>
+<td>Indicates if the asset has options contracts.</td>
+</tr>
+<tr>
+<td>higher_circuit_limit</td>
+<td>The higher circuit limit of the asset.</td>
+</tr>
+<tr>
+<td>instrument_name</td>
+<td>The name of the instrument.</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>The token or identifier of the instrument.</td>
+</tr>
+<tr>
+<td>instrument_type</td>
+<td>The type of the instrument.</td>
+</tr>
+<tr>
+<td>is_index</td>
+<td>Indicates if the asset is an index.</td>
+</tr>
+<tr>
+<td>is_mtf_eligible</td>
+<td>Indicates if the asset is eligible for MTF (market to franchise) trading.</td>
+</tr>
+<tr>
+<td>isin</td>
+<td>The ISIN (International Securities Identification Number) of the asset.</td>
+</tr>
+<tr>
+<td>issue_maturity_date</td>
+<td>The maturity date of the issued asset.</td>
+</tr>
+<tr>
+<td>issue_rate</td>
+<td>The rate at which the asset was issued.</td>
+</tr>
+<tr>
+<td>issue_start_date</td>
+<td>The start date of the issuance of the asset.</td>
+</tr>
+<tr>
+<td>last_trade_vol</td>
+<td>The volume of the last trade of the asset.</td>
+</tr>
+<tr>
+<td>last_trading_date</td>
+<td>The date of the last trading of the asset.</td>
+</tr>
+<tr>
+<td>list_date</td>
+<td>The date when the asset was listed.</td>
+</tr>
+<tr>
+<td>local_update_time</td>
+<td>The local update time of the asset.</td>
+</tr>
+<tr>
+<td>lower_circuit_limit</td>
+<td>The lower circuit limit of the asset.</td>
+</tr>
+<tr>
+<td>market_type</td>
+<td>The market type of the asset.</td>
+</tr>
+<tr>
+<td>max_order_size</td>
+<td>The maximum order size of the asset.</td>
+</tr>
+<tr>
+<td>max_single_qty</td>
+<td>The maximum single quantity of the asset.</td>
+</tr>
+<tr>
+<td>month_identifier</td>
+<td>The month identifier of the asset.</td>
+</tr>
+<tr>
+<td>mtf_margin</td>
+<td>The margin for MTF trading of the asset.</td>
+</tr>
+<tr>
+<td>multiplier</td>
+<td>The multiplier of the asset.</td>
+</tr>
+<tr>
+<td>no_delivery_date_end</td>
+<td>The end date for no delivery of the asset.</td>
+</tr>
+<tr>
+<td>no_delivery_date_start</td>
+<td>The start date for no delivery of the asset.</td>
+</tr>
+<tr>
+<td>open_interest</td>
+<td>The open interest of the asset.</td>
+</tr>
+<tr>
+<td>option_type</td>
+<td>The type of the option.</td>
+</tr>
+<tr>
+<td>partition_id</td>
+<td>The partition ID of the asset.</td>
+</tr>
+<tr>
+<td>precision</td>
+<td>The precision of the asset.</td>
+</tr>
+<tr>
+<td>price_denominator</td>
+<td>The denominator of the price of the asset.</td>
+</tr>
+<tr>
+<td>price_numerator</td>
+<td>The numerator of the price of the asset.</td>
+</tr>
+<tr>
+<td>price_quotation</td>
+<td>The quotation of the price of the asset.</td>
+</tr>
+<tr>
+<td>price_units</td>
+<td>The units of the price of the asset.</td>
+</tr>
+<tr>
+<td>product_category</td>
+<td>The category of the product.</td>
+</tr>
+<tr>
+<td>product_id</td>
+<td>The ID of the product.</td>
+</tr>
+<tr>
+<td>raw_expiry</td>
+<td>The raw expiry timestamp of the asset.</td>
+</tr>
+<tr>
+<td>raw_tender_period_end_date</td>
+<td>The raw end date of the tender period of the asset.</td>
+</tr>
+<tr>
+<td>raw_tender_period_start_date</td>
+<td>The raw start date of the tender period of the asset.</td>
+</tr>
+<tr>
+<td>raw_tick_size</td>
+<td>The raw tick size of the asset.</td>
+</tr>
+<tr>
+<td>re_admission_date</td>
+<td>The readmission date of the asset.</td>
+</tr>
+<tr>
+<td>record_date</td>
+<td>The record date of the asset.</td>
+</tr>
+<tr>
+<td>series</td>
+<td>The series of the asset.</td>
+</tr>
+<tr>
+<td>short_code</td>
+<td>The short code of the asset.</td>
+</tr>
+<tr>
+<td>span</td>
+<td>The SPAN (Standard Portfolio Analysis of Risk)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="error-response">Error Response</h2>
+<pre><code class="language-json">{
+    &quot;error&quot;:{
+        &quot;code&quot;: 404,
+        &quot;message&quot;: &quot;Resource Not Found&quot;
+    }
+    &quot;result&quot;: &quot;&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.links", "navigation.tabs.sticky", "navigation.light", "navigation.instant", "content.code.copy", "content.code.toggle", "content.code.prettify", "content.code.select", "content.code.annotate", "content.code.fence_code"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>

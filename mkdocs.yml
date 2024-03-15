@@ -1,0 +1,114 @@
+site_name: Pocketful
+site_description: 'Pacefin API Documentation'
+site_url: 'https://pacefin.github.io/pacefin-api-docs/'
+site_author: 'Pacefin'
+nav:
+  - Introduction: index.md
+  - Login: login.md
+  - orders:
+    - Types of Order: orders/order_types.md
+    - Regular Order:
+      - Place Regular Order: orders/regular_order/place_regular_order.md
+      - Modify Regular Order: orders/regular_order/modify_regular_order.md
+      - Cancel Regular Order: orders/regular_order/cancel_regular_order.md
+    - Conditional Order:
+      - Bracket Order & Cover Order: orders/conditional_order/BO_CO.md
+      - Place Cover Order: orders/conditional_order/place_COorder.md
+      - Modify Cover Order: orders/conditional_order/modify_COorder.md
+      - Cancel Cover Order: orders/conditional_order/cancel_COorder.md
+      - Place Bracket Order: orders/conditional_order/place_BOorder.md
+      - Modify Bracket Order: orders/conditional_order/modify_BOorder.md
+      - Cancel Bracket Order: orders/conditional_order/cancel_BOorder.md
+    - Basket Order:
+      - Create Basket:  orders/basket_order/create_basket.md
+      - Fetch Basket: orders/basket_order/fetch_basket.md
+      - Delete Basket: orders/basket_order/delete_basket.md
+      - Add Basket Instrument: orders/basket_order/add_basketinstrument.md
+      - Edit Basket Instrument: orders/basket_order/edit_basketinstrument.md
+      - Delete Basket Instrument: orders/basket_order/delete_basketinstrument.md
+      - Rename Basket: orders/basket_order/rename_basket.md
+      - Execute Basket: orders/basket_order/execute_basket.md
+    - GTT Order:
+      - Create GTT Order: orders/gtt/create_gtt.md
+      - Fetch GTT Order: orders/gtt/fetch_gtt.md
+      - Cancel GTT Order: orders/gtt/cancel_gtt.md
+      - Modify GTT Order: orders/gtt/modify_gtt.md
+  - Order Book:
+    - Fetch Completed Orders: order_book/fetch_completedorder.md
+    - Fetch Pending Orders: order_book/fetch_pendingorder.md
+    - Order History: order_book/order_history.md
+    - Trade Book: order_book/trade_book.md
+  - Contract Details:
+    - Scrip Info: contract_details/scrip_info.md
+    - Search Scrip: contract_details/search_scrip.md
+  - Market Data:
+    - Get Market Data: market_data/get_marketdata.md
+    - Get Last Traded Price: market_data/get_ltp.md
+    - Get FnO Last Traded Price: market_data/get_fnoltp.md
+    - Get DPR: market_data/get_dpr.md
+    - Get Closing Price: market_data/get_closingprice.md
+    - Get Greek: market_data/get_greek.md
+    - Option Chain: market_data/option_chain.md
+  - Portfolio:
+    - Fetch Position Daywise: portfolio/daywise_position.md
+    - Fetch Position Netwise: portfolio/netwise_position.md
+    - Fetch Demat Holdings: portfolio/demat_holding.md
+    - Convert Position: portfolio/convert_positions.md
+  - Funds:
+    - Get Fund Details: funds.md
+  - Profile: profile.md
+  - Websockets:
+    - Live Data and Websockets: websockets/basic.md
+    - Connecting Websockets: connecting_websocket.md
+    - Detailed Marketdata: websockets/detailed_marketdata.md
+    - Compact Marketdata: websockets/compact_marketdata.md
+    - Snapquote Data: websockets/snapquote_data.md
+
+# theme: readthedocs
+# theme: gitbook
+theme:
+  # name: gitbook
+  name: material
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - content.tabs.links
+    # - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.light
+    - navigation.instant
+    - content.code.copy
+    - content.code.toggle
+    - content.code.prettify
+    - content.code.select
+    - content.code.annotate
+    - content.code.fence_code
+
+  markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+
+extra :
+  generator : False

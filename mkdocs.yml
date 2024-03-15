@@ -2,6 +2,8 @@ site_name: Pocketful
 site_description: 'Pacefin API Documentation'
 site_url: 'https://pacefin.github.io/pacefin-api-docs/'
 site_author: 'Pacefin'
+
+
 nav:
   - Introduction: index.md
   - Login: login.md
@@ -59,7 +61,7 @@ nav:
   - Profile: profile.md
   - Websockets:
     - Live Data and Websockets: websockets/basic.md
-    - Connecting Websockets: connecting_websocket.md
+    - Connecting Websockets: websockets/connecting_websocket.md
     - Detailed Marketdata: websockets/detailed_marketdata.md
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md

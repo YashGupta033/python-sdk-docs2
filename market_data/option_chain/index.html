@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#option-chain" class="md-skip">
+        <a href="#example" class="md-skip">
           Skip to content
         </a>
       
@@ -1322,26 +1322,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#option-chain" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option Chain
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Option Chain">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1759,26 +1744,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#option-chain" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option Chain
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Option Chain">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1817,7 +1787,6 @@
 
   <h1>Option Chain</h1>
 
-<h2 id="option-chain">Option Chain</h2>
 <p>This API retrieves option chain data for the chosen instrument. Within the query parameters, "token" denotes the instrument token of the selected asset. The "num" parameter specifies the quantity of options for a specific expiry, while "price" serves as the reference point for the strike price of the options being retrieved. For instance, if "num" is set to 6 and "price" is 506.5, the API will fetch three options above and three options below the 506.5 strike price.</p>
 <pre><code class="language-python">optionchain = pocket.getOptionChain(token, 40, ltp)
 </code></pre>

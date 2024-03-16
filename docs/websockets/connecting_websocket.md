@@ -5,7 +5,7 @@ First import the pacefinwebsocket library
 from pacefinwebsocket import PacefinSocket
 ```
 
-Then create an instance of class pacefinsocket through which all methods can be passed.
+Then create an instance of class pacefinsocket through which all methods can be called.
 ```python
 pocket_ws = PacefinSocket(pace_clientId, access_token)
 ```

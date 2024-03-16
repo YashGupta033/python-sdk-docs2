@@ -6,7 +6,7 @@ Exchange Segment
 | BSE           | Bombay Stock Exchange                    |
 | MCX           | Multi Commodity Exchange of India        |
 | NFO           | Nifty Futures and Options                                  |
-| CDS           | Credit Default Swap                              |
+| CDS           | Currency Derivatives Segment                               |
 
 
 Instruments
@@ -28,7 +28,7 @@ Product Type
 
 | Attribute | Detail                                 |
 |-----------|----------------------------------------|
-| CNC       | Cash & Carry for equity deliveries     |
+| CNC       | Cash & Carry for equity delivery     |
 | INTRADAY  | Intraday for Equity, Futures & Options |
 | MARGIN    | Carry Forward in Futures & Options     |
 | CO        | Cover Order                            |

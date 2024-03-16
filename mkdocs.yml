@@ -44,10 +44,10 @@ nav:
   - Market Data:
     - Get Market Data: market_data/get_marketdata.md
     - Get Last Traded Price: market_data/get_ltp.md
-    - Get FnO Last Traded Price: market_data/get_fnoltp.md
-    - Get DPR: market_data/get_dpr.md
+    # - Get FnO Last Traded Price: market_data/get_fnoltp.md
+    # - Get DPR: market_data/get_dpr.md
     - Get Closing Price: market_data/get_closingprice.md
-    - Get Greek: market_data/get_greek.md
+    # - Get Greek: market_data/get_greek.md
     - Option Chain: market_data/option_chain.md
   - Portfolio:
     - Fetch Position Daywise: portfolio/daywise_position.md
@@ -109,6 +109,9 @@ theme:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - markdown_extensions:
+    - attr_list
+    - md_in_html
 
 
 

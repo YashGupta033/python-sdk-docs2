@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/Annexure/</loc>
+         <lastmod>2024-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/IPO/</loc>
          <lastmod>2024-03-16</lastmod>
          <changefreq>daily</changefreq>

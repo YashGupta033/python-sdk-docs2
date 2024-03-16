@@ -63,6 +63,8 @@ nav:
     - Detailed Marketdata: websockets/detailed_marketdata.md
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
+  - Annexure:
+    - Annexure: Annexure.md
 
 # theme: readthedocs
 # theme: gitbook

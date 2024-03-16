@@ -1,4 +1,5 @@
 Exchange Segment
+
 | Exchange Code | Segment                                |
 |---------------|------------------------------------------|
 | NSE           | National Stock Exchange                  |
@@ -9,6 +10,7 @@ Exchange Segment
 
 
 Instruments
+
 | Attribute | Detail                            |
 |-----------|-----------------------------------|
 | INDEX     | Index                             |
@@ -23,6 +25,7 @@ Instruments
 
 
 Product Type
+
 | Attribute | Detail                                 |
 |-----------|----------------------------------------|
 | CNC       | Cash & Carry for equity deliveries     |

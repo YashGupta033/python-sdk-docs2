@@ -46,10 +46,10 @@ login = pocket.generateSession(pace_clintId, pace_password,"totp")
 setAccessToken = pocket.setAccessToken(login["data"]["auth_token"])
 ```
 
-Congratulations! By following the steps outlined above, you have seamlessly accessed your pocketful account without the need for any manual intervention, thanks to the assistance of our APIs and methods.
+Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs and methods.
 
 
-With full access to your pocketful account now granted, you're empowered to leverage our methods for executing trades or querying your account details. Next you can consider our documentation as a comprehensive tutorial where you can proceed step-by-step, mastering at your own pace. Alternatively, feel free to navigate directly to the methods or APIs that pique your interest, allowing you to embark on your journey with freedom and flexibility.
+With full access to your Pocketful account now granted, you're empowered to leverage our methods for executing trades or querying your account details. Next you can consider our documentation as a comprehensive tutorial where you can proceed step-by-step, mastering at your own pace. Alternatively, feel free to navigate directly to the methods or APIs that pique your interest, allowing you to embark on your journey with freedom and flexibility.
 
 
 

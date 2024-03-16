@@ -53,13 +53,13 @@ nav:
     - Fetch Position Daywise: portfolio/daywise_position.md
     - Fetch Position Netwise: portfolio/netwise_position.md
     - Fetch Demat Holdings: portfolio/demat_holding.md
-    - Convert Position: portfolio/convert_positions.md
+    # - Convert Position: portfolio/convert_positions.md
   - Funds:
     - Get Fund Details: funds.md
   - Profile: profile.md
   - Websockets:
     - Live Data and Websockets: websockets/basic.md
-    - Connecting Websockets: connecting_websocket.md
+    - Connecting Websockets: websockets/connecting_websocket.md
     - Detailed Marketdata: websockets/detailed_marketdata.md
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md

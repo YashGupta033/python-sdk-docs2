@@ -10,26 +10,66 @@ profile = pocket.getProfile()   # No parameters needs to be passed.
 ```json
 {
     "data": {
-        "bo_id": [
-            "1206140012061400"
-        ],
-        "client_id": "TEST1",
-        "ddpi": false,
-        "email_id": "test@TRADELAB.IN",
+        "last_password_change_date": 1700543471,
+        "dob": "2000-01-01",
+        "bank_state": "DELHI",
+        "bank_branch_name": "NA",
+        "bank_account_number": "11233435545",
+        "pan_number": "Pan Number",
+        "user_type": "CLIENT",
+        "account_type": "SAVING",
         "exchanges_subscribed": [
-            "NFO",
-            "NSE",
             "BSE",
-            "CDS"
+            "MCX",
+            "NFO",
+            "NSE"
         ],
-        "name": "DEMO",
-        "poa_enabled": true,
+        "ifsc_code": "IFSC-code",
+        "status": "active",
+        "office_addr": "Address",
+        "bank_name": "ICICI BANK LTD",
+        "depository": null,
+        "client_id": "YG0008",
+        "name": "Name",
+        "exchange_nnf": {
+            "BSE": 0,
+            "MCX": 0,
+            "NFO": 0,
+            "NSE": 0
+        },
+        "dp_id": [
+            "12049845"
+        ],
+        "profile_url": "",
+        "backoffice_link": "",
+        "permanent_addr": "address,",
+        "city": "NEW DELHI",
+        "branch": "STAFF",
+        "cp_code": null,
+        "sex": "MALE",
+        "broker_id": null,
+        "poa_status": false,
+        "phone_number": "2234345467",
+        "role": {
+            "id": 2,
+            "name": "BASIC_CLIENT"
+        },
+        "bo_id": [
+            "3758458456955"
+        ],
+        "state": "DELHI",
         "products_enabled": [
             "NRML",
-            "CNC",
-            "MIS"
+            "MIS",
+            "CNC"
         ],
-        "status": "active"
+        "bank_city": "NEW DELHI",
+        "poa_enabled": false,
+        "basket_enabled": false,
+        "twofa_enabled": false,
+        "email_id": "Email",
+        "user_conscents": [],
+        "entity_type": "RETAIL"
     },
     "message": "",
     "status": "success"

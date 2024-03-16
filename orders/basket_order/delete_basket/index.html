@@ -1716,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../websockets/connecting_websocket/" class="md-nav__link">
+      <a href="../../../connecting_websocket.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1884,26 +1884,65 @@
   <h1>Delete Basket</h1>
 
 <!-- ## Delete Basket Order -->
-
+<p>The Delete Basket API allows users to remove a specific basket from their account. By providing the unique identifier of the basket to be deleted, the API initiates the removal process, ensuring that the specified basket and its associated orders are permanently deleted from the user's account. This functionality helps users manage their baskets effectively, allowing them to clean up unwanted or obsolete baskets from their portfolio effortlessly.</p>
 <pre><code class="language-python">res = pocket.deleteBasket(Parameters)
 </code></pre>
 <h2 id="parameters">Parameters</h2>
-<p>BasketId, BasketName</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BasketId</td>
+<td>String</td>
+<td>Unique identifier for the basket</td>
+</tr>
+<tr>
+<td>BasketName</td>
+<td>String</td>
+<td>Name of the basket</td>
+</tr>
+</tbody>
+</table>
 <h3 id="example">Example</h3>
-<pre><code class="language-json">data=obj.deleteBasket({&quot;BasketId&quot;:&quot;0d991a91-21c0-4afd-aab2-ee9131cbd2fc&quot;,&quot;BasketName&quot;:&quot;Basketone&quot;})
+<pre><code class="language-json">data=obj.deleteBasket({&quot;BasketId&quot;:&quot;0d991a91-21c0-4afd-aab2-ee9131cbd2fc&quot;,&quot;BasketName&quot;:&quot;A_Basket&quot;})
 </code></pre>
 <h2 id="response">Response</h2>
 <pre><code class="language-json">{
-  {&quot;status&quot;:true,&quot;message&quot;:&quot;SUCCESS&quot;,&quot;errorcode&quot;:&quot;&quot;,&quot;data&quot;:null}
-{
     &quot;data&quot;: [        
     ],
     &quot;message&quot;: &quot;Basket A_Basket deleted successfully&quot;,
     &quot;status&quot;: &quot;success&quot;
 }
-}
 
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>Array containing data.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Description of the operation's outcome.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the operation (e.g., success).</td>
+</tr>
+</tbody>
+</table>
 <h2 id="error-response">Error Response</h2>
 <pre><code class="language-json">{
   &quot;data&quot;: {},

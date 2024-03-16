@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/websockets/detailed_marketdata/">
       
       
-        <link rel="prev" href="../connecting_websocket/">
+        <link rel="prev" href="../basic/">
       
       
         <link rel="next" href="../compact_marketdata/">
@@ -1636,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../connecting_websocket/" class="md-nav__link">
+      <a href="../../connecting_websocket.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,6 +1887,7 @@
 
   <h1>Detailed Marketdata</h1>
 
+<p>Detailed MarketData offers real-time access to comprehensive and detailed information about financial instruments. It provides users with a continuous stream of up-to-date data, including market depth, bid-ask spreads, trading volumes, and price movements. This function is invaluable for traders and investors seeking in-depth insights into market dynamics, enabling them to make informed decisions based on the most current and detailed market data available.</p>
 <p>To get the detailed marketdata, the first step is to subscribe the instrument for which we need the data.</p>
 <p>Below is the list of exchange codes which will be required while subscribing to a particular instrument.</p>
 <pre><code class="language-json">exchange_code = {
@@ -1948,6 +1949,116 @@ print(detailed_market_data)
   &quot;initialOpenInterest&quot;: 0
 }
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode</td>
+<td>Mode indicator for the instrument.</td>
+</tr>
+<tr>
+<td>exchange_code</td>
+<td>Exchange code for the instrument.</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>Token identifying the instrument.</td>
+</tr>
+<tr>
+<td>last_traded_price</td>
+<td>Last traded price of the instrument.</td>
+</tr>
+<tr>
+<td>last_traded_time</td>
+<td>Time of the last trade for the instrument.</td>
+</tr>
+<tr>
+<td>last_traded_quantity</td>
+<td>Quantity traded in the last transaction.</td>
+</tr>
+<tr>
+<td>trade_volume</td>
+<td>Total volume traded for the instrument.</td>
+</tr>
+<tr>
+<td>best_bid_price</td>
+<td>Best bid price in the market.</td>
+</tr>
+<tr>
+<td>best_bid_quantity</td>
+<td>Quantity available at the best bid price.</td>
+</tr>
+<tr>
+<td>best_ask_price</td>
+<td>Best ask price in the market.</td>
+</tr>
+<tr>
+<td>best_ask_quantity</td>
+<td>Quantity available at the best ask price.</td>
+</tr>
+<tr>
+<td>total_buy_quantity</td>
+<td>Total quantity of buy orders.</td>
+</tr>
+<tr>
+<td>total_sell_quantity</td>
+<td>Total quantity of sell orders.</td>
+</tr>
+<tr>
+<td>average_trade_price</td>
+<td>Average traded price over a period.</td>
+</tr>
+<tr>
+<td>exchange_timestamp</td>
+<td>Timestamp of the data from the exchange.</td>
+</tr>
+<tr>
+<td>open_price</td>
+<td>Opening price of the instrument for the session.</td>
+</tr>
+<tr>
+<td>high_price</td>
+<td>Highest price of the instrument for the session.</td>
+</tr>
+<tr>
+<td>low_price</td>
+<td>Lowest price of the instrument for the session.</td>
+</tr>
+<tr>
+<td>close_price</td>
+<td>Closing price of the instrument for the session.</td>
+</tr>
+<tr>
+<td>yearly_high_price</td>
+<td>Highest price of the instrument in the year.</td>
+</tr>
+<tr>
+<td>yearly_low_price</td>
+<td>Lowest price of the instrument in the year.</td>
+</tr>
+<tr>
+<td>lowDPR</td>
+<td>Low circuit price range for the instrument.</td>
+</tr>
+<tr>
+<td>highDPR</td>
+<td>High circuit price range for the instrument.</td>
+</tr>
+<tr>
+<td>currentOpenInterest</td>
+<td>Current open interest in the instrument.</td>
+</tr>
+<tr>
+<td>initialOpenInterest</td>
+<td>Initial open interest in the instrument.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="unsubscribe-the-instrument-to-stop-receiving-the-data">Unsubscribe the instrument to stop receiving the data.</h3>
 <pre><code class="language-python">response = pocket_ws.unsubscribe_detailed_marketdata(marketdata_payload)
 </code></pre>

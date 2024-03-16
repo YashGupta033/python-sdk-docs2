@@ -15,10 +15,6 @@
         <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/websockets/connecting_websocket/">
       
       
-        <link rel="prev" href="../basic/">
-      
-      
-        <link rel="next" href="../detailed_marketdata/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Connecting Websockets - Pocketful</title>
+        <title>Connecting websocket - Pocketful</title>
       
     
     
@@ -109,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Connecting Websockets
+              Connecting websocket
             
           </span>
         </div>
@@ -1570,19 +1566,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -1596,7 +1590,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Websockets
@@ -1628,17 +1622,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../connecting_websocket.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1647,7 +1634,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1754,9 +1740,9 @@
                   
 
 
-  <h1>Connecting Websockets</h1>
+  <h1>Connecting websocket</h1>
 
-<p>Follow the below steps to connect to establish a connection with websocket.</p>
+<p>Follow the below steps to establish a connection with websocket.</p>
 <p>First import the pacefinwebsocket library</p>
 <pre><code class="language-python">from pacefinwebsocket import PacefinSocket
 </code></pre>
@@ -1766,6 +1752,7 @@
 <p>Then call the method run_socket to establish a connection</p>
 <pre><code class="language-python">ws_status = pocket_ws.run_socket()
 </code></pre>
+<p>After this, the connection with websocket has been established, now subscribe the instruments for which you require live feed.</p>
 
 
 

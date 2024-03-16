@@ -1,5 +1,5 @@
 <!-- ## Modify Cover Order -->
-The Modify Order API enables users to make changes in the cover order, both open and pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
+The Modify Order API enables users to make changes in the cover order, pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
 ```python
 pocket.modifyConditionalOrder(Parameters)
 ```
@@ -12,17 +12,17 @@ pocket.modifyConditionalOrder(Parameters)
 | instrument_token         | String   | Represents the unique id of instrument.           |
 | client_id                | String   | Represents the unique id of user or username.     |
 | order_type               | String   | `LIMIT`, `MARKET`, `SL`, `SLM`                           |
-| price                    | Number   | It can't be Zero.                                 |
-| quantity                 | Number   | It can't be Zero.                                 |
-| disclosed_quantity       | Number   | It can't be negative number.                      |
+| price                    | Number   | the price at which order needs to be placed                                 |
+| quantity                 | Number   | total quantity to buy                                 |
+| disclosed_quantity       | Number   | hidden quantity from the market.                      |
 | validity                 | String   | `DAY` or `IOC`                                        |
 | product                  | String   | `CNC`, `MIS`, `NRML`                                    |
 | oms_order_id            | Number   | Represents the oms id of order.                |
 | filled_quantity          | Number   | Number of quantity which are traded.              |
 | remaining_quantity       | Number   | Number of quantity which are pending.             |
 | last_activity_reference  | Number   | Unique id of Last modification.                   |
-| stop_loss_value          | Number   | It can't be negative number.                      |
-| trailing_stop_loss       | Number   | It can't be negative number.                      |
+| stop_loss_value          | Number   | value at which Sl will get hit                      |
+| trailing_stop_loss       | Number   | adjusts sell order accordingly to reduce losses.                      |
 | execution_type           | String   | `CO`                                                |
 
 
@@ -34,7 +34,8 @@ data=obj.modifyConditionalOrder( {
     "instrument_token":14366,
     "client_id":"HI0009",
     "order_type":"LIMIT",
-    "price":12.45,"quantity":2,
+    "price":12.45,
+    "quantity":2,
     "disclosed_quantity":0,
     "validity":"DAY",
     "product":"CNC",
@@ -53,13 +54,20 @@ data=obj.modifyConditionalOrder( {
 ```json
 {
     "data": {
-        "basket_id": "",
+        "basket_id": "20210531-23",
         "message": "basket Order modified Successfully"
     },
     "message": "Order modified successfully",
     "status": "success"
 }
 ```
+
+| Parameter           | Description                          |
+|---------------|--------------------------------------|
+| basket_id     | Identifier for the basket order      |
+| message       | Confirmation message for the order   |
+| status        | Status of the order modification     |
+
 
 ## Error Response
 ```json

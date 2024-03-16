@@ -45,6 +45,39 @@ pocket.getPositionDayWise()
    }
 ```
 
+| Field Name          | Description                                         |
+|---------------------|-----------------------------------------------------|
+| average_buy_price   | Average buy price of the instrument.                |
+| average_price       | Average price of the instrument.                    |
+| average_sell_price  | Average sell price of the instrument.               |
+| buy_amount          | Amount spent on buying the instrument.              |
+| buy_quantity        | Quantity purchased of the instrument.               |
+| cf_buy_amount       | Cumulative buy amount of the instrument.            |
+| cf_buy_quantity     | Cumulative buy quantity of the instrument.          |
+| cf_sell_amount      | Cumulative sell amount of the instrument.           |
+| cf_sell_quantity    | Cumulative sell quantity of the instrument.         |
+| client_id           | Client identifier.                                  |
+| close_price         | Closing price of the instrument.                    |
+| exchange            | Exchange where the instrument is traded.            |
+| instrument_token    | Token identifying the instrument.                   |
+| ltp                 | Last traded price of the instrument.                |
+| multiplier          | Multiplier for the instrument.                      |
+| net_amount          | Net amount considering buy and sell transactions.   |
+| net_quantity        | Net quantity considering buy and sell transactions.|
+| previous_close      | Previous closing price of the instrument.          |
+| pro_cli             | Client category (e.g., CLIENT, PRO).               |
+| prod_type           | Product type code.                                  |
+| product             | Product type (e.g., MIS).                           |
+| realized_mtm        | Realized Mark-to-Market (MTM) value.                |
+| segment             | Market segment where the instrument is traded.     |
+| sell_amount         | Amount received from selling the instrument.        |
+| sell_quantity       | Quantity sold of the instrument.                    |
+| symbol              | Symbol of the instrument.                           |
+| token               | Token identifying the instrument.                   |
+| trading_symbol      | Trading symbol of the instrument.                   |
+| v_login_id          | Virtual login identifier.                           |
+
+
 
 
 ### Error Response

@@ -1,6 +1,6 @@
 <!-- # Place Cover Order -->
 
-A Cover Order helps traders protect against losses by placing a stop loss order together with a regular order. This means that if the price moves in an unexpected way, the stop loss order kicks in to limit losses. When buying a Cover Order, the limit price must be higher than the stop-loss trigger price. Conversely, when selling a Cover Order, the limit price must be lower than the stop loss trigger price.
+A Cover Order help traders protect against losses by placing a stop loss order together with a regular order. This means that if the price moves in an unexpected way, the stop loss order kicks in to limit losses. When buying a Cover Order, the limit price must be higher than the stop-loss trigger price. Conversely, when selling a Cover Order, the limit price must be lower than the stop loss trigger price.
 
 
 ```python
@@ -18,15 +18,16 @@ print(res)
 | order_type         | String     | `LIMIT`, `MARKET`, `SL`, `SLM`                             |
 | price              | Number     | the price at which order needs to be placed                                  |
 | quantity           | Number     | total quantity to buy                                    |
-| disclosed_quantity | Number     | hidden quantity from the marketnumber.                        |
+| disclosed_quantity | Number     | hidden quantity from the market.                        |
 | validity           | String     | `DAY` or `IOC`                                          |
 | product            | String     | `CNC`, `MIS`, `NRML`                                      |
 | order_side         | String     | `BUY` or `SELL`                                         |
 | device             | String     | `Web` or `Mobile`                                       |
-| user_order_id      | Number     | Represents the unique id of order.                  |
+| is_trailing      | Boolean     | `True` or `False`                 |
 | execution_type     | String     | `CO`                                                  |
+| square_off_value    | Number     | Not required in cover order `null`                 |
 | stop_loss_value    | Number     | value at which Sl will get hit                        |
-| trailing_stop_loss | Number     | It can't be negative number.                        |
+| trailing_stop_loss | Number     | adjusts sell order accordingly to reduce losses.                      |
 
 
 
@@ -46,7 +47,6 @@ response = pocket.placeConditionalOrder( {
     "device": "WEB",
     "execution_type": "CO",
     "is_trailing": True,
-    "square_off_value": 1,
     "stop_loss_value": 12,
     "trailing_stop_loss": "0.05",
     "trigger_price": 0,

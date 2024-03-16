@@ -1,5 +1,5 @@
 ## Create GTT Rule
-This method is used to place the gtt order. We can search the instrument and place order accordingly. Good Till Triggered is active until the trigger condition is met. The trigger is valid for a year. And whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.
+This API is used to place the gtt order. Good Till Triggered is active until the trigger condition is met. The trigger is valid for the given expiry date. Whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.
 
 
 
@@ -10,23 +10,23 @@ res = pocket.gttCreateRule(Parameters)
 ### Parameters
 | Field Name             | Data Type | Description                                       |
 |------------------------|-----------|---------------------------------------------------|
-| action_type            | String    | Type of action for a single order `single_order`                |
-| expiry_time            | String    | Represents a particular date of expiry `null`           |
-| client_id              | String    | Represents the unique ID of a user or username.   |
+| action_type            | String    | Type of action `single_order`                |
+| expiry_time            | String    | Represents a particular date of expiry          |
+| client_id              | String    | Represents the unique ID of a user.   |
 | device                 | String    | Device type: `Web`, `Mobile`.                         |
-| disclosed_quantity     | Number    | Quantity that can't be negative.                  |
+| disclosed_quantity     | Number    | quantity hidden from market                  |
 | exchange               | String    | Exchange: `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                |
 | instrument_token       | String    | Represents the unique ID of an instrument.        |
-| market_protection_percentage | String | Market protection percentage, can be 0                 |
+| market_protection_percentage | String | sets limit on the price deviation                 |
 | order_side             | String    | Side of the order<br>`BUY` or `SELL`                   |
 | order_type             | String    | Type of order<br>`LIMIT`, `MARKET`, `SL`, `SLM`            |
-| price                  | Number    | Price of the order; can't be zero.                |
+| price                  | Number    | the price at which order needs to be placed                |
 | product                | String    | Product type: `CNC`, `MIS`, `NRML`                     |
-| quantity               | Number    | Quantity of the order; can't be zero.             |
-| sl_order_price         | Number    | Stop-loss order price; can't be zero.             |
-| sl_order_quantity      | Number    | Stop-loss order quantity; can't be zero.          |
-| sl_trigger_price       | Number    | Stop-loss trigger price; can't be zero.           |
-| trigger_price          | Number    | Trigger price; can't be zero.                     |
+| quantity               | Number    | Quantity of the order.             |
+| sl_order_price         | Number    | Stop-loss order price.             |
+| sl_order_quantity      | Number    | Stop-loss order quantity.         |
+| sl_trigger_price       | Number    | Stop-loss trigger price.           |
+| trigger_price          | Number    | Trigger price.                   |
 | user_order_id          | Number    | Represents the unique ID of the order.            |
 
 
@@ -59,8 +59,21 @@ data = obj.gttCreateRule(
 
 ### Response
 ```json
-{"data": {"id": "ea036a20-2073-4bfb-a852-34662c4bd770"}, "message": "GTT created successfully", "status": "success"}
+{
+    "data":
+     {
+        "id": "ea036a20-2073-4bfb-a852-34662c4bd770"
+        },
+        "message": "GTT created successfully",
+        "status": "success"
+    }
 ```
+
+| Parameter           | Description                          |
+|---------------|--------------------------------------|
+| basket_id     | Identifier for the basket order      |
+| message       | Confirmation message for the order   |
+| status        | Status of the order modification     |
 
 ### Error response
 ```json

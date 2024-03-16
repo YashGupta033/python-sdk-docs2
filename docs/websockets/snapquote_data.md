@@ -1,3 +1,6 @@
+
+Snapquote data refers to a snapshot or instantaneous view of essential market data for a specific financial instrument at a particular moment in time. It typically includes key information such as the instrument's last traded price, bid and ask prices, trading volume, and possibly other relevant metrics. This data is crucial for real-time monitoring of market conditions and can help traders react swiftly to changes in prices and trading activity.
+
 To get the snapquote data, the first step is to subscribe the instrument for which we need the data.
 
 Below is the list of exchange codes which will be required while subscribing to a particular instrument.
@@ -103,6 +106,27 @@ print(snapquote_market_data)
   "volume": 9438681
 }
 ```
+
+| Field Name        | Description                                    |
+|-------------------|------------------------------------------------|
+| mode              | The mode of market data transmission.          |
+| exchange_code     | The code representing the exchange.            |
+| instrument_token  | Unique identifier for the financial instrument.|
+| buyers            | Array representing buyer data.                 |
+| bidPrices         | Array representing bid prices.                 |
+| bidQtys           | Array representing bid quantities.             |
+| sellers           | Array representing seller data.                 |
+| askPrices         | Array representing ask prices.                 |
+| askQtys           | Array representing ask quantities.             |
+| averageTradePrice | Average price of recent trades.                |
+| open              | Opening price for the trading session.         |
+| high              | Highest price reached during the session.      |
+| low               | Lowest price reached during the session.       |
+| close             | Closing price for the trading session.         |
+| totalBuyQty       | Total quantity of buy orders.                  |
+| totalSellQty      | Total quantity of sell orders.                 |
+| volume            | Total trading volume for the session.          |
+
 
 
 ### Unsubscribe the instrument to stop receiving the data.

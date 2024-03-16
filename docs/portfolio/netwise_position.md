@@ -2,7 +2,7 @@
 Use the method getPositionNetWise to get the net positions.
 
 ```python
-pocket.getPositionNetWise()
+pocket.getPositionNetWise() # No parameters needs to be passed
 ```
 
 ### Response

@@ -1,7 +1,7 @@
 # Funds
 
 ## Get Fund Details
-With the help of getFunds method, we can get the detail of funds.
+The "Get Fund" API is a request made to retrieve information about a user's funds or financial assets held within a particular account or platform. Typically, this API returns details such as the available balance, total funds invested, holdings, and any pending transactions. It provides users with real-time access to their financial data, allowing them to monitor their investments, track their portfolio performance, and make informed decisions about managing their funds effectively.
 
 ```python
 res = pocket.getFunds()     # No params needs to be passed

@@ -1,3 +1,5 @@
+Detailed MarketData offers real-time access to comprehensive and detailed information about financial instruments. It provides users with a continuous stream of up-to-date data, including market depth, bid-ask spreads, trading volumes, and price movements. This function is invaluable for traders and investors seeking in-depth insights into market dynamics, enabling them to make informed decisions based on the most current and detailed market data available.
+
 To get the detailed marketdata, the first step is to subscribe the instrument for which we need the data.
 
 Below is the list of exchange codes which will be required while subscribing to a particular instrument.
@@ -75,6 +77,35 @@ print(detailed_market_data)
   "initialOpenInterest": 0
 }
 ```
+
+| Field Name            | Description                                          |
+|-----------------------|------------------------------------------------------|
+| mode                  | Mode indicator for the instrument.                   |
+| exchange_code         | Exchange code for the instrument.                    |
+| instrument_token      | Token identifying the instrument.                    |
+| last_traded_price     | Last traded price of the instrument.                 |
+| last_traded_time      | Time of the last trade for the instrument.           |
+| last_traded_quantity  | Quantity traded in the last transaction.             |
+| trade_volume          | Total volume traded for the instrument.              |
+| best_bid_price        | Best bid price in the market.                        |
+| best_bid_quantity     | Quantity available at the best bid price.            |
+| best_ask_price        | Best ask price in the market.                        |
+| best_ask_quantity     | Quantity available at the best ask price.            |
+| total_buy_quantity    | Total quantity of buy orders.                        |
+| total_sell_quantity   | Total quantity of sell orders.                       |
+| average_trade_price   | Average traded price over a period.                  |
+| exchange_timestamp    | Timestamp of the data from the exchange.             |
+| open_price            | Opening price of the instrument for the session.     |
+| high_price            | Highest price of the instrument for the session.     |
+| low_price             | Lowest price of the instrument for the session.      |
+| close_price           | Closing price of the instrument for the session.     |
+| yearly_high_price     | Highest price of the instrument in the year.         |
+| yearly_low_price      | Lowest price of the instrument in the year.          |
+| lowDPR                | Low circuit price range for the instrument.          |
+| highDPR               | High circuit price range for the instrument.         |
+| currentOpenInterest   | Current open interest in the instrument.             |
+| initialOpenInterest   | Initial open interest in the instrument.             |
+
 
 
 ### Unsubscribe the instrument to stop receiving the data.

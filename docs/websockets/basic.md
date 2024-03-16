@@ -16,7 +16,11 @@ Competitive Edge: In today's highly competitive financial markets, having access
 
 In summary, live market feeds play a vital role in the share market by facilitating informed decision-making, identifying opportunities, managing risks, enabling algorithmic trading, facilitating information flow, and providing a competitive edge to market participants. Access to real-time market data is essential for investors seeking to navigate the complexities of the stock market and achieve their investment objectives.
 
+## Websockets
+
 Websockets are a communication protocol that provides full-duplex communication channels over a single, long-lived TCP connection. This protocol enables real-time data transfer between a client and a server, allowing them to exchange messages in both directions simultaneously. Unlike traditional HTTP connections, which follow a request-response model and require separate connections for each request, Websockets establish a persistent connection that remains open as long as needed.
+
+<p align="center"><img src="/images/web_socket.jpg" alt="login" width="400"/></p>
 
 In contrast to HTTP, where a client initiates communication by sending a request to a server and waits for a response, Websockets allow for bidirectional communication. This means that once the connection is established, either the client or the server can initiate the exchange of data at any time without waiting for a request. This capability is particularly useful for applications that require real-time updates or interactive communication, such as chat applications, online gaming, financial trading platforms, and live data streaming services.
 

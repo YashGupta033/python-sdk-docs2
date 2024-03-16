@@ -3,7 +3,7 @@ As a trader or investor, if you need to make a trade, the first step is obviousl
 Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation if the credentials are correct. Following this, the client is has to provide the TOTP for two-factor authentication. Upon successful verification of the TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.
 
 <!-- ![Login Process Explained](/images/login.jpg) -->
-<p align="center"><img src="/images/login.jpg" alt="login" width="400"/></p>
+<p align="center"><img src="\images\login.jpg" alt="login" width="400"/></p>
 
  You can follow the below steps to login into your Pocketful account using API's.
 

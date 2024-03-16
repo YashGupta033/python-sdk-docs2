@@ -15,4 +15,4 @@ Then call the method run_socket to establish a connection
 ws_status = pocket_ws.run_socket()
 ```
 
-After this, the connection with websocket has been established, now subscribe the instruments for which you require live feed.
+After completing the above steps, connection with websocket has been established.

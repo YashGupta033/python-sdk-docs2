@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#example" class="md-skip">
+        <a href="#parameters" class="md-skip">
           Skip to content
         </a>
       
@@ -452,6 +452,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -461,7 +470,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#parameters_1" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
     </span>
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1764,7 +1782,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#parameters_1" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
     </span>
@@ -1812,10 +1830,33 @@
 <pre><code class="language-python">res = pocket.cancelOrder(Parameters)
 print(res)
 </code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oms_order_id</td>
+<td>The unique identifier for the order in the Order Management System (OMS).</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>The identifier for the client or customer placing the order.</td>
+</tr>
+<tr>
+<td>execution_type</td>
+<td>The type of execution for the order, which could be "REGULAR" or another value indicating a different execution type.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">data = obj.cancelOrder({&quot;oms_order_id&quot;:&quot;202403111778&quot;, &quot;client_id&quot;: &quot;clintId&quot;, &quot;execution_type&quot;: &quot;REGULAR&quot;})
 </code></pre>
-<h3 id="parameters">Parameters</h3>
+<h3 id="parameters_1">Parameters</h3>
 <table>
 <thead>
 <tr>

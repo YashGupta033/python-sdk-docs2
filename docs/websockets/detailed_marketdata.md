@@ -78,6 +78,7 @@ print(detailed_market_data)
 }
 ```
 
+### Response Parameter
 | Field Name            | Description                                          |
 |-----------------------|------------------------------------------------------|
 | mode                  | Mode indicator for the instrument.                   |

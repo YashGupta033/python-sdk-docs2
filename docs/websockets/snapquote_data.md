@@ -106,7 +106,7 @@ print(snapquote_market_data)
   "volume": 9438681
 }
 ```
-
+### Response Parameter
 | Field Name        | Description                                    |
 |-------------------|------------------------------------------------|
 | mode              | The mode of market data transmission.          |

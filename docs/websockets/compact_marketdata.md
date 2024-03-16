@@ -54,6 +54,7 @@ print(compact_market_data)
 }
 ```
 
+### Response Parameter
 | Field Name           | Description                                     |
 |----------------------|-------------------------------------------------|
 | mode                 | Mode of operation                               |

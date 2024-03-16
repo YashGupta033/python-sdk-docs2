@@ -6,7 +6,7 @@ Pocketful boasts a robust and secure login mechanism fortified by two-factor aut
 
 
 <figure markdown>
-<p align="center"><img src="images/login.png" alt="login" width="450"/></p>
+<p align="center"><img src="../images/login.png" alt="login" width="450"/></p>
 </figure>
 
 

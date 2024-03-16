@@ -37,6 +37,8 @@ In the dynamic world of stock trading, understanding the intricacies of differen
 
 **Margin Intraday Square-off (MIS) Order**: MIS orders allow investors to leverage margin facilities provided by brokers for intraday trading. These orders must be squared off before the end of the trading session, making them ideal for short-term trading strategies.
 
+**Normal (NRML) Order**: Normal is an order type primarily utilized for overnight or positional trading in the Indian stock market. When traders place an NRML order, they express their intent to buy or sell stocks, futures, or options with the intention of holding these positions overnight or for multiple days. Unlike Margin Intraday Square-off (MIS) orders, NRML orders do not entail an automatic square-off by the broker at the end of the trading day. Instead, positions initiated through NRML orders require the trader to manually square them off.
+
 In conclusion, mastering the diverse range of stock market orders is crucial for investors to execute trades effectively and achieve their financial goals. By understanding the nuances of each order type and their applications, investors can optimize their trading strategies, minimize risks, and capitalize on market opportunities with confidence.
 
 

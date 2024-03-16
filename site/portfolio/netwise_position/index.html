@@ -1257,74 +1257,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1482,6 +1419,15 @@
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameters
     </span>
   </a>
   
@@ -1832,6 +1778,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#response-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error Response
@@ -1904,6 +1859,133 @@
      &quot;status&quot;: &quot;success&quot;
   }
 </code></pre>
+<h3 id="response-parameters">Response Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>JSON Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>average_buy_price</td>
+<td>The average price at which the commodity was bought.</td>
+</tr>
+<tr>
+<td>average_price</td>
+<td>The average price, if applicable.</td>
+</tr>
+<tr>
+<td>average_sell_price</td>
+<td>The average price at which the commodity was sold.</td>
+</tr>
+<tr>
+<td>buy_amount</td>
+<td>The amount spent on buying the commodity.</td>
+</tr>
+<tr>
+<td>buy_quantity</td>
+<td>The quantity of the commodity bought.</td>
+</tr>
+<tr>
+<td>cf_buy_amount</td>
+<td>Cumulative funds spent on buying the commodity.</td>
+</tr>
+<tr>
+<td>cf_buy_quantity</td>
+<td>Cumulative quantity of the commodity bought.</td>
+</tr>
+<tr>
+<td>cf_sell_amount</td>
+<td>Cumulative funds received from selling the commodity.</td>
+</tr>
+<tr>
+<td>cf_sell_quantity</td>
+<td>Cumulative quantity of the commodity sold.</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>The identifier for the client.</td>
+</tr>
+<tr>
+<td>close_price</td>
+<td>The closing price of the commodity.</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>The exchange where the commodity is traded.</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>The token representing the instrument.</td>
+</tr>
+<tr>
+<td>ltp</td>
+<td>The last traded price of the commodity.</td>
+</tr>
+<tr>
+<td>multiplier</td>
+<td>The multiplier for the commodity.</td>
+</tr>
+<tr>
+<td>net_amount</td>
+<td>The net amount, if applicable.</td>
+</tr>
+<tr>
+<td>net_quantity</td>
+<td>The net quantity, if applicable.</td>
+</tr>
+<tr>
+<td>previous_close</td>
+<td>The previous closing price of the commodity.</td>
+</tr>
+<tr>
+<td>pro_cli</td>
+<td>Indicates if the client is professional.</td>
+</tr>
+<tr>
+<td>prod_type</td>
+<td>The type of product.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>The product category.</td>
+</tr>
+<tr>
+<td>realized_mtm</td>
+<td>The realized mark-to-market value.</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>The segment where the commodity is traded.</td>
+</tr>
+<tr>
+<td>sell_amount</td>
+<td>The amount received from selling the commodity.</td>
+</tr>
+<tr>
+<td>sell_quantity</td>
+<td>The quantity of the commodity sold.</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>The symbol representing the commodity.</td>
+</tr>
+<tr>
+<td>token</td>
+<td>The token representing the commodity.</td>
+</tr>
+<tr>
+<td>trading_symbol</td>
+<td>The trading symbol of the commodity.</td>
+</tr>
+<tr>
+<td>v_login_id</td>
+<td>The login ID for the client.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;:{

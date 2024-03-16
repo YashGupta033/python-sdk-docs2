@@ -45,6 +45,8 @@ pocket.getPositionDayWise()
    }
 ```
 
+### Response Parameter
+
 | Field Name          | Description                                         |
 |---------------------|-----------------------------------------------------|
 | average_buy_price   | Average buy price of the instrument.                |
@@ -76,8 +78,6 @@ pocket.getPositionDayWise()
 | token               | Token identifying the instrument.                   |
 | trading_symbol      | Trading symbol of the instrument.                   |
 | v_login_id          | Virtual login identifier.                           |
-
-
 
 
 ### Error Response

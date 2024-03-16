@@ -862,6 +862,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1819,6 +1828,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1855,7 +1873,7 @@
 
 <!-- ## Execute Basket Order -->
 <p>This method is used to execute the orders of the instruments present in the basket.</p>
-<pre><code class="language-python">pocket.ExecuteBasket(&quot;Parameters&quot;)
+<pre><code class="language-python">pocket.ExecuteBasket(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1889,6 +1907,16 @@
 </tr>
 </tbody>
 </table>
+<h3 id="example">Example</h3>
+<pre><code class="language-python">data = obj.executeBasket({
+    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+    &quot;client_id&quot;:&quot;HI0009&quot;,
+    &quot;execution_state&quot;:False,
+    &quot;execution_type&quot;:&quot;NML&quot;,
+    &quot;name&quot;:&quot;Y_Basket&quot;,
+    &quot;square_off&quot;: False
+})
+</code></pre>
 <h2 id="response">Response</h2>
 <pre><code class="language-json">{
 

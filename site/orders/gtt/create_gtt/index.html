@@ -1902,7 +1902,7 @@
   <h1>Create GTT Order</h1>
 
 <h2 id="create-gtt-rule">Create GTT Rule</h2>
-<p>This method is used to place the gtt order. We can search the instrument and place order accordingly. Good Till Triggered is active until the trigger condition is met. The trigger is valid for a year. And whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.</p>
+<p>This API is used to place the gtt order. Good Till Triggered is active until the trigger condition is met. The trigger is valid for the given expiry date. Whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.</p>
 <pre><code class="language-python">res = pocket.gttCreateRule(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -1918,17 +1918,17 @@
 <tr>
 <td>action_type</td>
 <td>String</td>
-<td>Type of action for a single order <code>single_order</code></td>
+<td>Type of action <code>single_order</code></td>
 </tr>
 <tr>
 <td>expiry_time</td>
 <td>String</td>
-<td>Represents a particular date of expiry <code>null</code></td>
+<td>Represents a particular date of expiry</td>
 </tr>
 <tr>
 <td>client_id</td>
 <td>String</td>
-<td>Represents the unique ID of a user or username.</td>
+<td>Represents the unique ID of a user.</td>
 </tr>
 <tr>
 <td>device</td>
@@ -1938,7 +1938,7 @@
 <tr>
 <td>disclosed_quantity</td>
 <td>Number</td>
-<td>Quantity that can't be negative.</td>
+<td>quantity hidden from market</td>
 </tr>
 <tr>
 <td>exchange</td>
@@ -1953,7 +1953,7 @@
 <tr>
 <td>market_protection_percentage</td>
 <td>String</td>
-<td>Market protection percentage, can be 0</td>
+<td>sets limit on the price deviation</td>
 </tr>
 <tr>
 <td>order_side</td>
@@ -1968,7 +1968,7 @@
 <tr>
 <td>price</td>
 <td>Number</td>
-<td>Price of the order; can't be zero.</td>
+<td>the price at which order needs to be placed</td>
 </tr>
 <tr>
 <td>product</td>
@@ -1978,27 +1978,27 @@
 <tr>
 <td>quantity</td>
 <td>Number</td>
-<td>Quantity of the order; can't be zero.</td>
+<td>Quantity of the order.</td>
 </tr>
 <tr>
 <td>sl_order_price</td>
 <td>Number</td>
-<td>Stop-loss order price; can't be zero.</td>
+<td>Stop-loss order price.</td>
 </tr>
 <tr>
 <td>sl_order_quantity</td>
 <td>Number</td>
-<td>Stop-loss order quantity; can't be zero.</td>
+<td>Stop-loss order quantity.</td>
 </tr>
 <tr>
 <td>sl_trigger_price</td>
 <td>Number</td>
-<td>Stop-loss trigger price; can't be zero.</td>
+<td>Stop-loss trigger price.</td>
 </tr>
 <tr>
 <td>trigger_price</td>
 <td>Number</td>
-<td>Trigger price; can't be zero.</td>
+<td>Trigger price.</td>
 </tr>
 <tr>
 <td>user_order_id</td>
@@ -2031,8 +2031,37 @@
 }})
 </code></pre>
 <h3 id="response">Response</h3>
-<pre><code class="language-json">{&quot;data&quot;: {&quot;id&quot;: &quot;ea036a20-2073-4bfb-a852-34662c4bd770&quot;}, &quot;message&quot;: &quot;GTT created successfully&quot;, &quot;status&quot;: &quot;success&quot;}
+<pre><code class="language-json">{
+    &quot;data&quot;:
+     {
+        &quot;id&quot;: &quot;ea036a20-2073-4bfb-a852-34662c4bd770&quot;
+        },
+        &quot;message&quot;: &quot;GTT created successfully&quot;,
+        &quot;status&quot;: &quot;success&quot;
+    }
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basket_id</td>
+<td>Identifier for the basket order</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Confirmation message for the order</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the order modification</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;: {},

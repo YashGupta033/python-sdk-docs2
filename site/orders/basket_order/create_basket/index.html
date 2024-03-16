@@ -1913,7 +1913,15 @@
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-python">response = pocket.createBasket({&quot;login_id&quot;:clintId,&quot;name&quot;:&quot;Basket1&quot;,&quot;type&quot;:&quot;NORMAL&quot;,&quot;product_type&quot;:&quot;ALL&quot;,&quot;order_type&quot;:&quot;ALL&quot;})
+<pre><code class="language-python">response = pocket.createBasket(
+    {
+    &quot;login_id&quot;:clintId,
+    &quot;name&quot;:&quot;Basket1&quot;,
+    &quot;type&quot;:&quot;NORMAL&quot;,
+    &quot;product_type&quot;:&quot;ALL&quot;,
+    &quot;order_type&quot;:&quot;ALL&quot;
+    }
+)
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
@@ -1997,6 +2005,276 @@
 }
 
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>Contains information about the basket and its associated orders.</td>
+</tr>
+<tr>
+<td>basket_id</td>
+<td>Unique identifier for the basket.</td>
+</tr>
+<tr>
+<td>basket_type</td>
+<td>Type of basket (e.g., NORMAL).</td>
+</tr>
+<tr>
+<td>is_executed</td>
+<td>Indicates if the basket has been executed.</td>
+</tr>
+<tr>
+<td>login_id</td>
+<td>Identifier for the user's login.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name of the basket.</td>
+</tr>
+<tr>
+<td>order_type</td>
+<td>Type of orders in the basket (e.g., ALL).</td>
+</tr>
+<tr>
+<td>orders</td>
+<td>Array containing details of individual orders within the basket.</td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>Unique identifier for the order.</td>
+</tr>
+<tr>
+<td>order_info</td>
+<td>Information about the order.</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>Exchange where the order is placed.</td>
+</tr>
+<tr>
+<td>sl_trigger_price</td>
+<td>Trigger price for stop-loss order.</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>Identifier for the client.</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>Mode of the order (e.g., NEW).</td>
+</tr>
+<tr>
+<td>product</td>
+<td>Product type (e.g., CNC).</td>
+</tr>
+<tr>
+<td>rejection_code</td>
+<td>Code for rejection reason.</td>
+</tr>
+<tr>
+<td>rejection_reason</td>
+<td>Reason for rejection.</td>
+</tr>
+<tr>
+<td>order_side</td>
+<td>Side of the order (e.g., BUY).</td>
+</tr>
+<tr>
+<td>market_protection_percentage</td>
+<td>Limit on price deviation for order placement.</td>
+</tr>
+<tr>
+<td>validity</td>
+<td>Validity of the order (e.g., DAY).</td>
+</tr>
+<tr>
+<td>trading_symbol</td>
+<td>Symbol for the traded security.</td>
+</tr>
+<tr>
+<td>trigger_price</td>
+<td>Trigger price for the order.</td>
+</tr>
+<tr>
+<td>is_trailing</td>
+<td>Indicates if trailing stop-loss is enabled.</td>
+</tr>
+<tr>
+<td>series</td>
+<td>Series for the order (e.g., EQ).</td>
+</tr>
+<tr>
+<td>lot_size</td>
+<td>Size of the trading lot.</td>
+</tr>
+<tr>
+<td>leg_order_indicator</td>
+<td>Indicator for identifying leg of the order.</td>
+</tr>
+<tr>
+<td>disclosed_quantity</td>
+<td>Quantity disclosed in the order.</td>
+</tr>
+<tr>
+<td>order_entry_time</td>
+<td>Time at which the order was entered.</td>
+</tr>
+<tr>
+<td>sl_order_quantity</td>
+<td>Quantity for stop-loss order.</td>
+</tr>
+<tr>
+<td>order_type</td>
+<td>Type of order (e.g., LIMIT).</td>
+</tr>
+<tr>
+<td>average_price</td>
+<td>Average price of the order.</td>
+</tr>
+<tr>
+<td>deposit</td>
+<td>Deposit amount for the order.</td>
+</tr>
+<tr>
+<td>contract_description</td>
+<td>Description of the contract.</td>
+</tr>
+<tr>
+<td>average_trade_price</td>
+<td>Average trade price of the order.</td>
+</tr>
+<tr>
+<td>oms_order_id</td>
+<td>Order ID assigned by the order management system.</td>
+</tr>
+<tr>
+<td>filled_quantity</td>
+<td>Quantity filled for the order.</td>
+</tr>
+<tr>
+<td>order_status_info</td>
+<td>Additional information about the order status.</td>
+</tr>
+<tr>
+<td>trailing_stop_loss</td>
+<td>Value for trailing stop-loss.</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Price specified for the order.</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>Segment of the market.</td>
+</tr>
+<tr>
+<td>underlying_token</td>
+<td>Token for the underlying security.</td>
+</tr>
+<tr>
+<td>sl_order_price</td>
+<td>Price for stop-loss order.</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>Token for the instrument.</td>
+</tr>
+<tr>
+<td>trade_price</td>
+<td>Price at which the trade occurred.</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>Symbol for the order.</td>
+</tr>
+<tr>
+<td>target_price_type</td>
+<td>Type of target price (e.g., absolute).</td>
+</tr>
+<tr>
+<td>execution_type</td>
+<td>Type of execution (e.g., REGULAR).</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Quantity of shares in the order.</td>
+</tr>
+<tr>
+<td>order_tag</td>
+<td>Tag associated with the order.</td>
+</tr>
+<tr>
+<td>spread_token</td>
+<td>Token for the spread.</td>
+</tr>
+<tr>
+<td>isin</td>
+<td>International Securities Identification Number (ISIN).</td>
+</tr>
+<tr>
+<td>pro_cli</td>
+<td>Type of client (e.g., CLIENT).</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>Additional tags associated with the order.</td>
+</tr>
+<tr>
+<td>last_activity_reference</td>
+<td>Reference to the last activity related to the order.</td>
+</tr>
+<tr>
+<td>square_off_value</td>
+<td>Value for square-off.</td>
+</tr>
+<tr>
+<td>remaining_quantity</td>
+<td>Remaining quantity for the order.</td>
+</tr>
+<tr>
+<td>square_off</td>
+<td>Indicates if square-off is enabled.</td>
+</tr>
+<tr>
+<td>stop_loss_value</td>
+<td>Value for stop-loss.</td>
+</tr>
+<tr>
+<td>exchange_order_id</td>
+<td>Order ID assigned by the exchange.</td>
+</tr>
+<tr>
+<td>exchange_time</td>
+<td>Time at which the order was executed by the exchange.</td>
+</tr>
+<tr>
+<td>device</td>
+<td>Device used for placing the order.</td>
+</tr>
+<tr>
+<td>user_order_id</td>
+<td>User-specific identifier for the order.</td>
+</tr>
+<tr>
+<td>source</td>
+<td>Source of the order.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the operation (e.g., success).</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Description of the operation's outcome.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{ 
   data: {}

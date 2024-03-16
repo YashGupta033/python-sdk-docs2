@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fetch-gtt-order" class="md-skip">
+        <a href="#example" class="md-skip">
           Skip to content
         </a>
       
@@ -938,16 +938,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fetch-gtt-order" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch GTT Order
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fetch GTT Order">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -955,8 +945,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -964,18 +954,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error Response
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1825,16 +1810,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fetch-gtt-order" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch GTT Order
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fetch GTT Order">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1842,8 +1817,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1851,18 +1826,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error Response
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1883,12 +1853,12 @@
 
   <h1>Fetch GTT Order</h1>
 
-<h2 id="fetch-gtt-order">Fetch GTT Order</h2>
-<p>This method is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange,instrument token etc.</p>
-<pre><code class="language-python">res = pocket.gttFetchRule()
+<p>This method is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.</p>
+<pre><code class="language-python">res = pocket.gttFetchRule()  # No params
 </code></pre>
 <h3 id="example">Example</h3>
-<p>response = pocket.gttFetchRule()</p>
+<pre><code class="language-python">response = pocket.gttFetchRule() #No Parameters needs to be passed.
+</code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
     action_type: &quot;single_order&quot;
@@ -1930,6 +1900,148 @@
 
 }
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action_type</td>
+<td>Type of action (e.g., single order)</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>Identifier for the client</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>Date and time when the order was created</td>
+</tr>
+<tr>
+<td>expiry_time</td>
+<td>Expiry date for the order</td>
+</tr>
+<tr>
+<td>id</td>
+<td>Unique identifier for the order</td>
+</tr>
+<tr>
+<td>login_id</td>
+<td>Login identifier for the client</td>
+</tr>
+<tr>
+<td>disclosed_qty</td>
+<td>Quantity disclosed in the order</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>Exchange where the order is placed</td>
+</tr>
+<tr>
+<td>execution_type</td>
+<td>Type of execution</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>Mode of the order (e.g., NEW)</td>
+</tr>
+<tr>
+<td>order_side</td>
+<td>Side of the order (e.g., BUY)</td>
+</tr>
+<tr>
+<td>order_type</td>
+<td>Type of order (e.g., LIMIT)</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Price specified for the order</td>
+</tr>
+<tr>
+<td>pro_cli</td>
+<td>Type of client (e.g., CLIENT)</td>
+</tr>
+<tr>
+<td>prod_type</td>
+<td>Product type (e.g., CNC)</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Quantity of shares in the order</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>Segment of the market (e.g., Capital)</td>
+</tr>
+<tr>
+<td>sl_order_price</td>
+<td>Price for stop-loss order</td>
+</tr>
+<tr>
+<td>sl_order_quantity</td>
+<td>Quantity for stop-loss order</td>
+</tr>
+<tr>
+<td>sl_trigger_price</td>
+<td>Trigger price for stop-loss order</td>
+</tr>
+<tr>
+<td>square_off_price</td>
+<td>Price for square-off</td>
+</tr>
+<tr>
+<td>token</td>
+<td>Token associated with the order</td>
+</tr>
+<tr>
+<td>trading_symbol</td>
+<td>Symbol for the traded security</td>
+</tr>
+<tr>
+<td>trailing_stop_loss</td>
+<td>Value for trailing stop-loss</td>
+</tr>
+<tr>
+<td>trigger_price</td>
+<td>Trigger price for the order</td>
+</tr>
+<tr>
+<td>validity</td>
+<td>Validity of the order</td>
+</tr>
+<tr>
+<td>vendor_code</td>
+<td>Code for the vendor</td>
+</tr>
+<tr>
+<td>reject_code</td>
+<td>Code for rejection reason</td>
+</tr>
+<tr>
+<td>reject_reason</td>
+<td>Reason for rejection</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the order (e.g., Active)</td>
+</tr>
+<tr>
+<td>type</td>
+<td>Type of order (e.g., GTTStock)</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>Date and time when the order was last updated</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Message associated with the order</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;: {},

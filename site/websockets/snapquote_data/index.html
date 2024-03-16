@@ -1885,6 +1885,7 @@
 
   <h1>Snapquote Data</h1>
 
+<p>Snapquote data refers to a snapshot or instantaneous view of essential market data for a specific financial instrument at a particular moment in time. It typically includes key information such as the instrument's last traded price, bid and ask prices, trading volume, and possibly other relevant metrics. This data is crucial for real-time monitoring of market conditions and can help traders react swiftly to changes in prices and trading activity.</p>
 <p>To get the snapquote data, the first step is to subscribe the instrument for which we need the data.</p>
 <p>Below is the list of exchange codes which will be required while subscribing to a particular instrument.</p>
 <pre><code class="language-json">exchange_code = {
@@ -1974,6 +1975,84 @@ print(snapquote_market_data)
   &quot;volume&quot;: 9438681
 }
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode</td>
+<td>The mode of market data transmission.</td>
+</tr>
+<tr>
+<td>exchange_code</td>
+<td>The code representing the exchange.</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>Unique identifier for the financial instrument.</td>
+</tr>
+<tr>
+<td>buyers</td>
+<td>Array representing buyer data.</td>
+</tr>
+<tr>
+<td>bidPrices</td>
+<td>Array representing bid prices.</td>
+</tr>
+<tr>
+<td>bidQtys</td>
+<td>Array representing bid quantities.</td>
+</tr>
+<tr>
+<td>sellers</td>
+<td>Array representing seller data.</td>
+</tr>
+<tr>
+<td>askPrices</td>
+<td>Array representing ask prices.</td>
+</tr>
+<tr>
+<td>askQtys</td>
+<td>Array representing ask quantities.</td>
+</tr>
+<tr>
+<td>averageTradePrice</td>
+<td>Average price of recent trades.</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Opening price for the trading session.</td>
+</tr>
+<tr>
+<td>high</td>
+<td>Highest price reached during the session.</td>
+</tr>
+<tr>
+<td>low</td>
+<td>Lowest price reached during the session.</td>
+</tr>
+<tr>
+<td>close</td>
+<td>Closing price for the trading session.</td>
+</tr>
+<tr>
+<td>totalBuyQty</td>
+<td>Total quantity of buy orders.</td>
+</tr>
+<tr>
+<td>totalSellQty</td>
+<td>Total quantity of sell orders.</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>Total trading volume for the session.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="unsubscribe-the-instrument-to-stop-receiving-the-data">Unsubscribe the instrument to stop receiving the data.</h3>
 <pre><code class="language-python">response = pocket_ws.unsubscribe_snapquote_data(snapquotedata_payload)
 </code></pre>

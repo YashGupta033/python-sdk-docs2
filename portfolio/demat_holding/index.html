@@ -1785,34 +1785,116 @@
 <p>To get alll the demat holdings, use the getDematHoldings API</p>
 <pre><code class="language-python">res = pocket.getDematHoldings()
 </code></pre>
-<p>### Response Parameters
- | JSON Key               | Description                                                                        |
-|------------------------|------------------------------------------------------------------------------------|
-| branch_code            | The branch code associated with the client.                                       |
-| buy_avg                | The average buying price for the instrument.                                       |
-| buy_avg_mtm            | The average buying price for the instrument on a mark-to-market basis.             |
-| client_id              | The unique identifier of the client.                                               |
-| exchange               | The exchange where the instrument is traded.                                       |
-| free_quantity          | The quantity of the instrument available for trading without any restrictions.     |
-| instrument_details     | Details about the instrument, including exchange, instrument name, token, and trading symbol. |
-| isin                   | The International Securities Identification Number (ISIN) of the instrument.        |
-| ltp                    | The last traded price of the instrument.                                           |
-| pending_quantity       | The quantity of pending orders for the instrument.                                 |
-| pledge_quantity        | The quantity of the instrument pledged.                                            |
-| previous_close         | The previous closing price of the instrument.                                      |
-| quantity               | The total quantity of the instrument.                                              |
-| symbol                 | The symbol or ticker of the instrument.                                            |
-| t0_price               | The price at T0 (previous trading day).                                           |
-| t0_quantity            | The quantity at T0 (previous trading day).                                        |
-| t1_price               | The price at T1 (two trading days ago).                                           |
-| t1_quantity            | The quantity at T1 (two trading days ago).                                        |
-| t2_price               | The price at T2 (three trading days ago).                                         |
-| t2_quantity            | The quantity at T2 (three trading days ago).                                      |
-| today_pledge_quantity  | The quantity of the instrument pledged today.                                     |
-| token                  | The unique token or identifier of the instrument.                                  |
-| trading_symbol         | The trading symbol of the instrument.                                              |
-| transaction_type       | The type of transaction (if applicable).                                           |
-| used_quantity          | The quantity of the instrument used in transactions.                               |</p>
+<table>
+<thead>
+<tr>
+<th>JSON Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>branch_code</td>
+<td>The branch code associated with the client.</td>
+</tr>
+<tr>
+<td>buy_avg</td>
+<td>The average buying price for the instrument.</td>
+</tr>
+<tr>
+<td>buy_avg_mtm</td>
+<td>The average buying price for the instrument on a mark-to-market basis.</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>The unique identifier of the client.</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>The exchange where the instrument is traded.</td>
+</tr>
+<tr>
+<td>free_quantity</td>
+<td>The quantity of the instrument available for trading without any restrictions.</td>
+</tr>
+<tr>
+<td>instrument_details</td>
+<td>Details about the instrument, including exchange, instrument name, token, and trading symbol.</td>
+</tr>
+<tr>
+<td>isin</td>
+<td>The International Securities Identification Number (ISIN) of the instrument.</td>
+</tr>
+<tr>
+<td>ltp</td>
+<td>The last traded price of the instrument.</td>
+</tr>
+<tr>
+<td>pending_quantity</td>
+<td>The quantity of pending orders for the instrument.</td>
+</tr>
+<tr>
+<td>pledge_quantity</td>
+<td>The quantity of the instrument pledged.</td>
+</tr>
+<tr>
+<td>previous_close</td>
+<td>The previous closing price of the instrument.</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>The total quantity of the instrument.</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>The symbol or ticker of the instrument.</td>
+</tr>
+<tr>
+<td>t0_price</td>
+<td>The price at T0 (previous trading day).</td>
+</tr>
+<tr>
+<td>t0_quantity</td>
+<td>The quantity at T0 (previous trading day).</td>
+</tr>
+<tr>
+<td>t1_price</td>
+<td>The price at T1 (two trading days ago).</td>
+</tr>
+<tr>
+<td>t1_quantity</td>
+<td>The quantity at T1 (two trading days ago).</td>
+</tr>
+<tr>
+<td>t2_price</td>
+<td>The price at T2 (three trading days ago).</td>
+</tr>
+<tr>
+<td>t2_quantity</td>
+<td>The quantity at T2 (three trading days ago).</td>
+</tr>
+<tr>
+<td>today_pledge_quantity</td>
+<td>The quantity of the instrument pledged today.</td>
+</tr>
+<tr>
+<td>token</td>
+<td>The unique token or identifier of the instrument.</td>
+</tr>
+<tr>
+<td>trading_symbol</td>
+<td>The trading symbol of the instrument.</td>
+</tr>
+<tr>
+<td>transaction_type</td>
+<td>The type of transaction (if applicable).</td>
+</tr>
+<tr>
+<td>used_quantity</td>
+<td>The quantity of the instrument used in transactions.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;:{

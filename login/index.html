@@ -1712,7 +1712,7 @@
 pocket_password = &quot;your-password&quot;
 </code></pre>
 <p>Create an instance of Pocketful class</p>
-<pre><code class="language-python">pocket = pocketful()
+<pre><code class="language-python">pocket = pocketful(clientId = pocket_client_id, password = pocket_password)
 </code></pre>
 <p>Generate a session with your client-id, password and totp of your account with the help of instance you created above.</p>
 <pre><code class="language-python">login = pocket.generateSession(pace_clintId, pace_password,&quot;totp&quot;)  

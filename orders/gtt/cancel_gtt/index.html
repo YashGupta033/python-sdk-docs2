@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#cancel-gtt-order" class="md-skip">
           Skip to content
         </a>
       
@@ -959,6 +959,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cancel-gtt-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cancel GTT Order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cancel GTT Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -966,8 +976,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -975,8 +985,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -984,13 +994,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error response
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1755,6 +1770,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cancel-gtt-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cancel GTT Order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cancel GTT Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1762,8 +1787,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1771,8 +1796,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1780,13 +1805,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error response
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1807,14 +1837,11 @@
 
   <h1>Cancel GTT Order</h1>
 
-<p>A Cancel GTT API facilitates the cancellation of Good Till Trigger (GTT) orders placed on the market. It allows traders to retract their GTT orders before they are triggered, providing them with the flexibility to adjust their trading strategies or react to changing market conditions swiftly.</p>
+<h2 id="cancel-gtt-order">Cancel GTT Order</h2>
 <pre><code class="language-python"> res = pocket.gttCancelRule(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
-<p>Takes the gttId which has to be deleted.
-| Field Name                | Data Type | Description                                  |
-|---------------------------|-----------|----------------------------------------------|
-|  Id                       | <code>String</code>  |       Represents unique GTT Id                |</p>
+<p>Takes the gttId which has to be deleted.</p>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.gttCancelRule({&quot;id&quot;:&quot;e06f52ab-6cf4-492d-a014-c6e0e5843a93&quot;})
 </code></pre>

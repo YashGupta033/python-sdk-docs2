@@ -18,7 +18,15 @@ res = pocket.createBasket(Parameters)
 
 ### Example
 ```python
-response = pocket.createBasket({"login_id":clintId,"name":"Basket1","type":"NORMAL","product_type":"ALL","order_type":"ALL"})
+response = pocket.createBasket(
+    {
+    "login_id":clintId,
+    "name":"Basket1",
+    "type":"NORMAL",
+    "product_type":"ALL",
+    "order_type":"ALL"
+    }
+)
 ```
 
 
@@ -105,6 +113,75 @@ response = pocket.createBasket({"login_id":clintId,"name":"Basket1","type":"NORM
 }
 
 ```
+
+| Field Name                 | Description                                                        |
+|----------------------------|--------------------------------------------------------------------|
+| data                       | Contains information about the basket and its associated orders.   |
+| basket_id                  | Unique identifier for the basket.                                  |
+| basket_type                | Type of basket (e.g., NORMAL).                                     |
+| is_executed                | Indicates if the basket has been executed.                         |
+| login_id                   | Identifier for the user's login.                                   |
+| name                       | Name of the basket.                                                |
+| order_type                 | Type of orders in the basket (e.g., ALL).                          |
+| orders                     | Array containing details of individual orders within the basket.   |
+| order_id                   | Unique identifier for the order.                                   |
+| order_info                 | Information about the order.                                       |
+| exchange                   | Exchange where the order is placed.                                |
+| sl_trigger_price           | Trigger price for stop-loss order.                                 |
+| client_id                  | Identifier for the client.                                         |
+| mode                       | Mode of the order (e.g., NEW).                                     |
+| product                    | Product type (e.g., CNC).                                          |
+| rejection_code             | Code for rejection reason.                                         |
+| rejection_reason           | Reason for rejection.                                              |
+| order_side                 | Side of the order (e.g., BUY).                                     |
+| market_protection_percentage | Limit on price deviation for order placement.                     |
+| validity                   | Validity of the order (e.g., DAY).                                 |
+| trading_symbol             | Symbol for the traded security.                                    |
+| trigger_price              | Trigger price for the order.                                       |
+| is_trailing                | Indicates if trailing stop-loss is enabled.                        |
+| series                     | Series for the order (e.g., EQ).                                   |
+| lot_size                   | Size of the trading lot.                                           |
+| leg_order_indicator        | Indicator for identifying leg of the order.                         |
+| disclosed_quantity         | Quantity disclosed in the order.                                   |
+| order_entry_time           | Time at which the order was entered.                               |
+| sl_order_quantity          | Quantity for stop-loss order.                                      |
+| order_type                 | Type of order (e.g., LIMIT).                                       |
+| average_price              | Average price of the order.                                        |
+| deposit                    | Deposit amount for the order.                                      |
+| contract_description       | Description of the contract.                                       |
+| average_trade_price        | Average trade price of the order.                                  |
+| oms_order_id               | Order ID assigned by the order management system.                  |
+| filled_quantity            | Quantity filled for the order.                                     |
+| order_status_info          | Additional information about the order status.                     |
+| trailing_stop_loss         | Value for trailing stop-loss.                                     |
+| price                      | Price specified for the order.                                     |
+| segment                    | Segment of the market.                                             |
+| underlying_token           | Token for the underlying security.                                 |
+| sl_order_price             | Price for stop-loss order.                                         |
+| instrument_token           | Token for the instrument.                                          |
+| trade_price                | Price at which the trade occurred.                                 |
+| symbol                     | Symbol for the order.                                              |
+| target_price_type          | Type of target price (e.g., absolute).                             |
+| execution_type             | Type of execution (e.g., REGULAR).                                 |
+| quantity                   | Quantity of shares in the order.                                   |
+| order_tag                  | Tag associated with the order.                                     |
+| spread_token               | Token for the spread.                                              |
+| isin                       | International Securities Identification Number (ISIN).             |
+| pro_cli                    | Type of client (e.g., CLIENT).                                     |
+| tags                       | Additional tags associated with the order.                         |
+| last_activity_reference    | Reference to the last activity related to the order.               |
+| square_off_value           | Value for square-off.                                              |
+| remaining_quantity         | Remaining quantity for the order.                                  |
+| square_off                 | Indicates if square-off is enabled.                                |
+| stop_loss_value            | Value for stop-loss.                                               |
+| exchange_order_id          | Order ID assigned by the exchange.                                 |
+| exchange_time              | Time at which the order was executed by the exchange.             |
+| device                     | Device used for placing the order.                                 |
+| user_order_id              | User-specific identifier for the order.                            |
+| source                     | Source of the order.                                               |
+| status                     | Status of the operation (e.g., success).                           |
+| message                    | Description of the operation's outcome.                           |
+
 
 
 ### Error Response

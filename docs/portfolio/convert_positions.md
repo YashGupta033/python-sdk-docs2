@@ -5,7 +5,7 @@ Use method convertPosition to make changes in existing positions.
 pocket.convertPosition(Parameters)
 ```
 
-### Parameters
+### Request Parameters
 | FieldName         | Datatype | Description                                       |
 |-------------------|----------|---------------------------------------------------|
 | exchange          | String   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |

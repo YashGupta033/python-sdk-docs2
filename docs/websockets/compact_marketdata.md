@@ -1,4 +1,6 @@
-To get the compact marketdata, the first step is to subscribe the instrument for which we need the data.
+Compact MarketData typically refers to a condensed or summarized version of market data for financial instruments. It provides essential information such as the current price, bid-ask spread, trading volume, and possibly a few other key metrics. This condensed format is often used in situations where real-time updates are needed, but only a limited set of essential data points are required, such as in mobile trading apps or quick market overviews.
+
+To get the compact marketdata, the first step is to subscribe the instrument for which the data is required.
 
 
 ### Subscribe instruments to get market data
@@ -51,6 +53,23 @@ print(compact_market_data)
   "askPrice": 145070
 }
 ```
+
+### Response Parameter
+| Field Name           | Description                                     |
+|----------------------|-------------------------------------------------|
+| mode                 | Mode of operation                               |
+| exchange_code        | Code representing the exchange                  |
+| instrument_token     | Unique token representing the financial instrument |
+| last_traded_price    | Price at which the last trade occurred          |
+| change               | Change in price since the last trade            |
+| last_traded_time     | Timestamp of the last trade                     |
+| lowDPR               | Daily low price range                           |
+| highDPR              | Daily high price range                          |
+| currentOpenInterest  | Current open interest                           |
+| initialOpenInterest  | Initial open interest                           |
+| bidPrice             | Bid price in the current order book             |
+| askPrice             | Ask price in the current order book             |
+
 
 
 ### Unsubscribe the instrument to stop receiving the data.

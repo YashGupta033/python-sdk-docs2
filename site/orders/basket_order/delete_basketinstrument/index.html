@@ -837,6 +837,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1324,74 +1333,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1518,27 +1464,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1785,6 +1710,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1831,6 +1776,15 @@
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
     </span>
   </a>
   
@@ -1899,6 +1853,36 @@
     &quot;status&quot;: &quot;success&quot;
 }
 
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>Array containing data.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Description of the operation's outcome.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the operation (e.g., success).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="error-response">Error Response</h2>
+<pre><code class="language-json">{
+  &quot;data&quot;: {},
+  &quot;error_code&quot;: 48001,
+  &quot;message&quot;: &quot;BasketId doesn't exists&quot;,
+  &quot;status&quot;: &quot;error&quot;
+}
 </code></pre>
 
 

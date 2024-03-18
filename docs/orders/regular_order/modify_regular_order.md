@@ -1,5 +1,5 @@
 <!-- ## Modifying a regular order -->
-The Modify Order API enables users to make changes in both open and pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
+The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
 
 
 ```python

@@ -1333,74 +1333,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1527,27 +1464,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1794,6 +1710,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1873,7 +1809,7 @@
 
 <!-- # Place Cover Order -->
 
-<p>A Cover Order helps traders protect against losses by placing a stop loss order together with a regular order. This means that if the price moves in an unexpected way, the stop loss order kicks in to limit losses. When buying a Cover Order, the limit price must be higher than the stop-loss trigger price. Conversely, when selling a Cover Order, the limit price must be lower than the stop loss trigger price.</p>
+<p>A Cover Order help traders protect against losses by placing a stop loss order together with a regular order. This means that if the price moves in an unexpected way, the stop loss order kicks in to limit losses. When buying a Cover Order, the limit price must be higher than the stop-loss trigger price. Conversely, when selling a Cover Order, the limit price must be lower than the stop loss trigger price.</p>
 <pre><code class="language-python">res = pocket.placeConditionalOrder(Parameters)
 print(res)
 </code></pre>
@@ -1920,7 +1856,7 @@ print(res)
 <tr>
 <td>disclosed_quantity</td>
 <td>Number</td>
-<td>hidden quantity from the marketnumber.</td>
+<td>hidden quantity from the market.</td>
 </tr>
 <tr>
 <td>validity</td>
@@ -1943,14 +1879,19 @@ print(res)
 <td><code>Web</code> or <code>Mobile</code></td>
 </tr>
 <tr>
-<td>user_order_id</td>
-<td>Number</td>
-<td>Represents the unique id of order.</td>
+<td>is_trailing</td>
+<td>Boolean</td>
+<td><code>True</code> or <code>False</code></td>
 </tr>
 <tr>
 <td>execution_type</td>
 <td>String</td>
 <td><code>CO</code></td>
+</tr>
+<tr>
+<td>square_off_value</td>
+<td>Number</td>
+<td>Not required in cover order <code>null</code></td>
 </tr>
 <tr>
 <td>stop_loss_value</td>
@@ -1960,7 +1901,7 @@ print(res)
 <tr>
 <td>trailing_stop_loss</td>
 <td>Number</td>
-<td>It can't be negative number.</td>
+<td>adjusts sell order accordingly to reduce losses.</td>
 </tr>
 </tbody>
 </table>
@@ -1979,7 +1920,6 @@ print(res)
     &quot;device&quot;: &quot;WEB&quot;,
     &quot;execution_type&quot;: &quot;CO&quot;,
     &quot;is_trailing&quot;: True,
-    &quot;square_off_value&quot;: 1,
     &quot;stop_loss_value&quot;: 12,
     &quot;trailing_stop_loss&quot;: &quot;0.05&quot;,
     &quot;trigger_price&quot;: 0,

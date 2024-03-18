@@ -46,16 +46,16 @@ nav:
   - Market Data:
     - Get Market Data: market_data/get_marketdata.md
     - Get Last Traded Price: market_data/get_ltp.md
-    - Get FnO Last Traded Price: market_data/get_fnoltp.md
-    - Get DPR: market_data/get_dpr.md
+    # - Get FnO Last Traded Price: market_data/get_fnoltp.md
+    # - Get DPR: market_data/get_dpr.md
     - Get Closing Price: market_data/get_closingprice.md
-    - Get Greek: market_data/get_greek.md
+    # - Get Greek: market_data/get_greek.md
     - Option Chain: market_data/option_chain.md
   - Portfolio:
     - Fetch Position Daywise: portfolio/daywise_position.md
     - Fetch Position Netwise: portfolio/netwise_position.md
     - Fetch Demat Holdings: portfolio/demat_holding.md
-    - Convert Position: portfolio/convert_positions.md
+    # - Convert Position: portfolio/convert_positions.md
   - Funds:
     - Get Fund Details: funds.md
   - Profile: profile.md
@@ -65,6 +65,8 @@ nav:
     - Detailed Marketdata: websockets/detailed_marketdata.md
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
+  - Annexure: Annexure.md
+
 
 # theme: readthedocs
 # theme: gitbook
@@ -109,6 +111,9 @@ theme:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - markdown_extensions:
+    - attr_list
+    - md_in_html
 
 
 

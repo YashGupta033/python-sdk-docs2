@@ -12,18 +12,18 @@ print(res)
 | instrument_token   | String     | Represents the unique id of instrument.           |
 | client_id          | String     | Represents the unique id of user or username.     |
 | order_type         | String     |`LIMIT`, `MARKET`, `SL`, `SLM`                           |
-| price              | Number     | It can't be Zero.                                 |
-| quantity           | Number     | It can't be Zero.                                 |
-| disclosed_quantity | Number     | It can't be negative number.                      |
+| price              | Number     | the price at which order needs to be placed                                 |
+| quantity           | Number     | total quantity to buy                                 |
+| disclosed_quantity | Number     | hidden quantity from the market.                      |
 | validity           | String     | `DAY`, `IOC`                                        |
 | product            | String     | `CNC`, `MIS`, `NRML`                                    |
 | order_side         | String     | `BUY` or `SELL`                                       |
 | device             | String     | `Web` or `Mobile`                                     |
 | user_order_id      | Number     | Represents the unique id of order.                |
-| trigger_price      | Number     | It can't be Zero.                                 |
-| stop_loss_value    | Number     | It can't be negative number.                      |
-| square_off_value   | Number     | It can't be negtive number.                       |
-| trailing_stop_loss | Number     | It can't be negative number.                      |
+| trigger_price      | Number     | price at which target is set                                 |
+| stop_loss_value    | Number     |value at which Sl will get hit                      |
+| square_off_value   | Number     | value at which position will get squared off.                       |
+| trailing_stop_loss | Number     | adjusts sell order accordingly to reduce losses.                      |
 | is_trailing        | Boolean    | `TRUE` or `FALSE`                                     |
 | execution_type     | String     | `BO`                                                |
 
@@ -66,6 +66,13 @@ data=obj.placeConditionalOrder( {
     "status": "success"
  }
 ```
+
+| Parameter           | Description                          |
+|---------------|--------------------------------------|
+| basket_id     | Identifier for the basket order      |
+| message       | Confirmation message for the order   |
+| status        | Status of the order modification     |
+
 
 ### Error Response
 ```json

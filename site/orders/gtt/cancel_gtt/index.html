@@ -978,6 +978,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1339,74 +1348,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1533,27 +1479,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1800,6 +1725,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1838,6 +1783,15 @@
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
     </span>
   </a>
   
@@ -1888,6 +1842,9 @@
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <p>Takes the gttId which has to be deleted.</p>
+<h3 id="example">Example</h3>
+<pre><code class="language-python">response = pocket.gttCancelRule({&quot;id&quot;:&quot;e06f52ab-6cf4-492d-a014-c6e0e5843a93&quot;})
+</code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
     &quot;status&quot;: true,
@@ -1898,6 +1855,32 @@
     }
 }
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>Indicates the status of the operation.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Describes the outcome of the operation.</td>
+</tr>
+<tr>
+<td>errorcode</td>
+<td>Represents any error code if applicable.</td>
+</tr>
+<tr>
+<td>data.id</td>
+<td>Unique identifier associated with the data.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error response</h3>
 <p><code>json
  {

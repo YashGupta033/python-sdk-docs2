@@ -1257,74 +1257,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1451,27 +1388,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1756,6 +1672,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#response-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unsubscribe-the-instrument-to-stop-receiving-the-data" class="md-nav__link">
     <span class="md-ellipsis">
       Unsubscribe the instrument to stop receiving the data.
@@ -1797,6 +1722,26 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1862,6 +1807,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#response-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unsubscribe-the-instrument-to-stop-receiving-the-data" class="md-nav__link">
     <span class="md-ellipsis">
       Unsubscribe the instrument to stop receiving the data.
@@ -1887,7 +1841,8 @@
 
   <h1>Compact Marketdata</h1>
 
-<p>To get the compact marketdata, the first step is to subscribe the instrument for which we need the data.</p>
+<p>Compact MarketData typically refers to a condensed or summarized version of market data for financial instruments. It provides essential information such as the current price, bid-ask spread, trading volume, and possibly a few other key metrics. This condensed format is often used in situations where real-time updates are needed, but only a limited set of essential data points are required, such as in mobile trading apps or quick market overviews.</p>
+<p>To get the compact marketdata, the first step is to subscribe the instrument for which the data is required.</p>
 <h3 id="subscribe-instruments-to-get-market-data">Subscribe instruments to get market data</h3>
 <p>You can subscribe or unsubscribe single or multiple instruments to get market data.</p>
 <p>To subscribe only one instrument.</p>
@@ -1925,6 +1880,65 @@ print(compact_market_data)
   &quot;askPrice&quot;: 145070
 }
 </code></pre>
+<h3 id="response-parameter">Response Parameter</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode</td>
+<td>Mode of operation</td>
+</tr>
+<tr>
+<td>exchange_code</td>
+<td>Code representing the exchange</td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td>Unique token representing the financial instrument</td>
+</tr>
+<tr>
+<td>last_traded_price</td>
+<td>Price at which the last trade occurred</td>
+</tr>
+<tr>
+<td>change</td>
+<td>Change in price since the last trade</td>
+</tr>
+<tr>
+<td>last_traded_time</td>
+<td>Timestamp of the last trade</td>
+</tr>
+<tr>
+<td>lowDPR</td>
+<td>Daily low price range</td>
+</tr>
+<tr>
+<td>highDPR</td>
+<td>Daily high price range</td>
+</tr>
+<tr>
+<td>currentOpenInterest</td>
+<td>Current open interest</td>
+</tr>
+<tr>
+<td>initialOpenInterest</td>
+<td>Initial open interest</td>
+</tr>
+<tr>
+<td>bidPrice</td>
+<td>Bid price in the current order book</td>
+</tr>
+<tr>
+<td>askPrice</td>
+<td>Ask price in the current order book</td>
+</tr>
+</tbody>
+</table>
 <h3 id="unsubscribe-the-instrument-to-stop-receiving-the-data">Unsubscribe the instrument to stop receiving the data.</h3>
 <pre><code class="language-python">response = pocket_ws.unsubscribe_compact_marketdata(marketdata_payload)
 </code></pre>

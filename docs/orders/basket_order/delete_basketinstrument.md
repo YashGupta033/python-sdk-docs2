@@ -33,4 +33,19 @@ data = obj.deleteBasketInstrument({
 }
 
 ```
+| Key       | Description                                     |
+|-----------|-------------------------------------------------|
+| data      | Array containing data. |
+| message   | Description of the operation's outcome.         |
+| status    | Status of the operation (e.g., success).        |
 
+
+## Error Response
+```json
+{
+  "data": {},
+  "error_code": 48001,
+  "message": "BasketId doesn't exists",
+  "status": "error"
+}
+```

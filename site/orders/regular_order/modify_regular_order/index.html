@@ -1333,74 +1333,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1527,27 +1464,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1794,6 +1710,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1872,7 +1808,7 @@
   <h1>Modify Regular Order</h1>
 
 <!-- ## Modifying a regular order -->
-<p>The Modify Order API enables users to make changes in both open and pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
+<p>The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
 <pre><code class="language-python">res = pocket.modifyOrder(Parameters)
 print(res)
 </code></pre>

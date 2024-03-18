@@ -9,7 +9,7 @@ res = pocket.gttModifyRule(Parameters)
 | Field Name                | Data Type | Description                                  |
 |---------------------------|-----------|----------------------------------------------|
 | expiry_time               | String    | Expiry time of the order (e.g., "2024-12-12")|
-| action_type               | String    | Type of action (e.g., "single_order")       |
+| action_type               | String    | Type of action (e.g. "single_order")       |
 | id                        | String    | Unique identifier for the order              |
 | order                     | Object    | Object containing order details              |
 | order.client_id           | String    | Client ID associated with the order          |
@@ -70,6 +70,12 @@ data = obj.gttModifyRule({
     "status": "success"
 }
 ```
+
+| Parameter           | Description                          |
+|---------------|--------------------------------------|
+| basket_id     | Identifier for the basket order      |
+| message       | Confirmation message for the order   |
+| status        | Status of the order modification     |
 
 
 ### Error Response

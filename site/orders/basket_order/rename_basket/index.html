@@ -1333,74 +1333,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1527,27 +1464,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1794,6 +1710,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1898,11 +1834,90 @@
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-python">response = pocket.renameBasket({&quot;basket_id&quot;:&quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,&quot;name&quot;:&quot;Basket2&quot;})
+<pre><code class="language-python">response = pocket.renameBasket(
+  {
+    &quot;basket_id&quot;:&quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+    &quot;name&quot;:&quot;Basket2&quot;
+    }
+)
 </code></pre>
 <h3 id="response">Response</h3>
-<pre><code class="language-json">{&quot;data&quot;: {&quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;, &quot;basket_type&quot;: &quot;NORMAL&quot;, &quot;is_executed&quot;: false, &quot;login_id&quot;: &quot;HI0009&quot;, &quot;name&quot;: &quot;Basket2&quot;, &quot;order_type&quot;: &quot;ALL&quot;, &quot;orders&quot;: [], &quot;product_type&quot;: &quot;ALL&quot;, &quot;sip_eligible&quot;: true, &quot;sip_enabled&quot;: false}, &quot;message&quot;: &quot;Basket name updated successfully&quot;, &quot;status&quot;: &quot;success&quot;}
+<pre><code class="language-json">{
+  &quot;data&quot;: 
+  {
+    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+    &quot;basket_type&quot;: &quot;NORMAL&quot;,
+    &quot;is_executed&quot;: false,
+    &quot;login_id&quot;: &quot;HI0009&quot;,
+    &quot;name&quot;: &quot;Basket2&quot;,
+    &quot;order_type&quot;: &quot;ALL&quot;,
+    &quot;orders&quot;: [],
+    &quot;product_type&quot;: &quot;ALL&quot;,
+    &quot;sip_eligible&quot;: true,
+    &quot;sip_enabled&quot;: false
+         },
+    &quot;message&quot;: &quot;Basket name updated successfully&quot;, 
+    &quot;status&quot;: &quot;success&quot;
+}
 </code></pre>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basket_id</td>
+<td>Unique identifier for the basket.</td>
+</tr>
+<tr>
+<td>basket_type</td>
+<td>Type of the basket.</td>
+</tr>
+<tr>
+<td>is_executed</td>
+<td>Indicates whether the basket has been executed.</td>
+</tr>
+<tr>
+<td>login_id</td>
+<td>Identifier for the user's login.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name of the basket.</td>
+</tr>
+<tr>
+<td>order_type</td>
+<td>Type of orders in the basket.</td>
+</tr>
+<tr>
+<td>orders</td>
+<td>List of orders in the basket.</td>
+</tr>
+<tr>
+<td>product_type</td>
+<td>Type of product.</td>
+</tr>
+<tr>
+<td>sip_eligible</td>
+<td>Indicates if SIP (Systematic Investment Plan) is eligible for the basket.</td>
+</tr>
+<tr>
+<td>sip_enabled</td>
+<td>Indicates if SIP (Systematic Investment Plan) is enabled for the basket.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Information message related to the operation performed on the basket.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the operation performed on the basket.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
   &quot;data&quot;: {},

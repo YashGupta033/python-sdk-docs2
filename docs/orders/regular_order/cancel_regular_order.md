@@ -6,6 +6,15 @@ res = pocket.cancelOrder(Parameters)
 print(res)
 ```
 
+### Parameters
+| Key              | Description                               |
+|------------------|-------------------------------------------|
+| oms_order_id    | The unique identifier for the order in the Order Management System (OMS). |
+| client_id       | The identifier for the client or customer placing the order. |
+| execution_type  | The type of execution for the order, which could be "REGULAR" or another value indicating a different execution type. |
+
+
+
 ### Example
 ```python
 data = obj.cancelOrder({"oms_order_id":"202403111778", "client_id": "clintId", "execution_type": "REGULAR"})

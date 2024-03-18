@@ -201,6 +201,70 @@ pocket.editBasketInstrument("Parameters")
 }
 ```
 
+| Field Name                   | Description                                                                                        |
+|------------------------------|----------------------------------------------------------------------------------------------------|
+| basket_id                    | Unique identifier for the basket.                                                                  |
+| basket_type                  | Type of the basket.                                                                                |
+| is_executed                  | Indicates whether the basket has been executed.                                                     |
+| login_id                     | Identifier for the user's login.                                                                    |
+| name                         | Name of the basket.                                                                                 |
+| order_type                   | Type of orders in the basket.                                                                       |
+| order_id                     | Unique identifier for the order.                                                                    |
+| exchange                     | Exchange where the order is placed.                                                                 |
+| client_id                    | Identifier for the order's login.                                                                   |
+| mode                         | Mode of the order.                                                                                  |
+| product                      | Product type associated with the order.                                                             |
+| rejection_code               | Code indicating reason for rejection.                                                               |
+| rejection_reason             | Reason for rejection of the order.                                                                  |
+| market_protection_percentage | Market protection percentage.                                                                       |
+| validity                     | Validity of the order.                                                                              |
+| trading_symbol               | Symbol for the traded security.                                                                     |
+| trigger_price                | Trigger price for the order.                                                                        |
+| is_trailing                  | Indicates if trailing stop loss is enabled.                                                         |
+| series                       | Trading series.                                                                                     |
+| lot_size                     | Lot size.                                                                                           |
+| disclosed_quantity           | Disclosed quantity.                                                                                 |
+| order_entry_time             | Time of order entry.                                                                                |
+| sl_order_quantity            | Quantity of shares for stop loss order.                                                             |
+| order_type                   | Type of the order.                                                                                  |
+| average_price                | Average price of filled shares.                                                                     |
+| deposit                      | Deposit amount.                                                                                     |
+| average_trade_price          | Average trade price.                                                                                |
+| filled_quantity              | Quantity of shares filled.                                                                          |
+| order_status_info            | Information about order status.                                                                     |
+| trailing_stop_loss           | Trailing stop loss value.                                                                           |
+| price                        | Price specified for the order.                                                                      |
+| segment                      | Segment of the market.                                                                              |
+| underlying_token             | Token for the traded security.                                                                      |
+| sl_order_price               | Price for stop loss order.                                                                          |
+| instrument_token             | Token for the traded security.                                                                      |
+| trade_price                  | Trade price.                                                                                        |
+| symbol                       | Symbol for the traded security.                                                                     |
+| target_price_type            | Type of target price.                                                                               |
+| execution_type               | Type of execution.                                                                                  |
+| quantity                     | Quantity of shares in the order.                                                                    |
+| order_tag                    | Order tag.                                                                                          |
+| spread_token                 | Spread token.                                                                                       |
+| isin                         | ISIN of the traded security.                                                                        |
+| pro_cli                      | Type of client.                                                                                     |
+| tags                         | Additional tags for the order.                                                                      |
+| last_activity_reference      | Reference for the last activity.                                                                    |
+| square_off_value             | Value for square off.                                                                               |
+| remaining_quantity           | Remaining quantity of shares.                                                                       |
+| square_off                   | Indicates if the order is square off.                                                               |
+| stop_loss_value              | Stop loss value for the order.                                                                      |
+| exchange_order_id            | Exchange order ID.                                                                                  |
+| exchange_time                | Time of exchange order.                                                                             |
+| device                       | Device from which the order was placed.                                                             |
+| user_order_id                | User order ID.                                                                                      |
+| source                       | Source of the order.                                                                                |
+| product_type                 | Type of product.                                                                                    |
+| sip_eligible                 | Indicates if SIP (Systematic Investment Plan) is eligible for the basket.                           |
+| sip_enabled                  | Indicates if SIP (Systematic Investment Plan) is enabled for the basket.                            |
+| message                      | Information message related to the operation performed on the basket.                               |
+| status                       | Status of the operation performed on the basket.                                                     |
+
+
 ### Error Response
 ```json
  {

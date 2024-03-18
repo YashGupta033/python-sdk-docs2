@@ -12,13 +12,21 @@ pocket.cancelConditionalOrder(Parameters)
 | oms_order_id        | Number   | Represents the unique id of order.            |
 | execution_type       | String   | BO                                             |
 | exchange_order_id    | Number   | Represents the unique id of order.            |
-| leg_order_indicator  | String   | `Entry`, `Second`, or `Third`                        |
+| leg_order_indicator  | String   | specifies buy/sell SL or target order cancellation `Entry`, `Second`, or `Third`                        |
 | status               | String   | `Confirmed`                                      |
 
 
 ### Example
 ```python
-data=obj.cancelConditionalOrder({"client_id":clintId,"exchange_order_id":"1100000012461398","execution_type":"BO","leg_order_indicator":"ENTRY", "oms_order_id":"20240314929", "status":"MODIFY_CONFIRMED"})
+data=obj.cancelConditionalOrder(
+{
+    "client_id":clintId,
+    "exchange_order_id":"1100000012461398",
+    "execution_type":"BO",
+    "leg_order_indicator":"ENTRY",
+    "oms_order_id":"20240314929",
+    "status":"MODIFY_CONFIRMED"
+})
 ```
 
 
@@ -33,6 +41,12 @@ data=obj.cancelConditionalOrder({"client_id":clintId,"exchange_order_id":"110000
     "status": "success"
 }
 ```
+
+| Parameter           | Description                          |
+|---------------|--------------------------------------|
+| basket_id     | Identifier for the basket order      |
+| message       | Confirmation message for the order   |
+| status        | Status of the order modification     |
 
 ### Error Response
 ```json

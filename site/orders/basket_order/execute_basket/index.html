@@ -862,6 +862,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1324,74 +1333,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../market_data/get_fnoltp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get FnO Last Traded Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_dpr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get DPR
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../market_data/get_closingprice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Get Closing Price
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../market_data/get_greek/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Get Greek
   </span>
   
 
@@ -1518,27 +1464,6 @@
   
   <span class="md-ellipsis">
     Fetch Demat Holdings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../portfolio/convert_positions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Convert Position
   </span>
   
 
@@ -1785,6 +1710,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Annexure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1813,6 +1758,15 @@
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
     </span>
   </a>
   
@@ -1855,7 +1809,7 @@
 
 <!-- ## Execute Basket Order -->
 <p>This method is used to execute the orders of the instruments present in the basket.</p>
-<pre><code class="language-python">pocket.ExecuteBasket(&quot;Parameters&quot;)
+<pre><code class="language-python">pocket.ExecuteBasket(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1889,6 +1843,16 @@
 </tr>
 </tbody>
 </table>
+<h3 id="example">Example</h3>
+<pre><code class="language-python">data = obj.executeBasket({
+    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+    &quot;client_id&quot;:&quot;HI0009&quot;,
+    &quot;execution_state&quot;:False,
+    &quot;execution_type&quot;:&quot;NML&quot;,
+    &quot;name&quot;:&quot;Y_Basket&quot;,
+    &quot;square_off&quot;: False
+})
+</code></pre>
 <h2 id="response">Response</h2>
 <pre><code class="language-json">{
 

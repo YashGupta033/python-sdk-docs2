@@ -34,3 +34,8 @@ Product Type
 | CO        | Cover Order                            |
 | BO        | Bracket Order                          |
 
+
+Rate Limit
+<figure markdown>
+<p align="center"><img src="../images/rate_limit.jpg" alt="login" width="450"/></p>
+</figure>

@@ -1445,6 +1445,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#response-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1759,6 +1777,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#response-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1787,84 +1823,161 @@
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
-  &quot;data&quot;:{
-  &quot;holdings&quot;: [
-    {
-    &quot;branch_code&quot;: &quot;&quot;,
-    &quot;buy_avg&quot;: 240.2,
-    &quot;buy_avg_mtm&quot;: 277.7500000000006,
-    &quot;client_id&quot;: &quot;DEMO1&quot;,
-    &quot;exchange&quot;: &quot;NSE&quot;,
-    &quot;free_quantity&quot;: 55,
-    &quot;instrument_details&quot;:{
-    &quot;exchange&quot;: 1,
-    &quot;instrument_name&quot;: &quot;EQ&quot;,
-    &quot;instrument_token&quot;: 3045,
-    &quot;trading_symbol&quot;: &quot;SBIN-EQ&quot;
-    }
-    &quot;isin&quot;: &quot;INE062A01020&quot;,
-    &quot;ltp&quot;: 245.25,
-    &quot;pending_quantity&quot;: 0,
-    &quot;pledge_quantity&quot;: 0,
-    &quot;previous_close&quot;: 240.2,
-    &quot;quantity&quot;: 55,
-    &quot;symbol&quot;: &quot;SBIN&quot;,
-    &quot;t0_price&quot;: 0,
-    &quot;t0_quantity&quot;: 0,
-    &quot;t1_price&quot;: 0,
-    &quot;t1_quantity&quot;: 0,
-    &quot;t2_price&quot;: 0,
-    &quot;t2_quantity&quot;: 0,
-    &quot;today_pledge_quantity&quot;: 0,
-    &quot;token&quot;: 3045,
-    &quot;trading_symbol&quot;: &quot;SBIN&quot;,
-    &quot;transaction_type&quot;: &quot;&quot;,
-    &quot;used_quantity&quot;: 0
-    }]
+  &quot;data&quot;: {
+    &quot;holdings&quot;: [
+      {
+        &quot;branch_code&quot;: &quot;&quot;,
+        &quot;buy_avg&quot;: 240.2,
+        &quot;buy_avg_mtm&quot;: 277.7500000000006,
+        &quot;client_id&quot;: &quot;DEMO1&quot;,
+        &quot;exchange&quot;: &quot;NSE&quot;,
+        &quot;free_quantity&quot;: 55,
+        &quot;instrument_details&quot;: {
+          &quot;exchange&quot;: 1,
+          &quot;instrument_name&quot;: &quot;EQ&quot;,
+          &quot;instrument_token&quot;: 3045,
+          &quot;trading_symbol&quot;: &quot;SBIN-EQ&quot;
+        },
+        &quot;isin&quot;: &quot;INE062A01020&quot;,
+        &quot;ltp&quot;: 245.25,
+        &quot;pending_quantity&quot;: 0,
+        &quot;pledge_quantity&quot;: 0,
+        &quot;previous_close&quot;: 240.2,
+        &quot;quantity&quot;: 55,
+        &quot;symbol&quot;: &quot;SBIN&quot;,
+        &quot;t0_price&quot;: 0,
+        &quot;t0_quantity&quot;: 0,
+        &quot;t1_price&quot;: 0,
+        &quot;t1_quantity&quot;: 0,
+        &quot;t2_price&quot;: 0,
+        &quot;t2_quantity&quot;: 0,
+        &quot;today_pledge_quantity&quot;: 0,
+        &quot;token&quot;: 3045,
+        &quot;trading_symbol&quot;: &quot;SBIN&quot;,
+        &quot;transaction_type&quot;: &quot;&quot;,
+        &quot;used_quantity&quot;: 0
+      }
+    ]
   },
-  &quot;message&quot;  &quot;&quot;,
+  &quot;message&quot;: &quot;&quot;,
   &quot;status&quot;: &quot;success&quot;
- }
- ```
-
- ### Response Parameters
- | JSON Key               | Description                                                                        |
-|------------------------|------------------------------------------------------------------------------------|
-| branch_code            | The branch code associated with the client.                                       |
-| buy_avg                | The average buying price for the instrument.                                       |
-| buy_avg_mtm            | The average buying price for the instrument on a mark-to-market basis.             |
-| client_id              | The unique identifier of the client.                                               |
-| exchange               | The exchange where the instrument is traded.                                       |
-| free_quantity          | The quantity of the instrument available for trading without any restrictions.     |
-| instrument_details     | Details about the instrument, including exchange, instrument name, token, and trading symbol. |
-| isin                   | The International Securities Identification Number (ISIN) of the instrument.        |
-| ltp                    | The last traded price of the instrument.                                           |
-| pending_quantity       | The quantity of pending orders for the instrument.                                 |
-| pledge_quantity        | The quantity of the instrument pledged.                                            |
-| previous_close         | The previous closing price of the instrument.                                      |
-| quantity               | The total quantity of the instrument.                                              |
-| symbol                 | The symbol or ticker of the instrument.                                            |
-| t0_price               | The price at T0 (previous trading day).                                           |
-| t0_quantity            | The quantity at T0 (previous trading day).                                        |
-| t1_price               | The price at T1 (two trading days ago).                                           |
-| t1_quantity            | The quantity at T1 (two trading days ago).                                        |
-| t2_price               | The price at T2 (three trading days ago).                                         |
-| t2_quantity            | The quantity at T2 (three trading days ago).                                      |
-| today_pledge_quantity  | The quantity of the instrument pledged today.                                     |
-| token                  | The unique token or identifier of the instrument.                                  |
-| trading_symbol         | The trading symbol of the instrument.                                              |
-| transaction_type       | The type of transaction (if applicable).                                           |
-| used_quantity          | The quantity of the instrument used in transactions.                               |
-
-
-
-
-
-### Error Response
-```json
-{
+}
+</code></pre>
+<h3 id="response-parameters">Response Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>JSON Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>branch_code</td>
+<td>The branch code associated with the client.</td>
+</tr>
+<tr>
+<td>buy_avg</td>
+<td>The average buying price for the instrument.</td>
+</tr>
+<tr>
+<td>buy_avg_mtm</td>
+<td>The average buying price for the instrument on a mark-to-market basis.</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>The unique identifier of the client.</td>
+</tr>
+<tr>
+<td>exchange</td>
+<td>The exchange where the instrument is traded.</td>
+</tr>
+<tr>
+<td>free_quantity</td>
+<td>The quantity of the instrument available for trading without any restrictions.</td>
+</tr>
+<tr>
+<td>instrument_details</td>
+<td>Details about the instrument, including exchange, instrument name, token, and trading symbol.</td>
+</tr>
+<tr>
+<td>isin</td>
+<td>The International Securities Identification Number (ISIN) of the instrument.</td>
+</tr>
+<tr>
+<td>ltp</td>
+<td>The last traded price of the instrument.</td>
+</tr>
+<tr>
+<td>pending_quantity</td>
+<td>The quantity of pending orders for the instrument.</td>
+</tr>
+<tr>
+<td>pledge_quantity</td>
+<td>The quantity of the instrument pledged.</td>
+</tr>
+<tr>
+<td>previous_close</td>
+<td>The previous closing price of the instrument.</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>The total quantity of the instrument.</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>The symbol or ticker of the instrument.</td>
+</tr>
+<tr>
+<td>t0_price</td>
+<td>The price at T0 (previous trading day).</td>
+</tr>
+<tr>
+<td>t0_quantity</td>
+<td>The quantity at T0 (previous trading day).</td>
+</tr>
+<tr>
+<td>t1_price</td>
+<td>The price at T1 (two trading days ago).</td>
+</tr>
+<tr>
+<td>t1_quantity</td>
+<td>The quantity at T1 (two trading days ago).</td>
+</tr>
+<tr>
+<td>t2_price</td>
+<td>The price at T2 (three trading days ago).</td>
+</tr>
+<tr>
+<td>t2_quantity</td>
+<td>The quantity at T2 (three trading days ago).</td>
+</tr>
+<tr>
+<td>today_pledge_quantity</td>
+<td>The quantity of the instrument pledged today.</td>
+</tr>
+<tr>
+<td>token</td>
+<td>The unique token or identifier of the instrument.</td>
+</tr>
+<tr>
+<td>trading_symbol</td>
+<td>The trading symbol of the instrument.</td>
+</tr>
+<tr>
+<td>transaction_type</td>
+<td>The type of transaction (if applicable).</td>
+</tr>
+<tr>
+<td>used_quantity</td>
+<td>The quantity of the instrument used in transactions.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="error-response">Error Response</h3>
+<pre><code class="language-json">{
     &quot;data&quot;:{
-    }
+    },
     &quot;error_code&quot;: 44000,
     &quot;message&quot;: &quot;`type` is invalid&quot;,
     &quot;status&quot;: &quot;error&quot;

@@ -73,6 +73,8 @@ nav:
 theme:
   # name: gitbook
   name: material
+  font:
+    text: Roboto
 
   palette:
     # Palette toggle for light mode

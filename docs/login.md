@@ -37,7 +37,7 @@ pocket_password = "your-password"
 
  Create an instance of Pocketful class
 ```python
-pocket = pocketful()
+pocket = pocketful(pocket_client_id, pocket_password)
 ```
 
  Generate a session with your client-id, password and totp of your account with the help of instance you created above.

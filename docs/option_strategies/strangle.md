@@ -1,0 +1,1 @@
+Using the execute strangle API, we can place a order which buy/sell OTM call and OTM put depending on whether it is short strangle or long strangle.

@@ -91,6 +91,61 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bearcallspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bearputspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bullcallspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bullputspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/callratiobackspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/ironbutterfly/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/ironcondor/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/putratiobackspread/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/straddle/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/straddlechain/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/strangle/</loc>
+         <lastmod>2024-03-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/order_book/fetch_completedorder/</loc>
          <lastmod>2024-03-30</lastmod>
          <changefreq>daily</changefreq>

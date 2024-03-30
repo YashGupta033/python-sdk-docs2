@@ -68,6 +68,12 @@ nav:
   - Annexure: Annexure.md
 
 
+markdown_extensions:
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
 # theme: readthedocs
 # theme: gitbook
 theme:
@@ -89,8 +95,8 @@ theme:
         name: Switch to light mode
 
   features:
-    - content.tabs.links
-    # - navigation.tabs
+    # - content.tabs.links
+    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.light
     - navigation.instant
@@ -102,18 +108,33 @@ theme:
     - content.code.fence_code
 
   markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - markdown_extensions:
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
     - attr_list
     - md_in_html
+
+  markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed:
+        slugify: !!python/object/apply:pymdownx.slugs.slugify
+          kwds:
+            case: lower
+    # - pymdownx.tabbed:
+    #     alternate_style: true
+    - markdown_extensions:
+      - attr_list
+      - md_in_html
 
 
 

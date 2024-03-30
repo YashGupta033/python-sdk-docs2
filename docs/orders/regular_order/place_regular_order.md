@@ -26,25 +26,67 @@ print(order_res)
 
 
 ### Example Code
-```python
-response = pocket.placeOrder({
-    "exchange": "NSE",
-    "instrument_token": "14366",
-    "client_id": "clientId",
-    "order_type": "LIMIT",
-    "amo": False,
-    "price": 13,"quantity": 1,
-    "disclosed_quantity": 0,
-    "validity": "DAY",
-    "product": "CNC",
-    "order_side": "BUY",
-    "device": "WEB",
-    "user_order_id": 1,
-    "trigger_price": 0,
-    "execution_type": "REGULAR"
-    })
-```
 
+=== "Python"
+
+  ```python
+  response = pocket.placeOrder({
+      "exchange": "NSE",
+      "instrument_token": "14366",
+      "client_id": "clientId",
+      "order_type": "LIMIT",
+      "amo": False,
+      "price": 13,"quantity": 1,
+      "disclosed_quantity": 0,
+      "validity": "DAY",
+      "product": "CNC",
+      "order_side": "BUY",
+      "device": "WEB",
+      "user_order_id": 1,
+      "trigger_price": 0,
+      "execution_type": "REGULAR"
+      })
+  ```
+
+=== "python - http.client"
+
+    ``` python
+    # you an use any other module as well such as requests, urllib, etc.,
+
+    import http.client
+    import json
+
+    conn = http.client.HTTPSConnection("pacetrader.pacefin.in")
+    payload = json.dumps({
+    "amo": False,
+    "client_id": "<ClientId>",
+    "device": "WEB",
+    "disclosed_quantity": 0,
+    "exchange": "NSE",
+    "execution_type": "REGULAR",
+    "instrument_token": "22",
+    "order_side": "BUY",
+    "order_type": "LIMIT",
+    "price": 500,
+    "product": "CNC",
+    "quantity": 1,
+    "trigger_price": 0,
+    "user_order_id": "<UserOrderId>",
+    "validity": "DAY"
+    })
+    headers = {
+    'x-device-type': 'WEB',
+    'x-authorization-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJibGFja2xpc3Rfa2V5IjoiQ0xJRU5UMTpURGYvZ1RKUUNFSytsWGJ1L21yenF3IiwiY2xpZW50X2lkIjoiQ0xJRU5UMSIsImNsaWVudF90b2tlbiI6InlKeDI0dFdmUUlsSnloUnVWbVVKeXciLCJkZXZpY2UiOiJ3ZWIiLCJleHAiOjE2NjQ0Mzk3ODE2NTZ9.LP70t5kXSBtO0iflzG2lo3lvs8wj9_HpHRjOPSHSBpg',
+    'content-type': 'application/json'
+    }
+    conn.request("POST", "/api/v1/orders", payload, headers)
+    res = conn.getresponse()
+    data = res.read()
+    print(data.decode("utf-8"))
+    ```
+
+
+ 
 
 
 ### Response

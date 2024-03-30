@@ -1,21 +1,47 @@
 <!-- ## ScripInfo -->
 The Search Scrip API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.
 
-## Python Method
-```python
-pocket.getScripInfo(parameters) 
-```
 
-## Parameters
+| Request Type | APIs    | Endpoint                               | Description                     |
+|-------------- | ------- | ------------------------------------------------------------------------- | --------------------------------- |
+| `GET `         | `Scrip Info`    | /api/v1/contract/<Exchange>?info=scrip&token=<InstrumentTokenOfEquity> | Get scrip info of an instrument |
+
+
+
+
+### Parameters
 | Field Name     | Data Type | Description                                       |
 |----------------|-----------|---------------------------------------------------|
 | Exchange       | String    | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
 | Instrument Token | Integer   | Unique identifier assigned to each financial instrument within the exchange. |
 
 
-### Example
-response = obj.getScripInfo('NSE', 11915)
 
+### Example Codes
+
+=== "python - http.client"
+``` python
+# you an use any other module as well such as requests, urllib, etc.,
+import http.client
+import json
+
+conn = http.client.HTTPSConnection("pacetrader.pacefin.in")
+payload = ''
+headers = {
+'x-device-type': 'WEB',
+'x-authorization-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJibGFja2xpc3Rfa2V5IjoiQ0xJRU5UMTpURGYvZ1RKUUNFSytsWGJ1L21yenF3IiwiY2xpZW50X2lkIjoiQ0xJRU5UMSIsImNsaWVudF90b2tlbiI6InlKeDI0dFdmUUlsSnloUnVWbVVKeXciLCJkZXZpY2UiOiJ3ZWIiLCJleHAiOjE2NjQ0Mzk3ODE2NTZ9.LP70t5kXSBtO0iflzG2lo3lvs8wj9_HpHRjOPSHSBpg',
+'content-type': 'application/json'
+}
+conn.request("GET", "/api/v1/contract/<Exchange>?info=scrip&token=%3CInstrumentTokenOfEquity%3E", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
+```
+
+=== "python - SDK"
+``` python
+response = obj.getScripInfo('NSE', 11915)
+```
 
 ## Response
 ```json

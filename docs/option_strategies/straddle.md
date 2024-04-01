@@ -14,7 +14,7 @@ The straddle strategy in options involves placing simultaneous orders for both C
 
 ### Example
 
- response = pocket.execute_straddle('NSE', 'BUY', 26009, 46800, '27MAR24', 1)
+response = pocket.execute_straddle('NSE', 'BUY', 26009, 46800, '27MAR24', 1)
  
-
+### Response
 

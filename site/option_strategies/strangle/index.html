@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#request-parameters" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1936,6 +1941,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1952,6 +1983,56 @@
   <h1>Strangle</h1>
 
 <p>Using the execute strangle API, we can place a order which buy/sell OTM call and OTM put depending on whether it is short strangle or long strangle.</p>
+<h3 id="request-parameters">Request Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exchange</td>
+<td>String</td>
+<td>The name of the exchange where the option is traded.</td>
+</tr>
+<tr>
+<td>Order_side</td>
+<td>String</td>
+<td>The side of the order (e.g., buy or sell).</td>
+</tr>
+<tr>
+<td>Underlying Token</td>
+<td>String</td>
+<td>The token symbol representing the underlying asset.</td>
+</tr>
+<tr>
+<td>strangle_call_strike</td>
+<td>Float</td>
+<td>The strike at which the call option can be exercised.</td>
+</tr>
+<tr>
+<td>strangle_put_strike</td>
+<td>Float</td>
+<td>The strike at which the put option can be exercised.</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td>Date</td>
+<td>The date when option expires.</td>
+</tr>
+<tr>
+<td>Number of Lots</td>
+<td>Integer</td>
+<td>The number of option lots being traded.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<p>data = pocket.execute_strangle('NSE', 'BUY', 26000, 22300, 21900, '28MAR24', 1)
+print(data)</p>
 
 
 

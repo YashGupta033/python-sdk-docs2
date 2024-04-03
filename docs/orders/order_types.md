@@ -2,6 +2,7 @@
 
 In the dynamic world of stock trading, understanding the intricacies of different order types is essential for investors to navigate the market with confidence and precision. Each order type serves a distinct purpose, offering flexibility and control over trading activities. Let's dive into the diverse array of order types and explore their unique characteristics and applications.
 
+<p align="center"><img src="../../images/typesoforder.jpg" alt="websockets" width="400"/></p>
 
 1.__Standard Orders__:
 

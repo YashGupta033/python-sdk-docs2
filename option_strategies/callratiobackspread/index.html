@@ -2060,8 +2060,57 @@
 
   <h1>Call Ratio Spread</h1>
 
+<p>This approach is utilized when one holds a strong bullish outlook on a stock (or index), in contrast to the moderately bullish stance taken with a bull call spread or bull put spread.To implement this strategy, buy two OTM call option and sell one ITM Call option.</p>
 <h3 id="request-parameters">Request Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exchange</td>
+<td>String</td>
+<td>The name of the exchange where the option is traded <br> <code>NSE</code>or <code>BSE</code></td>
+</tr>
+<tr>
+<td>Product_Type</td>
+<td>String</td>
+<td>Type of product <code>MIS</code> or <code>NRML</code></td>
+</tr>
+<tr>
+<td>Underlying Token</td>
+<td>Integer</td>
+<td>The token representing underlying asset.</td>
+</tr>
+<tr>
+<td>OTM_CALL_Strike</td>
+<td>integer</td>
+<td>The option strike at which the order can be placed.</td>
+</tr>
+<tr>
+<td>ITM_CALL_Strike</td>
+<td>integer</td>
+<td>The option strike at which the order can be placed.</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td>String</td>
+<td>The date when option expires. <br> Please ensure date is formatted exactly as 'DDMONYY', for example, '03MAR24'</td>
+</tr>
+<tr>
+<td>Number of Lots</td>
+<td>Integer</td>
+<td>The number of lots being traded.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="example">Example</h3>
+<pre><code class="language-python">response = execute_callratiobackspread('NSE','MIS', 26000, 22600, 22200, '04APR24', 1)
+</code></pre>
 <h3 id="response-parameters">Response Parameters</h3>
 
 

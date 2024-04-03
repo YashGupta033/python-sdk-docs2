@@ -69,7 +69,7 @@ nav:
   - Option Strategies:
     - Straddle Chain: option_strategies/straddlechain.md
     - Straddle: option_strategies/straddle.md
-    - Strangle: option_strategies/straddlechain.md
+    - Strangle: option_strategies/strangle.md
     - Bull Call Spread: option_strategies/bullcallspread.md
     - Bull Put Spread: option_strategies/bullputspread.md
     - Bear Call Spread: option_strategies/bearcallspread.md

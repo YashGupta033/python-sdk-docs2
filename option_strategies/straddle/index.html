@@ -2060,7 +2060,7 @@
 
   <h1>Straddle</h1>
 
-<p>The straddle strategy in options involves placing simultaneous orders for both Call and a Put option with identical strike prices. The order side selection, whether it's buy or sell, determines the execution of either a long straddle or a short straddle.</p>
+<p>The straddle strategy in options involves placing simultaneous orders for both Call and Put option with identical strike prices. The order side selection, whether it's buy or sell, determines the execution of either a long straddle or a short straddle.</p>
 <h3 id="request-parameters">Request Parameters</h3>
 <table>
 <thead>
@@ -2074,12 +2074,12 @@
 <tr>
 <td>Exchange</td>
 <td>String</td>
-<td>The name of the exchange where the option is traded.</td>
+<td>The name of the exchange where the option is traded <br> <code>nse</code>, <code>bse</code></td>
 </tr>
 <tr>
 <td>Order_side</td>
 <td>String</td>
-<td>The side of the order (e.g., buy or sell).</td>
+<td>The side of order <br>  <code>buy</code> or <code>sell</code></td>
 </tr>
 <tr>
 <td>Underlying Token</td>

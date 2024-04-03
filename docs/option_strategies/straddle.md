@@ -6,7 +6,7 @@ The straddle strategy in options involves placing simultaneous orders for both C
 | Field Name        | Data Type | Description                                            |
 |-------------------|-----------|--------------------------------------------------------|
 | Exchange          | String    | The name of the exchange where the option is traded <br> `nse`, `bse`   |
-| Order_side        | String    | The side of the order (e.g., buy or sell).             |
+| Order_side        | String    | The side of order <br>  `buy` or `sell`             |
 | Underlying Token  | String    | The token symbol representing the underlying asset.    |
 | Strike            | Float     | The price at which the option can be exercised.        |
 | Expiry            | Date      | The date when option expires.             |

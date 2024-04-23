@@ -1,13 +1,15 @@
 <!-- ## Search Scrip -->
-In Search Scrip, detailes of searched instruments like: token, exchange, company name, display name etc. is showed.
+In Search Scrip, detailes of all the related named instruments will be returned in response with attributes like: token, exchange, company name, display name etc.
 
-## Python Code
+
 ```python
 pocket.searchScrip(Parameters)
 ```
 
 ### Parameters
-Takes instrument name as input parameter.
+| Field Name     | Data Type | Description                                       |
+|----------------|-----------|---------------------------------------------------|
+| Instrument Name   | `String`    | Name of the instrument whose information needs to be fetched. |
 
 
 ### Example
@@ -153,7 +155,7 @@ data = obj.searchScrip('Bank Nifty')
     "error":{
         "code": 0,
         "message": ""
-    }
+    },
     "result":{
     }
 }

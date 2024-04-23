@@ -6,7 +6,7 @@ In the dynamic world of stock trading, understanding the intricacies of differen
 
 1.__Standard Orders__:
 
-**Regular Order**: A cornerstone of trading, the regular order, also known as a day order, instructs brokers to execute trades at prevailing market prices within the current trading session. Ideal for investors seeking immediate execution without carrying orders forward to the next day.
+**Regular Order**: regular orders refer to standard buy or sell orders executed during regular trading hours, typically from 9:30 AM to 4:00 PM EST. These orders are processed on a first-come, first-served basis, and their execution is influenced by market conditions such as price and liquidity. Regular orders ensure the usual execution of trades within the established trading session.
 
 **Conditional Order**: Conditional orders are triggered by predefined conditions, such as specific price levels or market events. These orders provide flexibility, allowing investors to automate trades based on predetermined criteria, enhancing efficiency and reducing manual intervention.
 

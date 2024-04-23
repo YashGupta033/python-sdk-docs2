@@ -118,28 +118,28 @@ res = pocket.getFunds()     # No params needs to be passed
 | client_id                  | The unique identifier of the client.                                    |
 | headers                    | The headers of the data table.                                          |
 | values                     | The values associated with the headers.                                 |
-| Available                  | The available balance.                                                  |
-| Adhoc Deposit              | The adhoc deposit amount.                                               |
-| Cash Deposit               | The cash deposit amount.                                                |
-| Delivery                   | The delivery amount.                                                    |
-| DP Collateral Benefit      | The benefit from collateral in the depository.                          |
-| DP Credit for Sale         | The credit available from sale in the depository.                       |
-| DP Pledge Collateral       | The collateral pledged in the depository.                               |
-| Manual Collateral          | The manually provided collateral amount.                                |
-| Pay In                     | The amount paid in.                                                     |
-| Net Margin                 | The net margin amount.                                                  |
-| Notion Deposit             | The notion deposit amount.                                              |
-| Overdraft                  | The overdraft amount.                                                   |
-| Pay out                    | The amount paid out.                                                    |
-| Pool Collateral Benefit    | The benefit from collateral in the pool.                                |
-| Pool Pledge Collateral     | The collateral pledged in the pool.                                     |
-| Premium                    | The premium amount.                                                     |
-| Sar Collateral Benefit     | The benefit from collateral in SAR (systematically important banks).    |
-| Sar Credit for Sale        | The credit available from sale in SAR (systematically important banks). |
-| Span Margin                | The span margin amount.                                                 |
-| Var Margin                 | The value at risk (VAR) margin amount.                                  |
-| Extreme Loss Margin        | The extreme loss margin amount.                                         |
-| Option Credit For Sell    | The credit available for selling options.                               |
+| Available                  | The amount of funds currently available in a trading account.           |
+| Adhoc Deposit              | Funds added on an ad-hoc basis, typically to meet margin requirements or for immediate trading needs.                                               |
+| Cash Deposit               |  The total amount of cash deposited into a trading account.                                                |
+| Delivery                   | Funds allocated for the settlement of delivery trades, which involve the actual exchange of securities.                                                    |
+| DP Collateral Benefit      | Benefits accrued from using depository participant (DP) securities as collateral for trading.                          |
+| DP Credit for Sale         |  Credit available for trading when securities held in a DP account are sold.                       |
+| DP Pledge Collateral       | Funds obtained against securities pledged from a depository participant account.                               |
+| Manual Collateral          |  Collateral that is manually entered or adjusted, rather than automatically calculated by the system.                                |
+| Pay In                     | The amount required to be paid in to cover securities purchased.                                                     |
+| Net Margin                 | The minimum required balance to maintain in a margin account, after accounting for all open positions.                                                  |
+| Notion Deposit             | May refer to a notional amount set aside or used for calculation purposes in trading.                                              |
+| Overdraft                  |  The amount that can be overdrawn from a margin account, essentially a credit facility.                                                   |
+| Pay out                    | The amount disbursed from a trading account, typically from the sale of securities or other withdrawals.                                                    |
+| Pool Collateral Benefit    | Benefits from using pooled resources or securities as collateral.                                |
+| Pool Pledge Collateral     | Collateral derived from pooled securities pledged for securing trades.                                     |
+| Premium                    | The cost paid for options contracts or the extra amount paid over the normal price of securities.                                                    |
+| Sar Collateral Benefit     | Similar to DP Collateral Benefit, but specific to the securities allocated for Risk Assessment and Review (SAR).    |
+| Sar Credit for Sale        |  Credit received for selling securities that were under SAR (specific analysis or risk assessment). |
+| Span Margin                | The initial margin requirement calculated using a standardized portfolio analysis of risk (SPAN) system to cover potential losses in a worst-case scenario.                                                 |
+| Var Margin                 |  Variation margin, which represents the amount of funds required to cover adverse market movements over a day.                                  |
+| Extreme Loss Margin        | Additional margin meant to cover potential losses in extremely volatile market conditions.                                         |
+| Option Credit For Sell    | Credit received from selling options, either from premiums collected or from leveraging positions.                               |
 | message                    | Additional information or message.                                       |
 | status                     | The status of the operation.                                            |
 

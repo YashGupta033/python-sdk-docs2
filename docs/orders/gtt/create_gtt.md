@@ -10,24 +10,24 @@ res = pocket.gttCreateRule(Parameters)
 ### Parameters
 | Field Name             | Data Type | Description                                       |
 |------------------------|-----------|---------------------------------------------------|
-| action_type            | String    | Type of action `single_order`                |
-| expiry_time            | String    | Represents a particular date of expiry          |
-| client_id              | String    | Represents the unique ID of a user.   |
-| device                 | String    | Device type: `Web`, `Mobile`.                         |
-| disclosed_quantity     | Number    | quantity hidden from market                  |
-| exchange               | String    | Exchange: `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                |
-| instrument_token       | String    | Represents the unique ID of an instrument.        |
-| market_protection_percentage | String | sets limit on the price deviation                 |
-| order_side             | String    | Side of the order<br>`BUY` or `SELL`                   |
-| order_type             | String    | Type of order<br>`LIMIT`, `MARKET`, `SL`, `SLM`            |
-| price                  | Number    | the price at which order needs to be placed                |
-| product                | String    | Product type: `CNC`, `MIS`, `NRML`                     |
-| quantity               | Number    | Quantity of the order.             |
-| sl_order_price         | Number    | Stop-loss order price.             |
-| sl_order_quantity      | Number    | Stop-loss order quantity.         |
-| sl_trigger_price       | Number    | Stop-loss trigger price.           |
-| trigger_price          | Number    | Trigger price.                   |
-| user_order_id          | Number    | Represents the unique ID of the order.            |
+| action_type            | `String`    | Type of action `single_order`                |
+| expiry_time            | `String`    | Represents a particular date of expiry          |
+| client_id              | `String`    | Represents the unique ID of a user.   |
+| device                 | `String`    | Device type: `Web`, `Mobile`.                         |
+| disclosed_quantity     | `Integer`    | quantity hidden from market                  |
+| exchange               | `String`    | Exchange: `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                |
+| instrument_token       | `String`    | Represents the unique ID of an instrument.        |
+| market_protection_percentage | `String` | sets limit on the price deviation                 |
+| order_side             | `String`    | Side of the order<br>`BUY` or `SELL`                   |
+| order_type             | `String`    | Type of order<br>`LIMIT`, `MARKET`, `SL`, `SLM`            |
+| price                  | `Float`    | the price at which order needs to be placed                |
+| product                | `String`    | Product type: `CNC`, `MIS`, `NRML`                     |
+| quantity               | `Integer`    | Quantity of the order.             |
+| sl_order_price         | `Float`    | Stop-loss order price.             |
+| sl_order_quantity      | `Integer`    | Stop-loss order quantity.         |
+| sl_trigger_price       | `Float`    | Stop-loss trigger price.           |
+| trigger_price          | `Float`    | Trigger price.                   |
+| user_order_id          | `Integer`    | Represents the unique ID of the order.            |
 
 
 ### Example

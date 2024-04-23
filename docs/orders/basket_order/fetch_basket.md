@@ -2,7 +2,7 @@
 This method used to fetch details of the basket order like basketId, basket type, name, login Id etc. It displays total number of baskets created along with the added instrument details.
 
 ```python
-pocket.fetchBasket()    #No params
+pocket.fetchBasket()   
 ```
 
 ### Example
@@ -84,77 +84,9 @@ response = pocket.fetchBasket()        # No params needs to be passed.
                 "productType": "ALL",
                 "sipEligible": true,
                 "sipEnabled": false
-            },
-            {
-                "basketId": "f67ec77b-81a7-4b4e-b45d-16ce949ecb09",
-                "basketType": "NORMAL",
-                "isExecuted": false,
-                "loginId": "HI0009",
-                "name": "basket_test1",
-                "orderType": "ALL",
-                "orders": [
-                    {
-                        "orderId": "d69bd238-3731-49a0-b54a-8ce770a63af8",
-                        "orderInfo": {
-                            "triggerPrice": 0,
-                            "underlyingToken": "14366",
-                            "series": "EQ",
-                            "userOrderId": 10002,
-                            "exchange": "NSE",
-                            "squareOff": false,
-                            "mode": "NEW",
-                            "remainingQuantity": 0,
-                            "averageTradePrice": 0,
-                            "tradePrice": 0,
-                            "orderTag": "",
-                            "orderStatusInfo": "",
-                            "orderSide": "BUY",
-                            "squareOffValue": 0,
-                            "contractDescription": {},
-                            "segment": "",
-                            "clientId": "HI0009",
-                            "tradingSymbol": "IDEA-EQ",
-                            "rejectionCode": 0,
-                            "lotSize": 0,
-                            "quantity": 1,
-                            "lastActivityReference": 0,
-                            "nnfId": 0,
-                            "proCli": "CLIENT",
-                            "price": 13.75,
-                            "orderType": "LIMIT",
-                            "validity": "DAY",
-                            "targetPriceType": "absolute",
-                            "instrumentToken": 14366,
-                            "slTriggerPrice": 0,
-                            "isTrailing": false,
-                            "slOrderQuantity": 0,
-                            "orderEntryTime": 0,
-                            "exchangeTime": 0,
-                            "legOrderIndicator": null,
-                            "trailingStopLoss": 0,
-                            "loginId": null,
-                            "omsOrderId": "",
-                            "marketProtectionPercentage": 0,
-                            "executionType": "REGULAR",
-                            "disclosedQuantity": 0,
-                            "rejectionReason": "",
-                            "stopLossValue": 0,
-                            "device": null,
-                            "product": "CNC",
-                            "slOrderPrice": 0,
-                            "filledQuantity": 0,
-                            "exchangeOrderId": "",
-                            "deposit": 0,
-                            "averagePrice": 0,
-                            "spreadToken": null,
-                            "orderStatus": null
-                        }
-                    }
-                ],
-                "productType": "ALL",
-                "sipEligible": true,
-                "sipEnabled": false
-            }
+            }]
+    }
+            
 ```
 
 | Field Name             | Description                                                        |

@@ -1,5 +1,5 @@
 <!-- ## Get Market Data -->
-The getMarketData method gives the market data.
+The getMarketData API return market data information of the given instrument.
 
 ```python
 pocket.getMarketData(Parameters)

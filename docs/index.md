@@ -29,6 +29,10 @@ We have added a layer of abstraction and wrapped the raw http APIs into python m
 Note - If you do not have python installed on your machine, please download and install it from the  <a href="https://www.python.org/" target="_blank">official website.</a>
 
 
+### Install Pocketful Library
+> pip install pocketful
+
+
 Once you have installed Pocketful python library, you can go ahead in the documentation and start your journey.
 
 

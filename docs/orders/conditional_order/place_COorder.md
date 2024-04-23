@@ -12,22 +12,21 @@ print(res)
 
 | FieldName          | Datatype   | Description                                         |
 |--------------------|------------|-----------------------------------------------------|
-| exchange           | String     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                            |
-| instrument_token   | String     | Represents the unique id of instrument.             |
-| client_id          | String     | Represents the unique id of user or username.       |
-| order_type         | String     | `LIMIT`, `MARKET`, `SL`, `SLM`                             |
-| price              | Number     | the price at which order needs to be placed                                  |
-| quantity           | Number     | total quantity to buy                                    |
-| disclosed_quantity | Number     | hidden quantity from the market.                        |
-| validity           | String     | `DAY` or `IOC`                                          |
-| product            | String     | `CNC`, `MIS`, `NRML`                                      |
-| order_side         | String     | `BUY` or `SELL`                                         |
-| device             | String     | `Web` or `Mobile`                                       |
-| is_trailing      | Boolean     | `True` or `False`                 |
-| execution_type     | String     | `CO`                                                  |
-| square_off_value    | Number     | Not required in cover order `null`                 |
-| stop_loss_value    | Number     | value at which Sl will get hit                        |
-| trailing_stop_loss | Number     | adjusts sell order accordingly to reduce losses.                      |
+| exchange           | `String`     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                            |
+| instrument_token   | `String`     | Represents the unique id of instrument.             |
+| client_id          | `String`     | Represents the unique id of user or username.       |
+| order_type         | `String`     | `LIMIT`, `MARKET`, `SL`, `SLM`                             |
+| price              | `Float`     | the price at which order needs to be placed                                  |
+| quantity           | `Integer`     | total quantity to buy                                    |
+| disclosed_quantity | `Integer`     | hidden quantity from the market.                        |
+| validity           | `String`     | `DAY` or `IOC`                                          |
+| product            | `String`     | `CNC`, `MIS`, `NRML`                                      |
+| order_side         | `String`     | `BUY` or `SELL`                                         |
+| device             | `String`     | `Web` or `Mobile`                                       |
+| is_trailing      | `Boolean`     | `True` or `False`                 |
+| execution_type     | `String`     | `CO`                                                  |
+| stop_loss_value    | `Float`     | value at which Sl will get hit                        |
+| trailing_stop_loss | `Float`     | adjusts sell order accordingly to reduce losses.                      |
 
 
 
@@ -62,7 +61,7 @@ response = pocket.placeConditionalOrder( {
         "data":{
             "basket_id": "20210531-23",
             "message": "basket Order Placed Successfully"}
-        }
+        },
         "message": "Order place successfully",
         "status": "success"
  }

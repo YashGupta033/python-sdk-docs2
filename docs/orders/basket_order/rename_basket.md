@@ -8,8 +8,8 @@ res = pocket.renameBasket(Parameters)
 ### Parameters
 | FieldName  | Datatype | Description                                    |
 |------------|----------|------------------------------------------------|
-| basket_id  | String   | Represents the unique id of the basket.       |
-| name       | String   | Represents the name of the basket.            |
+| basket_id  | `String`   | Represents the unique id of the basket.       |
+| name       | `String`   | Represents the name of the basket.            |
 
 
 ### Example

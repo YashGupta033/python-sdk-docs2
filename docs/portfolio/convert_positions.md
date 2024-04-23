@@ -1,5 +1,5 @@
 ## Convert Positions
-Use method convertPosition to make changes in existing positions.
+Convert Position API is used to change the position of an order from delivery to intraday and vice versa.
 
 ```python
 pocket.convertPosition(Parameters)
@@ -12,8 +12,8 @@ pocket.convertPosition(Parameters)
 | instrument_token  | String   | Represents the unique id of instrument.           |
 | client_id         | String   | Represents the unique id of user or username.     |
 | order_side        | String   | `BUY`, `SELL`                                         |
-| price             | Number   | It can't be Zero.                                 |
-| quantity          | Number   | It can't be Zero.                                 |
+| price             | Number   | Price of the instrument                                 |
+| quantity          | Number   | Quantity of the instrument                                 |
 | validity          | String   | `DAY` or `IOC`                                        |
 | product           | String   | `CNC`, `MIS`, `NRML`, `MTF`                              |
 | new_product       | String   | `CNC`, `MIS`, `NRML`, `MTF`                              |

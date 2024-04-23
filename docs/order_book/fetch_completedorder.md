@@ -1,6 +1,6 @@
 <!-- ## Fetch Completed Orders -->
 
-The Completed Orders API retrieves information about orders that have been successfully executed and completed from the order book. By accessing this API, users can obtain detailed data on their past transactions, including the order ID, type of order, price, quantity, timestamp, and any associated fees. This API provides valuable insights into trading activity, allowing users to analyze their performance, track order history, and reconcile transactions efficiently. With the ability to access comprehensive information on completed orders, traders can make informed decisions, refine their strategies, and optimize their trading activities for better outcomes.
+The Completed Orders API retrieves information about orders that have been successfully executed and completed from the order book. By accessing this API, users can obtain detailed data on their past transactions, including the order ID, type of order, price, quantity, timestamp, and any associated fees. This API provides valuable insights into trading activity, allowing users to analyze their performance, track order history, and reconcile transactions efficiently. 
 
 
 ``` python
@@ -18,64 +18,6 @@ response = pocket.getCompletedOrderBook()
 {
     "data": {
         "orders": [
-            {
-                "mode": "NEW",
-                "exchange": "BSE",
-                "segment": "",
-                "login_id": "HI0009",
-                "deposit": 0,
-                "order_status": "REJECTED",
-                "product": "MIS",
-                "order_type": "LIMIT",
-                "rejection_reason": "BSECM Adapter is offline,ctcl not available ",
-                "order_side": "BUY",
-                "instrument_token": 532461,
-                "exchange_time": 0,
-                "nnf_id": 0,
-                "quantity": 1,
-                "trading_symbol": "PNB-A",
-                "client_id": "HI0009",
-                "average_trade_price": 0,
-                "underlying_token": null,
-                "oms_order_id": "2024030938",
-                "lot_size": 1,
-                "isin": "INE160A01022",
-                "disclosed_quantity": 0,
-                "execution_type": "BO",
-                "source": "",
-                "device": "",
-                "exchange_order_id": "",
-                "validity": "DAY",
-                "leg_order_indicator": "ENTRY",
-                "trade_price": 0,
-                "spread_token": null,
-                "market_protection_percentage": 0,
-                "filled_quantity": 0,
-                "order_tag": "",
-                "sl_trigger_price": 0.0,
-                "square_off": false,
-                "order_status_info": "",
-                "square_off_value": 0.0,
-                "tags": null,
-                "order_entry_time": 1709992490,
-                "last_activity_reference": 0,
-                "trigger_price": 0,
-                "sl_order_price": 0.0,
-                "stop_loss_value": 0.0,
-                "rejection_code": 1009,
-                "average_price": 0,
-                "trailing_stop_loss": 0.0,
-                "price": 125.0,
-                "user_order_id": "12778",
-                "symbol": "PNB",
-                "is_trailing": false,
-                "pro_cli": "CLIENT",
-                "remaining_quantity": 1,
-                "contract_description": {},
-                "series": "A",
-                "target_price_type": "absolute",
-                "sl_order_quantity": 0
-            },
             {
                 "mode": "NEW",
                 "exchange": "BSE",
@@ -145,12 +87,11 @@ response = pocket.getCompletedOrderBook()
 
 | Key                            | Description                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| data                           | Container for order data.                                                                                 |
 | orders                         | An array containing individual order objects.                                                             |
 | mode                           | Indicates the status of the order, e.g., "NEW."                                                           |
 | exchange                       | The stock exchange where the order is placed, e.g., "BSE" or "NSE."                                      |
-| segment                        | The trading segment, if applicable.                                                                      |
-| login_id                       | Unique identifier for the user or client.                                                                 |
+| segment                        | The trading segment.                                                                      |
+| login_id                       | Unique identifier for the client.                                                                 |
 | deposit                        | The deposit amount associated with the order.                                                             |
 | order_status                   | The current status of the order, e.g., "REJECTED" or "COMPLETE."                                          |
 | product                        | The product type, such as "MIS," "CNC," etc.                                                             |

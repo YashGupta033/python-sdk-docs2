@@ -1,4 +1,4 @@
-## Modify GTT Orders
+<!-- ## Modify GTT Orders -->
 This method is used to modify the existing gtt orders. We can modify the price, trigger price etc.
 
 ```python
@@ -8,26 +8,25 @@ res = pocket.gttModifyRule(Parameters)
 ### Parameters
 | Field Name                | Data Type | Description                                  |
 |---------------------------|-----------|----------------------------------------------|
-| expiry_time               | String    | Expiry time of the order (e.g., "2024-12-12")|
-| action_type               | String    | Type of action (e.g. "single_order")       |
-| id                        | String    | Unique identifier for the order              |
-| order                     | Object    | Object containing order details              |
-| order.client_id           | String    | Client ID associated with the order          |
-| order.device              | String    | Device used for placing the order (e.g., "web")|
-| order.disclosed_quantity | Integer   | Disclosed quantity for the order             |
-| order.exchange           | String    | Exchange where the order is placed (e.g., "NSE")|
-| order.instrument_token   | String    | Token representing the instrument            |
-| order.market_protection_percentage | Integer | Market protection percentage            |
-| order.order_side         | String    | Side of the order (e.g., "BUY")              |
-| order.order_type         | String    | Type of order (e.g., "LIMIT")               |
-| order.price              | Float     | Price per unit of the instrument            |
-| order.product            | String    | Product code (e.g., "CNC")                  |
-| order.quantity           | Integer   | Quantity of the instrument                   |
-| order.sl_order_price     | Integer   | Stop-loss order price                        |
-| order.sl_order_quantity  | Integer   | Stop-loss order quantity                     |
-| order.sl_trigger_price   | Integer   | Stop-loss trigger price                      |
-| order.trigger_price      | Float     | Trigger price for the order                  |
-| order.user_order_id      | Integer   | User-defined order ID                        |
+| expiry_time               | `String`    | Expiry time of the order (e.g., "2024-12-12")|
+| action_type               | `String`    | Type of action (e.g. "single_order")       |
+| id                        | `String`    | Unique identifier for the order              |
+| order                     | `Object`    | Object containing order details              |
+| client_id           | `String`    | Client ID associated with the order          |
+| disclosed_quantity | `Integer`   | Disclosed quantity for the order             |
+| exchange           | `String`    | Exchange where the order is placed (e.g., "NSE")|
+| instrument_token   | `String`    | Token representing the instrument            |
+| market_protection_percentage | `Integer` | Market protection percentage            |
+| order_side         | `String`    | Side of the order (e.g., "BUY")              |
+| order_type         | `String`    | Type of order (e.g., "LIMIT")               |
+| price              | `Float`     | Price per unit of the instrument            |
+| product            | `String`    | Product code (e.g., "CNC")                  |
+| quantity           | `Integer`   | Quantity of the instrument                   |
+| sl_order_price     | `Integer`   | Stop-loss order price                        |
+| sl_order_quantity  | `Integer`   | Stop-loss order quantity                     |
+| sl_trigger_price   | `Integer`   | Stop-loss trigger price                      |
+| trigger_price      | `Float`     | Trigger price for the order                  |
+| user_order_id      | `Integer`   | User-defined order ID                        |
 
 
 

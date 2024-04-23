@@ -11,11 +11,11 @@ pocket.cancelConditionalOrder(Parameters)
 ### Parameters
 | FieldName             | Datatype | Description                                    |
 |-----------------------|----------|------------------------------------------------|
-| client_id             | String   | Represents the unique id of user |
-| oms_order_id         | Number   | Represents the unique id of order.            |
-| execution_type        | String   | `CO`                                             |
-| exchange_order_id     | Number   | Represents the unique id of order.            |
-| leg_order_indicator   | String   | specifies either buy/sell or sl order `Entry` or `Third`                                 |
+| client_id             | `String`   | Represents the unique id of user |
+| oms_order_id         | `Integer`   | Represents the unique id of order.            |
+| execution_type        | `String`   | `CO`                                             |
+| exchange_order_id     | `Integer`   | Represents the unique id of order.            |
+| leg_order_indicator   | `String`   | specifies either buy/sell or sl order `Entry` or `Third`                                 |
 
 
 ### Example 

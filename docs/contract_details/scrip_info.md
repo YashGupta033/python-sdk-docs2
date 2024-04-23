@@ -1,7 +1,6 @@
 <!-- ## ScripInfo -->
-The Search Scrip API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.
+The Scrip Info API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.
 
-## Python Method
 ```python
 pocket.getScripInfo(parameters) 
 ```
@@ -9,13 +8,14 @@ pocket.getScripInfo(parameters)
 ## Parameters
 | Field Name     | Data Type | Description                                       |
 |----------------|-----------|---------------------------------------------------|
-| Exchange       | String    | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
-| Instrument Token | Integer   | Unique identifier assigned to each financial instrument within the exchange. |
+| Exchange       | `String`    | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
+| Instrument Token | `Integer`   | Unique identifier assigned to each financial instrument within the exchange. |
 
 
 ### Example
+```python
 response = obj.getScripInfo('NSE', 11915)
-
+```
 
 ## Response
 ```json
@@ -223,7 +223,7 @@ response = obj.getScripInfo('NSE', 11915)
     "error":{
         "code": 404,
         "message": "Resource Not Found"
-    }
+    },
     "result": ""
 }
 ```

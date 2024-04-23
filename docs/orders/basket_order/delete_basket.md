@@ -9,8 +9,8 @@ res = pocket.deleteBasket(Parameters)
 ## Parameters
 | Field Name  | Type   | Description                     |
 |-------------|--------|---------------------------------|
-| BasketId    | String | Unique identifier for the basket|
-| BasketName  | String | Name of the basket              |
+| BasketId    | `String` | Unique identifier for the basket|
+| BasketName  | `String` | Name of the basket              |
 
 
 ### Example

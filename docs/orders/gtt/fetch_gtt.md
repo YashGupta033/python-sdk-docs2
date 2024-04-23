@@ -1,7 +1,7 @@
-This method is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.
+This API is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.
 
 ```python
-res = pocket.gttFetchRule()  # No params
+res = pocket.gttFetchRule()  
 ```
 ### Example
 ```python

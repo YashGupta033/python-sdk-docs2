@@ -1,5 +1,5 @@
 <!-- ## Add Basket Instrument -->
-This method used to add Instrument in the created baskets. We can add only limited number of instruments in the basket and repeated instrument can't be added.
+This method used to add Instrument in the created basket. We can add only limited number of instruments in the basket and repeated instrument can't be added.
 
 
 ```python 
@@ -9,24 +9,24 @@ res = pocket.addBasketInstrument(Parameters)
 ## Parameters
 | FieldName          | Datatype       | Description                                          |
 |--------------------|----------------|------------------------------------------------------|
-| basket_id          | String         | Represents the unique id of basket.                  |
-| name               | String         | Represents the name of the basket.                   |
-| exchange           | String         | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                             |
-| instrument_token   | Number         | Represents unique id of a particular instrument.     |
-| client_id          | String         | Represents the unique id of user or username.        |
-| order_type         | String         | `LIMIT`, `MARKET`, `SL`, `SLM`                              |
-| price              | String         | price at which order will get placed                                    |
-| product            | String         | `CNC`, `MIS`, `NRML`                                       |      |
-| disclose_quantity  | Number         | It can't be a negative number.                       |
-| execution_type     | String         | `REGULAR`, `BO`, `CO`, `AMO`                                 |
-| order_side         | String         | `BUY` or `SELL`                                          |
-| quantity           | Number         | total number of instruments to trade.                                    |
-| series             | String         | Represents the particular series based on exchange.  |
-| trading_symbol     | String         | Represents the name of the instrument.               |
-| trigger_price      | Number         | Price at which order will get triggered                                    |
-| underlying_token   | Number         | It is the token of the base equity instrument.       |
-| user_order_id      | Number         | Unique id of the order placed.                       |
-| validity           | String         | `Day` or `IOC`                                           |
+| basket_id          | `String`         | Represents the unique id of basket.                  |
+| name               | `String`         | Represents the name of the basket.                   |
+| exchange           | `String`         | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                             |
+| instrument_token   | `Integer`         | Represents unique id of a particular instrument.     |
+| client_id          | `String`         | Represents the unique id of user or username.        |
+| order_type         | `String`         | `LIMIT`, `MARKET`, `SL`, `SLM`                              |
+| price              | `String`         | price at which order will get placed                                    |
+| product            | `String`         | `CNC`, `MIS`, `NRML`                                       |      |
+| disclose_quantity  | `Integer`         | It can't be a negative number.                       |
+| execution_type     | `String`         | `REGULAR`, `BO`, `CO`, `AMO`                                 |
+| order_side         | `String`         | `BUY` or `SELL`                                          |
+| quantity           | `Integer`         | total number of instruments to trade.                                    |
+| series             | `String`         | Represents the particular series based on exchange.  |
+| trading_symbol     | `String`         | Represents the name of the instrument.               |
+| trigger_price      | `Float`         | Price at which order will get triggered                                    |
+| underlying_token   | `Integer`         | It is the token of the base equity instrument.       |
+| user_order_id      | `Integer`         | Unique id of the order placed.                       |
+| validity           | `String`         | `Day` or `IOC`                                           |
 
 
 ### Example

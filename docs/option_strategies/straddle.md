@@ -1,5 +1,4 @@
-The straddle strategy involves placing simultaneous orders for both Call and Put option with identical strike price. The order side selection, whether it's buy or sell, determines the execution of either a long straddle or a short straddle.
-
+The straddle strategy involves placing simultaneous orders for both Call and Put with identical strike price. The order side selection, whether it's buy or sell, determines the execution of either a long straddle or a short straddle.
 
 
 ### Request Parameters
@@ -15,9 +14,10 @@ The straddle strategy involves placing simultaneous orders for both Call and Put
 
 
 ### Example
-
+```python
 response = pocket.execute_straddle('NSE', 'BUY', 26009, 46800, '27MAR24', 1)
- 
+```
+
 ### Response
 
 

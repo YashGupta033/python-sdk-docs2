@@ -1,17 +1,17 @@
 <!-- ## Execute Basket Order -->
-This method is used to execute the orders of the instruments present in the basket.
+This method is used to execute the orders of the instruments present in the basket. All the orders are placed in one go and there is no need to place individual orders
 
 ```python
-pocket.ExecuteBasket(Parameters)
+pocket.executeBasket(Parameters)
 ```
 
 ### Parameters
 | FieldName       | Datatype | Description                                   |
 |-----------------|----------|-----------------------------------------------|
-| basket_id       | String   | Represents the unique id of the basket.      |
-| execution_type  | String   | `REGULAR`, `LIMIT`, `MARKET`                       |
-| name            | String   | Represents the name of the basket.           |
-| square_off      | Boolean  | `TRUE` or `FALSE`                                 |
+| basket_id       | `String`   | Represents the unique id of the basket.      |
+| execution_type  | `String`   | `REGULAR`, `LIMIT`, `MARKET`                       |
+| name            | `String`   | Represents the name of the basket.           |
+| square_off      | `Boolean`  | `TRUE` or `FALSE`                                 |
 
 
 ### Example
@@ -41,6 +41,14 @@ data = obj.executeBasket({
     "status": "success"
 }
 ```
+
+### Parameters
+| FieldName       |  Description                                   |
+|-----------------|----------|-----------------------------------------------|
+| basket_id       |  Represents the unique id of the basket.      |
+| message         |   Response message                      |
+| status            |      `success`, `error`       |
+
 
 ## Error Response
 ```json

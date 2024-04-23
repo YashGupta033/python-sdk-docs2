@@ -1,5 +1,5 @@
 <!-- ## Create Basket -->
-This method is used to create basket. It can create two types of basket i.e. Normal or Hedge. The Hedge Basket can have order type as LIMIT, MARKET, SL or SLM. And the product type can be CNC, MIS or NRML.
+This method is used to create basket. It can create two types of basket i.e. Normal or Hedge. The Hedge Basket helps to hedge margins for all the instruments added in the basket.
 
 ```python
 res = pocket.createBasket(Parameters)
@@ -9,11 +9,11 @@ res = pocket.createBasket(Parameters)
 
 | FieldName    | Datatype | Description                                     |
 |--------------|----------|-------------------------------------------------|
-| login_id     | String   | Represents the unique id of user or username.  |
-| name         | String   | Represents the name of the basket.             |
-| type         | String   | `NORMAL`, `HEDGE`                                  |
-| product_type | String   | `CNC`, `MIS`, `NRML`                                 |
-| order_type   | String   | `LIMIT`, `MARKET`, `SL`, `SLM`                         |
+| login_id     | `String`   | Represents the unique id of user or username.  |
+| name         | `String`   | Represents the name of the basket.             |
+| type         | `String`   | `NORMAL`, `HEDGE`                                  |
+| product_type | `String`   | `CNC`, `MIS`, `NRML`                                 |
+| order_type   | `String`   | `LIMIT`, `MARKET`, `SL`, `SLM`                         |
 
 
 ### Example
@@ -118,7 +118,7 @@ response = pocket.createBasket(
 |----------------------------|--------------------------------------------------------------------|
 | data                       | Contains information about the basket and its associated orders.   |
 | basket_id                  | Unique identifier for the basket.                                  |
-| basket_type                | Type of basket (e.g., NORMAL).                                     |
+| basket_type                | Type of basket (e.g., NORMAL, HEDGE).                                     |
 | is_executed                | Indicates if the basket has been executed.                         |
 | login_id                   | Identifier for the user's login.                                   |
 | name                       | Name of the basket.                                                |

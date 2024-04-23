@@ -1,5 +1,5 @@
-## Get Net Position
-Use the method getPositionNetWise to get the net positions.
+<!-- ## Get Net Position -->
+Use the getPositionNetWise API to get the net positions present in the account.
 
 ```python
 pocket.getPositionNetWise() # No parameters needs to be passed
@@ -39,14 +39,14 @@ pocket.getPositionNetWise() # No parameters needs to be passed
      "token": 222895,
      "trading_symbol": "GOLDGUINEA20NOVFUT",
      "v_login_id": "DEMO1"
-     }]
+     }],
      "message": "",
      "status": "success"
   }
 ```
 
 ### Response Parameters
-| JSON Key           | Description                                            |
+| Key           | Description                                            |
 |--------------------|--------------------------------------------------------|
 | average_buy_price  | The average price at which the commodity was bought.  |
 | average_price      | The average price, if applicable.                     |
@@ -83,7 +83,7 @@ pocket.getPositionNetWise() # No parameters needs to be passed
 ```json
 {
     "data":{
-    }
+    },
     "error_code": 44000,
     "message": "`type` is invalid",
     "status": "error"

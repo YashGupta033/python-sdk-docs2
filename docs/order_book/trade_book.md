@@ -76,39 +76,65 @@ res = pocket.getTradedOrderBook()
 }
 ```
 
-| Key                      | Description                                                        |
-| ------------------------ | ------------------------------------------------------------------ |
-| book_type                | Type of book, e.g., "0."                                            |
-| broker_id                | Unique identifier for the broker.                                  |
-| client_id                | Unique identifier for the client.                                  |
-| disclosed_vol            | Disclosed volume, if applicable.                                   |
-| disclosed_vol_remaining  | Remaining disclosed volume.                                       |
-| exchange                 | The exchange where the order is placed.                            |
-| exchange_order_id        | Order ID assigned by the exchange.                                  |
-| exchange_time            | Timestamp from the exchange.                                       |
-| fill_number              | Placeholder for fill number.                                      |
-| filled_quantity          | Quantity of the order that has been filled.                        |
-| good_till_date           | Timestamp indicating the good-till date, if applicable.           |
-| instrument_token         | Token representing the financial instrument.                       |
-| login_id                 | Unique identifier for the user.                                    |
-| oms_order_id             | Order ID assigned by the Order Management System (OMS).           |
-| order_entry_time         | Timestamp of the order entry.                                      |
-| order_price              | Price specified in the order.                                      |
-| order_side               | Indicates the side of the order, e.g., "BUY."                      |
-| order_type               | Type of order, e.g., "MARKET."                                     |
-| original_vol             | Original order volume.                                             |
-| pan                      | PAN (Permanent Account Number) of the user.                         |
-| pro_cli                  | Indicator for professional client status.                          |
-| product                  | The product type, e.g., "MIS."                                     |
-| remaining_quantity       | Remaining quantity of the order to be filled.                       |
-| trade_number             | Unique identifier for the trade.                                   |
-| trade_price              | Price at which the trade is executed.                              |
-| trade_quantity           | Quantity of the trade.                                             |
-| trade_time               | Timestamp of the trade.                                           |
-| trading_symbol           | Ticker symbol or name of the financial instrument.                 |
-| trigger_price            | Placeholder for trigger price.                                     |
-| v_login_id               | Placeholder for login ID.                                         |
-| vol_filled_today         | Volume filled today.                                              |
+| Key                             | Description                                           |
+|---------------------------------|-------------------------------------------------------|
+| mode                            | Mode of the transaction, e.g., NEW for new orders     |
+| exchange                        | Stock exchange identifier, e.g., NSE                  |
+| segment                         | Market segment, could be blank if not applicable      |
+| login_id                        | User login identifier                                 |
+| deposit                         | Amount of deposit, if applicable                      |
+| order_status                    | Current status of the order, e.g., CONFIRMED          |
+| product                         | Type of product, e.g., MIS (Margin Intraday Square off)|
+| order_type                      | Type of order, e.g., LIMIT                            |
+| rejection_reason                | Reason for order rejection, if any                    |
+| order_side                      | Side of the order, e.g., BUY                          |
+| instrument_token                | Unique identifier for the instrument                  |
+| exchange_time                   | Timestamp for when the order was recorded on the exchange|
+| nnf_id                          | Unique identifier for the participant                 |
+| quantity                        | Number of units in the order                          |
+| trading_symbol                  | Trading symbol of the security, e.g., IDEA-EQ         |
+| client_id                       | Client identifier matching login_id                   |
+| average_trade_price             | Average price at which trades were executed           |
+| underlying_token                | Token for the underlying asset, if applicable         |
+| oms_order_id                    | Order management system identifier                    |
+| lot_size                        | Number of units in each lot                           |
+| isin                            | International Securities Identification Number        |
+| disclosed_quantity              | Quantity of the order disclosed to the market         |
+| execution_type                  | Type of execution, e.g., REGULAR                      |
+| source                          | Source of the order, e.g., manual, automated          |
+| device                          | Device used to place the order, if specified          |
+| exchange_order_id               | Order identifier given by the exchange                |
+| validity                        | Validity of the order, e.g., DAY                      |
+| leg_order_indicator             | Indicator for leg of a complex order, if applicable   |
+| trade_price                     | Price at which the trade was executed, if applicable  |
+| spread_token                    | Token related to spread orders, if applicable         |
+| market_protection_percentage    | Percentage of market protection, if applicable        |
+| filled_quantity                 | Quantity of the order that has been filled            |
+| order_tag                       | Tag associated with the order, for user categorization|
+| sl_trigger_price                | Trigger price for a stop-loss order                   |
+| square_off                      | Indicates if the position is to be squared off        |
+| order_status_info               | Additional info about the order status                |
+| square_off_value                | Value at which to square off, if applicable           |
+| tags                            | Tags associated with the order                        |
+| order_entry_time                | Timestamp when the order was entered                  |
+| last_activity_reference         | Reference ID for the last activity on this order      |
+| trigger_price                   | Price at which an order trigger is set                |
+| sl_order_price                  | Price set for a stop-loss order                       |
+| stop_loss_value                 | Value set for the stop-loss                           |
+| rejection_code                  | Code representing the reason for rejection, if any    |
+| average_price                   | Average price of the order                            |
+| trailing_stop_loss              | Indicates if a trailing stop loss is set              |
+| price                           | Price set for the order                               |
+| user_order_id                   | User-defined identifier for the order                 |
+| symbol                          | Symbol of the traded security                         |
+| is_trailing                     | Indicates whether trailing is enabled                 |
+| pro_cli                         | Profile type, e.g., CLIENT                            |
+| remaining_quantity              | Quantity remaining to be filled                       |
+| contract_description            | Description of the contract, if applicable            |
+| series                          | Series of the traded security, e.g., EQ               |
+| target_price_type               | Type of target price, e.g., absolute                  |
+| sl_order_quantity               | Quantity for a stop-loss order                        |
+
 
 
 

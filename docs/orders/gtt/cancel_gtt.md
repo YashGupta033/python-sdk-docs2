@@ -1,4 +1,5 @@
-## Cancel GTT Order
+<!-- ## Cancel GTT Order -->
+This API is used to cancel existing gtt order. This method fetch details like action type, exchange, instrument token, expiry time etc.
 
 
 ```python
@@ -6,7 +7,9 @@
 ```
 
 ### Parameters
-Takes the gttId which has to be deleted.
+| Field Name                | Data Type | Description                                  |
+|---------------------------|-----------|----------------------------------------------|
+| id               | `String`    | id of the gtt order that needs to be cancelled.|
 
 ### Example
 ```python

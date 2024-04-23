@@ -9,13 +9,14 @@ pocket.modifyConditionalOrder(Parameters)
 ### Parameters
 | FieldName                | Datatype | Description                                       |
 |--------------------------|----------|---------------------------------------------------|
-| exchange                 | String   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| exchange                 | `String`   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
 | instrument_token         | String   | Represents the unique id of instrument.           |
 | client_id                | String   | Represents the unique id of user or username.     |
 | order_type               | String   | `LIMIT`, `MARKET`, `SL`, `SLM`                           |
 | price              | Number     | the price at which order needs to be placed                                 |
 | quantity           | Number     | total quantity to buy                                 |
-| disclosed_quantity | Number     | hidden quantity from the market.                      || validity                 | String   | `DAY`, `IOC`                                        |
+| disclosed_quantity | Number     | hidden quantity from the market.                      |
+| validity                 | String   | `DAY`, `IOC`                                        |
 | product                  | String   | `CNC`, `MIS`, `NRML`                                    |
 | user_order_id            | Number   | Represents the unique id of order.                |
 | filled_quantity          | Number   | Number of quantity which are traded.              |

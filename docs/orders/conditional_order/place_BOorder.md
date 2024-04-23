@@ -8,24 +8,24 @@ print(res)
 ### Parameters
 | FieldName          | Datatype   | Description                                       |
 |--------------------|------------|---------------------------------------------------|
-| exchange           | String     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
-| instrument_token   | String     | Represents the unique id of instrument.           |
-| client_id          | String     | Represents the unique id of user or username.     |
-| order_type         | String     |`LIMIT`, `MARKET`, `SL`, `SLM`                           |
-| price              | Number     | the price at which order needs to be placed                                 |
-| quantity           | Number     | total quantity to buy                                 |
-| disclosed_quantity | Number     | hidden quantity from the market.                      |
-| validity           | String     | `DAY`, `IOC`                                        |
-| product            | String     | `CNC`, `MIS`, `NRML`                                    |
-| order_side         | String     | `BUY` or `SELL`                                       |
-| device             | String     | `Web` or `Mobile`                                     |
-| user_order_id      | Number     | Represents the unique id of order.                |
-| trigger_price      | Number     | price at which target is set                                 |
-| stop_loss_value    | Number     |value at which Sl will get hit                      |
-| square_off_value   | Number     | value at which position will get squared off.                       |
-| trailing_stop_loss | Number     | adjusts sell order accordingly to reduce losses.                      |
-| is_trailing        | Boolean    | `TRUE` or `FALSE`                                     |
-| execution_type     | String     | `BO`                                                |
+| exchange           | `String`     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| instrument_token   | `String`     | Represents the unique id of instrument.           |
+| client_id          | `String`     | Represents the unique id of user or username.     |
+| order_type         | `String`     |`LIMIT`, `MARKET`, `SL`, `SLM`                           |
+| price              | `Float`     | the price at which order needs to be placed                                 |
+| quantity           | `Integer`     | total quantity to buy                                 |
+| disclosed_quantity | `Integer`     | hidden quantity from the market.                      |
+| validity           | `String`     | `DAY`, `IOC`                                        |
+| product            | `String`     | `CNC`, `MIS`, `NRML`                                    |
+| order_side         | `String`     | `BUY` or `SELL`                                       |
+| device             | `String`     | `Web` or `Mobile`                                     |
+| user_order_id      | `Integer`     | Represents the unique id of order.                |
+| trigger_price      | `Float`     | price at which target is set                                 |
+| stop_loss_value    | `Float`     |value at which Sl will get hit                      |
+| square_off_value   | `Float`     | value at which position will get squared off.                       |
+| trailing_stop_loss | `Float`     | adjusts sell order accordingly to reduce losses.                      |
+| is_trailing        | `Boolean`    | `TRUE` or `FALSE`                                     |
+| execution_type     | `String`     | `BO`                                                |
 
 
 ### Example
@@ -61,7 +61,7 @@ data=obj.placeConditionalOrder( {
             "basket_id": "202403132873",
             "message": "basket Order Placed Successfully"
         }
-    }
+    },
     "message": "Order place successfully",
     "status": "success"
  }

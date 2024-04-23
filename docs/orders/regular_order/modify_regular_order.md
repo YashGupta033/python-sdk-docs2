@@ -12,18 +12,18 @@ print(res)
 
 | FieldName          | Datatype | Description                                    |
 |--------------------|----------|------------------------------------------------|
-| exchange           | String   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                       |
-| instrument_token   | String   | Represents the unique id of instrument.        |
-| client_id          | String   | Represents the unique id of user  |
-| order_type         | String   | `LIMIT`, `MARKET`, `SL`, `SLM`                        |
-| price              | Number   | If order_type is market, give value 0 else limit price                              |
-| quantity           | Number   | Total quantity of the instrument.                              |
-| disclosed_quantity | Number   | hidden quantity from the market                   |
-| validity           | String   | `DAY` or `IOC`                                     |
-| product            | String   | `CNC`, `MIS`, `NRML`                                 |
-| oms_order_id       | Number   | Represents the unique id of order given by oms.|
-| trigger_price      | Number   | specified activation threshold, required in SL or SLM orders                              |
-| execution_type     | String   | `REGULAR`                          |
+| exchange           | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`           |
+| instrument_token   | `String`   | The unique ID of the financial instrument.        |
+| client_id          | `String`   | Represents the unique id of user.  |
+| order_type         | `String`   | `LIMIT`, `MARKET`, `SL`, `SLM`                        |
+| price              | `Float`  | If order_type is market, give value 0 else limit price                              |
+| quantity           | `Integer`   | Total quantity of the instrument.                              |
+| disclosed_quantity | `Integer`  | hidden quantity from the market                   |
+| validity           | `String`  | `DAY` or `IOC`                                     |
+| product            | `String`   | `CNC`, `MIS`, `NRML`                                 |
+| oms_order_id       | `Integer`   | Represents the unique id of order given by oms.|
+| trigger_price      | `Integer`   | specified activation threshold, required in SL or SLM orders                              |
+| execution_type     | `String`  | `REGULAR`                          |
 
 
 ### Example Code
@@ -53,7 +53,7 @@ data=obj.modifyOrder({
 {
     "data":{
         "oms_order_id": "202403111778"
-    }
+    },
     "message": "Order modification request submitted",
     "status": "success"
 }
@@ -69,7 +69,7 @@ data=obj.modifyOrder({
 ```json
 {
     "data":{
-    }
+    },
     "error_code": 45010,
     "message": "Something went wrong",
     "status": "error"

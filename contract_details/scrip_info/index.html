@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-method" class="md-skip">
+        <a href="#parameters" class="md-skip">
           Skip to content
         </a>
       
@@ -1175,15 +1175,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1768,15 +1759,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python Method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1836,8 +1818,7 @@
   <h1>Scrip Info</h1>
 
 <!-- ## ScripInfo -->
-<p>The Search Scrip API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.</p>
-<h2 id="python-method">Python Method</h2>
+<p>The Scrip Info API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.</p>
 <pre><code class="language-python">pocket.getScripInfo(parameters) 
 </code></pre>
 <h2 id="parameters">Parameters</h2>
@@ -1852,18 +1833,19 @@
 <tbody>
 <tr>
 <td>Exchange</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Name of the exchange where the order is being placed. Possible values include <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code>.</td>
 </tr>
 <tr>
 <td>Instrument Token</td>
-<td>Integer</td>
+<td><code>Integer</code></td>
 <td>Unique identifier assigned to each financial instrument within the exchange.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<p>response = obj.getScripInfo('NSE', 11915)</p>
+<pre><code class="language-python">response = obj.getScripInfo('NSE', 11915)
+</code></pre>
 <h2 id="response">Response</h2>
 <pre><code class="language-json">{
   &quot;error&quot;: {
@@ -2290,7 +2272,7 @@
     &quot;error&quot;:{
         &quot;code&quot;: 404,
         &quot;message&quot;: &quot;Resource Not Found&quot;
-    }
+    },
     &quot;result&quot;: &quot;&quot;
 }
 </code></pre>

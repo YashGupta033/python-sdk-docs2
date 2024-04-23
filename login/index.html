@@ -1690,8 +1690,8 @@
 
   <h1>Login</h1>
 
-<p>As a trader or investor, if you need to make a trade, the first step is obviously to login into your trading account; trading with API's is also the same, the first step is to login, not manually but with the API.</p>
-<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation if the credentials are correct. Following this, the client has to provide TOTP for two-factor authentication. Upon successful verification of TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
+<p>As a trader or investor, if you manually need to make a trade, the first step is obviously to login into your trading account; trading with API's is also the same, the first step is to login, not manually but with the API.</p>
+<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation and a twofa token if the credentials are correct. Following this, the client has to provide TOTP for two-factor authentication. Upon successful verification of TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
 <!-- ![Login Process Explained](/images/login.jpg) -->
 
 <figure markdown>
@@ -1717,7 +1717,7 @@ pocket_password = &quot;your-password&quot;
 <p>Generate a session with your client-id, password and totp of your account with the help of instance you created above.</p>
 <pre><code class="language-python">login = pocket.generateSession(pace_clintId, pace_password,&quot;totp&quot;)  
 </code></pre>
-<p>After the login, we get an access token in response, use pocket instance to store the access token.</p>
+<p>After login, we get an access token in response, use pocket instance to store the access token.</p>
 <pre><code class="language-python">setAccessToken = pocket.setAccessToken(login[&quot;data&quot;][&quot;auth_token&quot;])
 </code></pre>
 <p>Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs.</p>

@@ -1824,62 +1824,62 @@ print(res)
 <tbody>
 <tr>
 <td>exchange</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td>Name of the exchange where the order is being placed. Possible values include <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
 </tr>
 <tr>
 <td>instrument_token</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td>The unique ID of the financial instrument.</td>
 </tr>
 <tr>
 <td>client_id</td>
-<td>'String'</td>
-<td>Represents the unique id of user</td>
+<td><code>String</code></td>
+<td>Represents the unique id of user.</td>
 </tr>
 <tr>
 <td>order_type</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
 </tr>
 <tr>
 <td>price</td>
-<td>'Float'</td>
+<td><code>Float</code></td>
 <td>If order_type is market, give value 0 else limit price</td>
 </tr>
 <tr>
 <td>quantity</td>
-<td>'Integer'</td>
+<td><code>Integer</code></td>
 <td>Total quantity of the instrument.</td>
 </tr>
 <tr>
 <td>disclosed_quantity</td>
-<td>'Integer'</td>
+<td><code>Integer</code></td>
 <td>hidden quantity from the market</td>
 </tr>
 <tr>
 <td>validity</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td><code>DAY</code> or <code>IOC</code></td>
 </tr>
 <tr>
 <td>product</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td><code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
 </tr>
 <tr>
 <td>oms_order_id</td>
-<td>'Integer'</td>
+<td><code>Integer</code></td>
 <td>Represents the unique id of order given by oms.</td>
 </tr>
 <tr>
 <td>trigger_price</td>
-<td>'Integer'</td>
+<td><code>Integer</code></td>
 <td>specified activation threshold, required in SL or SLM orders</td>
 </tr>
 <tr>
 <td>execution_type</td>
-<td>'String'</td>
+<td><code>String</code></td>
 <td><code>REGULAR</code></td>
 </tr>
 </tbody>
@@ -1906,7 +1906,7 @@ print(res)
 <pre><code class="language-json">{
     &quot;data&quot;:{
         &quot;oms_order_id&quot;: &quot;202403111778&quot;
-    }
+    },
     &quot;message&quot;: &quot;Order modification request submitted&quot;,
     &quot;status&quot;: &quot;success&quot;
 }

@@ -1791,7 +1791,7 @@
 
 <!-- ## Fetch Basket Order -->
 <p>This method used to fetch details of the basket order like basketId, basket type, name, login Id etc. It displays total number of baskets created along with the added instrument details.</p>
-<pre><code class="language-python">pocket.fetchBasket()    #No params
+<pre><code class="language-python">pocket.fetchBasket()   
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.fetchBasket()        # No params needs to be passed.
@@ -1868,77 +1868,9 @@
                 &quot;productType&quot;: &quot;ALL&quot;,
                 &quot;sipEligible&quot;: true,
                 &quot;sipEnabled&quot;: false
-            },
-            {
-                &quot;basketId&quot;: &quot;f67ec77b-81a7-4b4e-b45d-16ce949ecb09&quot;,
-                &quot;basketType&quot;: &quot;NORMAL&quot;,
-                &quot;isExecuted&quot;: false,
-                &quot;loginId&quot;: &quot;HI0009&quot;,
-                &quot;name&quot;: &quot;basket_test1&quot;,
-                &quot;orderType&quot;: &quot;ALL&quot;,
-                &quot;orders&quot;: [
-                    {
-                        &quot;orderId&quot;: &quot;d69bd238-3731-49a0-b54a-8ce770a63af8&quot;,
-                        &quot;orderInfo&quot;: {
-                            &quot;triggerPrice&quot;: 0,
-                            &quot;underlyingToken&quot;: &quot;14366&quot;,
-                            &quot;series&quot;: &quot;EQ&quot;,
-                            &quot;userOrderId&quot;: 10002,
-                            &quot;exchange&quot;: &quot;NSE&quot;,
-                            &quot;squareOff&quot;: false,
-                            &quot;mode&quot;: &quot;NEW&quot;,
-                            &quot;remainingQuantity&quot;: 0,
-                            &quot;averageTradePrice&quot;: 0,
-                            &quot;tradePrice&quot;: 0,
-                            &quot;orderTag&quot;: &quot;&quot;,
-                            &quot;orderStatusInfo&quot;: &quot;&quot;,
-                            &quot;orderSide&quot;: &quot;BUY&quot;,
-                            &quot;squareOffValue&quot;: 0,
-                            &quot;contractDescription&quot;: {},
-                            &quot;segment&quot;: &quot;&quot;,
-                            &quot;clientId&quot;: &quot;HI0009&quot;,
-                            &quot;tradingSymbol&quot;: &quot;IDEA-EQ&quot;,
-                            &quot;rejectionCode&quot;: 0,
-                            &quot;lotSize&quot;: 0,
-                            &quot;quantity&quot;: 1,
-                            &quot;lastActivityReference&quot;: 0,
-                            &quot;nnfId&quot;: 0,
-                            &quot;proCli&quot;: &quot;CLIENT&quot;,
-                            &quot;price&quot;: 13.75,
-                            &quot;orderType&quot;: &quot;LIMIT&quot;,
-                            &quot;validity&quot;: &quot;DAY&quot;,
-                            &quot;targetPriceType&quot;: &quot;absolute&quot;,
-                            &quot;instrumentToken&quot;: 14366,
-                            &quot;slTriggerPrice&quot;: 0,
-                            &quot;isTrailing&quot;: false,
-                            &quot;slOrderQuantity&quot;: 0,
-                            &quot;orderEntryTime&quot;: 0,
-                            &quot;exchangeTime&quot;: 0,
-                            &quot;legOrderIndicator&quot;: null,
-                            &quot;trailingStopLoss&quot;: 0,
-                            &quot;loginId&quot;: null,
-                            &quot;omsOrderId&quot;: &quot;&quot;,
-                            &quot;marketProtectionPercentage&quot;: 0,
-                            &quot;executionType&quot;: &quot;REGULAR&quot;,
-                            &quot;disclosedQuantity&quot;: 0,
-                            &quot;rejectionReason&quot;: &quot;&quot;,
-                            &quot;stopLossValue&quot;: 0,
-                            &quot;device&quot;: null,
-                            &quot;product&quot;: &quot;CNC&quot;,
-                            &quot;slOrderPrice&quot;: 0,
-                            &quot;filledQuantity&quot;: 0,
-                            &quot;exchangeOrderId&quot;: &quot;&quot;,
-                            &quot;deposit&quot;: 0,
-                            &quot;averagePrice&quot;: 0,
-                            &quot;spreadToken&quot;: null,
-                            &quot;orderStatus&quot;: null
-                        }
-                    }
-                ],
-                &quot;productType&quot;: &quot;ALL&quot;,
-                &quot;sipEligible&quot;: true,
-                &quot;sipEnabled&quot;: false
-            }
+            }]
+    }
+
 </code></pre>
 <table>
 <thead>

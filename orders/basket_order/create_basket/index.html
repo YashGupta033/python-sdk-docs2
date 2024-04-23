@@ -1808,7 +1808,7 @@
   <h1>Create Basket</h1>
 
 <!-- ## Create Basket -->
-<p>This method is used to create basket. It can create two types of basket i.e. Normal or Hedge. The Hedge Basket can have order type as LIMIT, MARKET, SL or SLM. And the product type can be CNC, MIS or NRML.</p>
+<p>This method is used to create basket. It can create two types of basket i.e. Normal or Hedge. The Hedge Basket helps to hedge margins for all the instruments added in the basket.</p>
 <pre><code class="language-python">res = pocket.createBasket(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -1823,27 +1823,27 @@
 <tbody>
 <tr>
 <td>login_id</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique id of user or username.</td>
 </tr>
 <tr>
 <td>name</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the name of the basket.</td>
 </tr>
 <tr>
 <td>type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>NORMAL</code>, <code>HEDGE</code></td>
 </tr>
 <tr>
 <td>product_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
 </tr>
 <tr>
 <td>order_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
 </tr>
 </tbody>
@@ -1959,7 +1959,7 @@
 </tr>
 <tr>
 <td>basket_type</td>
-<td>Type of basket (e.g., NORMAL).</td>
+<td>Type of basket (e.g., NORMAL, HEDGE).</td>
 </tr>
 <tr>
 <td>is_executed</td>

@@ -1825,82 +1825,77 @@ print(res)
 <tbody>
 <tr>
 <td>exchange</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
 </tr>
 <tr>
 <td>instrument_token</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique id of instrument.</td>
 </tr>
 <tr>
 <td>client_id</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique id of user or username.</td>
 </tr>
 <tr>
 <td>order_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
 </tr>
 <tr>
 <td>price</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>the price at which order needs to be placed</td>
 </tr>
 <tr>
 <td>quantity</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>total quantity to buy</td>
 </tr>
 <tr>
 <td>disclosed_quantity</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>hidden quantity from the market.</td>
 </tr>
 <tr>
 <td>validity</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>DAY</code> or <code>IOC</code></td>
 </tr>
 <tr>
 <td>product</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
 </tr>
 <tr>
 <td>order_side</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>BUY</code> or <code>SELL</code></td>
 </tr>
 <tr>
 <td>device</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>Web</code> or <code>Mobile</code></td>
 </tr>
 <tr>
 <td>is_trailing</td>
-<td>Boolean</td>
+<td><code>Boolean</code></td>
 <td><code>True</code> or <code>False</code></td>
 </tr>
 <tr>
 <td>execution_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>CO</code></td>
 </tr>
 <tr>
-<td>square_off_value</td>
-<td>Number</td>
-<td>Not required in cover order <code>null</code></td>
-</tr>
-<tr>
 <td>stop_loss_value</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>value at which Sl will get hit</td>
 </tr>
 <tr>
 <td>trailing_stop_loss</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>adjusts sell order accordingly to reduce losses.</td>
 </tr>
 </tbody>
@@ -1932,7 +1927,7 @@ print(res)
         &quot;data&quot;:{
             &quot;basket_id&quot;: &quot;20210531-23&quot;,
             &quot;message&quot;: &quot;basket Order Placed Successfully&quot;}
-        }
+        },
         &quot;message&quot;: &quot;Order place successfully&quot;,
         &quot;status&quot;: &quot;success&quot;
  }

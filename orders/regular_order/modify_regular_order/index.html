@@ -1824,62 +1824,62 @@ print(res)
 <tbody>
 <tr>
 <td>exchange</td>
-<td>String</td>
-<td><code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
+<td>'String'</td>
+<td>Name of the exchange where the order is being placed. Possible values include <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
 </tr>
 <tr>
 <td>instrument_token</td>
-<td>String</td>
-<td>Represents the unique id of instrument.</td>
+<td>'String'</td>
+<td>The unique ID of the financial instrument.</td>
 </tr>
 <tr>
 <td>client_id</td>
-<td>String</td>
+<td>'String'</td>
 <td>Represents the unique id of user</td>
 </tr>
 <tr>
 <td>order_type</td>
-<td>String</td>
+<td>'String'</td>
 <td><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
 </tr>
 <tr>
 <td>price</td>
-<td>Number</td>
+<td>'Float'</td>
 <td>If order_type is market, give value 0 else limit price</td>
 </tr>
 <tr>
 <td>quantity</td>
-<td>Number</td>
+<td>'Integer'</td>
 <td>Total quantity of the instrument.</td>
 </tr>
 <tr>
 <td>disclosed_quantity</td>
-<td>Number</td>
+<td>'Integer'</td>
 <td>hidden quantity from the market</td>
 </tr>
 <tr>
 <td>validity</td>
-<td>String</td>
+<td>'String'</td>
 <td><code>DAY</code> or <code>IOC</code></td>
 </tr>
 <tr>
 <td>product</td>
-<td>String</td>
+<td>'String'</td>
 <td><code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
 </tr>
 <tr>
 <td>oms_order_id</td>
-<td>Number</td>
+<td>'Integer'</td>
 <td>Represents the unique id of order given by oms.</td>
 </tr>
 <tr>
 <td>trigger_price</td>
-<td>Number</td>
+<td>'Integer'</td>
 <td>specified activation threshold, required in SL or SLM orders</td>
 </tr>
 <tr>
 <td>execution_type</td>
-<td>String</td>
+<td>'String'</td>
 <td><code>REGULAR</code></td>
 </tr>
 </tbody>
@@ -1936,7 +1936,7 @@ print(res)
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;:{
-    }
+    },
     &quot;error_code&quot;: 45010,
     &quot;message&quot;: &quot;Something went wrong&quot;,
     &quot;status&quot;: &quot;error&quot;

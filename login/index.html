@@ -1691,7 +1691,7 @@
   <h1>Login</h1>
 
 <p>As a trader or investor, if you need to make a trade, the first step is obviously to login into your trading account; trading with API's is also the same, the first step is to login, not manually but with the API.</p>
-<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation if the credentials are correct. Following this, the client is has to provide the TOTP for two-factor authentication. Upon successful verification of the TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
+<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation if the credentials are correct. Following this, the client has to provide TOTP for two-factor authentication. Upon successful verification of TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
 <!-- ![Login Process Explained](/images/login.jpg) -->
 
 <figure markdown>
@@ -1720,7 +1720,7 @@ pocket_password = &quot;your-password&quot;
 <p>After the login, we get an access token in response, use pocket instance to store the access token.</p>
 <pre><code class="language-python">setAccessToken = pocket.setAccessToken(login[&quot;data&quot;][&quot;auth_token&quot;])
 </code></pre>
-<p>Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs and methods.</p>
+<p>Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs.</p>
 <p>With full access to your Pocketful account now granted, you're empowered to leverage our methods for executing trades or querying your account details. Next you can consider our documentation as a comprehensive tutorial where you can proceed step-by-step, mastering at your own pace. Alternatively, feel free to navigate directly to the methods or APIs that pique your interest, allowing you to embark on your journey with freedom and flexibility.</p>
 
 

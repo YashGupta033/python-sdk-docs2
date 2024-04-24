@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get-net-position" class="md-skip">
+        <a href="#response" class="md-skip">
           Skip to content
         </a>
       
@@ -1406,16 +1406,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-net-position" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get Net Position
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Get Net Position">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1423,8 +1413,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#response-parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Response Parameters
@@ -1432,18 +1422,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error Response
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1759,16 +1744,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-net-position" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get Net Position
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Get Net Position">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
       Response
@@ -1776,8 +1751,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#response-parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Response Parameters
@@ -1785,18 +1760,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       Error Response
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1817,8 +1787,8 @@
 
   <h1>Fetch Position Netwise</h1>
 
-<h2 id="get-net-position">Get Net Position</h2>
-<p>Use the method getPositionNetWise to get the net positions.</p>
+<!-- ## Get Net Position -->
+<p>Use the getPositionNetWise API to get the net positions present in the account.</p>
 <pre><code class="language-python">pocket.getPositionNetWise() # No parameters needs to be passed
 </code></pre>
 <h3 id="response">Response</h3>
@@ -1854,7 +1824,7 @@
      &quot;token&quot;: 222895,
      &quot;trading_symbol&quot;: &quot;GOLDGUINEA20NOVFUT&quot;,
      &quot;v_login_id&quot;: &quot;DEMO1&quot;
-     }]
+     }],
      &quot;message&quot;: &quot;&quot;,
      &quot;status&quot;: &quot;success&quot;
   }
@@ -1863,7 +1833,7 @@
 <table>
 <thead>
 <tr>
-<th>JSON Key</th>
+<th>Key</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1989,7 +1959,7 @@
 <h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
     &quot;data&quot;:{
-    }
+    },
     &quot;error_code&quot;: 44000,
     &quot;message&quot;: &quot;`type` is invalid&quot;,
     &quot;status&quot;: &quot;error&quot;

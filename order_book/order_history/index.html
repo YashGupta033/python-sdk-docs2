@@ -1771,7 +1771,9 @@
 
 <!-- ## Order History -->
 <p>The Order History API provides users with access to comprehensive data on past transactions recorded in the order book. This includes details such as order ID, order type, price, quantity, timestamp, and any associated fees. By utilizing this API, traders can review their complete and pending order.</p>
-<pre><code class="language-python">res = pocket.getHistoricalOrderBook()
+<pre><code class="language-python">Endpoint: /api/v1/order/&lt;oms_order_id&gt;/history
+Method-Type: GET
+Method: pocket.getHistoricalOrderBook()
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{

@@ -1694,10 +1694,10 @@
 
 <p>Follow the below steps to establish a connection with websocket.</p>
 <p>First import the pacefinwebsocket library</p>
-<pre><code class="language-python">from pacefinwebsocket import PacefinSocket
+<pre><code class="language-python">from pocketfulwebsocket import pocketfulSocket
 </code></pre>
 <p>Then create an instance of class pacefinsocket through which all methods can be called.</p>
-<pre><code class="language-python">pocket_ws = PacefinSocket(pace_clientId, access_token)
+<pre><code class="language-python">pocket_ws = pocketfulSocket(pace_clientId, access_token)
 </code></pre>
 <p>Then call the method run_socket to establish a connection</p>
 <pre><code class="language-python">ws_status = pocket_ws.run_socket()

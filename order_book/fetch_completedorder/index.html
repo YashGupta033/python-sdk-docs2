@@ -1790,7 +1790,9 @@
 <!-- ## Fetch Completed Orders -->
 
 <p>The Completed Orders API retrieves information about orders that have been successfully executed and completed from the order book. By accessing this API, users can obtain detailed data on their past transactions, including the order ID, type of order, price, quantity, timestamp, and any associated fees. This API provides valuable insights into trading activity, allowing users to analyze their performance, track order history, and reconcile transactions efficiently. </p>
-<pre><code class="language-python">pocket.getCompletedOrderBook()    # No parameter needs to be passed
+<pre><code class="language-python">Endpoint: /api/v1/orders
+Method-Type: GET
+Method: pocket.getCompletedOrderBook()  # No parameter needs to be passed
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.getCompletedOrderBook()

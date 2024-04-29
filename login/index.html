@@ -1719,7 +1719,7 @@ pocket_password = &quot;your-password&quot;
 <pre><code class="language-python">pocket = pocketful(pocket_client_id, pocket_password)
 </code></pre>
 <p>Generate a session with your client-id, password and totp of your account with the help of instance you created above.</p>
-<pre><code class="language-python">login = pocket.generateSession(pace_clintId, pace_password,&quot;totp&quot;)  
+<pre><code class="language-python">login = pocket.generateSession(pocket_clientId, pocket_password,&quot;totp&quot;)  
 </code></pre>
 <p>After login, we get an access token in response, use pocket instance to store the access token.</p>
 <pre><code class="language-python">setAccessToken = pocket.setAccessToken(login[&quot;data&quot;][&quot;auth_token&quot;])

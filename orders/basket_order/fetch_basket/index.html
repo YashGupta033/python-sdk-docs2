@@ -1791,7 +1791,9 @@
 
 <!-- ## Fetch Basket Order -->
 <p>This method used to fetch details of the basket order like basketId, basket type, name, login Id etc. It displays total number of baskets created along with the added instrument details.</p>
-<pre><code class="language-python">pocket.fetchBasket()   
+<pre><code class="language-python">Endpoint: api/v1/basket/{login_id}
+Method-Type: GET
+Method: pocket.fetchBasket()
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.fetchBasket()        # No params needs to be passed.

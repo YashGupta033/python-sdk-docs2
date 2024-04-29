@@ -1839,7 +1839,9 @@
 
 <h2 id="create-gtt-rule">Create GTT Rule</h2>
 <p>This API is used to place the gtt order. Good Till Triggered is active until the trigger condition is met. The trigger is valid for the given expiry date. Whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.</p>
-<pre><code class="language-python">res = pocket.gttCreateRule(Parameters)
+<pre><code class="language-python">Endpoint: api/v1/event/gtt
+Method-Type: POST
+Method: pocket.gttCreateRule(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

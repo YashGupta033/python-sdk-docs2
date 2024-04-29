@@ -1790,7 +1790,9 @@
   <h1>Fetch GTT Order</h1>
 
 <p>This API is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.</p>
-<pre><code class="language-python">res = pocket.gttFetchRule()  
+<pre><code class="language-python">Endpoint: api/v1/event/gtt/{client_id}
+Method-Type: GET
+Method: pocket.gttFetchRule()  
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.gttFetchRule() #No Parameters needs to be passed.

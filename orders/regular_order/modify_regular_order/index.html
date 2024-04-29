@@ -1809,8 +1809,10 @@
 
 <!-- ## Modifying a regular order -->
 <p>The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
-<pre><code class="language-python">res = pocket.modifyOrder(Parameters)
-print(res)
+<pre><code class="language-python">endpoint: api/v1/orders
+method-type: PUT
+method: pocket.modifyOrder(Parameters)
+
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

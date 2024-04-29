@@ -2,7 +2,10 @@
 The getMarketData API return market data information of the given instrument.
 
 ```python
-pocket.getMarketData(Parameters)
+Endpoint: /api/v1/marketdata/:exchange/:token
+Method-Type: GET
+Method: pocket.getMarketData(Parameters)
+
 ```
 
 ### Parameters

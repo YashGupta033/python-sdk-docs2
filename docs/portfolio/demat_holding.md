@@ -2,7 +2,9 @@
 To get alll the demat holdings, use the getDematHoldings API
 
 ```python
-res = pocket.getDematHoldings()
+Endpoint: api/v1/holdings
+Method-Type: GET
+Method: pocket.getDematHoldings()
 ```
 
 ### Response

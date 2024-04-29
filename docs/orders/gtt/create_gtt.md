@@ -4,7 +4,9 @@ This API is used to place the gtt order. Good Till Triggered is active until the
 
 
 ```python
-res = pocket.gttCreateRule(Parameters)
+Endpoint: api/v1/event/gtt
+Method-Type: POST
+Method: pocket.gttCreateRule(Parameters)
 ```
 
 ### Parameters

@@ -1,8 +1,11 @@
 <!-- ## Place Bracket Order -->
 A Bracket Order helps traders manage risk by placing a stop loss and a target order together with a regular order. The stop loss order protects against losses, while the target order aims for profitability in the trade.
+
+
 ```python
-res = pocket.placeConditionalOrder(Parameters)
-print(res)
+Endpoint: /api/v1/orders/kart
+Method-Type: POST
+Method: pocket.placeConditionalOrder(Parameters)
 ```
 
 ### Parameters

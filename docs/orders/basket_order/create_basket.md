@@ -2,7 +2,9 @@
 This method is used to create basket. It can create two types of basket i.e. Normal or Hedge. The Hedge Basket helps to hedge margins for all the instruments added in the basket.
 
 ```python
-res = pocket.createBasket(Parameters)
+Endpoint: /api/v1/basket
+Method-Type: POST
+Method: pocket.createBasket(Parameters)
 ```
 
 ### Parameters

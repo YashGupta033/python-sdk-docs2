@@ -3,7 +3,10 @@ This Method is used to delete basket Instrument inside the basket. This requires
 
 
 ```python
-pocket.deleteBasketInstrument(Parameters)
+Endpoint: api/v1/basket/order
+Method-Type: DELETE
+Method: pocket.deleteBasketInstrument(Parameters)
+
 ```
 
 

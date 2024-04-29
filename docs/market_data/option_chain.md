@@ -1,7 +1,9 @@
 This API retrieves option chain data for the selected instrument. Within the query parameters, "token" denotes the instrument token of the selected asset. The "num" parameter specifies the quantity of options for a specific expiry, while "price" serves as the reference point for the strike price of the options being retrieved. For instance, if "num" is set to 6 and "price" is 506.5, the API will fetch three options above and three options below the 506.5 strike price.
 
 ```python
-optionchain = pocket.getOptionChain(token, 40, ltp)
+Endpoint: /api/v1/optionchain/NFO
+Method-Type: GET
+Method: pocket.getClosePrice(Parameters)
 ```
 
 ### Example

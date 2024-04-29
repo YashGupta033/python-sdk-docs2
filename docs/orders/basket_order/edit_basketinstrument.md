@@ -2,7 +2,9 @@
 The method editBasketInstrument is used to edit the basket instrument present in the basket. In this we are able to edit the basket instrument details like quantity.
 
 ```python 
-pocket.editBasketInstrument("Parameters")
+Endpoint: api/v1/basket/order
+Method-Type: PUT
+Method: pocket.editBasketInstrument("Parameters")
 ```
 
 ## Parameters

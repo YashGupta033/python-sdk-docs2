@@ -1716,279 +1716,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../Annexure/" class="md-nav__link">
         
@@ -2082,7 +1809,9 @@
 
 <!-- ## Modify Bracket Order -->
 <p>The Modify Order API enables users to make changes in the bracket order, pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
-<pre><code class="language-python">pocket.modifyConditionalOrder(Parameters)
+<pre><code class="language-python">Endpoint: /api/v1/orders/kart
+Method-Type: PUT
+Method: pocket.modifyConditionalOrder(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -2096,7 +1825,7 @@
 <tbody>
 <tr>
 <td>exchange</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
 </tr>
 <tr>
@@ -2128,6 +1857,11 @@
 <td>disclosed_quantity</td>
 <td>Number</td>
 <td>hidden quantity from the market.</td>
+</tr>
+<tr>
+<td>validity</td>
+<td>String</td>
+<td><code>DAY</code>, <code>IOC</code></td>
 </tr>
 <tr>
 <td>product</td>

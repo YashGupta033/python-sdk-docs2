@@ -2,7 +2,9 @@
 The Get Closing Price API allows users to retrieve the closing price of a financial instrument. By specifying the instrument token, users can access the closing price, which can be crucial for making investment decisions.
 
 ```python
-res = pocket.getClosePrice(Parameters)
+Endpoint: /api/v1/marketdata/{exchange}/Capital?token={token}&key=close_price
+Method-Type: GET
+Method: pocket.getClosePrice(Parameters)
 ```
 
 ## Parameters

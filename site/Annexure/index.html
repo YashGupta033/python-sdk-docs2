@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/Annexure/">
       
       
-        <link rel="prev" href="../option_strategies/ironbutterfly/">
+        <link rel="prev" href="../websockets/snapquote_data/">
       
       
       
@@ -1631,279 +1631,6 @@
       
   
   
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -2070,6 +1797,17 @@
 </tr>
 </tbody>
 </table>
+<p>HTTP Codes
+| Code | Status Text           | Description                                                                                         |
+|------|-----------------------|-----------------------------------------------------------------------------------------------------|
+| 100  | Continue              | Initial part of a request has been received and the client should continue.                         |
+| 200  | OK                    | Standard response for successful HTTP requests.                                                     |
+| 201  | Created               | Request has succeeded and a new resource has been created.                                          |
+| 300  | Multiple Choices      | There are multiple options for the resource from which the client may choose.                       |
+| 301  | Moved Permanently     | This and all future requests should be directed to the given URI.                                   |
+| 400  | Bad Request           | Server cannot process the request due to a client error (e.g., malformed request syntax).           |
+| 404  | Not Found             | The requested resource could not be found but may be available again in the future.                 |
+| 500  | Internal Server Error | Generic error message when the server encounters an unexpected condition.                           |</p>
 <p>Rate Limit</p>
 <figure markdown>
 <img src="../images/rate_limit.jpg" alt="login" width="450"/>

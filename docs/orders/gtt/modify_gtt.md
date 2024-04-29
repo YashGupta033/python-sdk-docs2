@@ -2,7 +2,9 @@
 This method is used to modify the existing gtt orders. We can modify the price, trigger price etc.
 
 ```python
-res = pocket.gttModifyRule(Parameters)
+Endpoint: api/v1/event/gtt
+Method-Type: PUT
+Method: pocket.gttModifyRule(Parameters)
 ```
 
 ### Parameters

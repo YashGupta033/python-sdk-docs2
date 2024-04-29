@@ -2,7 +2,9 @@
 To get positions of the day, use getPositionDayWise method.
 
 ```python
-pocket.getPositionDayWise()
+Endpoint: api/v1/positions
+Method-Type: GET
+Method: pocket.getPositionDayWise()
 ```
 
 ### Response

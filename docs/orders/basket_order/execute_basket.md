@@ -2,7 +2,10 @@
 This method is used to execute the orders of the instruments present in the basket. All the orders are placed in one go and there is no need to place individual orders
 
 ```python
-pocket.executeBasket(Parameters)
+Endpoint: api/v1/orders/kart
+Method-Type: POST
+Method: pocket.executeBasket(Parameters)
+
 ```
 
 ### Parameters

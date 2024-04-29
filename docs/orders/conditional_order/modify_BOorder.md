@@ -3,7 +3,9 @@ The Modify Order API enables users to make changes in the bracket order, pending
 
 
 ```python
-pocket.modifyConditionalOrder(Parameters)
+Endpoint: /api/v1/orders/kart
+Method-Type: PUT
+Method: pocket.modifyConditionalOrder(Parameters)
 ```
 
 ### Parameters

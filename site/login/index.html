@@ -1643,279 +1643,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../Annexure/" class="md-nav__link">
         
@@ -1963,8 +1690,8 @@
 
   <h1>Login</h1>
 
-<p>As a trader or investor, if you need to make a trade, the first step is obviously to login into your trading account; trading with API's is also the same, the first step is to login, not manually but with the API.</p>
-<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation if the credentials are correct. Following this, the client is has to provide the TOTP for two-factor authentication. Upon successful verification of the TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
+<p>As a trader or investor, if you manually need to make a trade, the first step is obviously to login into your trading account; trading with API's is also the same, the first step is to login, not manually but with the API.</p>
+<p>Pocketful boasts a robust and secure login mechanism fortified by two-factor authentication. Initially, user submits their credential, and the server validates them, responding with a success confirmation and a twofa token if the credentials are correct. Following this, the client has to provide TOTP for two-factor authentication. Upon successful verification of TOTP, the server issues an access token, a crucial credential enabling seamless access to our APIs and retrieval of data.</p>
 <!-- ![Login Process Explained](/images/login.jpg) -->
 
 <figure markdown>
@@ -1974,6 +1701,10 @@
 <p>You can follow the below steps to login into your Pocketful account using API's.</p>
 <p>If you don't have a Pocketful account till now,  you can register 
 <a href="http://www.pocketful.in" target="_blank">here</a></p>
+<p>All the API's will be called with the below base URL.</p>
+<blockquote>
+<p>Base URL - trade.pocketful.in</p>
+</blockquote>
 <!-- ## Login -->
 <p>To login into your Pocketful Account via API, you need a client Id, password and totp.</p>
 <p>Follow the below example code snippet.</p>
@@ -1988,12 +1719,12 @@ pocket_password = &quot;your-password&quot;
 <pre><code class="language-python">pocket = pocketful(pocket_client_id, pocket_password)
 </code></pre>
 <p>Generate a session with your client-id, password and totp of your account with the help of instance you created above.</p>
-<pre><code class="language-python">login = pocket.generateSession(pace_clintId, pace_password,&quot;totp&quot;)  
+<pre><code class="language-python">login = pocket.generateSession(pocket_clientId, pocket_password,&quot;totp&quot;)  
 </code></pre>
-<p>After the login, we get an access token in response, use pocket instance to store the access token.</p>
+<p>After login, we get an access token in response, use pocket instance to store the access token.</p>
 <pre><code class="language-python">setAccessToken = pocket.setAccessToken(login[&quot;data&quot;][&quot;auth_token&quot;])
 </code></pre>
-<p>Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs and methods.</p>
+<p>Congratulations! By following the steps outlined above, you have seamlessly accessed your Pocketful account without the need for any manual intervention, thanks to the assistance of our APIs.</p>
 <p>With full access to your Pocketful account now granted, you're empowered to leverage our methods for executing trades or querying your account details. Next you can consider our documentation as a comprehensive tutorial where you can proceed step-by-step, mastering at your own pace. Alternatively, feel free to navigate directly to the methods or APIs that pique your interest, allowing you to embark on your journey with freedom and flexibility.</p>
 
 

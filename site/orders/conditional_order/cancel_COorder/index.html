@@ -1716,279 +1716,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../Annexure/" class="md-nav__link">
         
@@ -2083,7 +1810,10 @@
 <!-- ## Cancel Cover Order -->
 
 <p>The Cancel Order API lets users cancel an open or pending cover order. If you want to cancel a pending cover order in the order book, provide the oms_order_id, exchange_order_id and leg_order_indicator along with other parameters which can be obtained from the order book. Once the cancellation is done successfully, you'll get a response confirming it with a success status code. This API makes managing orders easier, allowing users to quickly remove orders when necessary, making trading more flexible and responsive.</p>
-<pre><code class="language-python">pocket.cancelConditionalOrder(Parameters)
+<pre><code class="language-python">Endpoint: /api/v1/orders/kart/&lt;oms_order_id&gt;
+Method-Type: DELETE
+Method: pocket.cancelConditionalOrder(Parameters)
+
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -2097,27 +1827,27 @@
 <tbody>
 <tr>
 <td>client_id</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique id of user</td>
 </tr>
 <tr>
 <td>oms_order_id</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>Represents the unique id of order.</td>
 </tr>
 <tr>
 <td>execution_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td><code>CO</code></td>
 </tr>
 <tr>
 <td>exchange_order_id</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>Represents the unique id of order.</td>
 </tr>
 <tr>
 <td>leg_order_indicator</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>specifies either buy/sell or sl order <code>Entry</code> or <code>Third</code></td>
 </tr>
 </tbody>

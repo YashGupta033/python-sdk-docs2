@@ -3,7 +3,9 @@ This method used to add Instrument in the created basket. We can add only limite
 
 
 ```python 
-res = pocket.addBasketInstrument(Parameters)
+Endpoint: api/v1/basket/order
+Method-Type: POST
+Method: pocket.addBasketInstrument(Parameters)
 ```
 
 ## Parameters

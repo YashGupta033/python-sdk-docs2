@@ -1696,279 +1696,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../Annexure/" class="md-nav__link">
         
@@ -2044,7 +1771,9 @@
 
 <!-- ## Trade Book -->
 <p>Trade book API fetches record or log of all the trades executed by an account holder. It contains details such as the date and time of the trade, the security traded (e.g., stocks, options, futures), the quantity bought or sold, the price at which the trade was executed.</p>
-<pre><code class="language-python">res = pocket.getTradedOrderBook()
+<pre><code class="language-python">Endpoint: /api/v1/trades
+Method-Type: GET
+Method: pocket.getTradedOrderBook()
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
@@ -2123,128 +1852,228 @@
 </thead>
 <tbody>
 <tr>
-<td>book_type</td>
-<td>Type of book, e.g., "0."</td>
-</tr>
-<tr>
-<td>broker_id</td>
-<td>Unique identifier for the broker.</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>Unique identifier for the client.</td>
-</tr>
-<tr>
-<td>disclosed_vol</td>
-<td>Disclosed volume, if applicable.</td>
-</tr>
-<tr>
-<td>disclosed_vol_remaining</td>
-<td>Remaining disclosed volume.</td>
+<td>mode</td>
+<td>Mode of the transaction, e.g., NEW for new orders</td>
 </tr>
 <tr>
 <td>exchange</td>
-<td>The exchange where the order is placed.</td>
+<td>Stock exchange identifier, e.g., NSE</td>
 </tr>
 <tr>
-<td>exchange_order_id</td>
-<td>Order ID assigned by the exchange.</td>
-</tr>
-<tr>
-<td>exchange_time</td>
-<td>Timestamp from the exchange.</td>
-</tr>
-<tr>
-<td>fill_number</td>
-<td>Placeholder for fill number.</td>
-</tr>
-<tr>
-<td>filled_quantity</td>
-<td>Quantity of the order that has been filled.</td>
-</tr>
-<tr>
-<td>good_till_date</td>
-<td>Timestamp indicating the good-till date, if applicable.</td>
-</tr>
-<tr>
-<td>instrument_token</td>
-<td>Token representing the financial instrument.</td>
+<td>segment</td>
+<td>Market segment, could be blank if not applicable</td>
 </tr>
 <tr>
 <td>login_id</td>
-<td>Unique identifier for the user.</td>
+<td>User login identifier</td>
 </tr>
 <tr>
-<td>oms_order_id</td>
-<td>Order ID assigned by the Order Management System (OMS).</td>
+<td>deposit</td>
+<td>Amount of deposit, if applicable</td>
 </tr>
 <tr>
-<td>order_entry_time</td>
-<td>Timestamp of the order entry.</td>
-</tr>
-<tr>
-<td>order_price</td>
-<td>Price specified in the order.</td>
-</tr>
-<tr>
-<td>order_side</td>
-<td>Indicates the side of the order, e.g., "BUY."</td>
-</tr>
-<tr>
-<td>order_type</td>
-<td>Type of order, e.g., "MARKET."</td>
-</tr>
-<tr>
-<td>original_vol</td>
-<td>Original order volume.</td>
-</tr>
-<tr>
-<td>pan</td>
-<td>PAN (Permanent Account Number) of the user.</td>
-</tr>
-<tr>
-<td>pro_cli</td>
-<td>Indicator for professional client status.</td>
+<td>order_status</td>
+<td>Current status of the order, e.g., CONFIRMED</td>
 </tr>
 <tr>
 <td>product</td>
-<td>The product type, e.g., "MIS."</td>
+<td>Type of product, e.g., MIS (Margin Intraday Square off)</td>
 </tr>
 <tr>
-<td>remaining_quantity</td>
-<td>Remaining quantity of the order to be filled.</td>
+<td>order_type</td>
+<td>Type of order, e.g., LIMIT</td>
 </tr>
 <tr>
-<td>trade_number</td>
-<td>Unique identifier for the trade.</td>
+<td>rejection_reason</td>
+<td>Reason for order rejection, if any</td>
 </tr>
 <tr>
-<td>trade_price</td>
-<td>Price at which the trade is executed.</td>
+<td>order_side</td>
+<td>Side of the order, e.g., BUY</td>
 </tr>
 <tr>
-<td>trade_quantity</td>
-<td>Quantity of the trade.</td>
+<td>instrument_token</td>
+<td>Unique identifier for the instrument</td>
 </tr>
 <tr>
-<td>trade_time</td>
-<td>Timestamp of the trade.</td>
+<td>exchange_time</td>
+<td>Timestamp for when the order was recorded on the exchange</td>
+</tr>
+<tr>
+<td>nnf_id</td>
+<td>Unique identifier for the participant</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Number of units in the order</td>
 </tr>
 <tr>
 <td>trading_symbol</td>
-<td>Ticker symbol or name of the financial instrument.</td>
+<td>Trading symbol of the security, e.g., IDEA-EQ</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>Client identifier matching login_id</td>
+</tr>
+<tr>
+<td>average_trade_price</td>
+<td>Average price at which trades were executed</td>
+</tr>
+<tr>
+<td>underlying_token</td>
+<td>Token for the underlying asset, if applicable</td>
+</tr>
+<tr>
+<td>oms_order_id</td>
+<td>Order management system identifier</td>
+</tr>
+<tr>
+<td>lot_size</td>
+<td>Number of units in each lot</td>
+</tr>
+<tr>
+<td>isin</td>
+<td>International Securities Identification Number</td>
+</tr>
+<tr>
+<td>disclosed_quantity</td>
+<td>Quantity of the order disclosed to the market</td>
+</tr>
+<tr>
+<td>execution_type</td>
+<td>Type of execution, e.g., REGULAR</td>
+</tr>
+<tr>
+<td>source</td>
+<td>Source of the order, e.g., manual, automated</td>
+</tr>
+<tr>
+<td>device</td>
+<td>Device used to place the order, if specified</td>
+</tr>
+<tr>
+<td>exchange_order_id</td>
+<td>Order identifier given by the exchange</td>
+</tr>
+<tr>
+<td>validity</td>
+<td>Validity of the order, e.g., DAY</td>
+</tr>
+<tr>
+<td>leg_order_indicator</td>
+<td>Indicator for leg of a complex order, if applicable</td>
+</tr>
+<tr>
+<td>trade_price</td>
+<td>Price at which the trade was executed, if applicable</td>
+</tr>
+<tr>
+<td>spread_token</td>
+<td>Token related to spread orders, if applicable</td>
+</tr>
+<tr>
+<td>market_protection_percentage</td>
+<td>Percentage of market protection, if applicable</td>
+</tr>
+<tr>
+<td>filled_quantity</td>
+<td>Quantity of the order that has been filled</td>
+</tr>
+<tr>
+<td>order_tag</td>
+<td>Tag associated with the order, for user categorization</td>
+</tr>
+<tr>
+<td>sl_trigger_price</td>
+<td>Trigger price for a stop-loss order</td>
+</tr>
+<tr>
+<td>square_off</td>
+<td>Indicates if the position is to be squared off</td>
+</tr>
+<tr>
+<td>order_status_info</td>
+<td>Additional info about the order status</td>
+</tr>
+<tr>
+<td>square_off_value</td>
+<td>Value at which to square off, if applicable</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>Tags associated with the order</td>
+</tr>
+<tr>
+<td>order_entry_time</td>
+<td>Timestamp when the order was entered</td>
+</tr>
+<tr>
+<td>last_activity_reference</td>
+<td>Reference ID for the last activity on this order</td>
 </tr>
 <tr>
 <td>trigger_price</td>
-<td>Placeholder for trigger price.</td>
+<td>Price at which an order trigger is set</td>
 </tr>
 <tr>
-<td>v_login_id</td>
-<td>Placeholder for login ID.</td>
+<td>sl_order_price</td>
+<td>Price set for a stop-loss order</td>
 </tr>
 <tr>
-<td>vol_filled_today</td>
-<td>Volume filled today.</td>
+<td>stop_loss_value</td>
+<td>Value set for the stop-loss</td>
+</tr>
+<tr>
+<td>rejection_code</td>
+<td>Code representing the reason for rejection, if any</td>
+</tr>
+<tr>
+<td>average_price</td>
+<td>Average price of the order</td>
+</tr>
+<tr>
+<td>trailing_stop_loss</td>
+<td>Indicates if a trailing stop loss is set</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Price set for the order</td>
+</tr>
+<tr>
+<td>user_order_id</td>
+<td>User-defined identifier for the order</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>Symbol of the traded security</td>
+</tr>
+<tr>
+<td>is_trailing</td>
+<td>Indicates whether trailing is enabled</td>
+</tr>
+<tr>
+<td>pro_cli</td>
+<td>Profile type, e.g., CLIENT</td>
+</tr>
+<tr>
+<td>remaining_quantity</td>
+<td>Quantity remaining to be filled</td>
+</tr>
+<tr>
+<td>contract_description</td>
+<td>Description of the contract, if applicable</td>
+</tr>
+<tr>
+<td>series</td>
+<td>Series of the traded security, e.g., EQ</td>
+</tr>
+<tr>
+<td>target_price_type</td>
+<td>Type of target price, e.g., absolute</td>
+</tr>
+<tr>
+<td>sl_order_quantity</td>
+<td>Quantity for a stop-loss order</td>
 </tr>
 </tbody>
 </table>

@@ -3,12 +3,15 @@
 The Pending Orders API retrieves information about orders that are currently pending and yet to be executed from the order book. By utilizing this API, users can access essential details regarding their outstanding orders, including the order ID, order type, price, quantity, and timestamp of placement.  
 
 ```python
-res = pocket.getPendingOrderBook()    # No parameter needs to be passed
+Endpoint: /api/v1/orders
+Method-Type: GET
+Method: pocket.getPendingOrderBook()
+  
 ```
 
 ### Example
 ```python
-response = pocket.getCompletedOrderBook()
+response = pocket.getCompletedOrderBook()    # No parameter needs to be passed
 ```
 
 ### Response

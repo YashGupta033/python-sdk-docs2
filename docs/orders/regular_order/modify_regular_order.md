@@ -3,8 +3,10 @@ The Modify Order API enables users to make changes in both open or pending order
 
 
 ```python
-res = pocket.modifyOrder(Parameters)
-print(res)
+endpoint: api/v1/orders
+method-type: PUT
+method: pocket.modifyOrder(Parameters)
+
 ```
 
 

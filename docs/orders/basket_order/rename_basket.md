@@ -2,7 +2,9 @@
 This method is used to rename the existing basket.
 
 ```python
-res = pocket.renameBasket(Parameters)
+Endpoint: api/v1/basket
+Method-Type: PUT
+Method: pocket.renameBasket(Parameters)
 ```
 
 ### Parameters

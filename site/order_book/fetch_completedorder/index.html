@@ -1705,279 +1705,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../Annexure/" class="md-nav__link">
         
@@ -2062,8 +1789,10 @@
 
 <!-- ## Fetch Completed Orders -->
 
-<p>The Completed Orders API retrieves information about orders that have been successfully executed and completed from the order book. By accessing this API, users can obtain detailed data on their past transactions, including the order ID, type of order, price, quantity, timestamp, and any associated fees. This API provides valuable insights into trading activity, allowing users to analyze their performance, track order history, and reconcile transactions efficiently. With the ability to access comprehensive information on completed orders, traders can make informed decisions, refine their strategies, and optimize their trading activities for better outcomes.</p>
-<pre><code class="language-python">pocket.getCompletedOrderBook()    # No parameter needs to be passed
+<p>The Completed Orders API retrieves information about orders that have been successfully executed and completed from the order book. By accessing this API, users can obtain detailed data on their past transactions, including the order ID, type of order, price, quantity, timestamp, and any associated fees. This API provides valuable insights into trading activity, allowing users to analyze their performance, track order history, and reconcile transactions efficiently. </p>
+<pre><code class="language-python">Endpoint: /api/v1/orders
+Method-Type: GET
+Method: pocket.getCompletedOrderBook()  # No parameter needs to be passed
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.getCompletedOrderBook()
@@ -2072,64 +1801,6 @@
 <pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;orders&quot;: [
-            {
-                &quot;mode&quot;: &quot;NEW&quot;,
-                &quot;exchange&quot;: &quot;BSE&quot;,
-                &quot;segment&quot;: &quot;&quot;,
-                &quot;login_id&quot;: &quot;HI0009&quot;,
-                &quot;deposit&quot;: 0,
-                &quot;order_status&quot;: &quot;REJECTED&quot;,
-                &quot;product&quot;: &quot;MIS&quot;,
-                &quot;order_type&quot;: &quot;LIMIT&quot;,
-                &quot;rejection_reason&quot;: &quot;BSECM Adapter is offline,ctcl not available &quot;,
-                &quot;order_side&quot;: &quot;BUY&quot;,
-                &quot;instrument_token&quot;: 532461,
-                &quot;exchange_time&quot;: 0,
-                &quot;nnf_id&quot;: 0,
-                &quot;quantity&quot;: 1,
-                &quot;trading_symbol&quot;: &quot;PNB-A&quot;,
-                &quot;client_id&quot;: &quot;HI0009&quot;,
-                &quot;average_trade_price&quot;: 0,
-                &quot;underlying_token&quot;: null,
-                &quot;oms_order_id&quot;: &quot;2024030938&quot;,
-                &quot;lot_size&quot;: 1,
-                &quot;isin&quot;: &quot;INE160A01022&quot;,
-                &quot;disclosed_quantity&quot;: 0,
-                &quot;execution_type&quot;: &quot;BO&quot;,
-                &quot;source&quot;: &quot;&quot;,
-                &quot;device&quot;: &quot;&quot;,
-                &quot;exchange_order_id&quot;: &quot;&quot;,
-                &quot;validity&quot;: &quot;DAY&quot;,
-                &quot;leg_order_indicator&quot;: &quot;ENTRY&quot;,
-                &quot;trade_price&quot;: 0,
-                &quot;spread_token&quot;: null,
-                &quot;market_protection_percentage&quot;: 0,
-                &quot;filled_quantity&quot;: 0,
-                &quot;order_tag&quot;: &quot;&quot;,
-                &quot;sl_trigger_price&quot;: 0.0,
-                &quot;square_off&quot;: false,
-                &quot;order_status_info&quot;: &quot;&quot;,
-                &quot;square_off_value&quot;: 0.0,
-                &quot;tags&quot;: null,
-                &quot;order_entry_time&quot;: 1709992490,
-                &quot;last_activity_reference&quot;: 0,
-                &quot;trigger_price&quot;: 0,
-                &quot;sl_order_price&quot;: 0.0,
-                &quot;stop_loss_value&quot;: 0.0,
-                &quot;rejection_code&quot;: 1009,
-                &quot;average_price&quot;: 0,
-                &quot;trailing_stop_loss&quot;: 0.0,
-                &quot;price&quot;: 125.0,
-                &quot;user_order_id&quot;: &quot;12778&quot;,
-                &quot;symbol&quot;: &quot;PNB&quot;,
-                &quot;is_trailing&quot;: false,
-                &quot;pro_cli&quot;: &quot;CLIENT&quot;,
-                &quot;remaining_quantity&quot;: 1,
-                &quot;contract_description&quot;: {},
-                &quot;series&quot;: &quot;A&quot;,
-                &quot;target_price_type&quot;: &quot;absolute&quot;,
-                &quot;sl_order_quantity&quot;: 0
-            },
             {
                 &quot;mode&quot;: &quot;NEW&quot;,
                 &quot;exchange&quot;: &quot;BSE&quot;,
@@ -2204,10 +1875,6 @@
 </thead>
 <tbody>
 <tr>
-<td>data</td>
-<td>Container for order data.</td>
-</tr>
-<tr>
 <td>orders</td>
 <td>An array containing individual order objects.</td>
 </tr>
@@ -2221,11 +1888,11 @@
 </tr>
 <tr>
 <td>segment</td>
-<td>The trading segment, if applicable.</td>
+<td>The trading segment.</td>
 </tr>
 <tr>
 <td>login_id</td>
-<td>Unique identifier for the user or client.</td>
+<td>Unique identifier for the client.</td>
 </tr>
 <tr>
 <td>deposit</td>

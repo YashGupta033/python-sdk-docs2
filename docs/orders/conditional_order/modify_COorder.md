@@ -1,7 +1,10 @@
 <!-- ## Modify Cover Order -->
 The Modify Order API enables users to make changes in the cover order, pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
+
 ```python
-pocket.modifyConditionalOrder(Parameters)
+Endpoint: /api/v1/orders/kart
+Method-Type: PUT
+Method: pocket.modifyConditionalOrder(Parameters)
 ```
 
 ### Parameters

@@ -1,8 +1,11 @@
 This API is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.
 
 ```python
-res = pocket.gttFetchRule()  
+Endpoint: api/v1/event/gtt/{client_id}
+Method-Type: GET
+Method: pocket.gttFetchRule()  
 ```
+
 ### Example
 ```python
 response = pocket.gttFetchRule() #No Parameters needs to be passed.

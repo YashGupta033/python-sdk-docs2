@@ -4,8 +4,9 @@ A Cover Order help traders protect against losses by placing a stop loss order t
 
 
 ```python
-res = pocket.placeConditionalOrder(Parameters)
-print(res)
+Endpoint: /api/v1/orders/kart
+Method-Type: POST
+Method: pocket.placeConditionalOrder(Parameters)
 ```
 
 ### Parameters

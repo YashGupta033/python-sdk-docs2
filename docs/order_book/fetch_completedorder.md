@@ -4,7 +4,9 @@ The Completed Orders API retrieves information about orders that have been succe
 
 
 ``` python
-pocket.getCompletedOrderBook()    # No parameter needs to be passed
+Endpoint: /api/v1/orders
+Method-Type: GET
+Method: pocket.getCompletedOrderBook()  # No parameter needs to be passed
 ```
 
 ### Example

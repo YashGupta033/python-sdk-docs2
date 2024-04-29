@@ -1731,279 +1731,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../Annexure/" class="md-nav__link">
         
@@ -2112,7 +1839,9 @@
 
 <h2 id="create-gtt-rule">Create GTT Rule</h2>
 <p>This API is used to place the gtt order. Good Till Triggered is active until the trigger condition is met. The trigger is valid for the given expiry date. Whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.</p>
-<pre><code class="language-python">res = pocket.gttCreateRule(Parameters)
+<pre><code class="language-python">Endpoint: api/v1/event/gtt
+Method-Type: POST
+Method: pocket.gttCreateRule(Parameters)
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -2126,92 +1855,92 @@
 <tbody>
 <tr>
 <td>action_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Type of action <code>single_order</code></td>
 </tr>
 <tr>
 <td>expiry_time</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents a particular date of expiry</td>
 </tr>
 <tr>
 <td>client_id</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique ID of a user.</td>
 </tr>
 <tr>
 <td>device</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Device type: <code>Web</code>, <code>Mobile</code>.</td>
 </tr>
 <tr>
 <td>disclosed_quantity</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>quantity hidden from market</td>
 </tr>
 <tr>
 <td>exchange</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Exchange: <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
 </tr>
 <tr>
 <td>instrument_token</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Represents the unique ID of an instrument.</td>
 </tr>
 <tr>
 <td>market_protection_percentage</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>sets limit on the price deviation</td>
 </tr>
 <tr>
 <td>order_side</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Side of the order<br><code>BUY</code> or <code>SELL</code></td>
 </tr>
 <tr>
 <td>order_type</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Type of order<br><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
 </tr>
 <tr>
 <td>price</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>the price at which order needs to be placed</td>
 </tr>
 <tr>
 <td>product</td>
-<td>String</td>
+<td><code>String</code></td>
 <td>Product type: <code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
 </tr>
 <tr>
 <td>quantity</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>Quantity of the order.</td>
 </tr>
 <tr>
 <td>sl_order_price</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>Stop-loss order price.</td>
 </tr>
 <tr>
 <td>sl_order_quantity</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>Stop-loss order quantity.</td>
 </tr>
 <tr>
 <td>sl_trigger_price</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>Stop-loss trigger price.</td>
 </tr>
 <tr>
 <td>trigger_price</td>
-<td>Number</td>
+<td><code>Float</code></td>
 <td>Trigger price.</td>
 </tr>
 <tr>
 <td>user_order_id</td>
-<td>Number</td>
+<td><code>Integer</code></td>
 <td>Represents the unique ID of the order.</td>
 </tr>
 </tbody>

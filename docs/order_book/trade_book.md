@@ -2,7 +2,9 @@
 Trade book API fetches record or log of all the trades executed by an account holder. It contains details such as the date and time of the trade, the security traded (e.g., stocks, options, futures), the quantity bought or sold, the price at which the trade was executed.
 
 ```python
-res = pocket.getTradedOrderBook()
+Endpoint: /api/v1/trades
+Method-Type: GET
+Method: pocket.getTradedOrderBook()
 ```
 
 

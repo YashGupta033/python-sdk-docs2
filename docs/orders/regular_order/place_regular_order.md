@@ -1,9 +1,11 @@
 <!-- ## Placing a Regular order -->
 You can place a regular order with the placeOrder API. All the parameters that needs to be passed are listed below. An instrument token will be required to place the order, to get the instrument token you can download the given CSV file. To place a regular order, feed the execution_type parameter as 'REGULAR'.
 
+
 ```python
-order_res = pocket.placeOrder(Parameters)
-print(order_res)
+Endpoint: /api/v1/orders
+Method-Type: POST
+Method: pocket.placeOrder(Parameters)
 ```
 
 ### Parameters

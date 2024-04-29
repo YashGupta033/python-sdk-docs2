@@ -3,7 +3,10 @@ In Search Scrip, detailes of all the related named instruments will be returned 
 
 
 ```python
-pocket.searchScrip(Parameters)
+Endpoint: api/v1/search
+Method-Type: GET
+Method: pocket.searchScrip(Parameters)
+
 ```
 
 ### Parameters

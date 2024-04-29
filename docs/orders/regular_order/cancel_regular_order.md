@@ -2,8 +2,9 @@
 The Cancel Order API provides user with the capability to cancel open or pending order. To cancel a pending order within the order book, user simply needs to provide the oms_order_id of the targeted order. Upon successful completion of the cancellation request, a `success` response status code will be returned, indicating the order's successful cancellation. This API streamlines the process of order management, empowering users to swiftly retract orders as needed, thereby enhancing flexibility and responsiveness in trading activities.
 
 ```python
-res = pocket.cancelOrder(Parameters)
-print(res)
+Endpoint: /api/v1/orders/<oms_order_id>
+Method-Type: DELETE
+Method: pocket.cancelOrder(Parameters)
 ```
 
 

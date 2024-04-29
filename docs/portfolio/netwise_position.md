@@ -2,7 +2,9 @@
 Use the getPositionNetWise API to get the net positions present in the account.
 
 ```python
-pocket.getPositionNetWise() # No parameters needs to be passed
+Endpoint: api/v1/positions
+Method-Type: GET
+Method: pocket.getPositionNetWise()
 ```
 
 ### Response
@@ -46,7 +48,7 @@ pocket.getPositionNetWise() # No parameters needs to be passed
 ```
 
 ### Response Parameters
-| Key           | Description                                            |
+| Key                | Description                                            |
 |--------------------|--------------------------------------------------------|
 | average_buy_price  | The average price at which the commodity was bought.  |
 | average_price      | The average price, if applicable.                     |

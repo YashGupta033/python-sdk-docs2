@@ -66,18 +66,18 @@ nav:
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
   
-  - Option Strategies:
-    - Straddle Chain: option_strategies/straddlechain.md
-    - Straddle: option_strategies/straddle.md
-    - Strangle: option_strategies/strangle.md
-    - Bull Call Spread: option_strategies/bullcallspread.md
-    - Bull Put Spread: option_strategies/bullputspread.md
-    - Bear Call Spread: option_strategies/bearcallspread.md
-    - Bear Put Spread: option_strategies/bearputspread.md
-    - Call Ratio Spread: option_strategies/callratiobackspread.md
-    - Put Ratio Spread: option_strategies/putratiobackspread.md
-    - Iron Condor: option_strategies/ironcondor.md
-    - Iron Butterfly: option_strategies/ironbutterfly.md
+  # - Option Strategies:
+  #   - Straddle Chain: option_strategies/straddlechain.md
+  #   - Straddle: option_strategies/straddle.md
+  #   - Strangle: option_strategies/strangle.md
+  #   - Bull Call Spread: option_strategies/bullcallspread.md
+  #   - Bull Put Spread: option_strategies/bullputspread.md
+  #   - Bear Call Spread: option_strategies/bearcallspread.md
+  #   - Bear Put Spread: option_strategies/bearputspread.md
+  #   - Call Ratio Spread: option_strategies/callratiobackspread.md
+  #   - Put Ratio Spread: option_strategies/putratiobackspread.md
+  #   - Iron Condor: option_strategies/ironcondor.md
+  #   - Iron Butterfly: option_strategies/ironbutterfly.md
   - Annexure: Annexure.md
 
 

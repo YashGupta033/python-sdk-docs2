@@ -2,7 +2,10 @@
 The Scrip Info API is designed to provide users with detailed information about a specific financial instrument based on the exchange and instrument token provided as inputs. Upon receiving the exchange and instrument token as parameters, the API searches its database to retrieve relevant data about the corresponding scrip. By utilizing this API, users can efficiently retrieve comprehensive information about a particular scrip, enabling them to make well-informed investment decisions and stay updated on the latest market developments.
 
 ```python
-pocket.getScripInfo(parameters) 
+Endpoint: api/v1/contract/:exchange
+Method-Type: GET
+Method: pocket.getScripInfo(parameters) 
+
 ```
 
 ## Parameters

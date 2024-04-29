@@ -1715,279 +1715,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Option Strategies
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            Option Strategies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddlechain/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle Chain
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/straddle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Straddle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/strangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bullputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bull Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearcallspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Call Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/bearputspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bear Put Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/callratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Call Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/putratiobackspread/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Put Ratio Spread
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironcondor/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Condor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../option_strategies/ironbutterfly/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iron Butterfly
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../Annexure/" class="md-nav__link">
         
@@ -2079,7 +1806,9 @@
 <h1 id="funds">Funds</h1>
 <h2 id="get-fund-details">Get Fund Details</h2>
 <p>The "Get Fund" API is a request made to retrieve information about a user's funds or financial assets held within a particular account or platform. Typically, this API returns details such as the available balance, total funds invested, holdings, and any pending transactions. It provides users with real-time access to their financial data, allowing them to monitor their investments, track their portfolio performance, and make informed decisions about managing their funds effectively.</p>
-<pre><code class="language-python">res = pocket.getFunds()     # No params needs to be passed
+<pre><code class="language-python">Endpoint: api/v1/funds/view
+Method-Type: GET
+Method: pocket.getFunds() 
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{
@@ -2210,91 +1939,91 @@
 </tr>
 <tr>
 <td>Available</td>
-<td>The available balance.</td>
+<td>The amount of funds currently available in a trading account.</td>
 </tr>
 <tr>
 <td>Adhoc Deposit</td>
-<td>The adhoc deposit amount.</td>
+<td>Funds added on an ad-hoc basis, typically to meet margin requirements or for immediate trading needs.</td>
 </tr>
 <tr>
 <td>Cash Deposit</td>
-<td>The cash deposit amount.</td>
+<td>The total amount of cash deposited into a trading account.</td>
 </tr>
 <tr>
 <td>Delivery</td>
-<td>The delivery amount.</td>
+<td>Funds allocated for the settlement of delivery trades, which involve the actual exchange of securities.</td>
 </tr>
 <tr>
 <td>DP Collateral Benefit</td>
-<td>The benefit from collateral in the depository.</td>
+<td>Benefits accrued from using depository participant (DP) securities as collateral for trading.</td>
 </tr>
 <tr>
 <td>DP Credit for Sale</td>
-<td>The credit available from sale in the depository.</td>
+<td>Credit available for trading when securities held in a DP account are sold.</td>
 </tr>
 <tr>
 <td>DP Pledge Collateral</td>
-<td>The collateral pledged in the depository.</td>
+<td>Funds obtained against securities pledged from a depository participant account.</td>
 </tr>
 <tr>
 <td>Manual Collateral</td>
-<td>The manually provided collateral amount.</td>
+<td>Collateral that is manually entered or adjusted, rather than automatically calculated by the system.</td>
 </tr>
 <tr>
 <td>Pay In</td>
-<td>The amount paid in.</td>
+<td>The amount required to be paid in to cover securities purchased.</td>
 </tr>
 <tr>
 <td>Net Margin</td>
-<td>The net margin amount.</td>
+<td>The minimum required balance to maintain in a margin account, after accounting for all open positions.</td>
 </tr>
 <tr>
 <td>Notion Deposit</td>
-<td>The notion deposit amount.</td>
+<td>May refer to a notional amount set aside or used for calculation purposes in trading.</td>
 </tr>
 <tr>
 <td>Overdraft</td>
-<td>The overdraft amount.</td>
+<td>The amount that can be overdrawn from a margin account, essentially a credit facility.</td>
 </tr>
 <tr>
 <td>Pay out</td>
-<td>The amount paid out.</td>
+<td>The amount disbursed from a trading account, typically from the sale of securities or other withdrawals.</td>
 </tr>
 <tr>
 <td>Pool Collateral Benefit</td>
-<td>The benefit from collateral in the pool.</td>
+<td>Benefits from using pooled resources or securities as collateral.</td>
 </tr>
 <tr>
 <td>Pool Pledge Collateral</td>
-<td>The collateral pledged in the pool.</td>
+<td>Collateral derived from pooled securities pledged for securing trades.</td>
 </tr>
 <tr>
 <td>Premium</td>
-<td>The premium amount.</td>
+<td>The cost paid for options contracts or the extra amount paid over the normal price of securities.</td>
 </tr>
 <tr>
 <td>Sar Collateral Benefit</td>
-<td>The benefit from collateral in SAR (systematically important banks).</td>
+<td>Similar to DP Collateral Benefit, but specific to the securities allocated for Risk Assessment and Review (SAR).</td>
 </tr>
 <tr>
 <td>Sar Credit for Sale</td>
-<td>The credit available from sale in SAR (systematically important banks).</td>
+<td>Credit received for selling securities that were under SAR (specific analysis or risk assessment).</td>
 </tr>
 <tr>
 <td>Span Margin</td>
-<td>The span margin amount.</td>
+<td>The initial margin requirement calculated using a standardized portfolio analysis of risk (SPAN) system to cover potential losses in a worst-case scenario.</td>
 </tr>
 <tr>
 <td>Var Margin</td>
-<td>The value at risk (VAR) margin amount.</td>
+<td>Variation margin, which represents the amount of funds required to cover adverse market movements over a day.</td>
 </tr>
 <tr>
 <td>Extreme Loss Margin</td>
-<td>The extreme loss margin amount.</td>
+<td>Additional margin meant to cover potential losses in extremely volatile market conditions.</td>
 </tr>
 <tr>
 <td>Option Credit For Sell</td>
-<td>The credit available for selling options.</td>
+<td>Credit received from selling options, either from premiums collected or from leveraging positions.</td>
 </tr>
 <tr>
 <td>message</td>

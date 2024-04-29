@@ -3,7 +3,9 @@ The Delete Basket API allows users to remove a specific basket from their accoun
 
 
 ```python
-res = pocket.deleteBasket(Parameters)
+Endpoint: /api/v1/basket
+Method-Type: DELETE
+Method: pocket.deleteBasket(Parameters)
 ```
 
 ## Parameters

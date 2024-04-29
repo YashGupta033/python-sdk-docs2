@@ -16,6 +16,9 @@ If you don't have a Pocketful account till now,  you can register
 <a href="http://www.pocketful.in" target="_blank">here</a>
 
 
+All the API's will be called with the below base URL.
+> Base URL - trade.pocketful.in
+
 <!-- ## Login -->
 To login into your Pocketful Account via API, you need a client Id, password and totp.
 
@@ -42,7 +45,7 @@ pocket = pocketful(pocket_client_id, pocket_password)
 
  Generate a session with your client-id, password and totp of your account with the help of instance you created above.
 ```python
-login = pocket.generateSession(pace_clintId, pace_password,"totp")  
+login = pocket.generateSession(pocket_clientId, pocket_password,"totp")  
 ```
 
 

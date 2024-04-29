@@ -3,7 +3,10 @@
 The Cancel Order API lets users cancel an open or pending cover order. If you want to cancel a pending cover order in the order book, provide the oms_order_id, exchange_order_id and leg_order_indicator along with other parameters which can be obtained from the order book. Once the cancellation is done successfully, you'll get a response confirming it with a success status code. This API makes managing orders easier, allowing users to quickly remove orders when necessary, making trading more flexible and responsive.
 
 ```python
-pocket.cancelConditionalOrder(Parameters)
+Endpoint: /api/v1/orders/kart/<oms_order_id>
+Method-Type: DELETE
+Method: pocket.cancelConditionalOrder(Parameters)
+
 ```
 
 

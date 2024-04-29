@@ -2,7 +2,9 @@
 To get the ltp of FnO, use the getFnoLtp method.
 
 ```python
-pocket.getFnoLtp(Parameters)
+Endpoint: /api/v1/marketdata/{exchange}/FutOpt?token={token}
+Method-Type: GET
+Method: pocket.getFnoLtp(Parameters)
 ```
 
 ## Parameters

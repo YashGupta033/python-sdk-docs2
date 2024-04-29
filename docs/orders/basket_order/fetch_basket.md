@@ -2,7 +2,9 @@
 This method used to fetch details of the basket order like basketId, basket type, name, login Id etc. It displays total number of baskets created along with the added instrument details.
 
 ```python
-pocket.fetchBasket()   
+Endpoint: api/v1/basket/{login_id}
+Method-Type: GET
+Method: pocket.fetchBasket()
 ```
 
 ### Example

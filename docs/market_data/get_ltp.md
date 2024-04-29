@@ -1,7 +1,11 @@
 <!-- ## Get Last Traded Price -->
 The Get Last Traded Price API provides user with the most recent price at which a financial instrument was traded. By accessing this API, users can quickly obtain the latest market information, aiding in real-time decision-making and market analysis.
+
 ```python
-pocket.getLtp(Parameters)
+Endpoint: /api/v1/marketdata/:exchange/:token/:last_trade_price
+Method-Type: GET
+Method: pocket.getLtp(Parameters)
+
 ```
 
 ### Parameters

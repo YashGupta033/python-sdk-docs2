@@ -5,7 +5,32 @@ The Modify Order API enables users to make changes in the bracket order, pending
 ```python
 Endpoint: /api/v1/orders/kart
 Method-Type: PUT
-Method: pocket.modifyConditionalOrder(Parameters)
+```
+
+### Request Packet
+```json
+{
+  "client_id": "HI0009",
+  "disclosed_quantity": 0,
+  "exchange": "NSE",
+  "exchange_order_id": "1100000007437522",
+  "execution_type": "BO",
+  "filled_quantity": 0,
+  "instrument_token": 14366,
+  "is_trailing":false,
+  "last_activity_reference": "1394876196271146000",
+  "oms_order_id": "20240314659",
+  "order_type": "LIMIT",
+  "price": 11.5,
+  "quantity": 1,
+  "product": "MIS",
+  "remaining_quantity": 1,
+  "square_off_value": 0.9,
+  "stop_loss_value": 0.06,
+  "trailing_stop_loss": 0,
+  "trigger_price": 0,
+  "validity": "DAY",
+}
 ```
 
 ### Parameters

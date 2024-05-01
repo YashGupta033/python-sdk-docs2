@@ -5,7 +5,13 @@ This API is used to cancel existing gtt order. This method fetch details like ac
 ```python
 Endpoint: api/v1/event/gtt/{client_id}/{id}
 Method-Type: DELETE
-Method: pocket.gttCancelRule(Parameters)
+```
+
+### Request Packet
+```json
+{
+    "id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"
+}
 ```
 
 ### Parameters

@@ -5,8 +5,16 @@ This Method is used to delete basket Instrument inside the basket. This requires
 ```python
 Endpoint: api/v1/basket/order
 Method-Type: DELETE
-Method: pocket.deleteBasketInstrument(Parameters)
+```
 
+
+### Example
+```json
+{
+  "BasketId": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
+  "BasketName":"Y_Basket",
+  "OrderId": "d5950a9f-b538-458b-a3cd-1dec744cb931"
+}
 ```
 
 
@@ -23,7 +31,8 @@ data = obj.deleteBasketInstrument({
 "BasketId": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
 "BasketName":"Y_Basket",
 "OrderId": "d5950a9f-b538-458b-a3cd-1dec744cb931"
-})
+}
+)
 ```
 
 ### Response

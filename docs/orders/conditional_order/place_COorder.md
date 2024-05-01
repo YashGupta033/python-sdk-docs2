@@ -6,7 +6,29 @@ A Cover Order help traders protect against losses by placing a stop loss order t
 ```python
 Endpoint: /api/v1/orders/kart
 Method-Type: POST
-Method: pocket.placeConditionalOrder(Parameters)
+```
+
+### Request Packet
+```json
+{
+    "exchange": "NSE",
+    "instrument_token": "14366",
+    "client_id": "clientId",
+    "order_type": "LIMIT",
+    "price": 13,
+    "quantity": 1,
+    "disclosed_quantity": 0,
+    "validity": "DAY",
+    "product": "MIS",
+    "order_side": "BUY",
+    "device": "WEB",
+    "execution_type": "CO",
+    "is_trailing": true,
+    "stop_loss_value": 12,
+    "trailing_stop_loss": "0.05",
+    "trigger_price": 0,
+    "user_order_id": 10002,
+}
 ```
 
 ### Parameters
@@ -33,7 +55,7 @@ Method: pocket.placeConditionalOrder(Parameters)
 
 ### Example 
 ```python
-response = pocket.placeConditionalOrder( {
+response = pocket.placeConditionalOrder({
     "exchange": "NSE",
     "instrument_token": "14366",
     "client_id": "clientId",

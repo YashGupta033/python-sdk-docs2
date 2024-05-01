@@ -5,8 +5,28 @@ You can place a regular order with the placeOrder API. All the parameters that n
 ```python
 Endpoint: /api/v1/orders
 Method-Type: POST
-Method: pocket.placeOrder(Parameters)
 ```
+
+### Request Packet
+```json
+  {
+    "exchange": "NSE",
+    "instrument_token": "14366",
+    "client_id": "clientId",
+    "order_type": "LIMIT",
+    "amo": False,
+    "price": 13,"quantity": 1,
+    "disclosed_quantity": 0,
+    "validity": "DAY",
+    "product": "CNC",
+    "order_side": "BUY",
+    "device": "WEB",
+    "user_order_id": 1,
+    "trigger_price": 0,
+    "execution_type": "REGULAR"
+  }
+```
+
 
 ### Parameters
 

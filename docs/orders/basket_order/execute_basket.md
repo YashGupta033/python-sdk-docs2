@@ -4,8 +4,18 @@ This method is used to execute the orders of the instruments present in the bask
 ```python
 Endpoint: api/v1/orders/kart
 Method-Type: POST
-Method: pocket.executeBasket(Parameters)
+```
 
+### Example
+```json
+{
+    "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
+    "client_id":"HI0009",
+    "execution_state":false,
+    "execution_type":"NML",
+    "name":"Y_Basket",
+    "square_off": false
+}
 ```
 
 ### Parameters

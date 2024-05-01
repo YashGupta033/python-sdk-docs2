@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -289,7 +289,7 @@
             
   
   <span class="md-ellipsis">
-    orders
+    Orders
   </span>
   
 
@@ -299,7 +299,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            orders
+            Orders
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -408,6 +408,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1812,6 +1830,24 @@
 <pre><code class="language-python">Endpoint: /api/v1/orders
 Method-Type: POST
 Method: pocket.placeOrder(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;exchange&quot;: &quot;NSE&quot;,
+    &quot;instrument_token&quot;: &quot;14366&quot;,
+    &quot;client_id&quot;: &quot;clientId&quot;,
+    &quot;order_type&quot;: &quot;LIMIT&quot;,
+    &quot;amo&quot;: False,
+    &quot;price&quot;: 13,&quot;quantity&quot;: 1,
+    &quot;disclosed_quantity&quot;: 0,
+    &quot;validity&quot;: &quot;DAY&quot;,
+    &quot;product&quot;: &quot;CNC&quot;,
+    &quot;order_side&quot;: &quot;BUY&quot;,
+    &quot;device&quot;: &quot;WEB&quot;,
+    &quot;user_order_id&quot;: 1,
+    &quot;trigger_price&quot;: 0,
+    &quot;execution_type&quot;: &quot;REGULAR&quot;
+    }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

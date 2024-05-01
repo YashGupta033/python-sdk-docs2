@@ -7,7 +7,7 @@ site_author: 'Pacefin'
 nav:
   - Introduction: index.md
   - Login: login.md
-  - orders:
+  - Orders:
     - Types of Order: orders/order_types.md
     - Regular Order:
       - Place Regular Order: orders/regular_order/place_regular_order.md

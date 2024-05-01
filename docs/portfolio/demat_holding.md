@@ -4,7 +4,13 @@ To get alll the demat holdings, use the getDematHoldings API
 ```python
 Endpoint: api/v1/holdings
 Method-Type: GET
-Method: pocket.getDematHoldings()
+```
+
+### Query Params
+```json
+{
+   "client_id": "YG1234"
+}
 ```
 
 ### Response

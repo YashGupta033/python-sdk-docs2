@@ -5,7 +5,14 @@ The Delete Basket API allows users to remove a specific basket from their accoun
 ```python
 Endpoint: /api/v1/basket
 Method-Type: DELETE
-Method: pocket.deleteBasket(Parameters)
+```
+
+### Request Packet
+```json
+{
+  "BasketId":"0d991a91-21c0-4afd-aab2-ee9131cbd2fc",
+  "BasketName":"A_Basket"
+}
 ```
 
 ## Parameters
@@ -16,8 +23,11 @@ Method: pocket.deleteBasket(Parameters)
 
 
 ### Example
-```json
-data=obj.deleteBasket({"BasketId":"0d991a91-21c0-4afd-aab2-ee9131cbd2fc","BasketName":"A_Basket"})
+```python
+data=obj.deleteBasket({
+  "BasketId":"0d991a91-21c0-4afd-aab2-ee9131cbd2fc",
+  "BasketName":"A_Basket"
+  })
 ```
 
 

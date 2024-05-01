@@ -3,10 +3,28 @@ The Modify Order API enables users to make changes in both open or pending order
 
 
 ```python
-endpoint: api/v1/orders
-method-type: PUT
-method: pocket.modifyOrder(Parameters)
+Endpoint: api/v1/orders
+Method-Type: PUT
+```
 
+### Request Packet
+```json
+{
+    "exchange": "NSE",
+    "instrument_token": "11915",
+    "client_id": "clientId",
+    "order_type": "LIMIT",
+    "price": 13,"quantity": 3,
+    "disclosed_quantity": 0,
+    "validity": "DAY",
+    "product": "CNC",
+    "order_side": "BUY",
+    "device": "WEB",
+    "user_order_id": 1,
+    "trigger_price": 0,
+    "oms_order_id":"202403111778",
+    "execution_type": "REGULAR"
+}
 ```
 
 

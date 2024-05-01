@@ -4,8 +4,31 @@ The Modify Order API enables users to make changes in the cover order, pending w
 ```python
 Endpoint: /api/v1/orders/kart
 Method-Type: PUT
-Method: pocket.modifyConditionalOrder(Parameters)
 ```
+
+### Request Packet
+```json
+{
+    "exchange":"NSE",
+    "exchange_order_id":"1100000030285558",
+    "instrument_token":14366,
+    "client_id":"HI0009",
+    "order_type":"LIMIT",
+    "price":12.45,
+    "quantity":2,
+    "disclosed_quantity":0,
+    "validity":"DAY",
+    "product":"CNC",
+    "oms_order_id":"202403132133",
+    "filled_quantity":0,
+    "remaining_quantity":1,
+    "last_activity_reference":"1394797204460943183",
+    "stop_loss_value":12.35,
+    "trailing_stop_loss":0,
+    "execution_type":"CO"
+}
+```
+
 
 ### Parameters
 | FieldName                | Datatype | Description                                       |
@@ -31,7 +54,7 @@ Method: pocket.modifyConditionalOrder(Parameters)
 
 ## Example
 ```python
-data=obj.modifyConditionalOrder( {
+data = obj.modifyConditionalOrder({
     "exchange":"NSE",
     "exchange_order_id":"1100000030285558",
     "instrument_token":14366,

@@ -5,7 +5,31 @@ A Bracket Order helps traders manage risk by placing a stop loss and a target or
 ```python
 Endpoint: /api/v1/orders/kart
 Method-Type: POST
-Method: pocket.placeConditionalOrder(Parameters)
+```
+
+
+### Request Packet
+```json
+{
+    "client_id": "clintId",
+    "device": "WEB",
+    "disclosed_quantity": 0,
+    "exchange": "NSE",
+    "execution_type": "BO",
+    "instrument_token": "11915",
+    "is_trailing": true,
+    "order_side": "BUY",
+    "order_type": "LIMIT",
+    "price": 18.3,
+    "product": "MIS",
+    "quantity": 1,
+    "square_off_value": 1,
+    "stop_loss_value": 1,
+    "trailing_stop_loss": "0.05",
+    "trigger_price": 0,
+    "user_order_id": 10002,
+    "validity": "DAY"
+}
 ```
 
 ### Parameters
@@ -33,7 +57,7 @@ Method: pocket.placeConditionalOrder(Parameters)
 
 ### Example
 ```python
-data=obj.placeConditionalOrder( {
+data=obj.placeConditionalOrder({
     "client_id": clintId,
     "device": "WEB",
     "disclosed_quantity": 0,

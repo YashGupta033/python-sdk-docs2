@@ -6,7 +6,31 @@ This API is used to place the gtt order. Good Till Triggered is active until the
 ```python
 Endpoint: api/v1/event/gtt
 Method-Type: POST
-Method: pocket.gttCreateRule(Parameters)
+```
+
+### Request Packet
+```json
+{
+"action_type": "single_order",
+"expiry_time": "2024-12-12",
+"order":{
+"client_id": "HI0009",
+"disclosed_quantity": 0,
+"exchange": "NSE",
+"instrument_token": "14366",
+"market_protection_percentage": 0,
+"order_side": "BUY",
+"order_type": "LIMIT",
+"price": 11.3,
+"product": "CNC",
+"quantity": 1,
+"sl_order_price": 0,
+"sl_order_quantity": 0,
+"sl_trigger_price": 0,
+"trigger_price": 13.6,
+"user_order_id": 122321
+    }
+}
 ```
 
 ### Parameters
@@ -54,7 +78,8 @@ data = obj.gttCreateRule(
 "sl_trigger_price": 0,
 "trigger_price": 13.6,
 "user_order_id": 122321
-}})
+    }
+})
 ```
 
 

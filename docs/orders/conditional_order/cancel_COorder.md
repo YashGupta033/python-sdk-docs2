@@ -5,10 +5,18 @@ The Cancel Order API lets users cancel an open or pending cover order. If you wa
 ```python
 Endpoint: /api/v1/orders/kart/<oms_order_id>
 Method-Type: DELETE
-Method: pocket.cancelConditionalOrder(Parameters)
-
 ```
 
+### Request Packet
+```json
+{
+    "client_id":"clientId",
+    "exchange_order_id":"1300000034566552",
+    "execution_type":"CO",
+    "leg_order_indicator":"ENTRY", 
+    "oms_order_id":"202403132605"
+}
+```
 
 
 ### Parameters
@@ -23,7 +31,10 @@ Method: pocket.cancelConditionalOrder(Parameters)
 
 ### Example 
 ```python
-response = pocket.cancelConditionalOrder({"client_id":clintId,"exchange_order_id":"1300000034566552","execution_type":"CO",
+response = pocket.cancelConditionalOrder({
+    "client_id":"clientId",
+    "exchange_order_id":"1300000034566552",
+    "execution_type":"CO",
 "leg_order_indicator":"ENTRY", 
 "oms_order_id":"202403132605"})
 ```

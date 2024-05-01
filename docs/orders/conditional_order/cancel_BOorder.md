@@ -4,7 +4,18 @@ The Cancel Order API lets users cancel an open or pending bracket order. If you 
 ```python
 Endpoint: /api/v1/orders/kart/<oms_order_id>
 Method-Type: DELETE
-Method: pocket.cancelConditionalOrder(Parameters)
+```
+
+### Request Packet
+```json
+{
+    "client_id":"clintId",
+    "exchange_order_id":"1100000012461398",
+    "execution_type":"BO",
+    "leg_order_indicator":"ENTRY",
+    "oms_order_id":"20240314929",
+    "status":"MODIFY_CONFIRMED"
+}
 ```
 
 ### Parameters

@@ -4,7 +4,40 @@ The method editBasketInstrument is used to edit the basket instrument present in
 ```python 
 Endpoint: api/v1/basket/order
 Method-Type: PUT
-Method: pocket.editBasketInstrument("Parameters")
+```
+
+### Request Packet
+```json
+{
+    "basket_id":"72fa28f8-7c08-4a4d-ba7a-fedd461744a1",
+    "name":"h",
+    "order_info":
+    {
+      "exchange":"NSE",
+      "instrument_token":3045,
+      "client_id":"DEMO1",
+      "order_type":"LIMIT",
+      "price":506.5,
+      "quantity":1,
+      "disclosed_quantity":0,
+      "validity":"DAY",
+      "product":"MIS",
+      "trading_symbol":"SBIN-EQ",
+      "order_side":"BUY",
+      "user_order_id":10002,
+      "underlying_token":"3045",
+      "series":"EQ",
+      "oms_order_id":"a5d13c1f-f99c-4230-ad19-9ed8e826ee74",
+      "exchange_order_id":"",
+      "trigger_price":0,
+      "stop_loss_value":0,
+      "square_off_value":0,
+      "trailing_stop_loss":0,
+      "is_trailing":false,
+      "execution_type":"BO"
+    },
+  "order_id":"a5d13c1f-f99c-4230-ad19-9ed8e826ee74"
+}
 ```
 
 ## Parameters
@@ -39,84 +72,37 @@ Method: pocket.editBasketInstrument("Parameters")
 
 ### Example
 ```python
-{
-  "data": {
-    "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
-    "basket_type": "NORMAL",
-    "is_executed": false,
-    "login_id": "HI0009",
-    "name": "Y_Basket",
-    "order_type": "ALL",
-    "orders": [
-      {
-        "order_id": "d5950a9f-b538-458b-a3cd-1dec744cb931",
-        "order_info": {
-          "login_id": null,
-          "order_status": null,
-          "rejection_code": 0,
-          "exchange": "NSE",
-          "sl_trigger_price": 0,
-          "client_id": "HI0009",
-          "mode": "NEW",
-          "product": "MIS",
-          "rejection_reason": "",
-          "order_side": "BUY",
-          "market_protection_percentage": 0,
-          "nnf_id": 0,
-          "validity": "DAY",
-          "trading_symbol": "IDEA-EQ",
-          "trigger_price": 0,
-          "is_trailing": false,
-          "series": "EQ",
-          "lot_size": 0,
-          "leg_order_indicator": null,
-          "disclosed_quantity": 0,
-          "order_entry_time": 0,
-          "sl_order_quantity": 0,
-          "order_type": "MARKET",
-          "average_price": 0,
-          "deposit": 0,
-          "contract_description": {},
-          "average_trade_price": 0,
-          "oms_order_id": "",
-          "filled_quantity": 0,
-          "order_status_info": "",
-          "trailing_stop_loss": null,
-          "price": 0,
-          "segment": "",
-          "underlying_token": "14366",
-          "sl_order_price": 0,
-          "instrument_token": 14366,
-          "trade_price": 0,
-          "symbol": "",
-          "target_price_type": "absolute",
-          "execution_type": "REGULAR",
-          "quantity": 1,
-          "order_tag": "",
-          "spread_token": null,
-          "isin": "",
-          "pro_cli": "CLIENT",
-          "tags": [],
-          "last_activity_reference": 0,
-          "square_off_value": null,
-          "remaining_quantity": 0,
-          "square_off": false,
-          "stop_loss_value": null,
-          "exchange_order_id": "",
-          "exchange_time": 0,
-          "device": null,
-          "user_order_id": 10002,
-          "source": null
-        }
-      }
-    ],
-    "product_type": "ALL",
-    "sip_eligible": false,
-    "sip_enabled": false
-  },
-  "message": "Order added in the basket Y_Basket.",
-  "status": "success"
-}
+data = obj.editBasketInstrument({
+
+    "basket_id":"72fa28f8-7c08-4a4d-ba7a-fedd461744a1",
+    "name":"h",
+    "order_info":
+    {
+      "exchange":"NSE",
+      "instrument_token":3045,
+      "client_id":"DEMO1",
+      "order_type":"LIMIT",
+      "price":506.5,
+      "quantity":1,
+      "disclosed_quantity":0,
+      "validity":"DAY",
+      "product":"MIS",
+      "trading_symbol":"SBIN-EQ",
+      "order_side":"BUY",
+      "user_order_id":10002,
+      "underlying_token":"3045",
+      "series":"EQ",
+      "oms_order_id":"a5d13c1f-f99c-4230-ad19-9ed8e826ee74",
+      "exchange_order_id":"",
+      "trigger_price":0,
+      "stop_loss_value":0,
+      "square_off_value":0,
+      "trailing_stop_loss":0,
+      "is_trailing":false,
+      "execution_type":"BO"
+    },
+  "order_id":"a5d13c1f-f99c-4230-ad19-9ed8e826ee74"
+})
 ```
 
 

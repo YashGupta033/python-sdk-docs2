@@ -5,7 +5,32 @@ This method used to add Instrument in the created basket. We can add only limite
 ```python 
 Endpoint: api/v1/basket/order
 Method-Type: POST
-Method: pocket.addBasketInstrument(Parameters)
+```
+
+### Request Packet
+```json
+{
+  "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
+  "name": "Y_Basket",
+  "order_info": {
+      "client_id": "HI0009",
+      "disclosedQuantity": 0,
+      "exchange": "NSE",
+      "execution_type": "REGULAR",
+      "instrument_token": 14366,
+      "order_side": "BUY",
+      "order_type": "MARKET",
+      "price": 0,
+      "product": "MIS",
+      "quantity": 1,
+      "series": "EQ",
+      "trading_symbol": "IDEA-EQ",
+      "trigger_price": 0,
+      "underlying_token": "14366",
+      "validity": "DAY",
+      "user_order_id": 10002
+  }
+}
 ```
 
 ## Parameters

@@ -3,7 +3,6 @@ This API is used to fetch the details of the existing gtt orders. This method fe
 ```python
 Endpoint: api/v1/event/gtt/{client_id}
 Method-Type: GET
-Method: pocket.gttFetchRule()  
 ```
 
 ### Example

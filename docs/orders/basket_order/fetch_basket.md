@@ -4,8 +4,9 @@ This method used to fetch details of the basket order like basketId, basket type
 ```python
 Endpoint: api/v1/basket/{login_id}
 Method-Type: GET
-Method: pocket.fetchBasket()
 ```
+
+
 
 ### Example
 ```python

@@ -4,8 +4,20 @@ This method is used to create basket. It can create two types of basket i.e. Nor
 ```python
 Endpoint: /api/v1/basket
 Method-Type: POST
-Method: pocket.createBasket(Parameters)
 ```
+
+
+### Request Packet
+```json
+{
+    "login_id":"clintId",
+    "name":"Basket1",
+    "type":"NORMAL",
+    "product_type":"ALL",
+    "order_type":"ALL"
+}
+```
+
 
 ### Parameters
 
@@ -22,7 +34,7 @@ Method: pocket.createBasket(Parameters)
 ```python
 response = pocket.createBasket(
     {
-    "login_id":clintId,
+    "login_id":"clintId",
     "name":"Basket1",
     "type":"NORMAL",
     "product_type":"ALL",

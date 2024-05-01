@@ -4,7 +4,14 @@ This method is used to rename the existing basket.
 ```python
 Endpoint: api/v1/basket
 Method-Type: PUT
-Method: pocket.renameBasket(Parameters)
+```
+
+### Example
+```json
+{
+  "basket_id":"9cd5fbc3-333b-4934-8d45-e692349b5ede",
+  "name":"Basket2"
+}
 ```
 
 ### Parameters

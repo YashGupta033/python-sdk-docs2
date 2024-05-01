@@ -4,7 +4,14 @@ Use the getPositionNetWise API to get the net positions present in the account.
 ```python
 Endpoint: api/v1/positions
 Method-Type: GET
-Method: pocket.getPositionNetWise()
+```
+
+### Query Params
+```json
+{
+   "client_id": "YG1234",
+   "type": "historical"
+}
 ```
 
 ### Response

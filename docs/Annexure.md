@@ -36,6 +36,7 @@ Product Type
 
 
 HTTP Codes
+
 | Code | Status Text           | Description                                                                                         |
 |------|-----------------------|-----------------------------------------------------------------------------------------------------|
 | 100  | Continue              | Initial part of a request has been received and the client should continue.                         |
@@ -46,6 +47,7 @@ HTTP Codes
 | 400  | Bad Request           | Server cannot process the request due to a client error (e.g., malformed request syntax).           |
 | 404  | Not Found             | The requested resource could not be found but may be available again in the future.                 |
 | 500  | Internal Server Error | Generic error message when the server encounters an unexpected condition.                           |
+
 
 
 

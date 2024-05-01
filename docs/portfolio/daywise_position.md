@@ -1,11 +1,24 @@
-## Get Day Wise Position
+<!-- ## Get Day Wise Position -->
 To get positions of the day, use getPositionDayWise method.
 
 ```python
 Endpoint: api/v1/positions
 Method-Type: GET
-Method: pocket.getPositionDayWise()
 ```
+
+### Query Params
+```json
+{
+   "client_id": "YG1234",
+   "type": "live"
+}
+```
+
+### Example
+```python
+data=obj.getPositionsDaywise()
+```
+
 
 ### Response
 ```json

@@ -4,7 +4,15 @@ The Cancel Order API provides user with the capability to cancel open or pending
 ```python
 Endpoint: /api/v1/orders/<oms_order_id>
 Method-Type: DELETE
-Method: pocket.cancelOrder(Parameters)
+```
+
+### Request Packet
+```json
+{
+    "oms_order_id":"202403111778",
+    "client_id": "clientId",
+    "execution_type": "REGULAR"
+}
 ```
 
 

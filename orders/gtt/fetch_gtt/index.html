@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#example" class="md-skip">
+        <a href="#query-params" class="md-skip">
           Skip to content
         </a>
       
@@ -938,6 +938,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#query-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1746,6 +1755,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#query-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1792,6 +1810,11 @@
 <p>This API is used to fetch the details of the existing gtt orders. This method fetch details like action type, exchange, instrument token, expiry time etc.</p>
 <pre><code class="language-python">Endpoint: api/v1/event/gtt/{client_id}
 Method-Type: GET
+</code></pre>
+<h3 id="query-params">Query Params</h3>
+<pre><code class="language-json">{
+    &quot;client_id&quot; : &quot;client_id&quot;
+}
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.gttFetchRule() #No Parameters needs to be passed.

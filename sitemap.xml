@@ -326,7 +326,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/websockets/order_book/</loc>
+         <lastmod>2024-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/snapquote_data/</loc>
+         <lastmod>2024-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/websockets/trade_book/</loc>
          <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

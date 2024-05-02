@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#request-packet" class="md-skip">
+        <a href="#path-params" class="md-skip">
           Skip to content
         </a>
       
@@ -959,9 +959,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#request-packet" class="md-nav__link">
+  <a href="#path-params" class="md-nav__link">
     <span class="md-ellipsis">
-      Request Packet
+      Path Params
     </span>
   </a>
   
@@ -977,9 +977,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Example Code
     </span>
   </a>
   
@@ -1764,9 +1764,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#request-packet" class="md-nav__link">
+  <a href="#path-params" class="md-nav__link">
     <span class="md-ellipsis">
-      Request Packet
+      Path Params
     </span>
   </a>
   
@@ -1782,9 +1782,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Example Code
     </span>
   </a>
   
@@ -1830,9 +1830,10 @@
 <pre><code class="language-python">Endpoint: api/v1/event/gtt/{client_id}/{id}
 Method-Type: DELETE
 </code></pre>
-<h3 id="request-packet">Request Packet</h3>
+<h3 id="path-params">Path Params</h3>
 <pre><code class="language-json">{
-    &quot;id&quot;:&quot;e06f52ab-6cf4-492d-a014-c6e0e5843a93&quot;
+    &quot;client_id&quot; : &quot;YG1234&quot;,
+    &quot;id&quot; : &quot;e06f52ab-6cf4-492d-a014-c6e0e5843a93&quot;
 }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -1852,7 +1853,7 @@ Method-Type: DELETE
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
+<h3 id="example-code">Example Code</h3>
 <pre><code class="language-python">response = pocket.gttCancelRule({&quot;id&quot;:&quot;e06f52ab-6cf4-492d-a014-c6e0e5843a93&quot;})
 </code></pre>
 <h3 id="response">Response</h3>

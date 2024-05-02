@@ -461,9 +461,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#body-params" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters
+      Body Params
     </span>
   </a>
   
@@ -1773,9 +1773,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#body-params" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters
+      Body Params
     </span>
   </a>
   
@@ -1837,7 +1837,7 @@ Method-Type: DELETE
     &quot;execution_type&quot;: &quot;REGULAR&quot;
 }
 </code></pre>
-<h3 id="parameters">Parameters</h3>
+<h3 id="body-params">Body Params</h3>
 <table>
 <thead>
 <tr>
@@ -1865,7 +1865,11 @@ Method-Type: DELETE
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-python">data = obj.cancelOrder({&quot;oms_order_id&quot;:&quot;202403111778&quot;, &quot;client_id&quot;: &quot;clientId&quot;, &quot;execution_type&quot;: &quot;REGULAR&quot;})
+<pre><code class="language-python">data = pocket.cancelOrder({
+    &quot;oms_order_id&quot;:&quot;202403111778&quot;, 
+    &quot;client_id&quot;: &quot;clientId&quot;, 
+    &quot;execution_type&quot;: &quot;REGULAR&quot;
+    })
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{

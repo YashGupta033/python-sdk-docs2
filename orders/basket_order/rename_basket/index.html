@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#example" class="md-skip">
           Skip to content
         </a>
       
@@ -832,6 +832,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -841,7 +850,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example_1" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1764,7 +1782,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example_1" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
@@ -1811,7 +1829,12 @@
 <p>This method is used to rename the existing basket.</p>
 <pre><code class="language-python">Endpoint: api/v1/basket
 Method-Type: PUT
-Method: pocket.renameBasket(Parameters)
+</code></pre>
+<h3 id="example">Example</h3>
+<pre><code class="language-json">{
+  &quot;basket_id&quot;:&quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+  &quot;name&quot;:&quot;Basket2&quot;
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1835,7 +1858,7 @@ Method: pocket.renameBasket(Parameters)
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
+<h3 id="example_1">Example</h3>
 <pre><code class="language-python">response = pocket.renameBasket(
   {
     &quot;basket_id&quot;:&quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,

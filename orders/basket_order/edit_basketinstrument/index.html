@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -788,6 +788,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1761,6 +1770,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1823,7 +1841,38 @@
 <p>The method editBasketInstrument is used to edit the basket instrument present in the basket. In this we are able to edit the basket instrument details like quantity.</p>
 <pre><code class="language-python">Endpoint: api/v1/basket/order
 Method-Type: PUT
-Method: pocket.editBasketInstrument(&quot;Parameters&quot;)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;basket_id&quot;:&quot;72fa28f8-7c08-4a4d-ba7a-fedd461744a1&quot;,
+    &quot;name&quot;:&quot;h&quot;,
+    &quot;order_info&quot;:
+    {
+      &quot;exchange&quot;:&quot;NSE&quot;,
+      &quot;instrument_token&quot;:3045,
+      &quot;client_id&quot;:&quot;DEMO1&quot;,
+      &quot;order_type&quot;:&quot;LIMIT&quot;,
+      &quot;price&quot;:506.5,
+      &quot;quantity&quot;:1,
+      &quot;disclosed_quantity&quot;:0,
+      &quot;validity&quot;:&quot;DAY&quot;,
+      &quot;product&quot;:&quot;MIS&quot;,
+      &quot;trading_symbol&quot;:&quot;SBIN-EQ&quot;,
+      &quot;order_side&quot;:&quot;BUY&quot;,
+      &quot;user_order_id&quot;:10002,
+      &quot;underlying_token&quot;:&quot;3045&quot;,
+      &quot;series&quot;:&quot;EQ&quot;,
+      &quot;oms_order_id&quot;:&quot;a5d13c1f-f99c-4230-ad19-9ed8e826ee74&quot;,
+      &quot;exchange_order_id&quot;:&quot;&quot;,
+      &quot;trigger_price&quot;:0,
+      &quot;stop_loss_value&quot;:0,
+      &quot;square_off_value&quot;:0,
+      &quot;trailing_stop_loss&quot;:0,
+      &quot;is_trailing&quot;:false,
+      &quot;execution_type&quot;:&quot;BO&quot;
+    },
+  &quot;order_id&quot;:&quot;a5d13c1f-f99c-4230-ad19-9ed8e826ee74&quot;
+}
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <table>
@@ -1963,84 +2012,37 @@ Method: pocket.editBasketInstrument(&quot;Parameters&quot;)
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-python">{
-  &quot;data&quot;: {
-    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
-    &quot;basket_type&quot;: &quot;NORMAL&quot;,
-    &quot;is_executed&quot;: false,
-    &quot;login_id&quot;: &quot;HI0009&quot;,
-    &quot;name&quot;: &quot;Y_Basket&quot;,
-    &quot;order_type&quot;: &quot;ALL&quot;,
-    &quot;orders&quot;: [
-      {
-        &quot;order_id&quot;: &quot;d5950a9f-b538-458b-a3cd-1dec744cb931&quot;,
-        &quot;order_info&quot;: {
-          &quot;login_id&quot;: null,
-          &quot;order_status&quot;: null,
-          &quot;rejection_code&quot;: 0,
-          &quot;exchange&quot;: &quot;NSE&quot;,
-          &quot;sl_trigger_price&quot;: 0,
-          &quot;client_id&quot;: &quot;HI0009&quot;,
-          &quot;mode&quot;: &quot;NEW&quot;,
-          &quot;product&quot;: &quot;MIS&quot;,
-          &quot;rejection_reason&quot;: &quot;&quot;,
-          &quot;order_side&quot;: &quot;BUY&quot;,
-          &quot;market_protection_percentage&quot;: 0,
-          &quot;nnf_id&quot;: 0,
-          &quot;validity&quot;: &quot;DAY&quot;,
-          &quot;trading_symbol&quot;: &quot;IDEA-EQ&quot;,
-          &quot;trigger_price&quot;: 0,
-          &quot;is_trailing&quot;: false,
-          &quot;series&quot;: &quot;EQ&quot;,
-          &quot;lot_size&quot;: 0,
-          &quot;leg_order_indicator&quot;: null,
-          &quot;disclosed_quantity&quot;: 0,
-          &quot;order_entry_time&quot;: 0,
-          &quot;sl_order_quantity&quot;: 0,
-          &quot;order_type&quot;: &quot;MARKET&quot;,
-          &quot;average_price&quot;: 0,
-          &quot;deposit&quot;: 0,
-          &quot;contract_description&quot;: {},
-          &quot;average_trade_price&quot;: 0,
-          &quot;oms_order_id&quot;: &quot;&quot;,
-          &quot;filled_quantity&quot;: 0,
-          &quot;order_status_info&quot;: &quot;&quot;,
-          &quot;trailing_stop_loss&quot;: null,
-          &quot;price&quot;: 0,
-          &quot;segment&quot;: &quot;&quot;,
-          &quot;underlying_token&quot;: &quot;14366&quot;,
-          &quot;sl_order_price&quot;: 0,
-          &quot;instrument_token&quot;: 14366,
-          &quot;trade_price&quot;: 0,
-          &quot;symbol&quot;: &quot;&quot;,
-          &quot;target_price_type&quot;: &quot;absolute&quot;,
-          &quot;execution_type&quot;: &quot;REGULAR&quot;,
-          &quot;quantity&quot;: 1,
-          &quot;order_tag&quot;: &quot;&quot;,
-          &quot;spread_token&quot;: null,
-          &quot;isin&quot;: &quot;&quot;,
-          &quot;pro_cli&quot;: &quot;CLIENT&quot;,
-          &quot;tags&quot;: [],
-          &quot;last_activity_reference&quot;: 0,
-          &quot;square_off_value&quot;: null,
-          &quot;remaining_quantity&quot;: 0,
-          &quot;square_off&quot;: false,
-          &quot;stop_loss_value&quot;: null,
-          &quot;exchange_order_id&quot;: &quot;&quot;,
-          &quot;exchange_time&quot;: 0,
-          &quot;device&quot;: null,
-          &quot;user_order_id&quot;: 10002,
-          &quot;source&quot;: null
-        }
-      }
-    ],
-    &quot;product_type&quot;: &quot;ALL&quot;,
-    &quot;sip_eligible&quot;: false,
-    &quot;sip_enabled&quot;: false
-  },
-  &quot;message&quot;: &quot;Order added in the basket Y_Basket.&quot;,
-  &quot;status&quot;: &quot;success&quot;
-}
+<pre><code class="language-python">data = obj.editBasketInstrument({
+
+    &quot;basket_id&quot;:&quot;72fa28f8-7c08-4a4d-ba7a-fedd461744a1&quot;,
+    &quot;name&quot;:&quot;h&quot;,
+    &quot;order_info&quot;:
+    {
+      &quot;exchange&quot;:&quot;NSE&quot;,
+      &quot;instrument_token&quot;:3045,
+      &quot;client_id&quot;:&quot;DEMO1&quot;,
+      &quot;order_type&quot;:&quot;LIMIT&quot;,
+      &quot;price&quot;:506.5,
+      &quot;quantity&quot;:1,
+      &quot;disclosed_quantity&quot;:0,
+      &quot;validity&quot;:&quot;DAY&quot;,
+      &quot;product&quot;:&quot;MIS&quot;,
+      &quot;trading_symbol&quot;:&quot;SBIN-EQ&quot;,
+      &quot;order_side&quot;:&quot;BUY&quot;,
+      &quot;user_order_id&quot;:10002,
+      &quot;underlying_token&quot;:&quot;3045&quot;,
+      &quot;series&quot;:&quot;EQ&quot;,
+      &quot;oms_order_id&quot;:&quot;a5d13c1f-f99c-4230-ad19-9ed8e826ee74&quot;,
+      &quot;exchange_order_id&quot;:&quot;&quot;,
+      &quot;trigger_price&quot;:0,
+      &quot;stop_loss_value&quot;:0,
+      &quot;square_off_value&quot;:0,
+      &quot;trailing_stop_loss&quot;:0,
+      &quot;is_trailing&quot;:false,
+      &quot;execution_type&quot;:&quot;BO&quot;
+    },
+  &quot;order_id&quot;:&quot;a5d13c1f-f99c-4230-ad19-9ed8e826ee74&quot;
+})
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json"> {

@@ -927,6 +927,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1780,6 +1789,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1841,7 +1859,29 @@
 <p>This API is used to place the gtt order. Good Till Triggered is active until the trigger condition is met. The trigger is valid for the given expiry date. Whenever the price condition within this period is met, the order will be placed and executed, provided there are enough funds in the trading account, and the limit price order is filled on the exchange.</p>
 <pre><code class="language-python">Endpoint: api/v1/event/gtt
 Method-Type: POST
-Method: pocket.gttCreateRule(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+&quot;action_type&quot;: &quot;single_order&quot;,
+&quot;expiry_time&quot;: &quot;2024-12-12&quot;,
+&quot;order&quot;:{
+&quot;client_id&quot;: &quot;HI0009&quot;,
+&quot;disclosed_quantity&quot;: 0,
+&quot;exchange&quot;: &quot;NSE&quot;,
+&quot;instrument_token&quot;: &quot;14366&quot;,
+&quot;market_protection_percentage&quot;: 0,
+&quot;order_side&quot;: &quot;BUY&quot;,
+&quot;order_type&quot;: &quot;LIMIT&quot;,
+&quot;price&quot;: 11.3,
+&quot;product&quot;: &quot;CNC&quot;,
+&quot;quantity&quot;: 1,
+&quot;sl_order_price&quot;: 0,
+&quot;sl_order_quantity&quot;: 0,
+&quot;sl_trigger_price&quot;: 0,
+&quot;trigger_price&quot;: 13.6,
+&quot;user_order_id&quot;: 122321
+    }
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1966,7 +2006,8 @@ Method: pocket.gttCreateRule(Parameters)
 &quot;sl_trigger_price&quot;: 0,
 &quot;trigger_price&quot;: 13.6,
 &quot;user_order_id&quot;: 122321
-}})
+    }
+})
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{

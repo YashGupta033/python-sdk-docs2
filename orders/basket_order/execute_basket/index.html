@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#example" class="md-skip">
           Skip to content
         </a>
       
@@ -853,6 +853,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -862,7 +871,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example_1" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
@@ -1770,6 +1779,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1779,7 +1797,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example_1" class="md-nav__link">
     <span class="md-ellipsis">
       Example
     </span>
@@ -1841,8 +1859,16 @@
 <p>This method is used to execute the orders of the instruments present in the basket. All the orders are placed in one go and there is no need to place individual orders</p>
 <pre><code class="language-python">Endpoint: api/v1/orders/kart
 Method-Type: POST
-Method: pocket.executeBasket(Parameters)
-
+</code></pre>
+<h3 id="example">Example</h3>
+<pre><code class="language-json">{
+    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+    &quot;client_id&quot;:&quot;HI0009&quot;,
+    &quot;execution_state&quot;:false,
+    &quot;execution_type&quot;:&quot;NML&quot;,
+    &quot;name&quot;:&quot;Y_Basket&quot;,
+    &quot;square_off&quot;: false
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1876,7 +1902,7 @@ Method: pocket.executeBasket(Parameters)
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
+<h3 id="example_1">Example</h3>
 <pre><code class="language-python">data = obj.executeBasket({
     &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
     &quot;client_id&quot;:&quot;HI0009&quot;,

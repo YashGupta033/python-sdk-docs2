@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -619,6 +619,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1811,7 +1829,30 @@
 <p>The Modify Order API enables users to make changes in the bracket order, pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
 <pre><code class="language-python">Endpoint: /api/v1/orders/kart
 Method-Type: PUT
-Method: pocket.modifyConditionalOrder(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+  &quot;client_id&quot;: &quot;HI0009&quot;,
+  &quot;disclosed_quantity&quot;: 0,
+  &quot;exchange&quot;: &quot;NSE&quot;,
+  &quot;exchange_order_id&quot;: &quot;1100000007437522&quot;,
+  &quot;execution_type&quot;: &quot;BO&quot;,
+  &quot;filled_quantity&quot;: 0,
+  &quot;instrument_token&quot;: 14366,
+  &quot;is_trailing&quot;:false,
+  &quot;last_activity_reference&quot;: &quot;1394876196271146000&quot;,
+  &quot;oms_order_id&quot;: &quot;20240314659&quot;,
+  &quot;order_type&quot;: &quot;LIMIT&quot;,
+  &quot;price&quot;: 11.5,
+  &quot;quantity&quot;: 1,
+  &quot;product&quot;: &quot;MIS&quot;,
+  &quot;remaining_quantity&quot;: 1,
+  &quot;square_off_value&quot;: 0.9,
+  &quot;stop_loss_value&quot;: 0.06,
+  &quot;trailing_stop_loss&quot;: 0,
+  &quot;trigger_price&quot;: 0,
+  &quot;validity&quot;: &quot;DAY&quot;,
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

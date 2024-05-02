@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -535,6 +535,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1812,7 +1830,27 @@
 <p>A Cover Order help traders protect against losses by placing a stop loss order together with a regular order. This means that if the price moves in an unexpected way, the stop loss order kicks in to limit losses. When buying a Cover Order, the limit price must be higher than the stop-loss trigger price. Conversely, when selling a Cover Order, the limit price must be lower than the stop loss trigger price.</p>
 <pre><code class="language-python">Endpoint: /api/v1/orders/kart
 Method-Type: POST
-Method: pocket.placeConditionalOrder(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;exchange&quot;: &quot;NSE&quot;,
+    &quot;instrument_token&quot;: &quot;14366&quot;,
+    &quot;client_id&quot;: &quot;clientId&quot;,
+    &quot;order_type&quot;: &quot;LIMIT&quot;,
+    &quot;price&quot;: 13,
+    &quot;quantity&quot;: 1,
+    &quot;disclosed_quantity&quot;: 0,
+    &quot;validity&quot;: &quot;DAY&quot;,
+    &quot;product&quot;: &quot;MIS&quot;,
+    &quot;order_side&quot;: &quot;BUY&quot;,
+    &quot;device&quot;: &quot;WEB&quot;,
+    &quot;execution_type&quot;: &quot;CO&quot;,
+    &quot;is_trailing&quot;: true,
+    &quot;stop_loss_value&quot;: 12,
+    &quot;trailing_stop_loss&quot;: &quot;0.05&quot;,
+    &quot;trigger_price&quot;: 0,
+    &quot;user_order_id&quot;: 10002,
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1902,7 +1940,7 @@ Method: pocket.placeConditionalOrder(Parameters)
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-python">response = pocket.placeConditionalOrder( {
+<pre><code class="language-python">response = pocket.placeConditionalOrder({
     &quot;exchange&quot;: &quot;NSE&quot;,
     &quot;instrument_token&quot;: &quot;14366&quot;,
     &quot;client_id&quot;: &quot;clientId&quot;,

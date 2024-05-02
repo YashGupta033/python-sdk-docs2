@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -767,6 +767,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1761,6 +1770,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1823,7 +1841,30 @@
 <p>This method used to add Instrument in the created basket. We can add only limited number of instruments in the basket and repeated instrument can't be added.</p>
 <pre><code class="language-python">Endpoint: api/v1/basket/order
 Method-Type: POST
-Method: pocket.addBasketInstrument(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+  &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+  &quot;name&quot;: &quot;Y_Basket&quot;,
+  &quot;order_info&quot;: {
+      &quot;client_id&quot;: &quot;HI0009&quot;,
+      &quot;disclosedQuantity&quot;: 0,
+      &quot;exchange&quot;: &quot;NSE&quot;,
+      &quot;execution_type&quot;: &quot;REGULAR&quot;,
+      &quot;instrument_token&quot;: 14366,
+      &quot;order_side&quot;: &quot;BUY&quot;,
+      &quot;order_type&quot;: &quot;MARKET&quot;,
+      &quot;price&quot;: 0,
+      &quot;product&quot;: &quot;MIS&quot;,
+      &quot;quantity&quot;: 1,
+      &quot;series&quot;: &quot;EQ&quot;,
+      &quot;trading_symbol&quot;: &quot;IDEA-EQ&quot;,
+      &quot;trigger_price&quot;: 0,
+      &quot;underlying_token&quot;: &quot;14366&quot;,
+      &quot;validity&quot;: &quot;DAY&quot;,
+      &quot;user_order_id&quot;: 10002
+  }
+}
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <table>

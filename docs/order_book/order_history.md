@@ -4,9 +4,14 @@ The Order History API provides users with access to comprehensive data on past t
 ```python
 Endpoint: /api/v1/order/<oms_order_id>/history
 Method-Type: GET
-Method: pocket.getHistoricalOrderBook()
 ```
 
+### Query Params
+```json
+{
+    "client_id": "YG1234"
+}
+```
 
 
 ### Response

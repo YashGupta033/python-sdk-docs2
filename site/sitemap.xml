@@ -2,332 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/Annexure/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/IPO/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/funds/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/login/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/profile/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/tpin/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/IPO/all_ipo_data/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/IPO/fetch_ipo_order/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/IPO/place_ipo_order/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/contract_details/scrip_info/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/contract_details/search_scrip/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_closingprice/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_dpr/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_fnoltp/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_greek/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_ltp/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/get_marketdata/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/market_data/option_chain/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bearcallspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bearputspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bullcallspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/bullputspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/callratiobackspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/ironbutterfly/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/ironcondor/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/putratiobackspread/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/straddle/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/straddlechain/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/option_strategies/strangle/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/order_book/fetch_completedorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/order_book/fetch_pendingorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/order_book/order_history/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/order_book/trade_book/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/order_types/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/add_basketinstrument/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/create_basket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/delete_basket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/delete_basketinstrument/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/edit_basketinstrument/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/execute_basket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/fetch_basket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/basket_order/rename_basket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/BO_CO/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/cancel_BOorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/cancel_COorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/modify_BOorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/modify_COorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/place_BOorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/conditional_order/place_COorder/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/gtt/cancel_gtt/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/gtt/create_gtt/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/gtt/fetch_gtt/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/gtt/modify_gtt/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/regular_order/cancel_regular_order/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/regular_order/modify_regular_order/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/orders/regular_order/place_regular_order/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/portfolio/convert_positions/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/portfolio/daywise_position/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/portfolio/demat_holding/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/portfolio/netwise_position/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/basic/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/compact_marketdata/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/connecting_websocket/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/detailed_marketdata/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/websockets/order_book/</loc>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pacefin.github.io/pacefin-api-docs/websockets/snapquote_data/</loc>
-         <lastmod>2024-05-01</lastmod>
+         <lastmod>2024-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pacefin.github.io/pacefin-api-docs/websockets/trade_book/</loc>
+         <lastmod>2024-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

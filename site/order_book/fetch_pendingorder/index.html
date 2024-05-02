@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#example" class="md-skip">
+        <a href="#query-params" class="md-skip">
           Skip to content
         </a>
       
@@ -1070,6 +1070,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#query-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1744,6 +1753,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#query-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1792,8 +1810,12 @@
 <p>The Pending Orders API retrieves information about orders that are currently pending and yet to be executed from the order book. By utilizing this API, users can access essential details regarding their outstanding orders, including the order ID, order type, price, quantity, and timestamp of placement.  </p>
 <pre><code class="language-python">Endpoint: /api/v1/orders
 Method-Type: GET
-Method: pocket.getPendingOrderBook()
-
+</code></pre>
+<h3 id="query-params">Query Params</h3>
+<pre><code class="language-json">{
+    &quot;type&quot;: &quot;pending&quot;,
+    &quot;client_id&quot;: &quot;YG1234&quot;
+}
 </code></pre>
 <h3 id="example">Example</h3>
 <pre><code class="language-python">response = pocket.getCompletedOrderBook()    # No parameter needs to be passed

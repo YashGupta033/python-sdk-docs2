@@ -6,7 +6,14 @@ The "Get Fund" API is a request made to retrieve information about a user's fund
 ```python
 Endpoint: api/v1/funds/view
 Method-Type: GET
-Method: pocket.getFunds() 
+```
+
+### Query Params
+```json
+{
+    "client_id": "YG1234",
+    "type": "all"
+}
 ```
 
 ### Response

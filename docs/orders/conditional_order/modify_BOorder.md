@@ -33,7 +33,7 @@ Method-Type: PUT
 }
 ```
 
-### Parameters
+### Body Params
 | FieldName                | Datatype | Description                                       |
 |--------------------------|----------|---------------------------------------------------|
 | exchange                 | `String`   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
@@ -59,9 +59,9 @@ Method-Type: PUT
 | execution_type           | String   | `BO`                                                |
 
 
-### Example 
+### Example Code
 ```python
-data=obj.modifyConditionalOrder( {
+data=pocket.modifyConditionalOrder( {
   "client_id": "HI0009",
   "disclosed_quantity": 0,
   "exchange": "NSE",

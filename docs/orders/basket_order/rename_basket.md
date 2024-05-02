@@ -6,7 +6,7 @@ Endpoint: api/v1/basket
 Method-Type: PUT
 ```
 
-### Example
+### Request Packet
 ```json
 {
   "basket_id":"9cd5fbc3-333b-4934-8d45-e692349b5ede",

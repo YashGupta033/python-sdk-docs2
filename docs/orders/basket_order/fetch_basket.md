@@ -2,8 +2,15 @@
 This method used to fetch details of the basket order like basketId, basket type, name, login Id etc. It displays total number of baskets created along with the added instrument details.
 
 ```python
-Endpoint: api/v1/basket/{login_id}
+Endpoint: api/v1/basket/{client_id}
 Method-Type: GET
+```
+
+### Query Params
+```json
+{
+    "login_id" : "client_id" 
+}
 ```
 
 

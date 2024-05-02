@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -980,6 +980,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1811,7 +1829,31 @@
 <p>This method is used to modify the existing gtt orders. We can modify the price, trigger price etc.</p>
 <pre><code class="language-python">Endpoint: api/v1/event/gtt
 Method-Type: PUT
-Method: pocket.gttModifyRule(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;expiry_time&quot;: &quot;2024-12-12&quot;,
+    &quot;action_type&quot;:&quot;single_order&quot;,
+    &quot;id&quot;: &quot;ba1ff6e6-e164-4dcd-af5a-0b6f192147ed&quot;,
+    &quot;order&quot;: {
+        &quot;client_id&quot;: &quot;HI0009&quot;,
+        &quot;device&quot;: &quot;web&quot;,
+        &quot;disclosed_quantity&quot;: 0,
+        &quot;exchange&quot;: &quot;NSE&quot;,
+        &quot;instrument_token&quot;: &quot;14366&quot;,
+        &quot;market_protection_percentage&quot;: 0,
+        &quot;order_side&quot;: &quot;BUY&quot;,
+        &quot;order_type&quot;: &quot;LIMIT&quot;,
+        &quot;price&quot;: 11.5,
+        &quot;product&quot;: &quot;CNC&quot;,
+        &quot;quantity&quot;: 1,
+        &quot;sl_order_price&quot;: 0,
+        &quot;sl_order_quantity&quot;: 0,
+        &quot;sl_trigger_price&quot;: 0,
+        &quot;trigger_price&quot;: 13.5,
+        &quot;user_order_id&quot;: 10002
+    }
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

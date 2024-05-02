@@ -5,7 +5,7 @@
 res = pocket.greekdata(Parameters)
 ```
 
-### Parameters
+### Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
 | exchange   | String    | `NFO`                                   |

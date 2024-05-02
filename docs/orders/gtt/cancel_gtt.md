@@ -7,10 +7,11 @@ Endpoint: api/v1/event/gtt/{client_id}/{id}
 Method-Type: DELETE
 ```
 
-### Request Packet
+### Path Params
 ```json
 {
-    "id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"
+    "client_id" : "YG1234",
+    "id" : "e06f52ab-6cf4-492d-a014-c6e0e5843a93"
 }
 ```
 
@@ -19,7 +20,7 @@ Method-Type: DELETE
 |---------------------------|-----------|----------------------------------------------|
 | id               | `String`    | id of the gtt order that needs to be cancelled.|
 
-### Example
+### Example Code
 ```python
 response = pocket.gttCancelRule({"id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"})
 ```

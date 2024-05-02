@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -746,6 +746,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1761,6 +1770,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1823,7 +1841,12 @@
 <p>The Delete Basket API allows users to remove a specific basket from their account. By providing the unique identifier of the basket to be deleted, the API initiates the removal process, ensuring that the specified basket and its associated orders are permanently deleted from the user's account. This functionality helps users manage their baskets effectively, allowing them to clean up unwanted or obsolete baskets from their portfolio effortlessly.</p>
 <pre><code class="language-python">Endpoint: /api/v1/basket
 Method-Type: DELETE
-Method: pocket.deleteBasket(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+  &quot;BasketId&quot;:&quot;0d991a91-21c0-4afd-aab2-ee9131cbd2fc&quot;,
+  &quot;BasketName&quot;:&quot;A_Basket&quot;
+}
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <table>
@@ -1848,7 +1871,10 @@ Method: pocket.deleteBasket(Parameters)
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<pre><code class="language-json">data=obj.deleteBasket({&quot;BasketId&quot;:&quot;0d991a91-21c0-4afd-aab2-ee9131cbd2fc&quot;,&quot;BasketName&quot;:&quot;A_Basket&quot;})
+<pre><code class="language-python">data=obj.deleteBasket({
+  &quot;BasketId&quot;:&quot;0d991a91-21c0-4afd-aab2-ee9131cbd2fc&quot;,
+  &quot;BasketName&quot;:&quot;A_Basket&quot;
+  })
 </code></pre>
 <h2 id="response">Response</h2>
 <pre><code class="language-json">{

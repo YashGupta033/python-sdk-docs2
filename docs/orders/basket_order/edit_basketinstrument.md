@@ -72,7 +72,7 @@ Method-Type: PUT
 
 ### Example
 ```python
-data = obj.editBasketInstrument({
+data = pocket.editBasketInstrument({
 
     "basket_id":"72fa28f8-7c08-4a4d-ba7a-fedd461744a1",
     "name":"h",

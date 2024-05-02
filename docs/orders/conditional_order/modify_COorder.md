@@ -30,7 +30,7 @@ Method-Type: PUT
 ```
 
 
-### Parameters
+### Body Params
 | FieldName                | Datatype | Description                                       |
 |--------------------------|----------|---------------------------------------------------|
 | exchange                 | `String`   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
@@ -54,7 +54,7 @@ Method-Type: PUT
 
 ## Example
 ```python
-data = obj.modifyConditionalOrder({
+data = pocket.modifyConditionalOrder({
     "exchange":"NSE",
     "exchange_order_id":"1100000030285558",
     "instrument_token":14366,

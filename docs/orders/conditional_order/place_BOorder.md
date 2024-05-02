@@ -7,7 +7,6 @@ Endpoint: /api/v1/orders/kart
 Method-Type: POST
 ```
 
-
 ### Request Packet
 ```json
 {
@@ -32,7 +31,7 @@ Method-Type: POST
 }
 ```
 
-### Parameters
+### Body Params
 | FieldName          | Datatype   | Description                                       |
 |--------------------|------------|---------------------------------------------------|
 | exchange           | `String`     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
@@ -57,7 +56,7 @@ Method-Type: POST
 
 ### Example
 ```python
-data=obj.placeConditionalOrder({
+data=pocket.placeConditionalOrder({
     "client_id": clintId,
     "device": "WEB",
     "disclosed_quantity": 0,

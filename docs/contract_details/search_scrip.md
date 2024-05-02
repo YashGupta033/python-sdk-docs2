@@ -5,8 +5,13 @@ In Search Scrip, detailes of all the related named instruments will be returned 
 ```python
 Endpoint: api/v1/search
 Method-Type: GET
-Method: pocket.searchScrip(Parameters)
+```
 
+### Query Params
+```json
+{
+  "key": "<trading_symbol>"
+}
 ```
 
 ### Parameters

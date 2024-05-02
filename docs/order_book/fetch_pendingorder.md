@@ -5,9 +5,16 @@ The Pending Orders API retrieves information about orders that are currently pen
 ```python
 Endpoint: /api/v1/orders
 Method-Type: GET
-Method: pocket.getPendingOrderBook()
-  
 ```
+
+### Query Params
+```json
+{
+    "type": "pending",
+    "client_id": "YG1234"
+}
+```
+
 
 ### Example
 ```python

@@ -4,11 +4,10 @@ The getMarketData API return market data information of the given instrument.
 ```python
 Endpoint: /api/v1/marketdata/:exchange/:token
 Method-Type: GET
-Method: pocket.getMarketData(Parameters)
-
 ```
 
-### Parameters
+
+### Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
 | exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`    |

@@ -5,7 +5,14 @@ Endpoint: api/v1/event/gtt/{client_id}
 Method-Type: GET
 ```
 
-### Example
+### Query Params
+```json
+{
+    "client_id" : "client_id"
+}
+```
+
+### Example Code
 ```python
 response = pocket.gttFetchRule() #No Parameters needs to be passed.
 ```

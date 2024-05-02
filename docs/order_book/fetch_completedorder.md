@@ -6,7 +6,14 @@ The Completed Orders API retrieves information about orders that have been succe
 ``` python
 Endpoint: /api/v1/orders
 Method-Type: GET
-Method: pocket.getCompletedOrderBook()  # No parameter needs to be passed
+```
+
+### Query Params
+```json
+{
+    "type": "completed",
+    "client_id": "YG1234"
+}
 ```
 
 ### Example

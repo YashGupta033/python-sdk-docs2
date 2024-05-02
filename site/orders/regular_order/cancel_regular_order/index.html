@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -450,6 +450,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1811,7 +1829,13 @@
 <p>The Cancel Order API provides user with the capability to cancel open or pending order. To cancel a pending order within the order book, user simply needs to provide the oms_order_id of the targeted order. Upon successful completion of the cancellation request, a <code>success</code> response status code will be returned, indicating the order's successful cancellation. This API streamlines the process of order management, empowering users to swiftly retract orders as needed, thereby enhancing flexibility and responsiveness in trading activities.</p>
 <pre><code class="language-python">Endpoint: /api/v1/orders/&lt;oms_order_id&gt;
 Method-Type: DELETE
-Method: pocket.cancelOrder(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;oms_order_id&quot;:&quot;202403111778&quot;,
+    &quot;client_id&quot;: &quot;clientId&quot;,
+    &quot;execution_type&quot;: &quot;REGULAR&quot;
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>

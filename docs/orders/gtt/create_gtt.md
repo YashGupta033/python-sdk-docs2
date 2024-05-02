@@ -33,7 +33,7 @@ Method-Type: POST
 }
 ```
 
-### Parameters
+### Body Params
 | Field Name             | Data Type | Description                                       |
 |------------------------|-----------|---------------------------------------------------|
 | action_type            | `String`    | Type of action `single_order`                |
@@ -56,9 +56,9 @@ Method-Type: POST
 | user_order_id          | `Integer`    | Represents the unique ID of the order.            |
 
 
-### Example
+### Example Code
 ```python
-data = obj.gttCreateRule(
+data = pocket.gttCreateRule(
 {
 "action_type": "single_order",
 "expiry_time": "2024-12-12",

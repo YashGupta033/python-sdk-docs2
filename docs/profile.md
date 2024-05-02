@@ -5,7 +5,13 @@ The profile API is designed to retrieve comprehensive information about a user. 
 ```python 
 Endpoint: /api/v1/user/trading_info
 Method-Type: GET
-Method: pocket.getProfile()
+```
+
+### Query Params
+```json
+{ 
+  "client_id": "YG1234"
+}
 ```
 
 ## Response 

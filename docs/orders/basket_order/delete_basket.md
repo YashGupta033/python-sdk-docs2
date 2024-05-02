@@ -24,7 +24,7 @@ Method-Type: DELETE
 
 ### Example
 ```python
-data=obj.deleteBasket({
+data=pocket.deleteBasket({
   "BasketId":"0d991a91-21c0-4afd-aab2-ee9131cbd2fc",
   "BasketName":"A_Basket"
   })

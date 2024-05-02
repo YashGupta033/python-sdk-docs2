@@ -16,7 +16,7 @@ Method-Type: DELETE
 ```
 
 
-### Parameters
+### Body Params
 
 | FieldName          | Datatype | Description                                    |
 |--------------------|----------|------------------------------------------------|
@@ -28,7 +28,11 @@ Method-Type: DELETE
 
 ### Example
 ```python
-data = obj.cancelOrder({"oms_order_id":"202403111778", "client_id": "clientId", "execution_type": "REGULAR"})
+data = pocket.cancelOrder({
+    "oms_order_id":"202403111778", 
+    "client_id": "clientId", 
+    "execution_type": "REGULAR"
+    })
 ```
 
 

@@ -34,7 +34,7 @@ Method-Type: PUT
 ```
 
 
-### Parameters
+### Body Params
 | Field Name                | Data Type | Description                                  |
 |---------------------------|-----------|----------------------------------------------|
 | expiry_time               | `String`    | Expiry time of the order (e.g., "2024-12-12")|
@@ -59,9 +59,9 @@ Method-Type: PUT
 
 
 
-### Example
+### Example Code
 ```python
-data = obj.gttModifyRule({
+data = pocket.gttModifyRule({
     "expiry_time": "2024-12-12",
     "action_type":"single_order",
     "id": "ba1ff6e6-e164-4dcd-af5a-0b6f192147ed",

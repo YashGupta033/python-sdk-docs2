@@ -19,7 +19,7 @@ Method-Type: DELETE
 ```
 
 
-### Parameters
+### Body Params
 | FieldName             | Datatype | Description                                    |
 |-----------------------|----------|------------------------------------------------|
 | client_id             | `String`   | Represents the unique id of user |
@@ -29,14 +29,15 @@ Method-Type: DELETE
 | leg_order_indicator   | `String`   | specifies either buy/sell or sl order `Entry` or `Third`                                 |
 
 
-### Example 
+### Example Code
 ```python
 response = pocket.cancelConditionalOrder({
     "client_id":"clientId",
     "exchange_order_id":"1300000034566552",
     "execution_type":"CO",
-"leg_order_indicator":"ENTRY", 
-"oms_order_id":"202403132605"})
+    "leg_order_indicator":"ENTRY", 
+    "oms_order_id":"202403132605"
+    })
 ```
 
 

@@ -8,7 +8,7 @@ Method-Type: DELETE
 ```
 
 
-### Example
+### Request Packet
 ```json
 {
   "BasketId": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
@@ -25,9 +25,10 @@ Method-Type: DELETE
 | BasketName | String    | Name of the basket.                        |
 | OrderId    | Integer   | Unique identifier for an order within a basket. |
 
+
 ### Example
 ```python
-data = obj.deleteBasketInstrument({
+data = pocket.deleteBasketInstrument({
 "BasketId": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
 "BasketName":"Y_Basket",
 "OrderId": "d5950a9f-b538-458b-a3cd-1dec744cb931"

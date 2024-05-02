@@ -4,8 +4,14 @@ The Scrip Info API is designed to provide users with detailed information about 
 ```python
 Endpoint: api/v1/contract/:exchange
 Method-Type: GET
-Method: pocket.getScripInfo(parameters) 
+```
 
+### Query Params
+```json
+{
+    "info": "scrip",
+    "token": "10666"
+}
 ```
 
 ## Parameters
@@ -15,9 +21,9 @@ Method: pocket.getScripInfo(parameters)
 | Instrument Token | `Integer`   | Unique identifier assigned to each financial instrument within the exchange. |
 
 
-### Example
+### Example Code
 ```python
-response = obj.getScripInfo('NSE', 11915)
+response = pocket.getScripInfo('NSE', 11915)
 ```
 
 ## Response

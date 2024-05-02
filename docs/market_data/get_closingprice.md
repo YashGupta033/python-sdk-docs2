@@ -4,10 +4,9 @@ The Get Closing Price API allows users to retrieve the closing price of a financ
 ```python
 Endpoint: /api/v1/marketdata/{exchange}/Capital?token={token}&key=close_price
 Method-Type: GET
-Method: pocket.getClosePrice(Parameters)
 ```
 
-## Parameters
+## Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
 | exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`   |

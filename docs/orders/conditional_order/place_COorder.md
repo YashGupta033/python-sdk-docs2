@@ -31,7 +31,7 @@ Method-Type: POST
 }
 ```
 
-### Parameters
+### Body Params
 
 | FieldName          | Datatype   | Description                                         |
 |--------------------|------------|-----------------------------------------------------|
@@ -53,7 +53,7 @@ Method-Type: POST
 
 
 
-### Example 
+### Example Code
 ```python
 response = pocket.placeConditionalOrder({
     "exchange": "NSE",

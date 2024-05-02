@@ -28,7 +28,7 @@ Method-Type: PUT
 ```
 
 
-### Parameters
+### Body Params
 
 | FieldName          | Datatype | Description                                    |
 |--------------------|----------|------------------------------------------------|
@@ -48,7 +48,7 @@ Method-Type: PUT
 
 ### Example Code
 ```python
-data=obj.modifyOrder({
+data=pocket.modifyOrder({
     "exchange": "NSE",
     "instrument_token": "11915",
     "client_id": "clientId",

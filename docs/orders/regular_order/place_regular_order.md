@@ -28,7 +28,7 @@ Method-Type: POST
 ```
 
 
-### Parameters
+### Body Params
 
 | FieldName           | Datatype   | Description                                                                                     |
 |---------------------|------------|-------------------------------------------------------------------------------------------------|
@@ -103,15 +103,6 @@ In different scenarios, you can get different error responses, the error respons
 
 Various error codes can be seen depending on the errors encountered within the code. Below are some of the defined error codes.
 
-<!-- 2.If given Wrong Instrument Token, you can get error response like
-```json
-{
-  "data": {},
-  "error_code": 45010,
-  "message": "Something went wrong",
-  "status": "error"
-}
-``` -->
 
 | Error Code | Description                                                |
 |------------|------------------------------------------------------------|

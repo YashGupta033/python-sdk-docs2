@@ -6,7 +6,7 @@ Endpoint: api/v1/orders/kart
 Method-Type: POST
 ```
 
-### Example
+### Request packet
 ```json
 {
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
@@ -29,7 +29,7 @@ Method-Type: POST
 
 ### Example
 ```python
-data = obj.executeBasket({
+data = pocket.executeBasket({
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
     "client_id":"HI0009",
     "execution_state":False,

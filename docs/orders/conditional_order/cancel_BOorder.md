@@ -18,7 +18,7 @@ Method-Type: DELETE
 }
 ```
 
-### Parameters
+### Body Params
 | FieldName            | Datatype | Description                                    |
 |----------------------|----------|------------------------------------------------|
 | client_id            | String   | Represents the unique id of user or username. |
@@ -29,9 +29,9 @@ Method-Type: DELETE
 | status               | String   | `Confirmed`                                      |
 
 
-### Example
+### Example Code
 ```python
-data=obj.cancelConditionalOrder(
+data=pocket.cancelConditionalOrder(
 {
     "client_id":clintId,
     "exchange_order_id":"1100000012461398",
@@ -60,6 +60,7 @@ data=obj.cancelConditionalOrder(
 | basket_id     | Identifier for the basket order      |
 | message       | Confirmation message for the order   |
 | status        | Status of the order modification     |
+
 
 ### Error Response
 ```json

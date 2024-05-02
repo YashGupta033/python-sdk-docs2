@@ -8,7 +8,7 @@ Method: pocket.getLtp(Parameters)
 
 ```
 
-### Parameters
+### Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
 | exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`    |

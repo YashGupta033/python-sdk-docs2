@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -556,6 +556,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1811,7 +1829,27 @@
 <p>The Modify Order API enables users to make changes in the cover order, pending within the order book. To execute a modification, users must provide the oms_order_id, last_activity_reference and exchange_order_id which can be obtained from the order book. User can modify parameters like price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
 <pre><code class="language-python">Endpoint: /api/v1/orders/kart
 Method-Type: PUT
-Method: pocket.modifyConditionalOrder(Parameters)
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+    &quot;exchange&quot;:&quot;NSE&quot;,
+    &quot;exchange_order_id&quot;:&quot;1100000030285558&quot;,
+    &quot;instrument_token&quot;:14366,
+    &quot;client_id&quot;:&quot;HI0009&quot;,
+    &quot;order_type&quot;:&quot;LIMIT&quot;,
+    &quot;price&quot;:12.45,
+    &quot;quantity&quot;:2,
+    &quot;disclosed_quantity&quot;:0,
+    &quot;validity&quot;:&quot;DAY&quot;,
+    &quot;product&quot;:&quot;CNC&quot;,
+    &quot;oms_order_id&quot;:&quot;202403132133&quot;,
+    &quot;filled_quantity&quot;:0,
+    &quot;remaining_quantity&quot;:1,
+    &quot;last_activity_reference&quot;:&quot;1394797204460943183&quot;,
+    &quot;stop_loss_value&quot;:12.35,
+    &quot;trailing_stop_loss&quot;:0,
+    &quot;execution_type&quot;:&quot;CO&quot;
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1911,7 +1949,7 @@ Method: pocket.modifyConditionalOrder(Parameters)
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<pre><code class="language-python">data=obj.modifyConditionalOrder( {
+<pre><code class="language-python">data = obj.modifyConditionalOrder({
     &quot;exchange&quot;:&quot;NSE&quot;,
     &quot;exchange_order_id&quot;:&quot;1100000030285558&quot;,
     &quot;instrument_token&quot;:14366,

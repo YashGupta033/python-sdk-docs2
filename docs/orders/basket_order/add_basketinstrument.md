@@ -58,7 +58,7 @@ Method-Type: POST
 
 ### Example
 ```python
-data = obj.addBasketInstrument({
+data = pocket.addBasketInstrument({
         "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
         "name": "Y_Basket",
         "order_info": {

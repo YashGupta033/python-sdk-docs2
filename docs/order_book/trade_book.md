@@ -4,7 +4,13 @@ Trade book API fetches record or log of all the trades executed by an account ho
 ```python
 Endpoint: /api/v1/trades
 Method-Type: GET
-Method: pocket.getTradedOrderBook()
+```
+
+### Query Params
+```json
+{
+    "client_id": "YG1234"
+}
 ```
 
 

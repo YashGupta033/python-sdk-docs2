@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#request-packet" class="md-skip">
           Skip to content
         </a>
       
@@ -809,6 +809,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1755,6 +1764,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -1811,8 +1829,13 @@
 <p>This Method is used to delete basket Instrument inside the basket. This requires basketId to delete the basket instrument in the basket.</p>
 <pre><code class="language-python">Endpoint: api/v1/basket/order
 Method-Type: DELETE
-Method: pocket.deleteBasketInstrument(Parameters)
-
+</code></pre>
+<h3 id="request-packet">Request Packet</h3>
+<pre><code class="language-json">{
+  &quot;BasketId&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
+  &quot;BasketName&quot;:&quot;Y_Basket&quot;,
+  &quot;OrderId&quot;: &quot;d5950a9f-b538-458b-a3cd-1dec744cb931&quot;
+}
 </code></pre>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1846,7 +1869,8 @@ Method: pocket.deleteBasketInstrument(Parameters)
 &quot;BasketId&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
 &quot;BasketName&quot;:&quot;Y_Basket&quot;,
 &quot;OrderId&quot;: &quot;d5950a9f-b538-458b-a3cd-1dec744cb931&quot;
-})
+}
+)
 </code></pre>
 <h3 id="response">Response</h3>
 <pre><code class="language-json">{

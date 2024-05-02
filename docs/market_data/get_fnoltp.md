@@ -7,7 +7,7 @@ Method-Type: GET
 Method: pocket.getFnoLtp(Parameters)
 ```
 
-## Parameters
+## Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
 | exchange   | String    | `NFO`                              |

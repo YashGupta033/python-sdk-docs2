@@ -3,8 +3,17 @@ This API retrieves option chain data for the selected instrument. Within the que
 ```python
 Endpoint: /api/v1/optionchain/NFO
 Method-Type: GET
-Method: pocket.getClosePrice(Parameters)
 ```
+
+### Query Params
+```json
+{
+    "token": 26009,
+    "num": 1,
+    "price": 46363
+}
+```
+
 
 ### Example
 ```python

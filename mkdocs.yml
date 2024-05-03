@@ -65,6 +65,9 @@ nav:
     - Detailed Marketdata: websockets/detailed_marketdata.md
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
+    - Order Updates: websockets/order_updates.md
+    - Trade Updates: websockets/trade_updates.md
+    
   
   # - Option Strategies:
   #   - Straddle Chain: option_strategies/straddlechain.md

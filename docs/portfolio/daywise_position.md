@@ -16,7 +16,7 @@ Method-Type: GET
 
 ### Example
 ```python
-data=obj.getPositionsDaywise()
+data=pocket.getPositionsDaywise()
 ```
 
 

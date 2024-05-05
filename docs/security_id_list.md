@@ -1,0 +1,2 @@
+To download the list of all the instruments that are available to trade, click on the below link.<br>
+<a href="https://pacetrader.pacefin.in/api/v1/contract/Compact?info=download&exchanges=NSE,NFO,CDS,BSE,MCX">Security ID List</a>

@@ -67,6 +67,8 @@ nav:
     - Snapquote Data: websockets/snapquote_data.md
     - Order Updates: websockets/order_updates.md
     - Trade Updates: websockets/trade_updates.md
+  - Security Id List: security_id_list.md
+  
     
   
   # - Option Strategies:

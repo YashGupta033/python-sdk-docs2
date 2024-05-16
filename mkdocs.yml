@@ -39,7 +39,7 @@ nav:
     - Fetch Completed Orders: order_book/fetch_completedorder.md
     - Fetch Pending Orders: order_book/fetch_pendingorder.md
     - Order History: order_book/order_history.md
-    - Trade Book: order_book/trade_book.md
+    # - Trade Book: order_book/trade_book.md
   - Contract Details:
     - Scrip Info: contract_details/scrip_info.md
     - Search Scrip: contract_details/search_scrip.md

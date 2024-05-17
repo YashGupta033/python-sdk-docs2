@@ -13,6 +13,10 @@ nav:
       - Place Regular Order: orders/regular_order/place_regular_order.md
       - Modify Regular Order: orders/regular_order/modify_regular_order.md
       - Cancel Regular Order: orders/regular_order/cancel_regular_order.md
+    - AMO Order:
+      - Place AMO Order: orders/amo_order/place_amo_order.md
+      - Modify AMO Order: orders/amo_order/modify_amo_order.md
+      - Cancel AMO Order: orders/amo_order/cancel_amo_order.md
     - Conditional Order:
       - Bracket Order & Cover Order: orders/conditional_order/BO_CO.md
       - Place Cover Order: orders/conditional_order/place_COorder.md
@@ -39,7 +43,7 @@ nav:
     - Fetch Completed Orders: order_book/fetch_completedorder.md
     - Fetch Pending Orders: order_book/fetch_pendingorder.md
     - Order History: order_book/order_history.md
-    # - Trade Book: order_book/trade_book.md
+    - Trade Book: order_book/trade_book.md
   - Contract Details:
     - Scrip Info: contract_details/scrip_info.md
     - Search Scrip: contract_details/search_scrip.md
@@ -58,7 +62,8 @@ nav:
     # - Convert Position: portfolio/convert_positions.md
   - Funds:
     - Get Fund Details: funds.md
-  - Profile: profile.md
+  - Profile:
+     - Get Profile Details: profile.md
   - Websockets:
     - Live Data and Websockets: websockets/basic.md
     - Connecting Websockets: websockets/connecting_websocket.md
@@ -66,7 +71,7 @@ nav:
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
     - Order Updates: websockets/order_updates.md
-    - Trade Updates: websockets/trade_updates.md
+    # - Trade Updates: websockets/trade_updates.md
   - Security Id List: security_id_list.md
   
     

@@ -12,13 +12,13 @@
         <meta name="author" content="Pacefin">
       
       
-        <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/orders/basket_order/execute_basket/">
+        <link rel="canonical" href="https://pacefin.github.io/pacefin-api-docs/orders/amo_order/modify_amo_order/">
       
       
-        <link rel="prev" href="../rename_basket/">
+        <link rel="prev" href="../place_amo_order/">
       
       
-        <link rel="next" href="../../gtt/create_gtt/">
+        <link rel="next" href="../cancel_amo_order/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Execute Basket - Pocketful</title>
+        <title>Modify AMO Order - Pocketful</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Execute Basket
+              Modify AMO Order
             
           </span>
         </div>
@@ -434,17 +434,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -458,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             AMO Order
@@ -472,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../amo_order/place_amo_order/" class="md-nav__link">
+      <a href="../place_amo_order/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,10 +492,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../amo_order/modify_amo_order/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modify AMO Order
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -502,6 +522,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Packet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body Params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Response
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -514,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../amo_order/cancel_amo_order/" class="md-nav__link">
+      <a href="../cancel_amo_order/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,19 +813,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -756,7 +837,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Basket Order
@@ -770,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_basket/" class="md-nav__link">
+      <a href="../../basket_order/create_basket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fetch_basket/" class="md-nav__link">
+      <a href="../../basket_order/fetch_basket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete_basket/" class="md-nav__link">
+      <a href="../../basket_order/delete_basket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../add_basketinstrument/" class="md-nav__link">
+      <a href="../../basket_order/add_basketinstrument/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../edit_basketinstrument/" class="md-nav__link">
+      <a href="../../basket_order/edit_basketinstrument/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete_basketinstrument/" class="md-nav__link">
+      <a href="../../basket_order/delete_basketinstrument/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rename_basket/" class="md-nav__link">
+      <a href="../../basket_order/rename_basket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -914,28 +995,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Execute Basket
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../basket_order/execute_basket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,84 +1007,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#request-packet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Request packet
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Response
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Response">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error Response
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1971,25 +1956,25 @@
         <li class="md-nav__item">
   <a href="#request-packet" class="md-nav__link">
     <span class="md-ellipsis">
-      Request packet
+      Request Packet
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#body-params" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters
+      Body Params
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#example-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Example Code
     </span>
   </a>
   
@@ -2001,21 +1986,6 @@
       Response
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Response">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2043,24 +2013,33 @@
                   
 
 
-  <h1>Execute Basket</h1>
+  <h1>Modify AMO Order</h1>
 
-<!-- ## Execute Basket Order -->
-<p>This method is used to execute the orders of the instruments present in the basket. All the orders are placed in one go and there is no need to place individual orders</p>
-<pre><code class="language-python">Endpoint: api/v1/orders/kart
-Method-Type: POST
+<!-- ## Modifying a AMO order -->
+<p>The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.</p>
+<pre><code class="language-python">Endpoint: api/v1/orders
+Method-Type: PUT
 </code></pre>
-<h3 id="request-packet">Request packet</h3>
+<h3 id="request-packet">Request Packet</h3>
 <pre><code class="language-json">{
-    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
-    &quot;client_id&quot;:&quot;HI0009&quot;,
-    &quot;execution_state&quot;:false,
-    &quot;execution_type&quot;:&quot;NML&quot;,
-    &quot;name&quot;:&quot;Y_Basket&quot;,
-    &quot;square_off&quot;: false
+    &quot;exchange&quot;: &quot;NSE&quot;,
+    &quot;instrument_token&quot;: &quot;11915&quot;,
+    &quot;client_id&quot;: &quot;clientId&quot;,
+    &quot;order_type&quot;: &quot;LIMIT&quot;,
+    &quot;price&quot;: 13,
+    &quot;quantity&quot;: 3,
+    &quot;disclosed_quantity&quot;: 0,
+    &quot;validity&quot;: &quot;DAY&quot;,
+    &quot;product&quot;: &quot;CNC&quot;,
+    &quot;order_side&quot;: &quot;BUY&quot;,
+    &quot;device&quot;: &quot;WEB&quot;,
+    &quot;user_order_id&quot;: 1,
+    &quot;trigger_price&quot;: 0,
+    &quot;oms_order_id&quot;:&quot;202403111778&quot;,
+    &quot;execution_type&quot;: &quot;AMO&quot;
 }
 </code></pre>
-<h3 id="parameters">Parameters</h3>
+<h3 id="body-params">Body Params</h3>
 <table>
 <thead>
 <tr>
@@ -2071,62 +2050,123 @@ Method-Type: POST
 </thead>
 <tbody>
 <tr>
-<td>basket_id</td>
+<td>exchange</td>
 <td><code>String</code></td>
-<td>Represents the unique id of the basket.</td>
+<td>Name of the exchange where the order is being placed. Possible values include <code>NSE</code>, <code>BSE</code>, <code>NFO</code>, <code>CDS</code>, <code>MCX</code></td>
+</tr>
+<tr>
+<td>instrument_token</td>
+<td><code>String</code></td>
+<td>The unique ID of the financial instrument.</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td><code>String</code></td>
+<td>Represents the unique id of user.</td>
+</tr>
+<tr>
+<td>order_type</td>
+<td><code>String</code></td>
+<td><code>LIMIT</code>, <code>MARKET</code>, <code>SL</code>, <code>SLM</code></td>
+</tr>
+<tr>
+<td>price</td>
+<td><code>Float</code></td>
+<td>If order_type is market, give value 0 else limit price</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td><code>Integer</code></td>
+<td>Total quantity of the instrument.</td>
+</tr>
+<tr>
+<td>disclosed_quantity</td>
+<td><code>Integer</code></td>
+<td>hidden quantity from the market</td>
+</tr>
+<tr>
+<td>validity</td>
+<td><code>String</code></td>
+<td><code>DAY</code> or <code>IOC</code></td>
+</tr>
+<tr>
+<td>product</td>
+<td><code>String</code></td>
+<td><code>CNC</code>, <code>MIS</code>, <code>NRML</code></td>
+</tr>
+<tr>
+<td>oms_order_id</td>
+<td><code>Integer</code></td>
+<td>Represents the unique id of order given by oms.</td>
+</tr>
+<tr>
+<td>trigger_price</td>
+<td><code>Integer</code></td>
+<td>specified activation threshold, required in SL or SLM orders</td>
 </tr>
 <tr>
 <td>execution_type</td>
 <td><code>String</code></td>
-<td><code>REGULAR</code>, <code>LIMIT</code>, <code>MARKET</code></td>
-</tr>
-<tr>
-<td>name</td>
-<td><code>String</code></td>
-<td>Represents the name of the basket.</td>
-</tr>
-<tr>
-<td>square_off</td>
-<td><code>Boolean</code></td>
-<td><code>TRUE</code> or <code>FALSE</code></td>
+<td><code>AMO</code></td>
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
-<pre><code class="language-python">data = pocket.executeBasket({
-    &quot;basket_id&quot;: &quot;9cd5fbc3-333b-4934-8d45-e692349b5ede&quot;,
-    &quot;client_id&quot;:&quot;HI0009&quot;,
-    &quot;execution_state&quot;:False,
-    &quot;execution_type&quot;:&quot;NML&quot;,
-    &quot;name&quot;:&quot;Y_Basket&quot;,
-    &quot;square_off&quot;: False
-})
+<h3 id="example-code">Example Code</h3>
+<pre><code class="language-python">data=pocket.modifyOrder({
+    &quot;exchange&quot;: &quot;NSE&quot;,
+    &quot;instrument_token&quot;: &quot;11915&quot;,
+    &quot;client_id&quot;: &quot;clientId&quot;,
+    &quot;order_type&quot;: &quot;LIMIT&quot;,
+    &quot;price&quot;: 13,&quot;quantity&quot;: 3,
+    &quot;disclosed_quantity&quot;: 0,
+    &quot;validity&quot;: &quot;DAY&quot;,
+    &quot;product&quot;: &quot;CNC&quot;,
+    &quot;order_side&quot;: &quot;BUY&quot;,
+    &quot;device&quot;: &quot;WEB&quot;,
+    &quot;user_order_id&quot;: 1,
+    &quot;trigger_price&quot;: 0,
+    &quot;oms_order_id&quot;:&quot;202403111778&quot;,
+    &quot;execution_type&quot;: &quot;AMO&quot;
+    })
 </code></pre>
-<h2 id="response">Response</h2>
+<h3 id="response">Response</h3>
 <pre><code class="language-json">{
-
-  &quot;data&quot;: {
-    &quot;data&quot;: {
-    &quot;basket_id&quot;: &quot;20211017-4&quot;,
-    &quot;message&quot;: &quot;basket Order Placed Successfully&quot;
-    }
-  },
-    &quot;message&quot;: &quot;Order place successfully&quot;,
+    &quot;data&quot;:{
+        &quot;oms_order_id&quot;: &quot;202403111778&quot;
+    },
+    &quot;message&quot;: &quot;Order modification request submitted&quot;,
     &quot;status&quot;: &quot;success&quot;
 }
 </code></pre>
-<h3 id="parameters_1">Parameters</h3>
-<p>| FieldName       |  Description                                   |
-|-----------------|----------|-----------------------------------------------|
-| basket_id       |  Represents the unique id of the basket.      |
-| message         |   Response message                      |
-| status            |      <code>success</code>, <code>error</code>       |</p>
-<h2 id="error-response">Error Response</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oms_order_id</td>
+<td>The ID assigned to the order in the Order Management System.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>A message indicating the result of the order placement.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>The status of the operation (success/failure).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="error-response">Error Response</h3>
 <pre><code class="language-json">{
-    &quot;data&quot;:{},
-    &quot;error_code&quot;:49002,
-    &quot;message&quot;:&quot;instrument `SBIN-EQ` is disabled for hedging&quot;,
-    &quot;status&quot;:&quot;error&quot;
+    &quot;data&quot;:{
+    },
+    &quot;error_code&quot;: 45010,
+    &quot;message&quot;: &quot;Something went wrong&quot;,
+    &quot;status&quot;: &quot;error&quot;
 }
 </code></pre>
 

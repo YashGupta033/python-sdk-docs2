@@ -365,23 +365,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#authorization-url-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authorization URL Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#query-parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Query Parameters
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Query Parameters">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#example-authorization-url" class="md-nav__link">
@@ -389,11 +379,6 @@
       Example Authorization URL
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -420,15 +405,6 @@
   
     <nav class="md-nav" aria-label="2. Generate Access Token">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token-request-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token Request Details
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#headers" class="md-nav__link">
@@ -491,9 +467,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#response-example" class="md-nav__link">
+  <a href="#response_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Response Example
+      Response
     </span>
   </a>
   
@@ -2177,23 +2153,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#authorization-url-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authorization URL Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#query-parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Query Parameters
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Query Parameters">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#example-authorization-url" class="md-nav__link">
@@ -2201,11 +2167,6 @@
       Example Authorization URL
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2232,15 +2193,6 @@
   
     <nav class="md-nav" aria-label="2. Generate Access Token">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token-request-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token Request Details
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#headers" class="md-nav__link">
@@ -2303,9 +2255,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#response-example" class="md-nav__link">
+  <a href="#response_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Response Example
+      Response
     </span>
   </a>
   
@@ -2332,15 +2284,14 @@
 
 
 <h1 id="oauth2-login-process"><strong>OAuth2 Login Process</strong></h1>
-<p>This guide explains the step-by-step process to integrate OAuth2 login functionality into your platform using our API.</p>
-<h2 id="1-generate-authorization-url"><strong>1. Generate Authorization URL</strong></h2>
+<p>This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs.</p>
+<h3 id="1-generate-authorization-url"><strong>1. Generate Authorization URL</strong></h3>
 <p>To initiate the login process, create an authorization URL. This URL opens a webview for user's login.</p>
-<h3 id="authorization-url-details"><strong>Authorization URL Details</strong></h3>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in
 Endpoint: /oauth2/auth
 Method-Type: GET
 </code></pre>
-<h3 id="query-parameters"><strong>Query Parameters</strong></h3>
+<h4 id="query-parameters">Query Parameters</h4>
 <table>
 <thead>
 <tr>
@@ -2380,19 +2331,18 @@ Method-Type: GET
 <h4 id="example-authorization-url">Example Authorization URL</h4>
 <pre><code>https://trade.pocketful.in/oauth2/auth?scope=orders+holdings&amp;state=bdkjbcjhdbsvhj&amp;redirect-uri=http%3A%2F%2F127.0.0.1%3A8000&amp;response_type=code&amp;client_id=Ybg3ab2VXM
 </code></pre>
-<h3 id="redirection-after-login"><strong>Redirection After Login</strong></h3>
+<h4 id="redirection-after-login">Redirection After Login</h4>
 <p>Once the user logs in successfully, they are redirected to the specified <code>redirect_uri</code> along with the following query parameters:<br>
 - <code>code</code>: The authorization code.<br>
 - <code>scope</code>: Approved permissions.<br>
 - <code>state</code>: The original state value.</p>
-<h2 id="2-generate-access-token"><strong>2. Generate Access Token</strong></h2>
+<h3 id="2-generate-access-token"><strong>2. Generate Access Token</strong></h3>
 <p>After receiving the authorization code, exchange it for an access token by making a <code>POST</code> request to the token endpoint.</p>
-<h3 id="token-request-details"><strong>Token Request Details</strong></h3>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in
 Endpoint: /oauth2/token
 Method-Type: POST
 </code></pre>
-<h3 id="headers">Headers</h3>
+<h4 id="headers">Headers</h4>
 <table>
 <thead>
 <tr>
@@ -2411,7 +2361,7 @@ Method-Type: POST
 </tr>
 </tbody>
 </table>
-<h3 id="body-parameters">Body Parameters</h3>
+<h4 id="body-parameters">Body Parameters</h4>
 <table>
 <thead>
 <tr>
@@ -2438,7 +2388,7 @@ Method-Type: POST
 </tr>
 </tbody>
 </table>
-<h3 id="curl">cURL</h3>
+<h4 id="curl">cURL</h4>
 <pre><code class="language-bash">curl --location 'https://trade.pocketful.in/oauth2/token' \
 --header 'Authorization: Basic WWJnM3N6MlZYTTpnQjJzeG9QOUMzWEhvQTE3b3lWa2luajNLeGtPWEJ3VUJkSG5rNm9hdG9xMmg1RFd5VmNiVWhuUzdRb05JY3la' \
 --header 'Cache-Control: &quot;no-cache&quot;' \
@@ -2447,20 +2397,19 @@ Method-Type: POST
 --data-urlencode 'code=iskEgqNA6y10dS3e0C7_Gdnw_LdjZh6JoVa-U6D_xcA.LERbhY3JkbTHR9E1srqetg7ShKEYW9HXN0nzXQ9yGoM' \
 --data-urlencode 'redirect_uri=http://127.0.0.1:8000'
 </code></pre>
-<h3 id="response">Response</h3>
+<h4 id="response">Response</h4>
 <pre><code class="language-json">{
     &quot;access_token&quot;: &quot;o9_luIzUWrjrBj1siKVkwft_T8KNc6YhOfwO5bWiHPI.Ht38QfD-FxAHDqL9xdY1jDyYoJIT3od2GA58bzZUmGU&quot;,
     &quot;expires_in&quot;: 86399,
     &quot;scope&quot;: &quot;orders holdings&quot;,
     &quot;token_type&quot;: &quot;bearer&quot;
 }
-
 </code></pre>
 <blockquote>
 <p><strong>Note:</strong>
-The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.</p>
+The access token remains valid until the end of the day (i.e. 12 AM), after which it will expire, and a new access token has to be generated.</p>
 </blockquote>
-<h2 id="3-get-the-client-id"><strong>3. Get the Client Id</strong></h2>
+<h3 id="3-get-the-client-id"><strong>3. Get the Client Id</strong></h3>
 <p>After sucessfully generating access token, we can get client id with the help of <code>trading_info</code> API</p>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in
 Endpoint: /api/v1/user/trading_info
@@ -2469,11 +2418,11 @@ Method-Type: GET
 <p>Headers</p>
 <pre><code>&quot;Authorization&quot;: &quot;Bearer {access_token}&quot;
 </code></pre>
-<h3 id="curl_1">cURL</h3>
+<h4 id="curl_1">cURL</h4>
 <pre><code class="language-bash">curl --location 'https://trade.pocketful.in/api/v1/user/trading_info' \
 --header 'Authorization: Bearer cGTC7TxYxNdnUEgMVZu0AonL20y3PfPumz31VkBFo64.ReVoLHhUjGZj9iYCod6zPUOSnmXTT_oRhGeRzWb0ooc'
 </code></pre>
-<h3 id="response-example">Response Example</h3>
+<h4 id="response_1">Response</h4>
 <pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;bo_id&quot;: [

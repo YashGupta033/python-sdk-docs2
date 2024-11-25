@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#steps-to-generate-an-access-token" class="md-skip">
+        <a href="#login-process" class="md-skip">
           Skip to content
         </a>
       
@@ -294,6 +294,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -322,6 +324,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -340,9 +344,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-create-an-application" class="md-nav__link">
+  <a href="#1-create-an-app" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Create an Application:
+      1. Create an App:
     </span>
   </a>
   
@@ -2054,6 +2058,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2072,9 +2078,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-create-an-application" class="md-nav__link">
+  <a href="#1-create-an-app" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Create an Application:
+      1. Create an App:
     </span>
   </a>
   
@@ -2127,12 +2133,11 @@
                   
 
 
-  <h1>Individual Trader</h1>
-
-<p>Pocketful provides a robust and secure login process, utilizing OAuth 2.0 authentication process to ensure your account's security. By following the steps below, you can easily generate an access token to start making API calls.</p>
+<h1 id="login-process"><strong>Login Process</strong></h1>
+<p>Pocketful offers a secure and efficient login process, leveraging OAuth 2.0 authentication to safeguard your account. Simply follow the steps below to generate an access token and start interacting with the API's.</p>
 <h3 id="steps-to-generate-an-access-token">Steps to Generate an Access Token:</h3>
 <p>To begin, visit the <a href="https://api.pocketful.in/login" target="_blank">Pocketful API Portal</a> and log in with your Pocketful account credentials. If you don't yet have an account, you can <a href="https://web.pocketful.in/kyc/" target="_blank">register here</a>. </p>
-<h4 id="1-create-an-application">1. <strong>Create an Application:</strong></h4>
+<h4 id="1-create-an-app">1. <strong>Create an App:</strong></h4>
 <ul>
 <li>Log in and click the <strong>Create App</strong> button on your dashboard.</li>
 <li>Fill in the <strong>App Name</strong> and <strong>Redirect URL</strong> in the provided form.</li>
@@ -2161,10 +2166,18 @@
 </figure>
 
 <blockquote>
-<p><strong>Note:</strong><br>
-- <strong>Default Redirect URL</strong>: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the <strong>"Generate Access Token"</strong> button.<br>
-- <strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.<br>
-- <strong>Access Token Validity</strong>: The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.</p>
+<p><strong>Note:</strong> </p>
+<ul>
+<li>
+<p><strong>Default Redirect URL</strong>: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the <strong>"Generate Access Token"</strong> button.</p>
+</li>
+<li>
+<p><strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.</p>
+</li>
+<li>
+<p><strong>Access Token Validity</strong>: The access token remains valid until the end of the day (i.e. 12:00AM), after which it will expire, and a new access token has to be generated.</p>
+</li>
+</ul>
 </blockquote>
 <h3 id="base-url-for-api-calls">Base URL for API Calls</h3>
 <p>All API requests will be using the following base URL</p>

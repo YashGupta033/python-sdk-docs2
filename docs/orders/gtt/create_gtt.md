@@ -14,7 +14,7 @@ Method-Type: POST
 "action_type": "single_order",
 "expiry_time": "2024-12-12",
 "order":{
-"client_id": "HI0009",
+"client_id": "YG1234",
 "disclosed_quantity": 0,
 "exchange": "NSE",
 "instrument_token": "14366",
@@ -41,7 +41,7 @@ Method-Type: POST
 | client_id              | `String`    | Represents the unique ID of a user.   |
 | device                 | `String`    | Device type: `Web`, `Mobile`.                         |
 | disclosed_quantity     | `Integer`    | quantity hidden from market                  |
-| exchange               | `String`    | Exchange: `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                |
+| exchange               | `String`    | Exchange: `NSE`, `BSE`, `NFO`, `MCX`                |
 | instrument_token       | `String`    | Represents the unique ID of an instrument.        |
 | market_protection_percentage | `String` | sets limit on the price deviation                 |
 | order_side             | `String`    | Side of the order<br>`BUY` or `SELL`                   |
@@ -63,7 +63,7 @@ data = pocket.gttCreateRule(
 "action_type": "single_order",
 "expiry_time": "2024-12-12",
 "order":{
-"client_id": "HI0009",
+"client_id": "YG1234",
 "disclosed_quantity": 0,
 "exchange": "NSE",
 "instrument_token": "14366",

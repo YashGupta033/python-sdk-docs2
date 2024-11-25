@@ -2,22 +2,54 @@
 Convert Position API is used to change the position of an order from delivery to intraday and vice versa.
 
 ```python
-pocket.convertPosition(Parameters)
+Endpoint: api/v1/positions
+Method-Type: GET
 ```
+
+### Request Packet
+```json
+{
+    "client_id": "YA0002",
+    "exchange": "NSE",
+    "instrument_token": 13342,
+    "product": "MIS",
+    "new_product": "CNC",
+    "quantity": 1,
+    "validity": "DAY",
+    "order_side": "BUY"
+}
+```
+
 
 ### Request Parameters
 | FieldName         | Datatype | Description                                       |
 |-------------------|----------|---------------------------------------------------|
-| exchange          | String   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| exchange          | String   | `NSE`, `BSE`, `NFO`, `MCX`                          |
 | instrument_token  | String   | Represents the unique id of instrument.           |
 | client_id         | String   | Represents the unique id of user or username.     |
 | order_side        | String   | `BUY`, `SELL`                                         |
-| price             | Number   | Price of the instrument                                 |
 | quantity          | Number   | Quantity of the instrument                                 |
 | validity          | String   | `DAY` or `IOC`                                        |
 | product           | String   | `CNC`, `MIS`, `NRML`, `MTF`                              |
 | new_product       | String   | `CNC`, `MIS`, `NRML`, `MTF`                              |
-| oms_order_id      | Number   | Represents the unique id of order given by oms.   |
+
+
+
+
+
+### Example
+```python
+data = pocket.convertPosition({
+    "client_id": "YA0002",
+    "exchange": "NSE",
+    "instrument_token": 13342,
+    "product": "MIS",
+    "new_product": "CNC",
+    "quantity": 1,
+    "validity": "DAY",
+    "order_side": "BUY"
+})
+```
 
 
 ### Response
@@ -34,8 +66,8 @@ pocket.convertPosition(Parameters)
 {
     "data": {
     },
-    "error_code": 45000,
-    "message": "Error from backend: (1013)-template is not assigned for this client",
+    "message": "Request forbidden",
+    "error_code": 40000,
     "status": "error"
 }
 ```

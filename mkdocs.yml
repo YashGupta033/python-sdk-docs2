@@ -1,12 +1,17 @@
 site_name: Pocketful
-site_description: 'Pocketful API Documentation'
-site_url: 'https://pacefin.github.io/pacefin-api-docs/'
-site_author: 'Pacefin'
+site_url: https://dev-trade.pocketful.in/pocketful-docs
+use_directory_urls: false
+
+extra:
+  base_path: /
+site_author: 'Pocketful'
 
 
 nav:
   - Introduction: index.md
-  - Login: login.md
+  - Login: 
+    - Individual Trader: login/login.md
+    - Partner: login/loginoauth.md
   - Orders:
     - Types of Order: orders/order_types.md
     - Regular Order:
@@ -59,7 +64,7 @@ nav:
     - Fetch Position Daywise: portfolio/daywise_position.md
     - Fetch Position Netwise: portfolio/netwise_position.md
     - Fetch Demat Holdings: portfolio/demat_holding.md
-    # - Convert Position: portfolio/convert_positions.md
+    - Convert Position: portfolio/convert_positions.md
   - Funds:
     - Get Fund Details: funds.md
   - Profile:
@@ -71,7 +76,7 @@ nav:
     - Compact Marketdata: websockets/compact_marketdata.md
     - Snapquote Data: websockets/snapquote_data.md
     - Order Updates: websockets/order_updates.md
-    # - Trade Updates: websockets/trade_updates.md
+    - Trade Updates: websockets/trade_updates.md
   - Security Id List: security_id_list.md
   
     
@@ -140,6 +145,8 @@ theme:
   - attr_list
   - md_in_html
 
+
+dev_addr: '0.0.0.0:8000'
 
 
 extra :

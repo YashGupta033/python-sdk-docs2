@@ -22,7 +22,7 @@ Method-Type: GET
 
 ### Example
 ```python
-data = obj.searchScrip('Bank Nifty')
+data = pocket.searchScrip('Bank Nifty')
 ```
 
 

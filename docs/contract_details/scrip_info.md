@@ -17,7 +17,7 @@ Method-Type: GET
 ## Parameters
 | Field Name     | Data Type | Description                                       |
 |----------------|-----------|---------------------------------------------------|
-| Exchange       | `String`    | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
+| Exchange       | `String`    | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `MCX`. |
 | Instrument Token | `Integer`   | Unique identifier assigned to each financial instrument within the exchange. |
 
 

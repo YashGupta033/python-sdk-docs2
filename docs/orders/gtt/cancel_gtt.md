@@ -22,7 +22,10 @@ Method-Type: DELETE
 
 ### Example Code
 ```python
-response = pocket.gttCancelRule({"id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"})
+response = pocket.gttCancelRule(
+    {
+        "id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"
+    })
 ```
 
 ### Response
@@ -47,10 +50,10 @@ response = pocket.gttCancelRule({"id":"e06f52ab-6cf4-492d-a014-c6e0e5843a93"})
 
 ### Error response
 ```json
- {
+{
     "data": {},
     "error_code": 45000,
     "message": "Error from backend: (500)-event id not found",
     "status": "error"
- }
- ```
+}
+```

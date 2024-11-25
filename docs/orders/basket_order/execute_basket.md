@@ -10,7 +10,7 @@ Method-Type: POST
 ```json
 {
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
-    "client_id":"HI0009",
+    "client_id":"YG1234",
     "execution_state":false,
     "execution_type":"NML",
     "name":"Y_Basket",
@@ -31,7 +31,7 @@ Method-Type: POST
 ```python
 data = pocket.executeBasket({
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
-    "client_id":"HI0009",
+    "client_id":"YG1234",
     "execution_state":False,
     "execution_type":"NML",
     "name":"Y_Basket",
@@ -55,9 +55,8 @@ data = pocket.executeBasket({
 }
 ```
 
-### Parameters
 | FieldName       |  Description                                   |
-|-----------------|----------|-----------------------------------------------|
+|-----------------|------------------------------------------------|
 | basket_id       |  Represents the unique id of the basket.      |
 | message         |   Response message                      |
 | status            |      `success`, `error`       |

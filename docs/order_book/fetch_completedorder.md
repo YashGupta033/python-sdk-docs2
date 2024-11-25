@@ -18,7 +18,7 @@ Method-Type: GET
 
 ### Example
 ```python
-response = pocket.getCompletedOrderBook()
+response = pocket.getCompletedOrder()
 ```
 
 
@@ -31,7 +31,7 @@ response = pocket.getCompletedOrderBook()
                 "mode": "NEW",
                 "exchange": "BSE",
                 "segment": "",
-                "login_id": "HI0009",
+                "login_id": "YG1234",
                 "deposit": 0,
                 "order_status": "AMO_CANCEL_CONFIRMED",
                 "product": "CNC",
@@ -43,7 +43,7 @@ response = pocket.getCompletedOrderBook()
                 "nnf_id": 333333333333100,
                 "quantity": 1,
                 "trading_symbol": "PNB-A",
-                "client_id": "HI0009",
+                "client_id": "YG1234",
                 "average_trade_price": 0,
                 "underlying_token": null,
                 "oms_order_id": "2024030935",

@@ -10,7 +10,7 @@ Method-Type: PUT
 ### Request Packet
 ```json
 {
-  "client_id": "HI0009",
+  "client_id": "YG1234",
   "disclosed_quantity": 0,
   "exchange": "NSE",
   "exchange_order_id": "1100000007437522",
@@ -36,7 +36,7 @@ Method-Type: PUT
 ### Body Params
 | FieldName                | Datatype | Description                                       |
 |--------------------------|----------|---------------------------------------------------|
-| exchange                 | `String`   | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| exchange                 | `String`   | `NSE`, `BSE`, `NFO`, `MCX`                          |
 | instrument_token         | String   | Represents the unique id of instrument.           |
 | client_id                | String   | Represents the unique id of user or username.     |
 | order_type               | String   | `LIMIT`, `MARKET`, `SL`, `SLM`                           |
@@ -62,7 +62,7 @@ Method-Type: PUT
 ### Example Code
 ```python
 data=pocket.modifyConditionalOrder( {
-  "client_id": "HI0009",
+  "client_id": "YG1234",
   "disclosed_quantity": 0,
   "exchange": "NSE",
   "exchange_order_id": "1100000007437522",

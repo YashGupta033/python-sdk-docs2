@@ -6,7 +6,6 @@ Bracket Orders (BO) and Cover Orders (CO) are advanced order types in stock trad
 
 BO combines entry, target and stop-loss orders into a single package.
 Entry order initiates the trade, profit target sets the desired profit level, and stop-loss limits potential losses.
-
 It offers a predefined risk-reward ratio and automates trade management, optimizing outcomes.
 
 ###  Cover Orders (CO):

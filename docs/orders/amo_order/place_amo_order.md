@@ -31,7 +31,7 @@ Method-Type: POST
 
 | FieldName           | Datatype   | Description                                                                                     |
 |---------------------|------------|-------------------------------------------------------------------------------------------------|
-| exchange            | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
+| exchange            | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `MCX`. |
 | instrument_token    | `String`   | The unique ID of the financial instrument.                                                     |
 | client_id           | `String`   | The unique ID of the user placing the order.                                                  |
 | order_type          | `String`   | The type of order being placed. Possible values are `LIMIT`, `MARKET`, `SL`, `SLM`.            |

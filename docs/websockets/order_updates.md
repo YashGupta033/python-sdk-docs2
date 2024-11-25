@@ -1,7 +1,5 @@
 
-Live order updates are essential in algorithmic trading as they provide real-time data crucial for making swift decisions, managing risk effectively, and capturing fleeting arbitrage opportunities. These updates allow algorithms to adjust strategies instantly, reduce slippage, and ensure compliance with regulatory requirements, directly impacting profitability and operational efficiency in high-frequency trading environments.
-
-To get order updates, trader needs to subscribe first, to get order updates.
+Live order updates are essential in algorithmic trading as they provide real-time data crucial for making swift decisions, managing risk effectively, and capturing fleeting arbitrage opportunities. These updates allow algorithms to adjust strategies instantly, reduce slippage, and ensure compliance with regulatory requirements, directly impacting profitability and operational efficiency in algo trading environments. To get order updates, trader needs to subscribe first to order updates via python library.
 
 ### Subscribe to get order updates
 

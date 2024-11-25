@@ -13,6 +13,14 @@ Method-Type: GET
 }
 ```
 
+### Example
+```python
+response = pocket.getOrderHistory("<oms_order_id>")
+```
+
+
+
+
 
 ### Response
 ```json

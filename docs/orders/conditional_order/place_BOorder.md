@@ -34,7 +34,7 @@ Method-Type: POST
 ### Body Params
 | FieldName          | Datatype   | Description                                       |
 |--------------------|------------|---------------------------------------------------|
-| exchange           | `String`     | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| exchange           | `String`     | `NSE`, `BSE`, `NFO`, `MCX`                          |
 | instrument_token   | `String`     | Represents the unique id of instrument.           |
 | client_id          | `String`     | Represents the unique id of user or username.     |
 | order_type         | `String`     |`LIMIT`, `MARKET`, `SL`, `SLM`                           |

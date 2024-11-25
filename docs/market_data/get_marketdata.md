@@ -1,5 +1,5 @@
 <!-- ## Get Market Data -->
-The getMarketData API return market data information of the given instrument.
+The MarketData API provides detailed market data for the specified instrument. It returns key metrics such as bid and ask prices, trade volume, high/low prices, and exchange-specific information. This data helps traders and investors make informed decisions by analyzing current market conditions for the instrument.
 
 ```python
 Endpoint: /api/v1/marketdata/:exchange/:token
@@ -10,7 +10,7 @@ Method-Type: GET
 ### Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
-| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`    |
+| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `NFO`, `BFO`    |
 | token      | String    | e.g. `90197`                            |
 
 

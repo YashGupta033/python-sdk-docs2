@@ -51,7 +51,7 @@ response = pocket.createBasket(
             "basket_id": "723905f6-b0f6-4bf9-a4f7-b0f119d9e24f",
             "basket_type": "NORMAL",
             "is_executed": false,
-            "login_id": "HI0009",
+            "login_id": "YG1234",
             "name": "Basket1",
             "order_type": "ALL",
             "orders": [
@@ -63,7 +63,7 @@ response = pocket.createBasket(
                         "rejection_code": 0,
                         "exchange": "NSE",
                         "sl_trigger_price": 0.0,
-                        "client_id": "HI0009",
+                        "client_id": "YG1234",
                         "mode": "NEW",
                         "product": "CNC",
                         "rejection_reason": "",

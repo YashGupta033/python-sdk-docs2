@@ -35,6 +35,8 @@ Product Type
 | BO        | Bracket Order                          |
 
 
+
+
 HTTP Codes
 
 | Code | Status Text           | Description                                                                                         |
@@ -49,9 +51,14 @@ HTTP Codes
 | 500  | Internal Server Error | Generic error message when the server encounters an unexpected condition.                           |
 
 
-
-
 Rate Limit
-<figure markdown>
-<img src="../images/rate_limit.jpg" alt="login" width="450"/>
-</figure>
+
+| Rate Limit   | Order APIs | Data APIs | Non-Trading APIs |
+|--------------|------------|-----------|------------------|
+| Per second   | 25         | 10        | 20               |
+| Per minute   | 250        | 1000      | Unlimited         |
+| Per hour     | 1000       | 5000      | Unlimited         |
+| Per day      | 7000       | 10000     | Unlimited         |
+
+
+

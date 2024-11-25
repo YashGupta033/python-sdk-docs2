@@ -1,5 +1,5 @@
 <!-- ## Modifying a regular order -->
-The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained either from the order book or from the response of place order API. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
+The Modify Order API enables users to make changes in both open or pending orders within the order book. To execute a modification, users must provide the oms_order_id which can be obtained from the order book. User can modify parameters like  price, quantity, order type, and validity. This API facilitates efficient management of orders by allowing users to tailor their orders to meet changing market conditions or trading strategies seamlessly.
 
 
 ```python
@@ -32,7 +32,7 @@ Method-Type: PUT
 
 | FieldName          | Datatype | Description                                    |
 |--------------------|----------|------------------------------------------------|
-| exchange           | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`           |
+| exchange           | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `MCX`           |
 | instrument_token   | `String`   | The unique ID of the financial instrument.        |
 | client_id          | `String`   | Represents the unique id of user.  |
 | order_type         | `String`   | `LIMIT`, `MARKET`, `SL`, `SLM`                        |

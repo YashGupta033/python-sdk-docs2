@@ -1,5 +1,5 @@
 ## Get Demat Holdings
-To get alll the demat holdings, use the getDematHoldings API
+To access all your demat holdings, utilize the getDematHoldings API. This API retrieves a complete list of your holdings, allowing you to monitor your investments effectively.
 
 ```python
 Endpoint: api/v1/holdings
@@ -11,6 +11,11 @@ Method-Type: GET
 {
    "client_id": "YG1234"
 }
+```
+
+### Example
+```python
+data = pocket.getDematHoldings()
 ```
 
 ### Response

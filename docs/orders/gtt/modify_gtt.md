@@ -13,7 +13,7 @@ Method-Type: PUT
     "action_type":"single_order",
     "id": "ba1ff6e6-e164-4dcd-af5a-0b6f192147ed",
     "order": {
-        "client_id": "HI0009",
+        "client_id": "YG1234",
         "device": "web",
         "disclosed_quantity": 0,
         "exchange": "NSE",
@@ -66,7 +66,7 @@ data = pocket.gttModifyRule({
     "action_type":"single_order",
     "id": "ba1ff6e6-e164-4dcd-af5a-0b6f192147ed",
     "order": {
-        "client_id": "HI0009",
+        "client_id": "YG1234",
         "device": "web",
         "disclosed_quantity": 0,
         "exchange": "NSE",

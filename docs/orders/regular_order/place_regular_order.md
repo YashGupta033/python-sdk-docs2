@@ -1,5 +1,5 @@
 <!-- ## Placing a Regular order -->
-You can place a regular order with the placeOrder API. All the parameters that needs to be passed are listed below. An instrument token will be required to place the order, to get the instrument token you can download the given CSV file. To place a regular order, feed the execution_type parameter as 'REGULAR'.
+You can place a regular order with the placeOrder API. All the parameters that needs to be passed are listed below. An instrument token will be required to place the order, to get the instrument token you can download the given <a href="https://trade.pocketful.in/api/v1/contract/Compact?info=download&exchanges=NSE,NFO,BSE,BFO,MCX">CSV file</a>. To place a regular order, feed the execution_type parameter as 'REGULAR'.
 
 
 ```python
@@ -32,7 +32,7 @@ Method-Type: POST
 
 | FieldName           | Datatype   | Description                                                                                     |
 |---------------------|------------|-------------------------------------------------------------------------------------------------|
-| exchange            | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `CDS`, `MCX`. |
+| exchange            | `String`   | Name of the exchange where the order is being placed. Possible values include `NSE`, `BSE`, `NFO`, `MCX`. |
 | instrument_token    | `String`   | The unique ID of the financial instrument.                                                     |
 | client_id           | `String`   | The unique ID of the user placing the order.                                                  |
 | order_type          | `String`   | The type of order being placed. Possible values are `LIMIT`, `MARKET`, `SL`, `SLM`.            |

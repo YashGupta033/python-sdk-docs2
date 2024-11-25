@@ -20,20 +20,47 @@ But we here at Pocketful believe that breaking into algorithmic trading doesn't 
 
 ## Python SDK for Algorithmic Trading
 We're thrilled to introduce Python SDK, designed to revolutionize the way traders interact with the markets and make algorithmic trading accessible to everyone.
-We have added a layer of abstraction and wrapped the raw http APIs into python methods. You just need to call those methods and you will get the desired response.<br> Click on the below link and start with your first step to install the Pocketful python library. 
+We have added a layer of abstraction and wrapped the raw http APIs into python methods. You just need to call those methods and you will get the desired response.<br> Click on the below link and start with your first step to clone the Pocketful python library from github. 
 
 <!-- - [Link for python library](https://github.com/pocketful-tech/pacefinapi-python){:target="_blank"} -->
 
-<a href="https://github.com/pocketful-tech/pacefinapi-python" target="_blank">Link for python library</a>
+<a href="https://github.com/pocketful-tech/Pocketfulapi-python" target="_blank">Link for python library</a>
 
 Note - If you do not have python installed on your machine, please download and install it from the  <a href="https://www.python.org/" target="_blank">official website.</a>
 
+### How to Set Up the Project
+### 1. Clone the GitHub Repository
 
-### Install Pocketful Library
-> pip install pocketful
+```bash
+git clone https://github.com/pocketful-tech/Pocketfulapi-python.git
+```
+
+### 2. Navigate to the Project Directory
+```bash
+cd Pocketfulapi-python
+```
+
+### 3. Create a Virtual Environment (Optional but Recommended)
+
+For Linux
+```bash
+python -m venv env
+source env/bin/activate
+```
+
+For Windows
+```bash
+python -m venv env
+.\env\Scripts\activate
+```
+
+### 4. Install Required Dependencies
+```bash
+pip install -r requirements.txt
+```
 
 
-Once you have installed Pocketful python library, you can go ahead in the documentation and start your journey.
+After completing the setup, you can proceed with the documentation and begin exploring. You can also use the demo.py file, which includes all the available methods for trading.
 
 
 

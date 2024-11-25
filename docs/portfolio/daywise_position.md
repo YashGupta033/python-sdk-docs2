@@ -1,5 +1,5 @@
 <!-- ## Get Day Wise Position -->
-To get positions of the day, use getPositionDayWise method.
+To retrieve the day's positions, use the PositionDayWise API. This method provides a detailed breakdown of your trading positions for the current day, allowing for real-time tracking and analysis.
 
 ```python
 Endpoint: api/v1/positions
@@ -16,7 +16,7 @@ Method-Type: GET
 
 ### Example
 ```python
-data=pocket.getPositionsDaywise()
+data = pocket.getPositionsDaywise()
 ```
 
 

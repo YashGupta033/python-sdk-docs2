@@ -1,5 +1,5 @@
 <!-- ## Get Net Position -->
-Use the getPositionNetWise API to get the net positions present in the account.
+To view the net positions in your account, use the NetwisePosition API. This API provides a comprehensive overview of all net positions, giving you a clear picture of your overall trading status.
 
 ```python
 Endpoint: api/v1/positions
@@ -12,6 +12,11 @@ Method-Type: GET
    "client_id": "YG1234",
    "type": "historical"
 }
+```
+
+### Example
+```python
+data = pocket.getPositionsNetwise()
 ```
 
 ### Response

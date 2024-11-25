@@ -45,7 +45,7 @@ Method-Type: PUT
 |---------------------|-------------|---------------------------------------------------|
 | basket_id           | String      | Represents the unique id of basket.              |
 | name                | String      | Represents the name of the basket.               |
-| exchange            | String      | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                          |
+| exchange            | String      | `NSE`, `BSE`, `NFO`, `MCX`                          |
 | instrument_token    | String      | Represents unique id of a particular instrument. |
 | client_id           | String      | Represents the unique id of user or username.    |
 | order_type          | String      | `LIMIT`, `MARKET`, `SL`, `SLM`                           |
@@ -114,7 +114,7 @@ data = pocket.editBasketInstrument({
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
     "basket_type": "NORMAL",
     "is_executed": false,
-    "login_id": "HI0009",
+    "login_id": "YG1234",
     "name": "Y_Basket",
     "order_type": "ALL",
     "orders": [
@@ -126,7 +126,7 @@ data = pocket.editBasketInstrument({
           "rejection_code": 0,
           "exchange": "NSE",
           "sl_trigger_price": 0,
-          "client_id": "HI0009",
+          "client_id": "YG1234",
           "mode": "NEW",
           "product": "MIS",
           "rejection_reason": "",

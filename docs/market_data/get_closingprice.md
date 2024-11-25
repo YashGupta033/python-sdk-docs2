@@ -1,5 +1,5 @@
 <!-- ## Get Closing Price -->
-The Get Closing Price API allows users to retrieve the closing price of a financial instrument. By specifying the instrument token, users can access the closing price, which can be crucial for making investment decisions.
+The ClosingPrice API allows users to retrieve the closing price of a financial instrument. By specifying the instrument token, users can access the closing price, which can be crucial for making investment decisions.
 
 ```python
 Endpoint: /api/v1/marketdata/{exchange}/Capital?token={token}&key=close_price
@@ -9,7 +9,7 @@ Method-Type: GET
 ## Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
-| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`   |
+| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `NFO`, `BFO`   |
 | token      | String    | e.g. `90197`                            |
 
 

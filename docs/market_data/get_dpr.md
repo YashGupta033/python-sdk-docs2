@@ -10,7 +10,7 @@ res = pocket.getDPRdata(Parameters)
 ### Path Parameters
 | Field Name | Data Type | Description                        |
 |------------|-----------|------------------------------------|
-| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO` |
+| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `NFO`, `BFO` |
 | token      | String    | e.g. `3045`                         |
 
 

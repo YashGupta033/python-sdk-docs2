@@ -29,7 +29,7 @@ response = pocket.fetchBasket()        # No params needs to be passed.
                 "basketId": "723905f6-b0f6-4bf9-a4f7-b0f119d9e24f",
                 "basketType": "NORMAL",
                 "isExecuted": false,
-                "loginId": "HI0009",
+                "loginId": "YG1234",
                 "name": "pockbask",
                 "orderType": "ALL",
                 "orders": [
@@ -52,7 +52,7 @@ response = pocket.fetchBasket()        # No params needs to be passed.
                             "squareOffValue": 0,
                             "contractDescription": {},
                             "segment": "",
-                            "clientId": "HI0009",
+                            "clientId": "YG1234",
                             "tradingSymbol": "VAKRANGEE-EQ",
                             "rejectionCode": 0,
                             "lotSize": 0,

@@ -1,17 +1,15 @@
 <!-- ## Get Last Traded Price -->
-The Get Last Traded Price API provides user with the most recent price at which a financial instrument was traded. By accessing this API, users can quickly obtain the latest market information, aiding in real-time decision-making and market analysis.
+The LastTradedPrice API provides user with the most recent price at which a financial instrument was traded. By accessing this API, users can quickly obtain the latest market information, aiding in real-time decision-making and market analysis.
 
 ```python
 Endpoint: /api/v1/marketdata/:exchange/:token/:last_trade_price
 Method-Type: GET
-Method: pocket.getLtp(Parameters)
-
 ```
 
 ### Path Parameters
 | Field Name | Data Type | Description                           |
 |------------|-----------|---------------------------------------|
-| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `CDS`, `NFO`, `BFO`    |
+| exchange   | String    | e.g. `NSE`, `BSE`, `MCX`, `NFO`, `BFO`    |
 | token      | String    | e.g. `90197`                            |
 
 
@@ -38,7 +36,12 @@ response = pocket.getLtp('NSE', 26009)
 
 ### Error Response
 ```json
-{"data": {}, "error_code": 44000, "message": "`exchange` is invalid", "status": "error"}
+{
+    "data": {},
+    "error_code": 44000,
+    "message": "`exchange` is invalid",
+    "status": "error"
+}
 ```
 
 

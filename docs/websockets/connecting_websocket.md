@@ -1,13 +1,13 @@
 Follow the below steps to establish a connection with websocket.
 
-First import the pacefinwebsocket library
+First import the pocketfulwebsocket library
 ```python
 from pocketfulwebsocket import pocketfulSocket
 ```
 
-Then create an instance of class pacefinsocket through which all methods can be called.
+Then create an instance of class pocketfulsocket through which all methods can be called.
 ```python
-pocket_ws = pocketfulSocket(pace_clientId, access_token)
+pocket_ws = pocketfulSocket(clientId, access_token)
 ```
 
 Then call the method run_socket to establish a connection

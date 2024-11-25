@@ -2,11 +2,11 @@
 
 In the dynamic world of stock trading, understanding the intricacies of different order types is essential for investors to navigate the market with confidence and precision. Each order type serves a distinct purpose, offering flexibility and control over trading activities. Let's dive into the diverse array of order types and explore their unique characteristics and applications.
 
-<p align="center"><img src="../../images/typesoforder.jpg" alt="websockets" width="600"/></p>
+<p align="center"><img src="../images/typesoforder.jpg" alt="websockets" width="600"/></p>
 
 1.__Standard Orders__:
 
-**Regular Order**: regular orders refer to standard buy or sell orders executed during regular trading hours, typically from 9:30 AM to 4:00 PM EST. These orders are processed on a first-come, first-served basis, and their execution is influenced by market conditions such as price and liquidity. Regular orders ensure the usual execution of trades within the established trading session.
+**Regular Order**: regular orders refer to standard buy or sell orders executed during regular trading hours, typically from 9:15 AM to 3:30 PM IST. These orders are processed on a first-come, first-served basis, and their execution is influenced by market conditions such as price and liquidity. Regular orders ensure the usual execution of trades within the established trading session.
 
 **Conditional Order**: Conditional orders are triggered by predefined conditions, such as specific price levels or market events. These orders provide flexibility, allowing investors to automate trades based on predetermined criteria, enhancing efficiency and reducing manual intervention.
 
@@ -16,7 +16,7 @@ In the dynamic world of stock trading, understanding the intricacies of differen
 
 **Good Til Triggered (GTT) Order**: GTT orders empower investors to set trigger prices for buy or sell orders, remaining active until the specified conditions are met. Offering flexibility and control, GTT orders enable strategic trading based on predetermined triggers, optimizing trading outcomes.
 
-2.Timing-Specific Orders:
+2.**Timing-Specific Orders**:
 
 **Day Order**: A standard in stock trading, day orders remain active until the end of the trading day, ensuring execution within the current session. This order type is ideal for investors seeking timely execution without carrying orders forward.
 

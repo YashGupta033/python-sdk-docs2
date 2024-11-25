@@ -4,7 +4,7 @@
 The "Get Fund" API is a request made to retrieve information about a user's funds or financial assets held within a particular account or platform. Typically, this API returns details such as the available balance, total funds invested, holdings, and any pending transactions. It provides users with real-time access to their financial data, allowing them to monitor their investments, track their portfolio performance, and make informed decisions about managing their funds effectively.
 
 ```python
-Endpoint: api/v1/funds/view
+Endpoint: api/v2/funds/view
 Method-Type: GET
 ```
 
@@ -20,7 +20,7 @@ Method-Type: GET
 ```json
 {
     "data": {
-        "client_id": "HI0009",
+        "client_id": "YG1234",
         "headers": [
             "Description",
             ""

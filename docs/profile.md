@@ -1,7 +1,6 @@
 # Profile
 The profile API is designed to retrieve comprehensive information about a user. Upon making a request to this API, the response typically contains all the details associated with the client, including personal, financial, and account-related information.
 
-## Python Code
 ```python 
 Endpoint: /api/v1/user/trading_info
 Method-Type: GET

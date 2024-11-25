@@ -13,6 +13,12 @@ Method-Type: GET
 }
 ```
 
+### Example
+```python
+response = pocket.getTradeBook()
+```
+
+
 
 ### Response
 ```json
@@ -23,7 +29,7 @@ Method-Type: GET
         "mode": "NEW",
         "exchange": "NSE",
         "segment": "",
-        "login_id": "HI0009",
+        "login_id": "YG1234",
         "deposit": 0,
         "order_status": "CONFIRMED",
         "product": "MIS",
@@ -35,7 +41,7 @@ Method-Type: GET
         "nnf_id": 111111111111100,
         "quantity": 1,
         "trading_symbol": "IDEA-EQ",
-        "client_id": "HI0009",
+        "client_id": "YG1234",
         "average_trade_price": 0,
         "underlying_token": null,
         "oms_order_id": "202403152052",

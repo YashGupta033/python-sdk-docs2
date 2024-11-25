@@ -18,7 +18,7 @@ Method-Type: GET
 
 ### Example
 ```python
-response = pocket.getCompletedOrderBook()    # No parameter needs to be passed
+response = pocket.getPendingOrder()    # No parameter needs to be passed
 ```
 
 ### Response
@@ -30,7 +30,7 @@ response = pocket.getCompletedOrderBook()    # No parameter needs to be passed
                 "mode": "NEW",
                 "exchange": "NFO",
                 "segment": "",
-                "login_id": "HI0009",
+                "login_id": "YG1234",
                 "deposit": 0,
                 "order_status": "AMO_MODIFY_CONFIRMED",
                 "product": "NRML",
@@ -42,7 +42,7 @@ response = pocket.getCompletedOrderBook()    # No parameter needs to be passed
                 "nnf_id": 333333333333100,
                 "quantity": 1500,
                 "trading_symbol": "COFORGE24MAR5700PE",
-                "client_id": "HI0009",
+                "client_id": "YG1234",
                 "average_trade_price": 0,
                 "underlying_token": null,
                 "oms_order_id": "2024030943",

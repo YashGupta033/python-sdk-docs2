@@ -1,5 +1,5 @@
 <!-- ## Add Basket Instrument -->
-This method used to add Instrument in the created basket. We can add only limited number of instruments in the basket and repeated instrument can't be added.
+This API used to add Instrument in the created basket. We can add only limited number of instruments in the basket and repeated instrument can't be added.
 
 
 ```python 
@@ -13,7 +13,7 @@ Method-Type: POST
   "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
   "name": "Y_Basket",
   "order_info": {
-      "client_id": "HI0009",
+      "client_id": "YG1234",
       "disclosedQuantity": 0,
       "exchange": "NSE",
       "execution_type": "REGULAR",
@@ -38,7 +38,7 @@ Method-Type: POST
 |--------------------|----------------|------------------------------------------------------|
 | basket_id          | `String`         | Represents the unique id of basket.                  |
 | name               | `String`         | Represents the name of the basket.                   |
-| exchange           | `String`         | `NSE`, `BSE`, `NFO`, `CDS`, `MCX`                             |
+| exchange           | `String`         | `NSE`, `BSE`, `NFO`, `MCX`                             |
 | instrument_token   | `Integer`         | Represents unique id of a particular instrument.     |
 | client_id          | `String`         | Represents the unique id of user or username.        |
 | order_type         | `String`         | `LIMIT`, `MARKET`, `SL`, `SLM`                              |
@@ -58,11 +58,11 @@ Method-Type: POST
 
 ### Example
 ```python
-data = pocket.addBasketInstrument({
+data = pocket.addInstrumentToBasket({
         "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
         "name": "Y_Basket",
         "order_info": {
-            "client_id": "HI0009",
+            "client_id": "YG1234",
             "disclosedQuantity": 0,
             "exchange": "NSE",
             "execution_type": "REGULAR",
@@ -91,7 +91,7 @@ data = pocket.addBasketInstrument({
     "basket_id": "9cd5fbc3-333b-4934-8d45-e692349b5ede",
     "basket_type": "NORMAL",
     "is_executed": false,
-    "login_id": "HI0009",
+    "login_id": "YG1234",
     "name": "Y_Basket",
     "order_type": "ALL",
     "orders": [
@@ -103,7 +103,7 @@ data = pocket.addBasketInstrument({
           "rejection_code": 0,
           "exchange": "NSE",
           "sl_trigger_price": 0,
-          "client_id": "HI0009",
+          "client_id": "YG1234",
           "mode": "NEW",
           "product": "MIS",
           "rejection_reason": "",

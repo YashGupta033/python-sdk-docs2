@@ -1,18 +1,17 @@
 # **OAuth2 Login Process**
 
-This guide explains the step-by-step process to integrate OAuth2 login functionality into your platform using our API.
+This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs.
 
-## **1. Generate Authorization URL**
+### **1. Generate Authorization URL**
 To initiate the login process, create an authorization URL. This URL opens a webview for user's login.
 
-### **Authorization URL Details**
 ```python
 Base URL: https://trade.pocketful.in
 Endpoint: /oauth2/auth
 Method-Type: GET
 ```
 
-### **Query Parameters**
+#### Query Parameters
 | Parameter      | Description                                                | Example Value             |
 |----------------|------------------------------------------------------------|---------------------------|
 | scope        | Requested permissions (space-separated).                   | orders holdings         |
@@ -27,36 +26,35 @@ https://trade.pocketful.in/oauth2/auth?scope=orders+holdings&state=bdkjbcjhdbsvh
 ```
 
 
-### **Redirection After Login**
+#### Redirection After Login
 Once the user logs in successfully, they are redirected to the specified `redirect_uri` along with the following query parameters:<br>
 - `code`: The authorization code.<br>
 - `scope`: Approved permissions.<br>
 - `state`: The original state value.
 
-## **2. Generate Access Token**
+### **2. Generate Access Token**
 After receiving the authorization code, exchange it for an access token by making a `POST` request to the token endpoint.
 
-### **Token Request Details**
 ```python
 Base URL: https://trade.pocketful.in
 Endpoint: /oauth2/token
 Method-Type: POST
 ```
 
-### Headers
+#### Headers
 | Header Name      | Value                                                                                             |
 |------------------|--------------------------------------------------------------------------------------------------|
 | Content-Type   | application/x-www-form-urlencoded                                                             |
 | Authorization  | Basic <base64(client_id:client_secret)> (Base64 encoded appid:appsecret).                    |
 
-### Body Parameters
+#### Body Parameters
 | Parameter       | Description                                      | Example Value                              |
 |-----------------|--------------------------------------------------|-------------------------------------------|
 | grant_type    | The type of grant being requested. Use authorization_code. | authorization_code                      |
 | code          | The authorization code from the previous step.   | iskEgqNA6y10dS3e0C7_Gdnw_LdjZh6JoVa-U6D |
 | redirect_uri  | The same redirect_uri used in Step 1.           | http://127.0.0.1:8000                   |
 
-### cURL
+#### cURL
 ```bash
 curl --location 'https://trade.pocketful.in/oauth2/token' \
 --header 'Authorization: Basic WWJnM3N6MlZYTTpnQjJzeG9QOUMzWEhvQTE3b3lWa2luajNLeGtPWEJ3VUJkSG5rNm9hdG9xMmg1RFd5VmNiVWhuUzdRb05JY3la' \
@@ -67,7 +65,7 @@ curl --location 'https://trade.pocketful.in/oauth2/token' \
 --data-urlencode 'redirect_uri=http://127.0.0.1:8000'
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -76,14 +74,13 @@ curl --location 'https://trade.pocketful.in/oauth2/token' \
     "scope": "orders holdings",
     "token_type": "bearer"
 }
-
 ```
 
 > **Note:**
-The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.
+The access token remains valid until the end of the day (i.e. 12 AM), after which it will expire, and a new access token has to be generated.
 
 
-## **3. Get the Client Id**
+### **3. Get the Client Id**
 After sucessfully generating access token, we can get client id with the help of `trading_info` API
 
 ```python
@@ -97,13 +94,13 @@ Headers
 "Authorization": "Bearer {access_token}"
 ```
 
-### cURL
+#### cURL
 ```bash
 curl --location 'https://trade.pocketful.in/api/v1/user/trading_info' \
 --header 'Authorization: Bearer cGTC7TxYxNdnUEgMVZu0AonL20y3PfPumz31VkBFo64.ReVoLHhUjGZj9iYCod6zPUOSnmXTT_oRhGeRzWb0ooc'
 ```
 
-### Response Example
+#### Response
 
 ```json
 {

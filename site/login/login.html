@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#secure-login-with-pocketful" class="md-skip">
+        <a href="#steps-to-generate-an-access-token" class="md-skip">
           Skip to content
         </a>
       
@@ -328,15 +328,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#secure-login-with-pocketful" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secure Login with Pocketful
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#steps-to-generate-an-access-token" class="md-nav__link">
@@ -2071,15 +2062,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#secure-login-with-pocketful" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secure Login with Pocketful
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#steps-to-generate-an-access-token" class="md-nav__link">
     <span class="md-ellipsis">
       Steps to Generate an Access Token:
@@ -2147,7 +2129,6 @@
 
   <h1>Individual Trader</h1>
 
-<h3 id="secure-login-with-pocketful">Secure Login with Pocketful</h3>
 <p>Pocketful provides a robust and secure login process, utilizing OAuth 2.0 authentication process to ensure your account's security. By following the steps below, you can easily generate an access token to start making API calls.</p>
 <h3 id="steps-to-generate-an-access-token">Steps to Generate an Access Token:</h3>
 <p>To begin, visit the <a href="https://api.pocketful.in/login" target="_blank">Pocketful API Portal</a> and log in with your Pocketful account credentials. If you don't yet have an account, you can <a href="https://web.pocketful.in/kyc/" target="_blank">register here</a>. </p>
@@ -2180,13 +2161,14 @@
 </figure>
 
 <blockquote>
-<p><strong>Note:</strong>
-- <strong>Default Redirect URL</strong>: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the <strong>"Generate Access Token"</strong> button.
-- <strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.</p>
+<p><strong>Note:</strong><br>
+- <strong>Default Redirect URL</strong>: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the <strong>"Generate Access Token"</strong> button.<br>
+- <strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.<br>
+- <strong>Access Token Validity</strong>: The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.</p>
 </blockquote>
 <h3 id="base-url-for-api-calls">Base URL for API Calls</h3>
 <p>All API requests will be using the following base URL</p>
-<p>Base URL: https://trade.pocketful.in</p>
+<p>Base URL: <strong>https://trade.pocketful.in</strong></p>
 <p>With your access token in hand, you now have full access to Pocketful API. Whether you're executing trades or querying your account details, you can refer to our detailed documentation for a step-by-step guide.</p>
 
 

@@ -2456,6 +2456,10 @@ Method-Type: POST
 }
 
 </code></pre>
+<blockquote>
+<p><strong>Note:</strong>
+The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.</p>
+</blockquote>
 <h2 id="3-get-the-client-id"><strong>3. Get the Client Id</strong></h2>
 <p>After sucessfully generating access token, we can get client id with the help of <code>trading_info</code> API</p>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in

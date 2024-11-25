@@ -10,22 +10,28 @@
         <meta name="author" content="Pocketful">
       
       
+        <link rel="canonical" href="https://dev-trade.pocketful.in/pocketful-docs/login/loginoauth.html">
       
       
+        <link rel="prev" href="login.html">
       
-      <link rel="icon" href="/pocketful-docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../orders/order_types.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
       
-        <title>Pocketful</title>
+        <title>Partner - Pocketful</title>
       
     
     
-      <link rel="stylesheet" href="/pocketful-docs/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="/pocketful-docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/pocketful-docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#oauth2-login-process" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/pocketful-docs/index.html" title="Pocketful" class="md-header__button md-logo" aria-label="Pocketful" data-md-component="logo">
+    <a href="../index.html" title="Pocketful" class="md-header__button md-logo" aria-label="Pocketful" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Partner
             
           </span>
         </div>
@@ -202,7 +213,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/pocketful-docs/index.html" title="Pocketful" class="md-nav__button md-logo" aria-label="Pocketful" data-md-component="logo">
+    <a href="../index.html" title="Pocketful" class="md-nav__button md-logo" aria-label="Pocketful" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -220,7 +231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -237,17 +248,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -261,7 +274,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Login
@@ -275,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/login/login.html" class="md-nav__link">
+      <a href="login.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -293,10 +306,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/pocketful-docs/login/loginoauth.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Partner
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="loginoauth.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -305,6 +338,176 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generate-authorization-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Generate Authorization URL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Generate Authorization URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorization-url-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization URL Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-authorization-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Authorization URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirection-after-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redirection After Login
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-generate-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Generate Access Token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Generate Access Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-request-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Request Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      cURL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-get-the-client-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get the Client Id
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Get the Client Id">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      cURL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -359,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/order_types.html" class="md-nav__link">
+      <a href="../orders/order_types.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/regular_order/place_regular_order.html" class="md-nav__link">
+      <a href="../orders/regular_order/place_regular_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -436,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/regular_order/modify_regular_order.html" class="md-nav__link">
+      <a href="../orders/regular_order/modify_regular_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/regular_order/cancel_regular_order.html" class="md-nav__link">
+      <a href="../orders/regular_order/cancel_regular_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/amo_order/place_amo_order.html" class="md-nav__link">
+      <a href="../orders/amo_order/place_amo_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/amo_order/modify_amo_order.html" class="md-nav__link">
+      <a href="../orders/amo_order/modify_amo_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -563,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/amo_order/cancel_amo_order.html" class="md-nav__link">
+      <a href="../orders/amo_order/cancel_amo_order.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/BO_CO.html" class="md-nav__link">
+      <a href="../orders/conditional_order/BO_CO.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/place_COorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/place_COorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/modify_COorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/modify_COorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/cancel_COorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/cancel_COorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -711,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/place_BOorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/place_BOorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/modify_BOorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/modify_BOorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/conditional_order/cancel_BOorder.html" class="md-nav__link">
+      <a href="../orders/conditional_order/cancel_BOorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/create_basket.html" class="md-nav__link">
+      <a href="../orders/basket_order/create_basket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/fetch_basket.html" class="md-nav__link">
+      <a href="../orders/basket_order/fetch_basket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/delete_basket.html" class="md-nav__link">
+      <a href="../orders/basket_order/delete_basket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/add_basketinstrument.html" class="md-nav__link">
+      <a href="../orders/basket_order/add_basketinstrument.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/edit_basketinstrument.html" class="md-nav__link">
+      <a href="../orders/basket_order/edit_basketinstrument.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/delete_basketinstrument.html" class="md-nav__link">
+      <a href="../orders/basket_order/delete_basketinstrument.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -943,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/rename_basket.html" class="md-nav__link">
+      <a href="../orders/basket_order/rename_basket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/basket_order/execute_basket.html" class="md-nav__link">
+      <a href="../orders/basket_order/execute_basket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,7 +1231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/gtt/create_gtt.html" class="md-nav__link">
+      <a href="../orders/gtt/create_gtt.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1049,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/gtt/fetch_gtt.html" class="md-nav__link">
+      <a href="../orders/gtt/fetch_gtt.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/gtt/cancel_gtt.html" class="md-nav__link">
+      <a href="../orders/gtt/cancel_gtt.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1091,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/orders/gtt/modify_gtt.html" class="md-nav__link">
+      <a href="../orders/gtt/modify_gtt.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1162,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/order_book/fetch_completedorder.html" class="md-nav__link">
+      <a href="../order_book/fetch_completedorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1183,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/order_book/fetch_pendingorder.html" class="md-nav__link">
+      <a href="../order_book/fetch_pendingorder.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1204,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/order_book/order_history.html" class="md-nav__link">
+      <a href="../order_book/order_history.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1225,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/order_book/trade_book.html" class="md-nav__link">
+      <a href="../order_book/trade_book.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1288,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/contract_details/scrip_info.html" class="md-nav__link">
+      <a href="../contract_details/scrip_info.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1309,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/contract_details/search_scrip.html" class="md-nav__link">
+      <a href="../contract_details/search_scrip.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1372,7 +1575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/market_data/get_marketdata.html" class="md-nav__link">
+      <a href="../market_data/get_marketdata.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1393,7 +1596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/market_data/get_ltp.html" class="md-nav__link">
+      <a href="../market_data/get_ltp.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1414,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/market_data/get_closingprice.html" class="md-nav__link">
+      <a href="../market_data/get_closingprice.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1435,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/market_data/option_chain.html" class="md-nav__link">
+      <a href="../market_data/option_chain.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1498,7 +1701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/portfolio/daywise_position.html" class="md-nav__link">
+      <a href="../portfolio/daywise_position.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1519,7 +1722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/portfolio/netwise_position.html" class="md-nav__link">
+      <a href="../portfolio/netwise_position.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1540,7 +1743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/portfolio/demat_holding.html" class="md-nav__link">
+      <a href="../portfolio/demat_holding.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1561,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/portfolio/convert_positions.html" class="md-nav__link">
+      <a href="../portfolio/convert_positions.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/funds.html" class="md-nav__link">
+      <a href="../funds.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/profile.html" class="md-nav__link">
+      <a href="../profile.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1750,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/basic.html" class="md-nav__link">
+      <a href="../websockets/basic.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1771,7 +1974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/connecting_websocket.html" class="md-nav__link">
+      <a href="../websockets/connecting_websocket.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1792,7 +1995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/detailed_marketdata.html" class="md-nav__link">
+      <a href="../websockets/detailed_marketdata.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1813,7 +2016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/compact_marketdata.html" class="md-nav__link">
+      <a href="../websockets/compact_marketdata.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1834,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/snapquote_data.html" class="md-nav__link">
+      <a href="../websockets/snapquote_data.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1855,7 +2058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/order_updates.html" class="md-nav__link">
+      <a href="../websockets/order_updates.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1876,7 +2079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/websockets/trade_updates.html" class="md-nav__link">
+      <a href="../websockets/trade_updates.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1904,7 +2107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/security_id_list.html" class="md-nav__link">
+      <a href="../security_id_list.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1924,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pocketful-docs/Annexure.html" class="md-nav__link">
+      <a href="../Annexure.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1954,6 +2157,166 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generate-authorization-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Generate Authorization URL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Generate Authorization URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorization-url-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization URL Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-authorization-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Authorization URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirection-after-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redirection After Login
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-generate-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Generate Access Token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Generate Access Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-request-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Request Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      cURL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-get-the-client-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get the Client Id
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Get the Client Id">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      cURL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1965,8 +2328,188 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="oauth2-login-process"><strong>OAuth2 Login Process</strong></h1>
+<p>This guide explains the step-by-step process to integrate OAuth2 login functionality into your platform using our API.</p>
+<h2 id="1-generate-authorization-url"><strong>1. Generate Authorization URL</strong></h2>
+<p>To initiate the login process, create an authorization URL. This URL opens a webview for user's login.</p>
+<h3 id="authorization-url-details"><strong>Authorization URL Details</strong></h3>
+<pre><code class="language-python">Base URL: https://trade.pocketful.in
+Endpoint: /oauth2/auth
+Method-Type: GET
+</code></pre>
+<h3 id="query-parameters"><strong>Query Parameters</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scope</td>
+<td>Requested permissions (space-separated).</td>
+<td>orders holdings</td>
+</tr>
+<tr>
+<td>state</td>
+<td>A unique string to maintain state between requests (min 8 characters).</td>
+<td>bdkjbcjhdbsvhj</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>URL to which the user will be redirected after login.</td>
+<td>http://127.0.0.1:8000</td>
+</tr>
+<tr>
+<td>response_type</td>
+<td>Specifies the type of response. Must be <code>code</code></td>
+<td>code</td>
+</tr>
+<tr>
+<td>app_id</td>
+<td>Your application’s unique identifier.</td>
+<td>Ybg3ab2VXM</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-authorization-url">Example Authorization URL</h4>
+<pre><code>https://trade.pocketful.in/oauth2/auth?scope=orders+holdings&amp;state=bdkjbcjhdbsvhj&amp;redirect-uri=http%3A%2F%2F127.0.0.1%3A8000&amp;response_type=code&amp;client_id=Ybg3ab2VXM
+</code></pre>
+<h3 id="redirection-after-login"><strong>Redirection After Login</strong></h3>
+<p>Once the user logs in successfully, they are redirected to the specified <code>redirect_uri</code> along with the following query parameters:<br>
+- <code>code</code>: The authorization code.<br>
+- <code>scope</code>: Approved permissions.<br>
+- <code>state</code>: The original state value.</p>
+<h2 id="2-generate-access-token"><strong>2. Generate Access Token</strong></h2>
+<p>After receiving the authorization code, exchange it for an access token by making a <code>POST</code> request to the token endpoint.</p>
+<h3 id="token-request-details"><strong>Token Request Details</strong></h3>
+<pre><code class="language-python">Base URL: https://trade.pocketful.in
+Endpoint: /oauth2/token
+Method-Type: POST
+</code></pre>
+<h3 id="headers">Headers</h3>
+<table>
+<thead>
+<tr>
+<th>Header Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/x-www-form-urlencoded</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Basic <base64(client_id:client_secret)> (Base64 encoded appid:appsecret).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body-parameters">Body Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>grant_type</td>
+<td>The type of grant being requested. Use authorization_code.</td>
+<td>authorization_code</td>
+</tr>
+<tr>
+<td>code</td>
+<td>The authorization code from the previous step.</td>
+<td>iskEgqNA6y10dS3e0C7_Gdnw_LdjZh6JoVa-U6D</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>The same redirect_uri used in Step 1.</td>
+<td>http://127.0.0.1:8000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="curl">cURL</h3>
+<pre><code class="language-bash">curl --location 'https://trade.pocketful.in/oauth2/token' \
+--header 'Authorization: Basic WWJnM3N6MlZYTTpnQjJzeG9QOUMzWEhvQTE3b3lWa2luajNLeGtPWEJ3VUJkSG5rNm9hdG9xMmg1RFd5VmNiVWhuUzdRb05JY3la' \
+--header 'Cache-Control: &quot;no-cache&quot;' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=authorization_code' \
+--data-urlencode 'code=iskEgqNA6y10dS3e0C7_Gdnw_LdjZh6JoVa-U6D_xcA.LERbhY3JkbTHR9E1srqetg7ShKEYW9HXN0nzXQ9yGoM' \
+--data-urlencode 'redirect_uri=http://127.0.0.1:8000'
+</code></pre>
+<h3 id="response">Response</h3>
+<pre><code class="language-json">{
+    &quot;access_token&quot;: &quot;o9_luIzUWrjrBj1siKVkwft_T8KNc6YhOfwO5bWiHPI.Ht38QfD-FxAHDqL9xdY1jDyYoJIT3od2GA58bzZUmGU&quot;,
+    &quot;expires_in&quot;: 86399,
+    &quot;scope&quot;: &quot;orders holdings&quot;,
+    &quot;token_type&quot;: &quot;bearer&quot;
+}
+
+</code></pre>
+<h2 id="3-get-the-client-id"><strong>3. Get the Client Id</strong></h2>
+<p>After sucessfully generating access token, we can get client id with the help of <code>trading_info</code> API</p>
+<pre><code class="language-python">Base URL: https://trade.pocketful.in
+Endpoint: /api/v1/user/trading_info
+Method-Type: GET
+</code></pre>
+<p>Headers</p>
+<pre><code>&quot;Authorization&quot;: &quot;Bearer {access_token}&quot;
+</code></pre>
+<h3 id="curl_1">cURL</h3>
+<pre><code class="language-bash">curl --location 'https://trade.pocketful.in/api/v1/user/trading_info' \
+--header 'Authorization: Bearer cGTC7TxYxNdnUEgMVZu0AonL20y3PfPumz31VkBFo64.ReVoLHhUjGZj9iYCod6zPUOSnmXTT_oRhGeRzWb0ooc'
+</code></pre>
+<h3 id="response-example">Response Example</h3>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;bo_id&quot;: [
+            &quot;1209981234567270&quot;
+        ],
+        &quot;client_id&quot;: &quot;YA0002&quot;,
+        &quot;email_id&quot;: &quot;XYZ@GMAIL.COM&quot;,
+        &quot;exchanges_subscribed&quot;: [
+            &quot;BFO&quot;,
+            &quot;BSE&quot;,
+            &quot;MCX&quot;,
+            &quot;NFO&quot;,
+            &quot;NSE&quot;
+        ],
+        &quot;name&quot;: &quot;CLIENT NAME&quot;,
+        &quot;poa_enabled&quot;: false,
+        &quot;products_enabled&quot;: [
+            &quot;NRML&quot;,
+            &quot;MIS&quot;,
+            &quot;CNC&quot;
+        ],
+        &quot;status&quot;: &quot;active&quot;
+    },
+    &quot;message&quot;: &quot;&quot;,
+    &quot;status&quot;: &quot;success&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1995,10 +2538,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/pocketful-docs/", "features": ["content.tabs.links", "navigation.tabs.sticky", "navigation.light", "navigation.instant", "content.code.copy", "content.code.toggle", "content.code.prettify", "content.code.select", "content.code.annotate", "content.code.fence_code"], "search": "/pocketful-docs/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.links", "navigation.tabs.sticky", "navigation.light", "navigation.instant", "content.code.copy", "content.code.toggle", "content.code.prettify", "content.code.select", "content.code.annotate", "content.code.fence_code"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/pocketful-docs/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>

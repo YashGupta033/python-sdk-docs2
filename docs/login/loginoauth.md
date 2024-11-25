@@ -79,6 +79,10 @@ curl --location 'https://trade.pocketful.in/oauth2/token' \
 
 ```
 
+> **Note:**
+The access token remains valid until the end of the day (i.e. 12:00), after which it will expire, and a new access token has to be generated.
+
+
 ## **3. Get the Client Id**
 After sucessfully generating access token, we can get client id with the help of `trading_info` API
 

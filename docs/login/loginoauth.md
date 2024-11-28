@@ -1,6 +1,6 @@
 # **OAuth2 Login Process**
 
-This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs.
+This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs. The below process is for businesses or advanced users managing their own setup.
 
 ### **1. Generate Authorization URL**
 To initiate the login process, create an authorization URL. This URL opens a webview for user's login.
@@ -18,7 +18,7 @@ Method-Type: GET
 | state        | A unique string to maintain state between requests (min 8 characters). | bdkjbcjhdbsvhj          |
 | redirect_uri | URL to which the user will be redirected after login.       | http://127.0.0.1:8000   |
 | response_type| Specifies the type of response. Must be `code`             | code                    |
-| app_id    | Your application’s unique identifier.                      | Ybg3ab2VXM              |
+| client_id    | Your application’s unique identifier (app id).                      | Ybg3ab2VXM              |
 
 #### Example Authorization URL
 ```
@@ -33,7 +33,7 @@ Once the user logs in successfully, they are redirected to the specified `redire
 - `state`: The original state value.
 
 ### **2. Generate Access Token**
-After receiving the authorization code, exchange it for an access token by making a `POST` request to the token endpoint.
+After receiving the authorization `code`, exchange it for an access token by making a `POST` request to the token endpoint.
 
 ```python
 Base URL: https://trade.pocketful.in
@@ -45,7 +45,7 @@ Method-Type: POST
 | Header Name      | Value                                                                                             |
 |------------------|--------------------------------------------------------------------------------------------------|
 | Content-Type   | application/x-www-form-urlencoded                                                             |
-| Authorization  | Basic <base64(client_id:client_secret)> (Base64 encoded appid:appsecret).                    |
+| Authorization  | Basic <base64(client_id:client_secret)>                     |
 
 #### Body Parameters
 | Parameter       | Description                                      | Example Value                              |

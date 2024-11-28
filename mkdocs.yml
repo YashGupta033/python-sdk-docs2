@@ -10,8 +10,8 @@ site_author: 'Pocketful'
 nav:
   - Introduction: index.md
   - Login: 
-    - Individual Trader: login/login.md
-    - Partner: login/loginoauth.md
+    - Quick-Login: login/login.md
+    - Oauth-Login: login/loginoauth.md
   - Orders:
     - Types of Order: orders/order_types.md
     - Regular Order:

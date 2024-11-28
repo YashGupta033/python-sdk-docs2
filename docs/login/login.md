@@ -1,6 +1,6 @@
 # **Login Process**
 
-Pocketful offers a secure and efficient login process, leveraging OAuth 2.0 authentication to safeguard your account. Simply follow the steps below to generate an access token and start interacting with the API's.
+Pocketful offers a secure and efficient login process, simply follow the steps below to generate an access token and start interacting with the API's.
 
 ### Steps to Generate an Access Token:
 
@@ -8,9 +8,9 @@ To begin, visit the <a href="https://api.pocketful.in/login" target="_blank">Poc
 
 
 #### 1. **Create an App:**
-- Log in and click the **Create App** button on your dashboard.
-- Fill in the **App Name** and **Redirect URL** in the provided form.
-- Click **Create App** button, and your application will be successfully created.
+- Click the **Create App** button on your dashboard.
+- Fill in the **App Name** and **Redirect URL** in the provided form. If you prefer an easier setup, use the default redirect URL to skip managing the login process and API calls yourself.
+- Click **Create App** button, and your app will be successfully created.
 
 <figure markdown>
 <p align="center"><img src="../images/createapp.png" alt="Dashboard" width="450"/></p>
@@ -36,7 +36,7 @@ To begin, visit the <a href="https://api.pocketful.in/login" target="_blank">Poc
 
 > - **Default Redirect URL**: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the **"Generate Access Token"** button.
 
-> - **Custom Redirect URL**: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.
+> - **Custom Redirect URL**: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="Oauth-Login.html" target="_blank">OAuth API Page</a>.
 
 > - **Access Token Validity**: The access token remains valid until the end of the day (i.e. 12:00AM), after which it will expire, and a new access token has to be generated.
 

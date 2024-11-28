@@ -24,7 +24,7 @@
     
     
       
-        <title>Individual Trader - Pocketful</title>
+        <title>Quick-Login - Pocketful</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individual Trader
+              Quick-Login
             
           </span>
         </div>
@@ -301,7 +301,7 @@
           
   
   <span class="md-ellipsis">
-    Individual Trader
+    Quick-Login
   </span>
   
 
@@ -312,7 +312,7 @@
         
   
   <span class="md-ellipsis">
-    Individual Trader
+    Quick-Login
   </span>
   
 
@@ -404,7 +404,7 @@
         
   
   <span class="md-ellipsis">
-    Partner
+    Oauth-Login
   </span>
   
 
@@ -2134,14 +2134,14 @@
 
 
 <h1 id="login-process"><strong>Login Process</strong></h1>
-<p>Pocketful offers a secure and efficient login process, leveraging OAuth 2.0 authentication to safeguard your account. Simply follow the steps below to generate an access token and start interacting with the API's.</p>
+<p>Pocketful offers a secure and efficient login process, simply follow the steps below to generate an access token and start interacting with the API's.</p>
 <h3 id="steps-to-generate-an-access-token">Steps to Generate an Access Token:</h3>
 <p>To begin, visit the <a href="https://api.pocketful.in/login" target="_blank">Pocketful API Portal</a> and log in with your Pocketful account credentials. If you don't yet have an account, you can <a href="https://web.pocketful.in/kyc/" target="_blank">register here</a>. </p>
 <h4 id="1-create-an-app">1. <strong>Create an App:</strong></h4>
 <ul>
-<li>Log in and click the <strong>Create App</strong> button on your dashboard.</li>
-<li>Fill in the <strong>App Name</strong> and <strong>Redirect URL</strong> in the provided form.</li>
-<li>Click <strong>Create App</strong> button, and your application will be successfully created.</li>
+<li>Click the <strong>Create App</strong> button on your dashboard.</li>
+<li>Fill in the <strong>App Name</strong> and <strong>Redirect URL</strong> in the provided form. If you prefer an easier setup, use the default redirect URL to skip managing the login process and API calls yourself.</li>
+<li>Click <strong>Create App</strong> button, and your app will be successfully created.</li>
 </ul>
 <figure markdown>
 <p align="center"><img src="../images/createapp.png" alt="Dashboard" width="450"/></p>
@@ -2172,7 +2172,7 @@
 <p><strong>Default Redirect URL</strong>: If you use Pocketful's default redirect URL during app creation, you can generate access tokens directly using the <strong>"Generate Access Token"</strong> button.</p>
 </li>
 <li>
-<p><strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="loginoauth.html" target="_blank">OAuth API Page</a>.</p>
+<p><strong>Custom Redirect URL</strong>: If you use a custom redirect URL, you will need to handle authentication on your own server and utilize Pocketful’s OAuth 2.0 APIs to generate the access token. For detailed guidance on OAuth 2.0 APIs, refer to the <a href="Oauth-Login.html" target="_blank">OAuth API Page</a>.</p>
 </li>
 <li>
 <p><strong>Access Token Validity</strong>: The access token remains valid until the end of the day (i.e. 12:00AM), after which it will expire, and a new access token has to be generated.</p>

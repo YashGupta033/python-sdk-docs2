@@ -24,7 +24,7 @@
     
     
       
-        <title>Partner - Pocketful</title>
+        <title>Oauth-Login - Pocketful</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Partner
+              Oauth-Login
             
           </span>
         </div>
@@ -292,7 +292,7 @@
         
   
   <span class="md-ellipsis">
-    Individual Trader
+    Quick-Login
   </span>
   
 
@@ -322,7 +322,7 @@
           
   
   <span class="md-ellipsis">
-    Partner
+    Oauth-Login
   </span>
   
 
@@ -333,7 +333,7 @@
         
   
   <span class="md-ellipsis">
-    Partner
+    Oauth-Login
   </span>
   
 
@@ -2284,7 +2284,7 @@
 
 
 <h1 id="oauth2-login-process"><strong>OAuth2 Login Process</strong></h1>
-<p>This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs.</p>
+<p>This guide explains the step-by-step process to integrate login functionality into your platform using our OAuth APIs. The below process is for businesses or advanced users managing their own setup.</p>
 <h3 id="1-generate-authorization-url"><strong>1. Generate Authorization URL</strong></h3>
 <p>To initiate the login process, create an authorization URL. This URL opens a webview for user's login.</p>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in
@@ -2322,8 +2322,8 @@ Method-Type: GET
 <td>code</td>
 </tr>
 <tr>
-<td>app_id</td>
-<td>Your application’s unique identifier.</td>
+<td>client_id</td>
+<td>Your application’s unique identifier (app id).</td>
 <td>Ybg3ab2VXM</td>
 </tr>
 </tbody>
@@ -2337,7 +2337,7 @@ Method-Type: GET
 - <code>scope</code>: Approved permissions.<br>
 - <code>state</code>: The original state value.</p>
 <h3 id="2-generate-access-token"><strong>2. Generate Access Token</strong></h3>
-<p>After receiving the authorization code, exchange it for an access token by making a <code>POST</code> request to the token endpoint.</p>
+<p>After receiving the authorization <code>code</code>, exchange it for an access token by making a <code>POST</code> request to the token endpoint.</p>
 <pre><code class="language-python">Base URL: https://trade.pocketful.in
 Endpoint: /oauth2/token
 Method-Type: POST
@@ -2357,7 +2357,7 @@ Method-Type: POST
 </tr>
 <tr>
 <td>Authorization</td>
-<td>Basic <base64(client_id:client_secret)> (Base64 encoded appid:appsecret).</td>
+<td>Basic <base64(client_id:client_secret)></td>
 </tr>
 </tbody>
 </table>
